@@ -10,4 +10,12 @@ github_username:  pablozxt
 
 # Build settings
 markdown: kramdown
-exclude: [bower.json,config.rb,Gemfile,Gemfile.lock,README.md,scss]
+exclude: [
+	bower.json,
+	config.rb,
+	Gemfile,
+	Gemfile.lock,
+	README.md,
+	package.json,
+	scss
+	]
