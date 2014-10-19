@@ -17,5 +17,7 @@ exclude: [
 	Gemfile.lock,
 	README.md,
 	package.json,
-	scss
-	]
+	scss,
+	node_modules,
+	gruntfile.js
+]
