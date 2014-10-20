@@ -20,21 +20,23 @@ module.exports = function(grunt) {
 		    }//jekyllServe
 		},//shell
 		watch: {
-			options: {livereload: true},
-			html:{
+			site: {
 				files:[
 					'index.html',
 					'_includes/*.html',
 					'_layouts/*.html',
 					'_posts/*.html'
-					]//html files
-			},//html
+					],//site files
+				tasks: ['shell:jekyllBuild'],
+				options: {livereload: true}
+			},//site
 			sass: {
 				files: ['scss/*.scss'],
-				tasks: ['compass:dev']
+				tasks: ['compass:dev'],
+				options: {livereload: true}
 			}//sass
 		}//watch
 	})//initConfig
 	grunt.registerTask('serve', ['shell:jekyllServe']);
-	grunt.registerTask('default', ['watch','shell:jekyllBuild']);
+	grunt.registerTask('default', ['shell:jekyllBuild','watch']);
 }//exports	
