@@ -1,7 +1,7 @@
 # Site settings
 title: pablodp.net
 email: pablodp@outlook.com
-description: > # this means to ignore newlines until "baseurl:"
+description: >
   I am Pablo Perez, an engineer, web developer, father of three and
   spaniard living in Los Angeles. And this is my site.
 url: "http://pablodp.net"
