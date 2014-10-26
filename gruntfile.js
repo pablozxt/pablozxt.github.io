@@ -31,6 +31,7 @@ module.exports = function(grunt) {
 					'_includes/*.html',
 					'_layouts/*.html',
 					'_posts/*.html',
+					'_config.yml',
 					'scss/*.scss'
 					],//site files
 				tasks: ['shell:jekyllBuild'],

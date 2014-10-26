@@ -2,8 +2,8 @@
 title: pablodp.net
 email: pablodp@outlook.com
 description: > # this means to ignore newlines until "baseurl:"
-  I am Pablo Perez, an engineer and web developer, father of three and
-  spaniard living in Los Angeles, and this is my site
+  I am Pablo Perez, an engineer, web developer, father of three and
+  spaniard living in Los Angeles. And this is my site.
 url: "http://pablodp.net"
 twitter_username: pablozxt
 github_username:  pablozxt
@@ -19,5 +19,8 @@ exclude: [
 	package.json,
 	scss,
 	node_modules,
-	gruntfile.js
+	gruntfile.js,
+	humans.txt,
+	robots.txt,
+	feed.xml
 ]
