@@ -1,11 +1,15 @@
 module.exports = function(grunt) {
-	grunt.loadNpmTasks('grunt-contrib-watch');
+	
 	grunt.loadNpmTasks('grunt-contrib-compass');
+	grunt.loadNpmTasks('grunt-contrib-watch');
 	grunt.loadNpmTasks('grunt-jekyll');
 	grunt.loadNpmTasks('grunt-shell');
+	grunt.loadNpmTasks('grunt-contrib-concat');
+	grunt.loadNpmTasks('grunt-contrib-uglify');
+	
 	grunt.initConfig({
-		compass:{
-			dev:{
+		compass : {
+			dev : {
 				options:{
 					config: 'config.rb'
 				}//compass options
@@ -19,26 +23,50 @@ module.exports = function(grunt) {
 		    	command : 'jekyll serve'
 		    }//jekyllServe
 		},//shell
-		watch: {
-			sass: {
+		concat : {
+			options : {
+				separator: ';'
+			},//concat options
+			libraries : {
+				src : [
+					'bower_components/foundation/js/vendor/jquery.js'
+					],//libraries src
+				dest : 'js/libs.js',
+			},//libraries
+			foundation : {
+				src : [
+					'bower_components/foundation/js/foundation/foundation.offcanvas.js'
+					],
+				dest : 'js/foundation.js',
+			}//foundation
+		},//concat
+		watch : {
+			sass : {
 				files: ['scss/*.scss'],
 				tasks: ['compass:dev'],
 				options: {livereload: true}
 			},//sass
-			site: {
+			js: {
+		        files: ['js/**/*.js', 'bower_components/foundation/js/**/*.js'],
+		        tasks: ['concat'],
+		        options: {livereload: true}
+			},//js
+			site : {
 				files:[
 					'index.html',
 					'_includes/*.html',
 					'_layouts/*.html',
 					'_posts/*.html',
 					'_config.yml',
-					'scss/*.scss'
+					'scss/*.scss',
+					'js/*.js'
 					],//site files
-				tasks: ['shell:jekyllBuild'],
-				options: {livereload: true}
+				tasks : ['shell:jekyllBuild'],
+				options : {livereload: true}
 			}//site
 		}//watch
-	})//initConfig
-	grunt.registerTask('serve', ['shell:jekyllServe']);
+	})//initConfig	grunt.loadNpmTasks('grunt-contrib-watch');
+	
+	grunt.registerTask('serve', ['concat', 'shell:jekyllServe']);
 	grunt.registerTask('default', ['watch','shell:jekyllBuild']);
 }//exports	
