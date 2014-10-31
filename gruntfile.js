@@ -40,6 +40,14 @@ module.exports = function(grunt) {
 				dest : 'js/foundation.js',
 			}//foundation
 		},//concat
+		uglify : {
+			my_target : {
+			      files: {
+			        'js/libs.min.js': ['js/libs.js'],
+					'js/foundation.min.js': ['js/foundation.js']
+			      }//files
+			 }//my_target
+		},//uglify
 		watch : {
 			sass : {
 				files: ['scss/*.scss'],
@@ -48,7 +56,7 @@ module.exports = function(grunt) {
 			},//sass
 			js: {
 		        files: ['js/**/*.js', 'bower_components/foundation/js/**/*.js'],
-		        tasks: ['concat'],
+		        tasks: ['concat','uglify'],
 		        options: {livereload: true}
 			},//js
 			site : {
@@ -67,6 +75,6 @@ module.exports = function(grunt) {
 		}//watch
 	})//initConfig	grunt.loadNpmTasks('grunt-contrib-watch');
 	
-	grunt.registerTask('serve', ['concat', 'shell:jekyllServe']);
+	grunt.registerTask('serve', ['concat','uglify', 'shell:jekyllServe']);
 	grunt.registerTask('default', ['watch','shell:jekyllBuild']);
 }//exports	
