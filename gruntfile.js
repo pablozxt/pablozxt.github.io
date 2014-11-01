@@ -75,6 +75,6 @@ module.exports = function(grunt) {
 		}//watch
 	})//initConfig	grunt.loadNpmTasks('grunt-contrib-watch');
 	
-	grunt.registerTask('serve', ['concat','uglify', 'shell:jekyllServe']);
+	grunt.registerTask('serve', ['compass','concat','uglify','shell:jekyllBuild','shell:jekyllServe']);
 	grunt.registerTask('default', ['watch','shell:jekyllBuild']);
 }//exports	
