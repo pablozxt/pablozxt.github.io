@@ -1,13 +1,14 @@
 # Require any additional compass plugins here.
-add_import_path "bower_components/foundation/scss"
+require "susy"
+# add_import_path "_sass"
 
 # Set this to the root of your project when deployed:
 http_path = "/"
-css_dir = "css"
-sass_dir = "scss"
+# css_dir = "css"
+# sass_dir = "css"
 images_dir = "images"
 javascripts_dir = "js"
-output_style = :nested
+# output_style = :nested
 
 # To enable relative paths to assets via compass helper functions. Uncomment:
 # relative_assets = true

@@ -24,3 +24,5 @@ exclude: [
 	robots.txt,
 	feed.xml
 ]
+sass:
+  style: :nested

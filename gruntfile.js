@@ -29,33 +29,26 @@ module.exports = function(grunt) {
 			},//concat options
 			libraries : {
 				src : [
-					'bower_components/foundation/js/vendor/jquery.js'
+					'js/vendors/jquery.js'
 					],//libraries src
-				dest : 'js/libs.js',
-			},//libraries
-			foundation : {
-				src : [
-					'bower_components/foundation/js/foundation/foundation.topbar.js'
-					],
-				dest : 'js/foundation.js',
-			}//foundation
+				dest : 'js/libraries.js',
+			}//libraries
 		},//concat
 		uglify : {
 			my_target : {
 			      files: {
-			        'js/libs.min.js': ['js/libs.js'],
-					'js/foundation.min.js': ['js/foundation.js']
+			        'js/libraries.min.js': ['js/vendors/libraries.js'],
 			      }//files
 			 }//my_target
 		},//uglify
 		watch : {
-			sass : {
+/*			sass : {
 				files: ['scss/*.scss'],
 				tasks: ['compass:dev'],
 				options: {livereload: true}
-			},//sass
+			},*///sass
 			js: {
-		        files: ['js/**/*.js', 'bower_components/foundation/js/**/*.js'],
+		        files: ['js/**/*.js', 'js/*.js'],
 		        tasks: ['concat','uglify'],
 		        options: {livereload: true}
 			},//js
@@ -66,9 +59,11 @@ module.exports = function(grunt) {
 					'_layouts/*.html',
 					'_posts/*.html',
 					'_config.yml',
-					'scss/*.scss',
-					'scss/**/*.scss',
-					'js/*.js'
+					'css/*.scss',
+					'css/**/*.scss',
+					'_sass/*.scss',
+					'js/*.js',
+					'js/**/*.js'
 					],//site files
 				tasks : ['shell:jekyllBuild'],
 				options : {livereload: true}
