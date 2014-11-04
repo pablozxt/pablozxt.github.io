@@ -35,7 +35,7 @@ module.exports = function(grunt) {
 			},//libraries
 			foundation : {
 				src : [
-					'bower_components/foundation/js/foundation/foundation.offcanvas.js'
+					'bower_components/foundation/js/foundation/foundation.topbar.js'
 					],
 				dest : 'js/foundation.js',
 			}//foundation
@@ -67,6 +67,7 @@ module.exports = function(grunt) {
 					'_posts/*.html',
 					'_config.yml',
 					'scss/*.scss',
+					'scss/**/*.scss',
 					'js/*.js'
 					],//site files
 				tasks : ['shell:jekyllBuild'],
