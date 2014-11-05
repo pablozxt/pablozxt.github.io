@@ -37,7 +37,7 @@ module.exports = function(grunt) {
 		uglify : {
 			my_target : {
 			      files: {
-			        'js/libraries.min.js': ['js/vendors/libraries.js'],
+			        'js/libraries.min.js': ['js/libraries.js'],
 			      }//files
 			 }//my_target
 		},//uglify
