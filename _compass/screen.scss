@@ -1,10 +1,13 @@
----
-# index stylesheet
----
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import 
+	"compass/reset",
+	"susy";
 
 @charset "utf-8";
-
-
 
 // Our variables
 $base-font-family: Helvetica, Arial, sans-serif;
@@ -44,8 +47,9 @@ $on-laptop:        800px;
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
-		"normalize",
 		"base",
         "layout",
         "syntax-highlighting"
 ;
+
+

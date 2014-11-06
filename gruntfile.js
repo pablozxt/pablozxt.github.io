@@ -1,6 +1,5 @@
 module.exports = function(grunt) {
 	
-	grunt.loadNpmTasks('grunt-contrib-compass');
 	grunt.loadNpmTasks('grunt-contrib-watch');
 	grunt.loadNpmTasks('grunt-jekyll');
 	grunt.loadNpmTasks('grunt-shell');
@@ -8,13 +7,6 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-contrib-uglify');
 	
 	grunt.initConfig({
-		compass : {
-			dev : {
-				options:{
-					config: 'config.rb'
-				}//compass options
-			}//compass dev
-		},//compass
 		shell : {
 			jekyllBuild : {
 		    	command : 'jekyll build'
@@ -42,11 +34,6 @@ module.exports = function(grunt) {
 			 }//my_target
 		},//uglify
 		watch : {
-/*			sass : {
-				files: ['scss/*.scss'],
-				tasks: ['compass:dev'],
-				options: {livereload: true}
-			},*///sass
 			js: {
 		        files: ['js/**/*.js', 'js/*.js'],
 		        tasks: ['concat','uglify'],
@@ -59,9 +46,8 @@ module.exports = function(grunt) {
 					'_layouts/*.html',
 					'_posts/*.html',
 					'_config.yml',
-					'css/*.scss',
-					'css/**/*.scss',
-					'_sass/*.scss',
+					'_compass/*.scss',
+					'_compass/**/*.scss',
 					'js/*.js',
 					'js/**/*.js'
 					],//site files
@@ -69,8 +55,8 @@ module.exports = function(grunt) {
 				options : {livereload: true}
 			}//site
 		}//watch
-	})//initConfig	grunt.loadNpmTasks('grunt-contrib-watch');
+	})//initConfig
 	
-	grunt.registerTask('serve', ['compass','concat','uglify','shell:jekyllBuild','shell:jekyllServe']);
+	grunt.registerTask('serve', ['concat','uglify','shell:jekyllBuild','shell:jekyllServe']);
 	grunt.registerTask('default', ['watch','shell:jekyllBuild']);
 }//exports	

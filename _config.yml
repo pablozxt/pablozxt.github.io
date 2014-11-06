@@ -24,5 +24,6 @@ exclude: [
 	robots.txt,
 	feed.xml
 ]
+gems: [jekyll-compass]
 sass:
   style: :nested
