@@ -5,10 +5,9 @@
 		<!-- image logo goes here-->
 		</ul>
 		<ul>
-			<li><a href="#">Engineer</a></li>
-			<li><a href="#">Developer</a></li>
-			<li><a href="#">Fwd:Thoughts</a></li>
-			<li><a href="#">What else?</a></li>
+			{% for menu_link in site.data.menu %}
+			<li><a href="{{ menu_link.url }}">{{ menu_link.name }}</a></li>
+			{% endfor %}
 		</ul>
 	</nav>
 </header>

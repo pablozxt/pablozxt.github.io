@@ -1,0 +1,14 @@
+- name: "Home"
+  url: "/"
+
+- name: "Engineer"
+  url: "/Engineer"
+  
+- name: "Developer"
+  url: "/Developer"
+
+- name: "Fwd: Thoughts"
+  url: "/Fwd_Thoughts"
+  
+- name: "What else?"
+  url: "/What_else"
