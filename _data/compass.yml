@@ -1,6 +1,7 @@
 ---
 require:
 - jekyll-compass
+- breakpoint
 project_path: /Users/Home/Documents/Repos/pablodp
 http_path: /
 css_dir: css
