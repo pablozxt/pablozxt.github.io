@@ -17,8 +17,10 @@ $susy               : (
 //Susy max-width
 $max-width          :   em(1200px);
 
-//navigation bar gutter
+//navigation 
+$off-canvas-width   :   em(250px);
 $nav-bar-gutter     :   em(15px);
+$perspective        :   750;//perspective for compass 3D translations
 
 //Breakpoints
 

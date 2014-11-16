@@ -1,20 +1,38 @@
+/********* 
+Nav bar and off canvas navigation
+*********/
+
+.container {
+	overflow: hidden; 
+}
+
+.off-canvas {
+	position: absolute;
+	width: $off-canvas-width;
+	left: (-1)*$off-canvas-width;
+	top: 0;
+	bottom: 0;
+	}	
+	
+.transformer{
+	@include translateX($off-canvas-width, $perspective);
+	@include translate3d($off-canvas-width, 0, 0, $perspective);
+}
+
+/********* 
+Large screen navigation styles
+*********/
+
 nav {
 	@include container($max-width);
 	@include clearfix;
 	.nav-links {
 		float:right;
 		@include clearfix;
-		@include breakpoint($break-nav){
-			clear:both;
-		}//breakpoint
 		li {
-			//float: right;
 			padding: em(15px);
 			float:left;
 			@include gutter($nav-bar-gutter);
-			@include breakpoint($break-nav){
-				clear:both;
-			}//breakpoint
 			a {
 				margin:0 auto;
 				text-align:center;
@@ -26,3 +44,19 @@ nav {
 	}//.nav-links
 }//.nav
 
+/********* 
+Use off-canvas side navigation for smaller screens 
+and CSS transitions enabled browsers
+*********/
+.csstransitions {
+	.nav-links {
+		@include breakpoint($break-nav){
+			float:none;
+		}//breakpoint
+		li {
+			@include breakpoint($break-nav) {
+				float:none;
+			}//breakpoint
+		}//li
+	}//.navlinks
+}//.css transitions
