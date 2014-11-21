@@ -22,14 +22,21 @@ module.exports = function(grunt) {
 			libraries : {
 				src : [
 					'js/vendors/jquery.js'
-					],//libraries src
-				dest : 'js/libraries.js',
-			}//libraries
+				],//libraries src
+				dest : 'js/libraries.js'
+			},//libraries
+			app : {
+				src : [
+					'js/app/menu.js'
+				],//app src
+				dest : 'js/app.js'
+			}//app
 		},//concat
 		uglify : {
 			my_target : {
 			      files: {
 			        'js/libraries.min.js': ['js/libraries.js'],
+					'js/app.min.js': ['js/app.js']
 			      }//files
 			 }//my_target
 		},//uglify

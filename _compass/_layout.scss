@@ -1,22 +1,10 @@
 /********* 
 Nav bar and off canvas navigation
+Start setting .container with n=hidden overflow
 *********/
 
 .container {
 	overflow: hidden; 
-}
-
-.off-canvas {
-	position: absolute;
-	width: $off-canvas-width;
-	left: (-1)*$off-canvas-width;
-	top: 0;
-	bottom: 0;
-	}	
-	
-.transformer{
-	@include translateX($off-canvas-width, $perspective);
-	@include translate3d($off-canvas-width, 0, 0, $perspective);
 }
 
 /********* 
@@ -44,11 +32,31 @@ nav {
 	}//.nav-links
 }//.nav
 
+.menu-toggle {
+	display:none;
+}
+
 /********* 
 Use off-canvas side navigation for smaller screens 
 and CSS transitions enabled browsers
 *********/
-.csstransitions {
+
+.js.csstransitions {
+	nav {
+		@include breakpoint($break-nav){
+			position: absolute;
+			width: $off-canvas-width;
+			left: (-1)*$off-canvas-width;
+			top: 0;
+			bottom: 0;
+		}//breakpoint
+	}//.menu
+	.transformer.is-open{
+		@include breakpoint($break-nav){
+			@include translateX($off-canvas-width, $perspective);
+			@include translate3d($off-canvas-width, 0, 0, $perspective);
+		}//breakpoint
+	}//.transformer.is-open
 	.nav-links {
 		@include breakpoint($break-nav){
 			float:none;
@@ -59,4 +67,15 @@ and CSS transitions enabled browsers
 			}//breakpoint
 		}//li
 	}//.navlinks
-}//.css transitions
+	.menu-toggle {
+		@include breakpoint($break-nav){
+		display:inline-block;
+		}//breakpoint
+	}//menu-toggle
+}//js
+
+
+
+
+
+	
