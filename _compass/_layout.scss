@@ -5,6 +5,7 @@ Start setting .container with n=hidden overflow
 
 .container {
 	overflow: hidden; 
+	@include container($max-width);
 }
 
 /********* 
@@ -12,7 +13,6 @@ Large screen navigation styles
 *********/
 
 .top-bar {
-	@include container($max-width);
 	@include clearfix;
 	.nav-links {
 		float:right;
@@ -50,10 +50,15 @@ and CSS transitions enabled browsers
 			top: 0;
 			bottom: 0;
 		}//.menu
-		.transformer.is-open{
-			@include translateX($off-canvas-width, $perspective);
-			//@include translate3d($off-canvas-width, 0, 0, $perspective);
-		}//.transformer.is-open
+		.transformer{
+			@include transition(transform, 0.5s, ease-in-out);
+			@include translateX(0, $perspective);
+			&.is-open{
+				@include transition(transform, 0.5s, ease-in-out);
+				@include translateX($off-canvas-width, $perspective);
+				//@include translate3d($off-canvas-width, 0, 0, $perspective);
+			}//.transformer.is-open
+		}//transformer
 		.nav-links {
 			float:none;
 			li {
