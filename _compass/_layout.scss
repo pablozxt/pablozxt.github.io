@@ -1,6 +1,6 @@
 /********* 
 Nav bar and off canvas navigation
-Start setting .container with n=hidden overflow
+Start setting .container with hidden overflow
 *********/
 
 .container {
@@ -52,11 +52,8 @@ and CSS transitions enabled browsers
 		}//.menu
 		.transformer{
 			@include transition(transform, 0.5s, ease-in-out);
-			@include translateX(0, $perspective);
 			&.is-open{
-				@include transition(transform, 0.5s, ease-in-out);
 				@include translateX($off-canvas-width, $perspective);
-				//@include translate3d($off-canvas-width, 0, 0, $perspective);
 			}//.transformer.is-open
 		}//transformer
 		.nav-links {
