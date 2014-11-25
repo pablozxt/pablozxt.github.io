@@ -3,7 +3,7 @@ Nav bar and off canvas navigation
 Start setting .container with hidden overflow
 *********/
 
-.container {
+body {
 	overflow: hidden; 
 	@include container($max-width);
 }
