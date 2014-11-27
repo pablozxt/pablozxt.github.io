@@ -46,16 +46,20 @@ and CSS transitions enabled browsers
 		.top-bar {
 			position: absolute;
 			width: $off-canvas-width;
-			left: (-1)*$off-canvas-width;
+			left: (-1)*$off-canvas-width;//position off-canvas menu out of screen
 			top: 0;
 			bottom: 0;
-		}//.menu
-		.transformer{
+			@include transition(transform, 0.5s, ease-in-out);
+			&.is-open {
+				@include translateX($off-canvas-width, $perspective);
+			}//slide off-canvas menu open when menu is toggled
+		}//.top-bar
+		.main {
 			@include transition(transform, 0.5s, ease-in-out);
 			&.is-open{
 				@include translateX($off-canvas-width, $perspective);
-			}//.transformer.is-open
-		}//transformer
+			}//slide main content along with menu
+		}//.main
 		.nav-links {
 			float:none;
 			li {

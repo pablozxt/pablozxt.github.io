@@ -1,21 +1,25 @@
 
 (function($){
 	
-	var transformer=$(".transformer");
+	var offCanvas=$(".top-bar"),
+		main=$(".main"),
+		toggle = document.querySelector(".menu-toggle");
 	
 	//toggle side menu when clicking on menu-toggle button
-	$(".menu-toggle" ).on( "click", function( event ) {
-	    event.preventDefault();
-		transformer.toggleClass("is-open");
+	$(toggle).on( "click", function( event ) {
+		offCanvas.toggleClass("is-open");
+		main.toggleClass("is-open");
 	});//menu-toggle on click
 	
 	//dismiss opened side menu when clicking outside of menu
 	$(document).on('click', function(event) {
-		if ($(event.target).closest(".main-inner").length) {
-			if(transformer.hasClass('is-open')){
-				transformer.removeClass("is-open");
-			}//if transformer is-open
-		}//if event.target closest
+		if ($(event.target).closest(".main").length && 
+		event.target !== toggle) {
+			if(offCanvas.hasClass('is-open')){
+				offCanvas.removeClass("is-open");
+				main.removeClass("is-open");
+			}//if offCanvas is-open, remove class
+		}//if event.target closest and != toggle
 	});//document on click
 	
 }(jQuery));//anonymous closure
