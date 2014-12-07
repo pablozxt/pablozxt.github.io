@@ -5,7 +5,6 @@ Start setting .container with hidden overflow
 
 body {
 	overflow: hidden; 
-	@include container($max-width);
 }
 
 /********* 
@@ -73,6 +72,9 @@ and CSS transitions enabled browsers
 }//js
 
 
+.main {
+	@include container($max-width);
+}
 
 
 

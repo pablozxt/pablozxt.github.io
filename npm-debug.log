@@ -1,0 +1,140 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/Users/Home/.nvm/v0.10.32/bin/node',
+1 verbose cli   '/Users/Home/.nvm/v0.10.32/bin/npm',
+1 verbose cli   'install' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.32
+4 verbose readDependencies using package.json deps
+5 verbose install where, deps [ '/Users/Home/Documents/Repos/pablodp',
+5 verbose install   [ 'grunt',
+5 verbose install     'grunt-contrib-watch',
+5 verbose install     'grunt-contrib-compass',
+5 verbose install     'grunt-contrib-concat',
+5 verbose install     'grunt-contrib-uglify',
+5 verbose install     'matchdep',
+5 verbose install     'grunt-jekyll',
+5 verbose install     'grunt-shell',
+5 verbose install     'grunt-autoprefixer' ] ]
+6 info preinstall pablodp.net@0.0.1
+7 verbose readDependencies using package.json deps
+8 verbose already installed skipping grunt@~0.4.5 /Users/Home/Documents/Repos/pablodp
+9 verbose already installed skipping grunt-contrib-watch@~0.6.1 /Users/Home/Documents/Repos/pablodp
+10 verbose already installed skipping grunt-contrib-compass@~1.0.1 /Users/Home/Documents/Repos/pablodp
+11 verbose already installed skipping grunt-contrib-concat@~0.5.0 /Users/Home/Documents/Repos/pablodp
+12 verbose already installed skipping grunt-contrib-uglify@~0.6.0 /Users/Home/Documents/Repos/pablodp
+13 verbose already installed skipping matchdep@~0.3 /Users/Home/Documents/Repos/pablodp
+14 verbose already installed skipping grunt-jekyll@~0.4.2 /Users/Home/Documents/Repos/pablodp
+15 verbose already installed skipping grunt-shell@~1.1.1 /Users/Home/Documents/Repos/pablodp
+16 verbose cache add [ 'grunt-autoprefixer@~4.0.0', null ]
+17 verbose cache add name=undefined spec="grunt-autoprefixer@~4.0.0" args=["grunt-autoprefixer@~4.0.0",null]
+18 verbose parsed url { protocol: null,
+18 verbose parsed url   slashes: null,
+18 verbose parsed url   auth: null,
+18 verbose parsed url   host: null,
+18 verbose parsed url   port: null,
+18 verbose parsed url   hostname: null,
+18 verbose parsed url   hash: null,
+18 verbose parsed url   search: null,
+18 verbose parsed url   query: null,
+18 verbose parsed url   pathname: 'grunt-autoprefixer@~4.0.0',
+18 verbose parsed url   path: 'grunt-autoprefixer@~4.0.0',
+18 verbose parsed url   href: 'grunt-autoprefixer@~4.0.0' }
+19 verbose cache add name="grunt-autoprefixer" spec="~4.0.0" args=["grunt-autoprefixer","~4.0.0"]
+20 verbose parsed url { protocol: null,
+20 verbose parsed url   slashes: null,
+20 verbose parsed url   auth: null,
+20 verbose parsed url   host: null,
+20 verbose parsed url   port: null,
+20 verbose parsed url   hostname: null,
+20 verbose parsed url   hash: null,
+20 verbose parsed url   search: null,
+20 verbose parsed url   query: null,
+20 verbose parsed url   pathname: '~4.0.0',
+20 verbose parsed url   path: '~4.0.0',
+20 verbose parsed url   href: '~4.0.0' }
+21 verbose addNamed [ 'grunt-autoprefixer', '~4.0.0' ]
+22 verbose addNamed [ null, '>=4.0.0-0 <4.1.0-0' ]
+23 silly lockFile 0e75d817-grunt-autoprefixer-4-0-0 grunt-autoprefixer@~4.0.0
+24 verbose lock grunt-autoprefixer@~4.0.0 /Users/Home/.npm/0e75d817-grunt-autoprefixer-4-0-0.lock
+25 silly addNameRange { name: 'grunt-autoprefixer',
+25 silly addNameRange   range: '>=4.0.0-0 <4.1.0-0',
+25 silly addNameRange   hasData: false }
+26 verbose request where is /grunt-autoprefixer
+27 verbose request registry https://registry.npmjs.org/
+28 verbose request id e8447ccdc35ecee0
+29 verbose url raw /grunt-autoprefixer
+30 verbose url resolving [ 'https://registry.npmjs.org/', './grunt-autoprefixer' ]
+31 verbose url resolved https://registry.npmjs.org/grunt-autoprefixer
+32 verbose request where is https://registry.npmjs.org/grunt-autoprefixer
+33 info trying registry request attempt 1 at 05:46:54
+34 http GET https://registry.npmjs.org/grunt-autoprefixer
+35 http 200 https://registry.npmjs.org/grunt-autoprefixer
+36 silly registry.get cb [ 200,
+36 silly registry.get   { date: 'Sun, 07 Dec 2014 13:46:54 GMT',
+36 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+36 silly registry.get     etag: '"DFKLGPNXPERORIBZT6FN261T4"',
+36 silly registry.get     'content-type': 'application/json',
+36 silly registry.get     'cache-control': 'max-age=60',
+36 silly registry.get     'content-length': '54216',
+36 silly registry.get     'accept-ranges': 'bytes',
+36 silly registry.get     via: '1.1 varnish',
+36 silly registry.get     age: '0',
+36 silly registry.get     'x-served-by': 'cache-lax1421-LAX',
+36 silly registry.get     'x-cache': 'HIT',
+36 silly registry.get     'x-cache-hits': '1',
+36 silly registry.get     'x-timer': 'S1417960014.520315,VS0,VE72',
+36 silly registry.get     vary: 'Accept',
+36 silly registry.get     'keep-alive': 'timeout=10, max=50',
+36 silly registry.get     connection: 'Keep-Alive' } ]
+37 silly addNameRange number 2 { name: 'grunt-autoprefixer',
+37 silly addNameRange   range: '>=4.0.0-0 <4.1.0-0',
+37 silly addNameRange   hasData: true }
+38 silly addNameRange versions [ 'grunt-autoprefixer',
+38 silly addNameRange   [ '0.1.0',
+38 silly addNameRange     '0.1.20130424',
+38 silly addNameRange     '0.1.20130516',
+38 silly addNameRange     '0.1.20130615',
+38 silly addNameRange     '0.2.0',
+38 silly addNameRange     '0.2.20130718',
+38 silly addNameRange     '0.2.20130806',
+38 silly addNameRange     '0.3.0',
+38 silly addNameRange     '0.3.1',
+38 silly addNameRange     '0.4.0',
+38 silly addNameRange     '0.4.1',
+38 silly addNameRange     '0.4.2',
+38 silly addNameRange     '0.5.0',
+38 silly addNameRange     '0.6.0',
+38 silly addNameRange     '0.6.1',
+38 silly addNameRange     '0.6.2',
+38 silly addNameRange     '0.6.3',
+38 silly addNameRange     '0.6.4',
+38 silly addNameRange     '0.6.5',
+38 silly addNameRange     '0.7.0',
+38 silly addNameRange     '0.7.1',
+38 silly addNameRange     '0.7.2',
+38 silly addNameRange     '0.7.3',
+38 silly addNameRange     '0.7.4',
+38 silly addNameRange     '0.7.5',
+38 silly addNameRange     '0.7.6',
+38 silly addNameRange     '0.8.0',
+38 silly addNameRange     '0.8.1',
+38 silly addNameRange     '0.8.2',
+38 silly addNameRange     '1.0.0',
+38 silly addNameRange     '1.0.1',
+38 silly addNameRange     '2.0.0' ] ]
+39 silly lockFile 0e75d817-grunt-autoprefixer-4-0-0 grunt-autoprefixer@~4.0.0
+40 silly lockFile 0e75d817-grunt-autoprefixer-4-0-0 grunt-autoprefixer@~4.0.0
+41 error notarget No compatible version found: grunt-autoprefixer@'>=4.0.0-0 <4.1.0-0'
+41 error notarget Valid install targets:
+41 error notarget ["0.1.0","0.1.20130424","0.1.20130516","0.1.20130615","0.2.0","0.2.20130718","0.2.20130806","0.3.0","0.3.1","0.4.0","0.4.1","0.4.2","0.5.0","0.6.0","0.6.1","0.6.2","0.6.3","0.6.4","0.6.5","0.7.0","0.7.1","0.7.2","0.7.3","0.7.4","0.7.5","0.7.6","0.8.0","0.8.1","0.8.2","1.0.0","1.0.1","2.0.0"]
+41 error notarget
+41 error notarget This is most likely not a problem with npm itself.
+41 error notarget In most cases you or one of your dependencies are requesting
+41 error notarget a package version that doesn't exist.
+42 error System Darwin 14.0.0
+43 error command "/Users/Home/.nvm/v0.10.32/bin/node" "/Users/Home/.nvm/v0.10.32/bin/npm" "install"
+44 error cwd /Users/Home/Documents/Repos/pablodp
+45 error node -v v0.10.32
+46 error npm -v 1.4.28
+47 error code ETARGET
+48 verbose exit [ 1, true ]
