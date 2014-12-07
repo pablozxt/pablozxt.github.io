@@ -33,6 +33,10 @@ Large screen navigation styles
 
 .menu-toggle {
 	display:none;
+	position: absolute;
+	top:0;
+	right:0;
+	padding-right: em(5px);
 }
 
 /********* 
@@ -45,18 +49,18 @@ and CSS transitions enabled browsers
 		.top-bar {
 			position: absolute;
 			width: $off-canvas-width;
-			left: (-1)*$off-canvas-width;//position off-canvas menu out of screen
+			left: 100%;//position off-canvas menu out of screen
 			top: 0;
 			bottom: 0;
 			@include transition(transform, 0.5s, ease-in-out);
 			&.is-open {
-				@include translateX($off-canvas-width, $perspective);
+				@include translateX((-1)*$off-canvas-width, $perspective);
 			}//slide off-canvas menu open when menu is toggled
 		}//.top-bar
 		.main {
 			@include transition(transform, 0.5s, ease-in-out);
 			&.is-open{
-				@include translateX($off-canvas-width, $perspective);
+				@include translateX((-1)*$off-canvas-width, $perspective);
 			}//slide main content along with menu
 		}//.main
 		.nav-links {
