@@ -7,7 +7,12 @@
 			</ul>
 			<ul class="nav-links">
 				{% for menu_link in site.data.menu %}
-				<li><a href="{{ menu_link.url }}">{{ menu_link.name }}</a></li>
+					<li 
+					{% if page.title == menu_link.name %} 
+						class="active" 
+					{% endif %}>
+						<a href="{{ menu_link.url }}">{{ menu_link.name }}</a>
+					</li>
 				{% endfor %}
 			</ul>
 		</nav>
