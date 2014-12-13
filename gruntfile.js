@@ -48,10 +48,12 @@ module.exports = function(grunt) {
 			},//js
 			site : {
 				files:[
-					'index.html',
-					'_includes/*.html',
-					'_layouts/*.html',
-					'_posts/*.html',
+					'*.html',
+					'**/*.html',
+					//'index.html',
+					//'_includes/*.html',
+					//'_layouts/*.html',
+					//'_posts/*.html',
 					'_config.yml',
 					'_compass/*.scss',
 					'_compass/**/*.scss',
