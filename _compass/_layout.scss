@@ -75,6 +75,9 @@ and CSS transitions enabled browsers
 	}//breakpoint
 }//js
 
+/********* 
+.main layout
+*********/
 
 .main {
 	@include container($max-width);
