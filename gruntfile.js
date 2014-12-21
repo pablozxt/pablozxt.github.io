@@ -50,6 +50,7 @@ module.exports = function(grunt) {
 				files:[
 					'*.html',
 					'**/*.html',
+					'**/**/*.html',
 					//'index.html',
 					//'_includes/*.html',
 					//'_layouts/*.html',
