@@ -9,8 +9,9 @@ title: Engineer
 	<p>I am an engineer working for J.F.Shea Construction since 2004. I have experience as a Mechanical Engineer and as a Structural Estimator and Engineer. I have participated in some great projects!</p>
 	<h2>Projects</h2>
 </header>
-	<section class="engineer-project">
 	{% for post in site.categories.engineer %}
+	<section class="engineer-project">
 		{{ post.content}}
-	{% endfor %}
 	</section>
+	{% endfor %}
+	
