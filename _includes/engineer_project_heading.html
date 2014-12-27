@@ -1,0 +1,11 @@
+{% if page.description_url %}
+	<h3><a href="{{ page.description_url }}">{{ page.description }}</a></h3>
+{% else %}
+	<h3>{{ page.description }}</h3>
+{% endif %}
+{% if page.customer_url %}
+	<h4>Customer:</h4><p><a href="{{ page.customer_url }}">{{ page.customer }}</a></p>
+{% else %}
+	<h4>Customer:</h4><p>{{ page.customer }}</p>
+{% endif %}
+	<h4>Date:</h4><p>{{ page.start_year }} - {{page.end_year}}</p>	
