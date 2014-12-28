@@ -11,7 +11,7 @@ body {
 Large screen navigation styles
 *********/
 
-.top-bar {
+#top-bar {
 	@include clearfix;
 	.nav-links {
 		float:right;
@@ -31,7 +31,7 @@ Large screen navigation styles
 	}//.nav-links
 }//.nav
 
-.menu-toggle {
+#menu-toggle {
 	display:none;
 	position: absolute;
 	top:0;
@@ -46,7 +46,7 @@ and CSS transitions enabled browsers
 
 .js.csstransforms {
 	@include breakpoint($break-nav){
-		.top-bar {
+		#top-bar {
 			position: absolute;
 			width: $off-canvas-width;
 			left: 100%;//position off-canvas menu out of screen
@@ -56,20 +56,20 @@ and CSS transitions enabled browsers
 			&.is-open {
 				@include translateX((-1)*$off-canvas-width, $perspective);
 			}//slide off-canvas menu open when menu is toggled
+			.nav-links {
+				float:none;
+				li {
+					float:none;
+				}//li
+			}//.navlinks
 		}//.top-bar
-		.main {
+		#main {
 			@include transition(transform, 0.5s, ease-in-out);
 			&.is-open{
 				@include translateX((-1)*$off-canvas-width, $perspective);
 			}//slide main content along with menu
 		}//.main
-		.nav-links {
-			float:none;
-			li {
-				float:none;
-			}//li
-		}//.navlinks
-		.menu-toggle {
+		#menu-toggle {
 			display:inline-block;
 		}//menu-toggle
 	}//breakpoint
@@ -79,7 +79,7 @@ and CSS transitions enabled browsers
 .main layout
 *********/
 
-.main {
+#main {
 	@include container($max-width);
 }
 

@@ -1,9 +1,9 @@
 
 (function($){
 	
-	var offCanvas=$(".top-bar"),
-		main=$(".main"),
-		toggle=$(".menu-toggle");
+	var offCanvas=$("#top-bar"),
+		main=$("#main"),
+		toggle=$("#menu-toggle");
 	
 	//toggle side menu when clicking on menu-toggle button
 	toggle.on( "click", function( event ) {
@@ -13,7 +13,7 @@
 	
 	//dismiss opened side menu when clicking outside of menu
 	$(document).on('click', function(event) {
-		if ($(event.target).closest(".main").length && 
+		if ($(event.target).closest("#main").length && 
 		!$(event.target).is(toggle)) {
 			if(offCanvas.hasClass('is-open')){
 				offCanvas.removeClass("is-open");
