@@ -5,12 +5,13 @@
 		main=$("#main"),
 		toggle=$("#menu-toggle");
 	
+
 	//toggle side menu when clicking on menu-toggle button
 	toggle.on( "click", function( event ) {
 		offCanvas.toggleClass("is-open");
 		main.toggleClass("is-open");
 	});//menu-toggle on click
-	
+
 	//dismiss opened side menu when clicking outside of menu
 	$(document).on('click', function(event) {
 		if ($(event.target).closest("#main").length && 
