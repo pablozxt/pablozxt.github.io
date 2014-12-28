@@ -14,3 +14,13 @@
     position: absolute;
     width: 1px;
 }
+
+.hidden {
+	display: none;
+}
+
+.js {
+	.js-hidden {
+		display: none;
+	}//js-hidden: hide if modernizr detects javascript
+}

@@ -29,7 +29,7 @@ Large screen navigation styles
 			margin-right: 0;
 		};
 	}//.nav-links
-}//.nav
+}//#top-bar
 
 #menu-toggle {
 	display:none;
@@ -62,21 +62,21 @@ and CSS transitions enabled browsers
 					float:none;
 				}//li
 			}//.navlinks
-		}//.top-bar
+		}//#top-bar
 		#main {
 			@include transition(transform, 0.5s, ease-in-out);
 			&.is-open{
 				@include translateX((-1)*$off-canvas-width, $perspective);
 			}//slide main content along with menu
-		}//.main
+		}//#main
 		#menu-toggle {
 			display:inline-block;
-		}//menu-toggle
+		}//#menu-toggle
 	}//breakpoint
 }//js
 
 /********* 
-.main layout
+#main layout
 *********/
 
 #main {
@@ -84,5 +84,8 @@ and CSS transitions enabled browsers
 }
 
 
+/********* 
+engineer layout
+*********/
 
-	
+
