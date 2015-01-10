@@ -25,7 +25,9 @@
 
 ;(function($){
 	var moreButton = $('.read-more-button'),//array containing all .read-more-button 
-	more = $('.read-more');//array containing all .read-more divs
+		more = $('.read-more'),//array containing all .read-more divs
+		text=moreButton.html(),//.read-more-button inner html, should be "Read more"
+		altText="Read less";//alternate text to be set after displaying .read-more
 	
 		$(window).load(function() {
 			moreButton.each(function(){
@@ -36,11 +38,11 @@
 		moreButton.click(function(event){
 			var target = $(event.target);
 			target.next('.read-more').slideToggle("slow",function(){
-				if (target.html() == "Read more"){
-					target.html("Read less");
+				if (target.html() == text){
+					target.html(altText);
 				} else {
-					target.html("Read more");
-				}//set .read-more-button text to either "Read more" or "Read less"
+					target.html(text);
+				}//set .read-more-button text to either text or altText
 			});//slideToggle the .read-more div
 		});//on moreButton click event
 }(jQuery));
