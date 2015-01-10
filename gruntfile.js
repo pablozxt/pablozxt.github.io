@@ -27,7 +27,8 @@ module.exports = function(grunt) {
 			},//libraries
 			app : {
 				src : [
-					'js/app/menu.js'
+					'js/app/menu.js',
+					'js/app/read-more.js'
 				],//app src
 				dest : 'js/app.js'
 			}//app
