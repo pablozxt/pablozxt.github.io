@@ -1,24 +1,26 @@
 <body>
 <!--[if lt IE 8]><p class="browserupgrade">You are using an <strong>outdated</strong>browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p><![endif]-->
-		<nav role="navigation" id="top-bar">
-			<ul>
-				<li><p class="visually-hidden">pablodp.net: engineer, web developer</p></li>
-			<!-- image logo goes here-->
-			</ul>
-			<ul class="nav-links">
-				{% for menu_link in site.data.menu %}
-					<li 
-					{% if page.title == menu_link.name %} 
-						class="active" 
-					{% endif %}>
-						<a href="{{ menu_link.url }}">{{ menu_link.name }}</a>
-					</li>
-				{% endfor %}
-			</ul>
-		</nav>
-		<div id="main">
-			<div>
-				<img src="{{ "/images/menu.svg" | prepend: site.baseurl}}" alt="menu-icon" id="menu-toggle">
-			</div>
+	<div class="outer-wrapper">
+		<div id="wrapper">
+			<nav role="navigation" id="top-bar">
+				<ul>
+					<li><p class="visually-hidden">pablodp.net: engineer, web developer</p></li>
+				<!-- image logo goes here-->
+				</ul>
+				<ul class="nav-links">
+					{% for menu_link in site.data.menu %}
+						<li 
+						{% if page.title == menu_link.name %} 
+							class="active" 
+						{% endif %}>
+							<a href="{{ menu_link.url }}">{{ menu_link.name }}</a>
+						</li>
+					{% endfor %}
+				</ul>
+			</nav>
+			<div id="main">
+				<div>
+					<img src="{{ "/images/menu.svg" | prepend: site.baseurl}}" alt="menu-icon" id="menu-toggle">
+				</div>
 
 			
