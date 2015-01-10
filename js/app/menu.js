@@ -5,7 +5,6 @@
 		toggle=$("#menu-toggle"),
 		wrapper=$("#wrapper");
 	
-
 	//toggle .is-open class when clicking on menu-toggle button
 	toggle.on( "click", function( event ) {
 		wrapper.toggleClass("is-open");

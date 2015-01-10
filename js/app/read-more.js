@@ -2,7 +2,7 @@
 	var moreButton = $('.read-more-button'),//array containing all .read-more-button 
 		more = $('.read-more'),//array containing all .read-more divs
 		text=moreButton.html(),//.read-more-button inner html, should be "Read more"
-		altText="Read less";//alternate text to be set after displaying .read-more
+		altText=moreButton.data('alt-text');//alternate text to be set after displaying .read-more
 	
 		$(window).load(function() {
 			moreButton.each(function(){
