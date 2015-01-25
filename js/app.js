@@ -6,26 +6,27 @@
 		wrapper=$("#wrapper"),
 		topBar=$("#top-bar")
 		navLinks=$(".nav-links"),
-		mql=window.matchMedia("screen and (max-width: 800px)");//responsive menu media 		breakpoint
+		mql=window.matchMedia("screen and (max-width: 800px)");//responsive menu breakpoint
 	
 		//add responsive classes to topBar and navLinks elements
 		//menu only adopts responsive form if javascript has loaded 
 		//and added these classes
-		//also display toggleButton
 		$(window).load(function(){
 			if (topBar && navLinks){
 				topBar.addClass("top-bar-resp");
-				navLinks.addClass("nav-links-resp");
-				$(window).resize(function(){//if media query is true
-					if (mql.matches){
-					toggleButton.show();
-					}//display toggleButton at breakpoint
-					else {//if media query not true
-						toggleButton.hide();//hide toggle button
-					}
-				});
-			}
+				navLinks.addClass("nav-links-resp");	
+			}//if topBar and navlinks
 		});//window load
+		
+		//display toggleButton if max-width < breakpoint
+		$(window).resize(function(){
+			if (mql.matches){
+			toggleButton.show();
+			}//display toggleButton at breakpoint
+			else {
+				toggleButton.hide();
+			}//hide toggleButton at breakpoint
+		});//on window resize function
 	
 		//toggle .is-open class when clicking on menu-toggle button
 		toggleButton.on( "click", function( event ) {
