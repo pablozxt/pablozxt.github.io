@@ -1,4 +1,7 @@
 (function($){
+	
+	"use strict";
+	
 	var moreButton = $('.read-more-button'),//array containing all .read-more-button 
 		more = $('.read-more'),//array containing all .read-more divs
 		text=moreButton.html(),//.read-more-button inner html, should be "Read more"

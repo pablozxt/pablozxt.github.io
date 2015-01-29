@@ -6,8 +6,20 @@
 		wrapper=$("#wrapper"),
 		topBar=$("#top-bar")
 		navLinks=$(".nav-links"),
-		mql=window.matchMedia("screen and (max-width: 800px)");//responsive menu breakpoint
+		mediaQuery="screen and (max-width: 800px)",//responsive menu breakpoint
+		mql=window.matchMedia(mediaQuery);//media query list
 	
+		//function allows to toggle an element if a media
+		//query list is true or false
+		function toggleResp (mediaQueryList,element){
+			if (mediaQueryList.matches){
+			element.show();
+			}//display element if breakpoint is met
+			else {
+				element.hide();
+			}//hide element if breakpoint is not met
+		}
+		
 		//add responsive classes to topBar and navLinks elements
 		//menu only adopts responsive form if javascript has loaded 
 		//and added these classes
@@ -16,16 +28,12 @@
 				topBar.addClass("top-bar-resp");
 				navLinks.addClass("nav-links-resp");	
 			}//if topBar and navlinks
+			toggleResp(mql,toggleButton);
 		});//window load
 		
 		//display toggleButton if max-width < breakpoint
 		$(window).resize(function(){
-			if (mql.matches){
-			toggleButton.show();
-			}//display toggleButton at breakpoint
-			else {
-				toggleButton.hide();
-			}//hide toggleButton at breakpoint
+			toggleResp(mql,toggleButton);
 		});//on window resize function
 	
 		//toggle .is-open class when clicking on menu-toggle button
@@ -35,8 +43,8 @@
 
 		//dismiss opened side menu when clicking outside of menu
 		$(document).on('click', function(event) {
-			if ($(event.target).closest("#main").length && 
-			!$(event.target).is(toggle)) {
+			if ($(event.target).closest(main).length && 
+			!$(event.target).is(toggleButton)) {
 				if(wrapper.hasClass('is-open')){
 					wrapper.removeClass("is-open");
 				}//if wrapper is-open, remove class
