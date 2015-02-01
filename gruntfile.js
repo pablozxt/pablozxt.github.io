@@ -5,6 +5,7 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-shell');
 	grunt.loadNpmTasks('grunt-contrib-concat');
 	grunt.loadNpmTasks('grunt-contrib-uglify');
+	grunt.loadNpmTasks('grunt-smushit');
 	
 	grunt.initConfig({
 		shell : {
@@ -41,6 +42,12 @@ module.exports = function(grunt) {
 			      }//files
 			 }//my_target
 		},//uglify
+		smushit: {
+		    mygroup: {
+		      src: ['images_source/*.png','images_source/*.jpg'],
+		      dest: 'images'
+		    }
+		},//smushit
 		watch : {
 			js: {
 		        files: ['js/**/*.js', 'js/*.js'],
@@ -68,6 +75,6 @@ module.exports = function(grunt) {
 		}//watch
 	})//initConfig
 	
-	grunt.registerTask('serve', ['concat','uglify','shell:jekyllBuild','shell:jekyllServe']);
+	grunt.registerTask('serve', ['concat','uglify','smushit','shell:jekyllBuild','shell:jekyllServe']);
 	grunt.registerTask('default', ['watch','shell:jekyllBuild']);
 }//exports	
