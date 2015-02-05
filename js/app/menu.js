@@ -1,18 +1,18 @@
 
 (function($){
 	
-	var main=$("#main"),
-		toggleButton=$("#menu-toggle"),
-		wrapper=$("#wrapper"),
-		topBar=$("#top-bar")
-		navLinks=$(".nav-links"),
-		mediaQuery="screen and (max-width: 800px)",//responsive menu breakpoint
-		mql=window.matchMedia(mediaQuery);//media query list
+	var main = $("#main"),
+		toggleButton = $("#menu-toggle"),
+		wrapper = $("#wrapper"),
+		topBar = $("#top-bar")
+		navLinks = $(".nav-links"),
+		mediaQuery =" screen and (max-width: 800px)",//responsive menu breakpoint
+		mql = window.matchMedia(mediaQuery);//media query list
 	
 		//function allows to toggle an element if a media
 		//query list is true or false
 		function toggleResp(mediaQueryList,element){
-		    if (mediaQueryList.matches){
+		    if (mediaQueryList.matches) {
 			element.show();
 			}//display element if breakpoint is met
 			else {
@@ -24,7 +24,7 @@
 		//menu only adopts responsive form if javascript has loaded 
 		//and added these classes
 		$(window).load(function () {
-			if (topBar && navLinks){
+			if (topBar && navLinks) {
 				topBar.addClass("top-bar-resp");
 				navLinks.addClass("nav-links-resp");	
 			}//if topBar and navlinks
