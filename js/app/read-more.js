@@ -7,15 +7,15 @@
 		text=moreButton.html(),//.read-more-button inner html, should be "Read more"
 		altText=moreButton.data('alt-text');//alternate text to be set after displaying .read-more
 	
-		$(window).load(function() {
-			moreButton.each(function(){
+		$(window).load(function () {
+			moreButton.each(function () {
 				$(this).toggleClass("hidden");
 			});//remove "hidden" class from all read-more buttons
 		});//on window load event
 		
-		moreButton.click(function(event){
+		moreButton.click(function (event) {
 			var target = $(event.target);
-			target.next('.read-more').slideToggle("slow",function(){
+			target.next('.read-more').slideToggle("slow",function () {
 				if (target.html() == text){
 					target.html(altText);
 				} else {
