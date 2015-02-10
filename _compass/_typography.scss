@@ -1,0 +1,11 @@
+// import establish baseline mixin
+
+@include establish-baseline;
+
+body {
+    font-size: $base-font-size;
+}
+
+h1 {
+	font-size: map-get($font-sizes, huge);
+}

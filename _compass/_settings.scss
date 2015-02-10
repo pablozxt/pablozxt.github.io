@@ -1,30 +1,56 @@
-// Our variables
-
-$base-font-family	: 	Verdana, Arial, sans-serif;
-
-
-// Vertical rhythm
-$base-font-size		:   16px;
-$small-font-size	:  	$base-font-size * 0.875;
-$base-line-height	: 	1.5;
-
 //Susy layout
-$susy               : (
-                       columns: 12,
-                       global-box-sizing: border-box
-                       );
+
+$susy               :    (
+                         columns: 12,
+                         global-box-sizing: border-box
+                         );
 
 //Susy max-width
-$max-width          :   em(1200px);
 
-//navigation 
-$off-canvas-width   :   em(250px);
-$nav-bar-gutter     :   em(15px);
-$perspective        :   750;//perspective for compass 3D translations
+$max-width          :    1200px;
+
+//Navigation 
+
+$off-canvas-width   :    em(250px);
+$nav-bar-gutter     :    em(15px);
+$perspective        :    750;//perspective for compass 3D translations
+
+//Padding
+
+$body-padding       :    em(15px);
+
+
+//Typography
+
+$base-font-family	: 	 Verdana, Arial, sans-serif;
+
+// Vertical rhythm
+
+$base-font-size		:    16px;
+$base-line-height	: 	 1.5 * $base-font-size;
+
+//Modular scale parameters
+
+$ms-base            :    $base-font-size;
+$ms-ratio           :    $minor-third;
+
+$round-to-nearest-half-line:    true; 
+
+$font-sizes         :    (
+						 huge: round(ms(4)),
+						 larger: round(ms(3)),
+						 large: round(ms(2)),
+						 medium: round(ms(1)),
+						 normal: round(ms(0)),
+						 small: round(ms(-1)),
+						 smaller: round(ms(-2)),
+						 tiny: round(ms(-3))
+                         );
+
 
 //Breakpoints
 
-$break-nav          :   max-width 800px;
+$break-nav          :    max-width 800px;
 
 
 //$spacing-unit		:	30px;
