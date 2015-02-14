@@ -7,5 +7,9 @@ body {
 }
 
 h1 {
-	font-size: map-get($font-sizes, huge);
+	@include set-font-size(huge);
+}
+
+header p {
+	@include set-font-size(medium);
 }

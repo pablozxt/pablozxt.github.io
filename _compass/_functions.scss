@@ -6,3 +6,8 @@
 @function em($target, $context: $base-font-size){
 	@return 1em * $target/$context;
 };
+
+@mixin set-font-size($size: normal) {
+    $font-size: map-get($font-sizes, $size);
+	@include adjust-font-size-to($font-size);
+}
