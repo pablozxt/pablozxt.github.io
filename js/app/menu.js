@@ -1,12 +1,14 @@
 
-(function($){
+(function ($) {
 	
-	var main = $('#main'),
+	"use strict";
+	
+    var main = $('#main'),
 		toggleButton = $('#menu-toggle'),
 		wrapper = $('#wrapper'),
-		topBar = $('#top-bar')
+		topBar = $('#top-bar'),
 		navLinks = $('.nav-links'),
-		mediaQuery ='screen and (max-width: 800px)',//responsive menu breakpoint
+		mediaQuery = 'screen and (max-width: 800px)',//responsive menu breakpoint
 		mql = window.matchMedia(mediaQuery);//media query list
 	
 		//function allows to toggle an element if a media
@@ -37,7 +39,7 @@
 		});//on window resize function
 	
 		//toggle .is-open class when clicking on menu-toggle button
-		toggleButton.on( 'click', function(event) {
+		toggleButton.on( 'click', function() {
 			wrapper.toggleClass('is-open');
 		});//menu-toggle on click
 
@@ -51,5 +53,5 @@
 			}//if event.target closest and != toggle
 		});//document on click
 	
-}(jQuery));//anonymous closure
+}(jQuery));//immediately invoked function
 
