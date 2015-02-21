@@ -87,6 +87,13 @@ img {
 	max-width: $max-width;
 }
 
+section {
+	img.full-width {
+		margin: 0 auto;
+		width: span(11);
+		margin-top: rhythm(1);
+	}
+}
 
 /********* 
 engineer layout

@@ -11,6 +11,7 @@ body {
     font-size: $base-font-size;
 	font-family: $base-font-family;
 	@include adjust-leading-to(3);
+	color: $text-color;
 }
 
 header {
@@ -23,7 +24,8 @@ header {
 		span {
 			font-family: $base-font-family;
 			@include set-font-size(huge-2);
-			color: red;
+			color: $main-color;
+			font-weight: bold;
 		}
 	}//h1
 	p {
@@ -34,22 +36,39 @@ header {
 	}//p
 }//header
 
-h2 {
-	@include set-font-size(normal);
+h2, h4 {
 	text-transform: uppercase;
+	font-weight: 500;
+	color: darken($main-color, 20%);
+}
+
+h2 {
+	@include set-font-size(medium);
 }
 
 h3 {
-	@include set-font-size(medium);
-	font-weight: 600;
+	@include set-font-size(normal);
+	margin-top: rhythm(1);
+	font-weight: bold;
+	span {
+		display:block;
+		font-weight: normal;
+	}
+	
+}
+
+h4 {
+	@include set-font-size(small);
+	margin-top: rhythm(2);
+	
 }
 
 section {
-	margin-top: rhythm(4);
-	.project-date {
-		@include set-font-size(medium);
-	}
+	margin-top: rhythm(3);
 }
 
+p {
+	margin-top: rhythm(1);
+}
 
 

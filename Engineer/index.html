@@ -5,21 +5,20 @@ title: Engineer
 ---
 
 <header>
-	<h1><span clas="accent">Engineer</span> </br>with {{(site.time | date: "%Y") | minus: 2002}} years of experience in the water industry</h1>
-	<p>I have been working for the Water division of J.F.Shea Construction since 2004. I have experience as a Mechanical & Start-Up Engineer, and as a Structural Estimator</p>
+	<h1><span clas="accent">Engineer</span> <br>with {{(site.time | date: "%Y") | minus: 2002}} years of experience in the water industry</h1>
+	<p>I have been working for the Water Division of J.F.Shea Construction since 2004. I have experience as a Mechanical & Start-Up Engineer, and as a Structural Estimator</p>
 </header>
 	<section>
 		<h2>Current Position</h2>
 		<article>
-			<h3><span>J.F.Shea Construction</span> - Structural Concrete Estimator</h3>
-			<p class="project-date">2012 - present</p>
+			<h3>J.F.Shea Construction - <br>Structural Concrete Estimator<span>2012 - present</span></h3>
 			<h4>Description</h4>
 			<p>Since January 2012 I have been working as a structural concrete estimator. I have been responsible for concrete quantity take-offs and pricing for very diverse water infrastructure projects, from construction of new facilities, to rehabilitation of existing structures or seismic retrofits.</p>
-			<img
+			<img class="full-width"
 			srcset="{{ "/images/weymouth-large.jpg" | prepend: site.baseurl }}  1200w, 
 			        {{ "/images/weymouth-medium.jpg" | prepend: site.baseurl }}  800w,
 			        {{ "/images/weymouth-small.jpg" | prepend: site.baseurl }}   600w"
-			sizes="50%"
+			sizes="100%"
 			src="{{ "/images/headworks-medium.jpg" | prepend: site.baseurl }}"
 			alt="Advanced Water Treatment Facility Reverse Osmosis Facility. View of Reverse Osmosis Unit" />
 			<button class="read-more-button hidden" data-alt-text="Read less">Read more</button>
@@ -39,7 +38,7 @@ title: Engineer
 		</article>
 	</section>
 	<section>
-		<h2>Past Projects with J.F.Shea Construction</h2>
+		<h2>Past Projects</h2>
 		{% for post in site.categories.engineer %}
 		<article class="engineer-project">
 			{{ post.content}}
