@@ -2,21 +2,37 @@
 
 @include establish-baseline;
 
+/********* 
+Typographic style of major html elements
+Include vertical rhythm layout
+*********/
+
 body {
     font-size: $base-font-size;
 	font-family: $base-font-family;
+	@include adjust-leading-to(3);
 }
 
-/********* 
-Heading element typographic styles
-Include vertical rhythm layout because
-it's closely linked to typography
-*********/
-
-h1 {
-	@include set-font-size(large);
-	font-weight: bold;
-}
+header {
+	padding-top: rhythm(0);
+	h1 {
+		font-family: $secondary-font-family;
+		@include set-font-size(medium);
+		text-transform: uppercase;
+		font-weight: 500;
+		span {
+			font-family: $base-font-family;
+			@include set-font-size(huge-2);
+			color: red;
+		}
+	}//h1
+	p {
+		@include set-font-size(normal);
+		font-family: $secondary-font-family;
+		font-weight: 300;
+		margin-top: rhythm(1);
+	}//p
+}//header
 
 h2 {
 	@include set-font-size(normal);
@@ -28,26 +44,8 @@ h3 {
 	font-weight: 600;
 }
 
-/********* 
-Typographic style of major html elements
-*********/
-
-header {
-	padding-top: em(10px);
-	h1 {
-		@include breakpoint($break-nav) {
-			margin-right: em(52px);
-		}//breakpoint
-	}//h1
-	p {
-		@include set-font-size(normal);
-		font-family: $secondary-font-family;
-		margin-top: rhythm(1);
-	}//p
-}//header
-
 section {
-	margin-top: rhythm(1);
+	margin-top: rhythm(4);
 	.project-date {
 		@include set-font-size(medium);
 	}

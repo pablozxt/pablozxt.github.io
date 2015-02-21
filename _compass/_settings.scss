@@ -11,7 +11,7 @@ $max-width          :    1200px;
 
 //Navigation 
 
-$off-canvas-width   :    em(250px);
+$off-canvas-width   :    em(200px);
 $nav-bar-gutter     :    em(15px);
 $perspective        :    750;//perspective for compass 3D translations
 
@@ -27,8 +27,8 @@ $secondary-font-family   :    "museo-sans";
 
 // Vertical rhythm
 
-$base-font-size		:    16px;
-$base-line-height	: 	 24px;
+$base-font-size		:    18px;
+$base-line-height	: 	 8px;
 
 //Modular scale parameters
 
@@ -38,8 +38,11 @@ $ms-ratio           :    $minor-third;
 $round-to-nearest-half-line:    true; 
 
 $font-sizes         :    (
-						 huge: round(ms(4)),
-						 larger: round(ms(3)),
+						 huge-4: round(ms(7)),
+						 huge-3: round(ms(6)),
+						 huge-2: round(ms(5)),
+						 huge-1: round(ms(4)),
+						 extra-large: round(ms(3)),
 						 large: round(ms(2)),
 						 medium: round(ms(1)),
 						 normal: round(ms(0)),

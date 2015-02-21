@@ -9,7 +9,12 @@ Start setting .outer-wrapper with hidden overflow
 *********/
 
 .outer-wrapper {
-	overflow: hidden; 
+	overflow-x: hidden; 
+}
+
+#wrapper {
+	@include container($max-width);
+	position:relative;
 }
 
 /********* 
@@ -40,7 +45,7 @@ Large screen navigation styles
 #menu-toggle {
 	display:none;
 	position: absolute;
-	top: 10px;
+	top: rhythm(1);
 	right:0;
 	padding-right: em(10px);
 }
@@ -80,14 +85,6 @@ pictures layout
 
 img {
 	max-width: $max-width;
-}
-
-/********* 
-#main layout
-*********/
-
-#main {
-	@include container($max-width);
 }
 
 
