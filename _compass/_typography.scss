@@ -4,12 +4,54 @@
 
 body {
     font-size: $base-font-size;
+	font-family: $base-font-family;
 }
+
+/********* 
+Heading element typographic styles
+Include vertical rhythm layout because
+it's closely linked to typography
+*********/
 
 h1 {
-	@include set-font-size(huge);
+	@include set-font-size(large);
+	font-weight: bold;
 }
 
-header p {
-	@include set-font-size(medium);
+h2 {
+	@include set-font-size(normal);
+	text-transform: uppercase;
 }
+
+h3 {
+	@include set-font-size(medium);
+	font-weight: 600;
+}
+
+/********* 
+Typographic style of major html elements
+*********/
+
+header {
+	padding-top: em(10px);
+	h1 {
+		@include breakpoint($break-nav) {
+			margin-right: em(52px);
+		}//breakpoint
+	}//h1
+	p {
+		@include set-font-size(normal);
+		font-family: $secondary-font-family;
+		margin-top: rhythm(1);
+	}//p
+}//header
+
+section {
+	margin-top: rhythm(1);
+	.project-date {
+		@include set-font-size(medium);
+	}
+}
+
+
+

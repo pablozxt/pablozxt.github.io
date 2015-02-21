@@ -3,6 +3,7 @@
 {% else %}
 	<h3>{{ page.description }}</h3>
 {% endif %}
+	<p class="project-date">{{ page.start_year }} - {{page.end_year}}</p>	
 	<h4>Position:</h4><p><span>J.F.Shea Construction</span> - {{page.position}}</p>
 {% if page.customer_url %}
 	<h4>Customer:</h4><p><a href="{{ page.customer_url }}">{{ page.customer }}</a></p>
@@ -12,4 +13,4 @@
 {% if page.budget %}
 	<h4>Budget</h4><p>{{ page.budget }}</p>
 {% endif %}
-	<h4>Date:</h4><p>{{ page.start_year }} - {{page.end_year}}</p>	
+	
