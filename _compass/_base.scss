@@ -1,0 +1,9 @@
+button {
+	@include border-radius($button-radius);
+	background-color: $button-color;
+	color: lighten($button-color, 40%);
+	min-height: em(44px);
+	border-color: darken($button-color, 10%);
+	padding: $button-padding;
+	
+}

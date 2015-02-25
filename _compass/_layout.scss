@@ -55,12 +55,13 @@ Use off-canvas side navigation for smaller screens
 and CSS transitions enabled browsers
 *********/
 
-.js.csstransforms {
+.js.csstransforms3d {
 	@include breakpoint($break-nav){
 		#wrapper {
 			@include transition(transform, 0.5s, ease-in-out);
+			@include translate3d(0, 0, 0);
 			&.is-open {
-				@include translateX((-1)*$off-canvas-width, $perspective);
+				@include translate3d((-1)*$off-canvas-width, 0, 0);
 			}//slide wrapper div to the left when menu is toggled
 		}//#wrapper
 		.top-bar-resp {
@@ -89,9 +90,8 @@ img {
 
 section {
 	img.full-width {
-		margin: 0 auto;
-		width: span(11);
-		margin-top: rhythm(1);
+		width: span(12);
+		margin-top: rhythm(2);
 	}
 }
 

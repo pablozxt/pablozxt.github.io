@@ -53,6 +53,7 @@ h3 {
 	span {
 		display:block;
 		font-weight: normal;
+		font-style: italic;
 	}
 	
 }
@@ -69,6 +70,25 @@ section {
 
 p {
 	margin-top: rhythm(1);
+}
+
+figcaption {
+	font-family: $secondary-font-family;
+	@include set-font-size(tiny);
+	font-style: italic;
+	color: lighten($text-color, 20%);
+	margin-top: rhythm(-1);
+	
+}
+
+button {
+	font-family: $secondary-font-family;
+	@include set-font-size(smaller);
+	text-transform: uppercase;
+	font-weight: 500;
+	&.read-more-button {
+		margin-top: rhythm(3);
+	}
 }
 
 
