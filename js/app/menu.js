@@ -14,7 +14,7 @@
 		
 	//function allows to toggle an element if a media
 	//query list is true or false
-	function toggleResp(mediaQueryList,element) {
+	function toggleResp(mediaQueryList, element) {
 	    if (mediaQueryList.matches) {
 			element.show();
 		}//display element if breakpoint is met
@@ -39,7 +39,7 @@
 	
 		//display toggleButton if max-width < breakpoint
 		$(window).resize(function () {
-			toggleResp(mql,toggleButton);
+			toggleResp(mql, toggleButton);
 		});//on window resize function
 
 		//toggle .is-open class when clicking on menu-toggle button
