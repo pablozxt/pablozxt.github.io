@@ -15,7 +15,7 @@
 		//query list is true or false
 		function toggleResp(mediaQueryList,element) {
 		    if (mediaQueryList.matches) {
-			element.show();
+				element.show();
 			}//display element if breakpoint is met
 			else {
 				element.hide();
@@ -41,6 +41,7 @@
 		//toggle .is-open class when clicking on menu-toggle button
 		toggleButton.on( 'click', function() {
 			wrapper.toggleClass('is-open');
+			main.toggleClass('pointer');
 		});//menu-toggle on click
 
 		//dismiss opened side menu when clicking outside of menu
@@ -49,6 +50,7 @@
 			!$(event.target).is(toggleButton)) {
 				if (wrapper.hasClass('is-open')) {
 					wrapper.removeClass('is-open');
+					main.removeClass('pointer');
 				}//if wrapper is-open, remove class
 			}//if event.target closest and != toggle
 		});//document on click
