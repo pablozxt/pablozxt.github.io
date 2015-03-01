@@ -9,7 +9,7 @@
 		topBar = $('#top-bar'),
 		navLinks = $('.nav-links'),
 		html = $('html'),
-		mediaQuery = 'screen and (max-width: 800px)',//responsive menu breakpoint
+		mediaQuery = 'screen and (max-width: 44.44444em)',//responsive menu breakpoint
 		mql = window.matchMedia(mediaQuery);//media query list
 		
 	//function allows to toggle an element if a media
@@ -24,7 +24,7 @@
 	}
 	
 	//if modernizr detects csstransforms3d, then add off-canvas menu
-	if (html.hasClass('csstransforms3d')) { 
+	if (html.hasClass('csstransforms3d') && (window.matchMedia)) { 
 	
 		//add responsive classes to topBar and navLinks elements
 		//menu only adopts responsive form if javascript has loaded 
@@ -43,7 +43,7 @@
 		});//on window resize function
 
 		//toggle .is-open class when clicking on menu-toggle button
-		toggleButton.on( 'click', function() {
+		toggleButton.on('click', function() {
 			wrapper.toggleClass('is-open');
 			main.toggleClass('pointer');
 		});//menu-toggle on click
