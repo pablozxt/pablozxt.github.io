@@ -18,20 +18,21 @@ header {
 	padding-top: rhythm(0);
 	h1 {
 		font-family: $secondary-font-family;
-		@include set-font-size(medium);
+		@include set-font-size(large);
 		text-transform: uppercase;
 		font-weight: 500;
 		span {
 			font-family: $base-font-family;
-			@include set-font-size(huge-2);
+			@include set-font-size(huge-1);
 			color: $main-color;
 			font-weight: bold;
 		}
 	}//h1
 	p {
-		@include set-font-size(normal);
+		@include set-font-size(medium);
 		font-family: $secondary-font-family;
-		font-weight: 300;
+		font-weight: map-get($font-weights, light);
+		//font-style: italic;
 		margin-top: rhythm(1);
 	}//p
 }//header

@@ -23,7 +23,15 @@ $body-padding       :    em(15px);
 //Typography
 
 $base-font-family	     : 	  "garamond-premier-pro";
-$secondary-font-family   :    "museo-sans";
+$secondary-font-family   :    "source-sans-pro";
+$font-weights            :    (
+                              extra-light: 200,
+							  light: 300,
+							  regular: 400, 
+							  medium: 500, 
+							  semibold: 600, 
+							  bold: 700
+							  );
 
 // Vertical rhythm
 
