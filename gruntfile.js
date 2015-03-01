@@ -32,13 +32,21 @@ module.exports = function(grunt) {
 					'js/app/read-more.js'
 				],//app src
 				dest : 'js/app.js'
-			}//app
+			},//app
+			headLibraries : {
+				src : [
+					'js/vendors/modernizr.js',
+					'js/vendors/picturefill.js'
+				],//headLibraries src
+				dest : 'js/headLibraries.js'
+			}//headLibraries
 		},//concat
 		uglify : {
 			my_target : {
 			      files: {
 			        'js/libraries.min.js': ['js/libraries.js'],
-					'js/app.min.js': ['js/app.js']
+					'js/app.min.js': ['js/app.js'],
+					'js/headLibraries.min.js': ['js/headLibraries.js']
 			      }//files
 			 }//my_target
 		},//uglify

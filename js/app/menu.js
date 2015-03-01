@@ -23,7 +23,9 @@
 		}//hide element if breakpoint is not met
 	}
 	
-	//if modernizr detects csstransforms3d, then add off-canvas menu
+	//if modernizr detects csstransforms3d, 
+	// and if browser supports matchMedia, 
+	//then add off-canvas menu
 	if (html.hasClass('csstransforms3d') && (window.matchMedia)) { 
 	
 		//add responsive classes to topBar and navLinks elements
@@ -58,7 +60,8 @@
 				}//if wrapper is-open, remove class
 			}//if event.target closest and != toggle
 		});//document on click
-	}//if html has class 3d transform
+	}//if html has class 3d transform and 
+	//browser supports matchMedia
 		
 }(jQuery));//close immediately invoked function expression
 
