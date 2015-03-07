@@ -86,9 +86,10 @@ button {
 	font-family: $secondary-font-family;
 	@include set-font-size(smaller);
 	text-transform: uppercase;
-	font-weight: 500;
+	font-weight: map-get($font-weights, regular);
 	&.read-more-button {
 		margin-top: rhythm(3);
+		//min-width: em(100px, map-get($font-sizes, smaller));
 	}
 }
 

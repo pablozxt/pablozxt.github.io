@@ -1,8 +1,16 @@
 button {
-	@include border-radius($button-radius);
+	border-radius: $button-radius;
 	background-color: $button-color;
 	color: lighten($button-color, 40%);
 	min-height: em(44px);
-	border-color: darken($button-color, 10%);
+	border-style: none;
 	padding: $button-padding;
+	cursor: pointer; 
+	transition: background-color 0.4s ease;
+	&:focus {
+		outline:0 !important;
+	}
+	&:hover {
+		background-color: darken($button-color, 10%);
+	};
 }
