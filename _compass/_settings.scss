@@ -1,77 +1,78 @@
 //Susy layout
 
-$susy               :    (
-                         columns: 12,
-                         global-box-sizing: border-box
-                         );
+$susy: (
+	   columns: 12,
+	   global-box-sizing: border-box
+       );
 
 //Susy max-width
 
-$max-width          :    em(1200px);
+$max-width: em(1200px);
 
 //Navigation 
 
-$off-canvas-width   :    em(200px);
-$nav-bar-gutter     :    em(15px);
-$perspective        :    750;//perspective for compass 3D translations
+$off-canvas-width: em(200px);
+$nav-bar-gutter: em(15px);
+$perspective: 750;//perspective for compass 3D translations
 
 //Padding
 
-$body-padding       :    em(15px);
+$body-padding: em(15px);
 
 
 //Typography
 
-$base-font-family	     : 	  "garamond-premier-pro";
-$secondary-font-family   :    "source-sans-pro";
-$font-weights            :    (
-                              extra-light: 200,
-							  light: 300,
-							  regular: 400, 
-							  medium: 500, 
-							  semibold: 600, 
-							  bold: 700
-							  );
+$base-font-family: "garamond-premier-pro";
+$secondary-font-family: "source-sans-pro";
+$font-weights: (
+               extra-light: 200,
+			   light: 300,
+			   normal: 400, 
+			   medium: 500, 
+			   semibold: 600, 
+			   bold: 700
+			   );
 
 // Vertical rhythm
 
-$base-font-size		:    18px;
-$base-line-height	: 	 8px;
+$base-font-size: 18px;
+$base-line-height: 8px;
 
 //Modular scale parameters
 
-$ms-base            :    $base-font-size;
-$ms-ratio           :    $minor-third;
+$ms-base: $base-font-size;
+$ms-ratio: $minor-third;
 
-$round-to-nearest-half-line:    true; 
+$round-to-nearest-half-line: true; 
 
-$font-sizes         :    (
-						 huge-4: round(ms(7)),
-						 huge-3: round(ms(6)),
-						 huge-2: round(ms(5)),
-						 huge-1: round(ms(4)),
-						 extra-large: round(ms(3)),
-						 large: round(ms(2)),
-						 medium: round(ms(1)),
-						 normal: round(ms(0)),
-						 small: round(ms(-1)),
-						 smaller: round(ms(-2)),
-						 tiny: round(ms(-3))
-                         );
+$font-sizes: (
+             huge-4: round(ms(7)),
+			 huge-3: round(ms(6)),
+			 huge-2: round(ms(5)),
+			 huge-1: round(ms(4)),
+			 extra-large: round(ms(3)),
+			 large: round(ms(2)),
+			 medium: round(ms(1)),
+			 normal: round(ms(0)),
+			 small: round(ms(-1)),
+			 smaller: round(ms(-2)),
+			 tiny: round(ms(-3))
+             );
 
 //Color palette
-$text-color         :    #222;
-$main-color    	    :    #df4747;
-$button-color       :    #5cb85c;
+$text-color: #222;
+$main-color: #df4747;
+$button-color: #5cb85c;
 
 
 //Button styles
-$button-radius      :    em(10px);
-$button-padding     :    em(15px);
+$button-radius: em(10px);
+$button-padding-vert: rhythm(2);
+$button-padding-horiz: rhythm(5);
 
 //Breakpoints
 
-$break-nav          :    max-width em(800px);
+$break-nav: max-width em(800px);
 
 
 //$spacing-unit		:	30px;

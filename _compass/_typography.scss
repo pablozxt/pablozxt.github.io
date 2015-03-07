@@ -25,21 +25,20 @@ header {
 			font-family: $base-font-family;
 			@include set-font-size(huge-1);
 			color: $main-color;
-			font-weight: bold;
+			font-weight: map-get($font-weights, bold);
 		}
 	}//h1
 	p {
 		@include set-font-size(medium);
 		font-family: $secondary-font-family;
 		font-weight: map-get($font-weights, light);
-		//font-style: italic;
 		margin-top: rhythm(1);
 	}//p
 }//header
 
 h2, h4 {
 	text-transform: uppercase;
-	font-weight: 500;
+	font-weight: map-get($font-weights, medium);
 	color: darken($main-color, 20%);
 }
 
@@ -50,10 +49,10 @@ h2 {
 h3 {
 	@include set-font-size(normal);
 	margin-top: rhythm(1);
-	font-weight: bold;
+	font-weight: map-get($font-weights, bold);
 	span {
 		display:block;
-		font-weight: normal;
+		font-weight: map-get($font-weights, normal);
 		font-style: italic;
 	}
 	
@@ -84,12 +83,11 @@ figcaption {
 
 button {
 	font-family: $secondary-font-family;
-	@include set-font-size(smaller);
-	text-transform: uppercase;
-	font-weight: map-get($font-weights, regular);
+	@include set-font-size(normal);
+	font-weight: map-get($font-weights, normal);
+	width: em(160px);
 	&.read-more-button {
 		margin-top: rhythm(3);
-		//min-width: em(100px, map-get($font-sizes, smaller));
 	}
 }
 
