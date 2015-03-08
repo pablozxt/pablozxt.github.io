@@ -11,3 +11,15 @@
     $font-size: map-get($font-sizes, $size);
 	@include adjust-font-size-to($font-size);
 }
+
+@mixin button-color($color: $primary-button-color) {
+	background-color: $color;
+	color: lighten($color, 40%);
+	transition: background-color 0.4s ease;
+	&:hover, &:focus {
+		background-color: darken($color, 10%);
+	}
+	&:active {
+		background-color: darken($color, 20%);
+	}
+}

@@ -85,10 +85,12 @@ button {
 	font-family: $secondary-font-family;
 	@include set-font-size(normal);
 	font-weight: map-get($font-weights, normal);
-	width: em(160px);
-	&.read-more-button {
-		margin-top: rhythm(3);
-	}
+}
+
+.read-more-button {
+	width: em(144px);
+	margin-top: rhythm(2);
+	@include button-color($primary-button-color);
 }
 
 
