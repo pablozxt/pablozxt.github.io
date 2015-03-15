@@ -17,48 +17,48 @@ body {
 header {
 	padding-top: rhythm(0);
 	h1 {
-		font-family: $secondary-font-family;
-		@include set-font-size(large);
+		font-family: $base-font-family;
+		@include set-font-size(huge-2);
+		font-weight: map-get($font-weights, bold);
 		text-transform: uppercase;
-		font-weight: 500;
-		span {
-			font-family: $base-font-family;
-			@include set-font-size(huge-1);
-			color: $main-color;
-			font-weight: map-get($font-weights, bold);
-		}
+		color: $main-color;
 	}//h1
-	p {
-		@include set-font-size(medium);
+	p{
 		font-family: $secondary-font-family;
+		@include set-font-size(medium);
 		font-weight: map-get($font-weights, light);
-		margin-top: rhythm(1);
-	}//p
+		margin-top: rhythm(0);
+	}
 }//header
 
-h2, h4 {
+h2, h5 {
 	text-transform: uppercase;
-	font-weight: map-get($font-weights, medium);
-	color: darken($main-color, 20%);
-}
-
-h2 {
 	@include set-font-size(medium);
 }
 
 h3 {
+	@include set-font-size(medium);
+	text-transform: capitalize;
+	margin-top: rhythm(1);	
+	color: $text-color;
+}
+
+h4 {
 	@include set-font-size(normal);
 	margin-top: rhythm(1);
-	font-weight: map-get($font-weights, bold);
-	span {
-		display:block;
+	.project-position {
+		color: darken($main-color, 15%);
+		font-weight: map-get($font-weights, bold);
+	}
+	.project-data {
 		font-weight: map-get($font-weights, normal);
 		font-style: italic;
+		color: $text-color;
 	}
 	
 }
 
-h4 {
+h5 {
 	@include set-font-size(small);
 	margin-top: rhythm(2);
 	
@@ -75,7 +75,6 @@ p {
 figcaption {
 	font-family: $secondary-font-family;
 	@include set-font-size(tiny);
-	font-style: italic;
 	color: lighten($text-color, 20%);
 	margin-top: rhythm(-1);
 	
@@ -88,9 +87,11 @@ button {
 }
 
 .read-more-button {
-	width: em(144px);
+	width: 100%;
+	margin-right: 0;
 	margin-top: rhythm(2);
 	@include button-color($primary-button-color);
+	margin-right: 0;
 }
 
 

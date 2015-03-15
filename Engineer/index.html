@@ -5,14 +5,17 @@ title: Engineer
 ---
 
 <header>
-	<h1><span clas="accent">Engineer</span> <br>with {{(site.time | date: "%Y") | minus: 2002}} years of experience in the water industry</h1>
-	<p>I have been working for the Water Division of J.F.Shea Construction since 2004. I have experience as a Mechanical & Start-Up Engineer, and as a Structural Estimator</p>
+	<h1>Engineer</h1>
+	<p>I have {{(site.time | date: "%Y") | minus: 2002}} years of experience as a Mechanical Engineer and Structural Estimator in the construction industry. I work for the Water group of J.F.Shea Construction.<p>
 </header>
 	<section>
 		<h2>Current Position</h2>
 		<article>
-			<h3>J.F.Shea Construction - <br>Structural Concrete Estimator<span>2012 - present</span></h3>
-			<h4>Description</h4>
+			<h4>J.F.Shea Construction
+				<div class="project-position">Structural Concrete Estimator</div>
+				<div class="project-data">2012 - present</div>
+			</h4>
+			<h5>Description</h5>
 			<p>Since January 2012 I have been working as a structural concrete estimator. I have been responsible for concrete quantity take-offs and pricing for very diverse water infrastructure projects, from construction of new facilities, to rehabilitation of existing structures or seismic retrofits.</p>
 			<figure>
 				<img class="full-width"
@@ -27,8 +30,8 @@ title: Engineer
 			</figure>
 			<button class="read-more-button hidden" data-alt-text="Read less">Read more</button>
 			<div class="read-more js-hidden">
-				<h4>The Best Parts</h4>
-				<p>Thanks to my position as a structural estimator I have gotten the chance to learn a completely new discipline. As explained below, my field experience was highly focused on mechanical, commissioning and start-up. After I finished the Headworks project and came into our office to help estimate, I knew very little about concrete construction or formwork. However, we had enough mechanical estimators at the time, and needed some help with concrete, so, with the help of our senior structural estimator, I jumped right in. The second project I was asked to estimate was a $200M water treatment facility, so I had to learn fast!  </p>
+				<h5>The Best Parts</h5>
+				<p>Thanks to my position as a structural estimator I have had the chance to learn a completely new discipline. As explained below, my field experience was highly focused on mechanical, commissioning and start-up. After I finished the Headworks project and came into our office to help estimate, I knew very little about concrete construction or formwork. However, we had enough mechanical estimators at the time, and needed some help with concrete, so, with the assistance of our senior structural estimator, I jumped right in. The second project I was asked to estimate was a $200M water treatment facility, so I had to learn fast!  </p>
 				<p>When you are in the field, you are involved with a single project for a long period of time, and you get to know that project in great detail. But it takes a long time until you move on to a different job. As an estimator, you only spend a few days or weeks working on any particular job. You get exposed to many more jobs, and I do enjoy this aspect of my position. Although the downside is that you know them in a more superficial manner. This is especially true for the jobs for which we do not become the successful low bidder.</p>
 				<p>Probably the most important part of my job as an estimator is tracking the performance of jobs that we do end up building. This is what keeps me honest, and tells me if the assumptions I made were correct, if I understood the job correctly, if the production rates used were accurate, etc. Following closely the jobs I estimated has been a critical aspect of my work in estimating.</p>
 				<p>One of the most appealing aspects of my position is the "every job is a puzzle" aspect of it. Every project we estimate has peculiarities that makes it unique. I enjoy figuring out where the difficulty lies for each one of them, understanding what the schedule and the work constraints are going to be like, and how they will affect cost.</p>
@@ -42,8 +45,8 @@ title: Engineer
 		</article>
 	</section>
 	<section>
-		<h2>Past Projects</h2>
 		{% for post in site.categories.engineer %}
+		<h2>Past Projects</h2>
 		<article class="engineer-project">
 			{{ post.content}}
 		</article>
@@ -58,9 +61,9 @@ title: Engineer
 			<p>My first job out of college consisted of building computer models of water supply, sewer and storm drain systems. We used these models to simulate extreme loading conditions and future city expansion plans, find areas where existing infrastructure needed improvement and propose solutions. I was the liaison with our customers in several projects, and managed a team of engineers.</p>
 			<p class="read-more-button hidden" data-alt-text="Read less">Read more</p>
 			<div class="read-more js-hidden">
-				<h4>The Best Parts</h4>
+				<h5>The Best Parts</h5>
 				<p>Having direct contact with customers is always a useful learning experience. The same can be said for managing a group of people. I extended my knowledge of hydraulics and hydrology, and, on the software side, learned to use GIS software <a href="http://www.mapinfo.com/product/mapinfo-professional/">MapInfo<a> pretty well, got some exposure to relational databases and wrote basic SQL queries.</p>
-				<h4>The Challenges</h4>
+				<h5>The Challenges</h5>
 				<p>Most Spanish municipalities at the time did not have at their disposal all the information that the <a href="http://www.innovyze.com/products/infoworks_cs/">InfoWorks</a> models require. In order to complete the work, we had to make assumptions, and no matter how reasonable we thought our assumptions were, one has to question the accuracy and usefulness of the model and, therefore, our whole endeavor. In other words, I am not sure that we brought a lot of value to our customers, and that was in my view the biggest challenge.</p>
 		</article>
 	</section>

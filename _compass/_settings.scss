@@ -23,15 +23,7 @@ $body-padding: em(15px);
 //Typography
 
 $base-font-family: "garamond-premier-pro";
-$secondary-font-family: "source-sans-pro";
-$font-weights: (
-               extra-light: 200,
-			   light: 300,
-			   normal: 400, 
-			   medium: 500, 
-			   semibold: 600, 
-			   bold: 700
-			   );
+$secondary-font-family: "open-sans";
 
 // Vertical rhythm
 
@@ -59,6 +51,15 @@ $font-sizes: (
 			 tiny: round(ms(-3))
              );
 
+ $font-weights: (
+                extra-light: 200,
+ 			   light: 300,
+ 			   normal: 400, 
+ 			   medium: 500, 
+ 			   semibold: 600, 
+ 			   bold: 700
+ 			   );
+
 //Color palette
 $text-color: #222;
 $main-color: #df4747;
@@ -67,8 +68,7 @@ $primary-button-color: #5cb85c;
 
 //Button styles
 $button-radius: em(10px);
-$button-padding-vert: rhythm(2);
-$button-padding-horiz: rhythm(5);
+$button-padding-vert: rhythm(1);
 
 //Breakpoints
 
