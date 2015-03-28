@@ -1,13 +1,13 @@
-- name: "Now"
+- name: "Pablo"
   url: "/"
 
 - name: "Engineer"
   url: "/Engineer"
   
-- name: "Developer"
+- name: "Web Developer"
   url: "/Developer"
 
-- name: "Fwd&#58; Thoughts"
+- name: "Forward Thoughts"
   url: "/Fwd_Thoughts"
   
 - name: "What else?"

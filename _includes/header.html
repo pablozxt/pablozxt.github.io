@@ -2,21 +2,14 @@
 <!--[if lt IE 8]><p class="browserupgrade">You are using an <strong>outdated</strong>browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p><![endif]-->
 	<div class="outer-wrapper">
 		<div id="wrapper">
-			<nav role="navigation" id="top-bar">
-				<ul>
-					<li><p class="visually-hidden">pablodp.net: engineer, web developer</p></li>
-				<!-- image logo goes here-->
-				</ul>
-				<ul class="nav-links">
-					{% for menu_link in site.data.menu %}
-						<li 
-						{% if page.title == menu_link.name %} 
-							class="active" 
-						{% endif %}>
-							<a href="{{ menu_link.url }}">{{ menu_link.name }}</a>
-						</li>
-					{% endfor %}
-				</ul>
+			<nav role="navigation" 
+			id= {% if page.title == "Pablo" %}
+				"sidebar"
+				{% else %}
+				"navigation"
+				{% endif %}>
+				<h1>I am <a href="{{ site.data.menu[0].url | prepend: site.baseurl }}">{{ site.data.menu[0].name}}</a>, an <a href="{{ site.data.menu[1].url | prepend: site.baseurl }}">{{ site.data.menu[1].name}}</a> and <a href="{{ site.data.menu[2].url | prepend: site.baseurl }}">{{ site.data.menu[2].name}}</a>, father of three boys español en Los Angeles. I sometimes <a href="{{ site.data.menu[3].url | prepend: site.baseurl }}">{{ site.data.menu[3].name}}</a>.
+				</h1>
 			</nav>
 			<div id="main">
 				<div>

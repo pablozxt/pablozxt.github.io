@@ -16,20 +16,22 @@ body {
 
 header {
 	padding-top: rhythm(0);
-	h1 {
+}//header
+
+h1 {
+	font-family: $secondary-font-family;
+	@include set-font-size(medium);
+	font-weight: map-get($font-weights, light);
+	margin-top: rhythm(0);
+	span {
 		font-family: $base-font-family;
-		@include set-font-size(huge-2);
+		@include set-font-size(huge-1);
 		font-weight: map-get($font-weights, bold);
 		text-transform: uppercase;
 		color: $main-color;
-	}//h1
-	p{
-		font-family: $secondary-font-family;
-		@include set-font-size(medium);
-		font-weight: map-get($font-weights, light);
-		margin-top: rhythm(0);
-	}
-}//header
+		display: block;
+	}//span
+}//h1
 
 h2, h5 {
 	text-transform: uppercase;

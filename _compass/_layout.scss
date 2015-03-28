@@ -21,27 +21,6 @@ Start setting .outer-wrapper with hidden overflow
 Large screen navigation styles
 *********/
 
-#top-bar {
-	@include clearfix;
-}//#top-bar
-
-.nav-links {
-	float:right;
-	@include clearfix;
-	li {
-		padding: em(15px);
-		float:left;
-		@include gutter($nav-bar-gutter);
-		a {
-			margin:0 auto;
-			text-align:center;
-		}//a
-	}//li
-	li:last-child{
-		margin-right: 0;
-	};
-}//.nav-links
-
 #menu-toggle {
 	display:none;
 	position: absolute;
@@ -64,19 +43,13 @@ and CSS transitions enabled browsers
 				@include translate3d((-1)*$off-canvas-width, 0, 0);
 			}//slide wrapper div to the left when menu is toggled
 		}//#wrapper
-		.top-bar-resp {
+		.nav-resp {
 			position: absolute;
 			width: $off-canvas-width;
 			left: 100%;//position off-canvas menu out of screen
 			top: 0;
 			bottom: 0;
 		}//#top-bar-resp
-		.nav-links-resp {
-			float:none;
-			li {
-				float:none;
-			}//li
-		}//.navlinks
 	}//breakpoint
 }//js
 
