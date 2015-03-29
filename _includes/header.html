@@ -8,8 +8,17 @@
 				{% else %}
 				"navigation"
 				{% endif %}>
-				<h1>I am <a href="{{ site.data.menu[0].url | prepend: site.baseurl }}">{{ site.data.menu[0].name}}</a>, an <a href="{{ site.data.menu[1].url | prepend: site.baseurl }}">{{ site.data.menu[1].name}}</a> and <a href="{{ site.data.menu[2].url | prepend: site.baseurl }}">{{ site.data.menu[2].name}}</a>, father of three boys español en Los Angeles. I sometimes <a href="{{ site.data.menu[3].url | prepend: site.baseurl }}">{{ site.data.menu[3].name}}</a>.
+				<h1>Hi, my name is <a href="{{ site.data.menu[0].url | prepend: site.baseurl }}">{{ site.data.menu[0].name}}</a>. I am an <a href="{{ site.data.menu[1].url | prepend: site.baseurl }}">{{ site.data.menu[1].name}}</a> and <a href="{{ site.data.menu[2].url | prepend: site.baseurl }}">{{ site.data.menu[2].name}}</a> interested in building web applications for the engineering and construction industry. I am a father of three boys, and an español en Los Angeles. I sometimes <a href="{{ site.data.menu[3].url | prepend: site.baseurl }}">{{ site.data.menu[3].name}}</a>.
 				</h1>
+				<div>
+						<img class="head-shot"
+					srcset="{{ "/images/head-large.jpg" | prepend: site.baseurl }}  900w, 
+							{{ "/images/head-medium.jpg" | prepend: site.baseurl }}  700w, 
+					        {{ "/images/head-small.jpg" | prepend: site.baseurl }}  400w" 
+					sizes="275px"
+					src="{{ "/images/head shot-medium.jpg" | prepend: site.baseurl }}"
+					alt="Pablo with his two oldest children" />
+				</div>
 			</nav>
 			<div id="main">
 				<div>

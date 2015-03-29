@@ -18,9 +18,13 @@ header {
 	padding-top: rhythm(0);
 }//header
 
+nav {
+	padding-top: rhythm(1);
+}
+
 h1 {
 	font-family: $secondary-font-family;
-	@include set-font-size(medium);
+	@include set-font-size(large);
 	font-weight: map-get($font-weights, light);
 	margin-top: rhythm(0);
 	span {
