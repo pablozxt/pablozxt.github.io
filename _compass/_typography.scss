@@ -24,7 +24,7 @@ nav {
 
 h1 {
 	font-family: $secondary-font-family;
-	@include set-font-size(large);
+	@include set-font-size(medium);
 	font-weight: map-get($font-weights, light);
 	margin-top: rhythm(0);
 	span {

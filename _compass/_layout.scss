@@ -17,6 +17,18 @@ Start setting .outer-wrapper with hidden overflow
 	position:relative;
 }
 
+.head-shot {
+	max-width: 275px;
+	border-radius: 50%;
+	display: block;
+	margin: rhythm(3) auto;
+}
+
+svg {
+	width: 16px;
+	height: 16px;
+}
+
 /********* 
 Large screen navigation styles
 *********/
@@ -66,13 +78,6 @@ section {
 		width: span(12);
 		margin-top: rhythm(2);
 	}
-}
-
-.head-shot {
-	max-width: 275px;
-	border-radius: 50%;
-	display: block;
-	margin: rhythm(3) auto;
 }
 
 /********* 
