@@ -20,6 +20,7 @@ header {
 
 nav {
 	padding-top: rhythm(1);
+	@extend %nav-color;
 }
 
 h1 {
@@ -86,7 +87,27 @@ figcaption {
 	
 }
 
-button {
+a {
+	color: $link-color;
+	text-decoration: none;
+	@include underline($background-color, $link-color, true, 1, 1)
+}
+
+a:hover {
+	color: $link-hover-color;
+	@include underline($background-color, $link-hover-color, true, 1, 1);
+}
+
+%nav-color {
+	background-color: $nav-background;
+	color: set-text-color($nav-background);
+	a, a:hover {
+		color: inherit;
+		@include underline($nav-background, $alt-text-color, true, 1.2, 1)
+	}
+}
+
+%button-type {
 	font-family: $secondary-font-family;
 	@include set-font-size(normal);
 	font-weight: map-get($font-weights, normal);

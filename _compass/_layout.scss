@@ -1,4 +1,4 @@
-#wrapper {
+nav, #main {
     padding: 0 $body-padding;
 }
 
@@ -18,7 +18,7 @@ Start setting .outer-wrapper with hidden overflow
 }
 
 .head-shot {
-	max-width: 275px;
+	max-width: 200px;
 	border-radius: 50%;
 	display: block;
 	margin: rhythm(3) auto;

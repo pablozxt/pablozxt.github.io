@@ -23,3 +23,11 @@
 		background-color: darken($color, 20%);
 	}
 }
+
+@function set-text-color($background-color) {
+  @if (lightness($background-color) > 50) {
+    @return $text-color;
+  } @else {
+    @return $alt-text-color;
+  }
+}

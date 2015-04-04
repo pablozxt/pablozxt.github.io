@@ -1,4 +1,4 @@
-- name: "Pablo"
+- name: "Pablo Perez"
   url: "/"
 
 - name: "Engineer"
@@ -7,8 +7,5 @@
 - name: "Web Developer"
   url: "/Developer"
 
-- name: "Forward Thoughts"
+- name: "Forwards Thoughts"
   url: "/Fwd_Thoughts"
-  
-- name: "What else?"
-  url: "/What_else"

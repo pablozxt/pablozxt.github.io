@@ -25,6 +25,6 @@ exclude: [
 	robots.txt,
 	feed.xml
 ]
-gems: [jekyll-compass, octopress-autoprefixer, modular-scale]
+gems: [jekyll-compass, octopress-autoprefixer, modular-scale, toolkit]
 sass:
   style: :nested

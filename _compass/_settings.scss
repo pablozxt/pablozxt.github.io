@@ -61,9 +61,15 @@ $font-sizes: (
  			   );
 
 //Color palette
+$background-color: #fff;
+$nav-background: #333;
 $text-color: #222;
+$alt-text-color: #ffffff;
+$link-color: set-text-color($background-color);
+$link-hover-color: lighten($link-color, 20%);
 $main-color: #df4747;
 $primary-button-color: #5cb85c;
+$nav-background: #333;
 
 
 //Button styles

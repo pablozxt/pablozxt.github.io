@@ -4,7 +4,9 @@ button {
 	border-style: none;
 	padding: $button-padding-vert 0;
 	cursor: pointer; 
+	@extend %button-type;
 	&:focus {
 		outline: none;
 	}
 }
+
