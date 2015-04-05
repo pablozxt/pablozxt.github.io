@@ -21,6 +21,13 @@ header {
 nav {
 	padding-top: rhythm(1);
 	@extend %nav-color;
+	ul {
+		font-family: $secondary-font-family;
+		font-weight: map-get($font-weights, light);
+	}
+	.nav-social {
+		@include set-font-size(smaller);
+	}
 }
 
 h1 {
@@ -90,24 +97,33 @@ figcaption {
 a {
 	color: $link-color;
 	text-decoration: none;
-	@include underline($background-color, $link-color, true, 1, 1)
+	@include underline($background-color, $link-color, true, 1, 1.3);
+	transition: color 0.4s ease;
+	&:hover, &:focus {
+		color: $link-hover-color;
+	}
+	&:active {
+		color: $link-active-color;
+	}
 }
 
-a:hover {
-	color: $link-hover-color;
-	@include underline($background-color, $link-hover-color, true, 1, 1);
-}
 
 %nav-color {
 	background-color: $nav-background;
 	color: set-text-color($nav-background);
-	a, a:hover {
+	a {
 		color: inherit;
-		@include underline($nav-background, $alt-text-color, true, 1.2, 1)
+		@include underline($nav-background, $alt-text-color, true, 1.2, 0.8);
+		&:hover, &:focus {
+			color: darken(set-text-color($nav-background), 10%);
+		}
+		&:active {
+			color: darken(set-text-color($nav-background), 20%);
+		}
 	}
 }
 
-%button-type {
+%button-typography {
 	font-family: $secondary-font-family;
 	@include set-font-size(normal);
 	font-weight: map-get($font-weights, normal);

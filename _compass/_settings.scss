@@ -65,9 +65,14 @@ $background-color: #fff;
 $nav-background: #333;
 $text-color: #222;
 $alt-text-color: #ffffff;
-$link-color: set-text-color($background-color);
-$link-hover-color: lighten($link-color, 20%);
+//$link-color: set-text-color($background-color);
+$link-color: #2455c3;
+$link-hover-color: lighten($link-color, 10%);
+$link-active-color: lighten($link-color, 20%);
 $main-color: #df4747;
+//http://paletton.com/#uid=3000u0klPr+chGNhBvMqpoHtfj-
+$second-color: #2b8686;
+$third-color: #a1d042;
 $primary-button-color: #5cb85c;
 $nav-background: #333;
 
