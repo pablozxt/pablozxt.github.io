@@ -1,13 +1,13 @@
 # Site settings
 title: pablodp.net
 email: pablozxt@gmail.com
-github: pablozxt
+twitter_username: pablozxt
+github_username:  pablozxt
 description: >
   I am Pablo Perez, an engineer, web developer, father of three and
   spaniard living in Los Angeles. And this is my site.
 url: "http://pablodp.net"
-twitter_username: pablozxt
-github_username:  pablozxt
+
 
 # Build settings
 markdown: kramdown

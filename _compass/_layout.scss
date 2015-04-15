@@ -1,7 +1,6 @@
-nav, #main {
+#main {
     padding: 0 $body-padding;
 }
-
 
 /********* 
 Nav bar and off canvas navigation
@@ -25,12 +24,34 @@ Start setting .outer-wrapper with hidden overflow
 }
 
 svg {
-	width: 20px;
-	height: 20px;
+	width: $social-icon-size;
+	height: $social-icon-size;
 	stroke: $alt-text-color;
 	fill: $alt-text-color;
 	position: relative;
 	top: 6px;
+}
+
+.nav-social {
+	ul {
+		display: relative;
+	}
+	li {
+		@include clearfix;
+		width: 200px;
+		margin-left: 38%;
+		span {
+			display: block;
+			float: left;
+		}
+		.username {
+			margin-left: em(10px);
+			&:first-of-type {
+				margin-left: $social-icon-size + em(10px);
+			}
+		}
+	}
+	
 }
 
 /********* 

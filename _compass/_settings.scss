@@ -2,6 +2,7 @@
 
 $susy: (
 	   columns: 12,
+	   gutters: .25,
 	   global-box-sizing: border-box
        );
 
@@ -12,8 +13,8 @@ $max-width: em(1200px);
 //Navigation 
 
 $off-canvas-width: em(200px);
-$nav-bar-gutter: em(15px);
 $perspective: 750;//perspective for compass 3D translations
+$social-icon-size: em(20px);
 
 //Padding
 
@@ -62,10 +63,9 @@ $font-sizes: (
 
 //Color palette
 $background-color: #fff;
-$nav-background: #333;
 $text-color: #222;
+$nav-background: darken(#085e5e, 8%);
 $alt-text-color: #ffffff;
-//$link-color: set-text-color($background-color);
 $link-color: #2455c3;
 $link-hover-color: lighten($link-color, 10%);
 $link-active-color: lighten($link-color, 20%);
@@ -74,7 +74,7 @@ $main-color: #df4747;
 $second-color: #2b8686;
 $third-color: #a1d042;
 $primary-button-color: #5cb85c;
-$nav-background: #333;
+
 
 
 //Button styles
