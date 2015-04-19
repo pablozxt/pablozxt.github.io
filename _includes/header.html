@@ -4,7 +4,7 @@
 		<div id="wrapper">
 			<div class="nav-container">
 				<nav role="navigation" 
-				id= {% if page.title == "Pablo" %}
+				id= {% if page.title == "Pablo Perez" %}
 					"sidebar"
 					{% else %}
 					"navigation"
@@ -16,7 +16,7 @@
 							<li><a href="{{ site.data.menu[2].url | prepend: site.baseurl }}">{{ site.data.menu[2].name}}</a></li>
 							<li>Father of three boys</li>
 							<li>Español en Los Angeles</li>
-							<li>Sometimes <a href="{{ site.data.menu[3].url | prepend: site.baseurl }}">{{ site.data.menu[3].name}}</a></li>
+							<li><a href="{{ site.data.menu[3].url | prepend: site.baseurl }}">{{ site.data.menu[3].name}}</a></li>
 						</ul>
 					</h1>
 					<div class="nav-social">
@@ -55,7 +55,7 @@
 						</ul>
 					</div>
 					<div>
-						<img src="{{ "/images/close.svg" | prepend: site.baseurl}}" alt="close-icon" id="menu-close">
+						<img src="{{ "/images/close.svg" | prepend: site.baseurl}}" alt="close-icon" id="menu-close" class="hidden">
 					</div>
 				</nav>
 			</div><!-- .nav-container -->
