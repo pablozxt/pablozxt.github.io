@@ -5,6 +5,7 @@
    
     var main = $('#main'),
 		toggleButton = $('#menu-toggle'),
+		closeButton = $('#menu-close'),
 		wrapper = $('#wrapper'),
 		nav = $('#navigation'),
 		html = $('html'),
@@ -37,18 +38,28 @@
 			$(window).load(function () {
 				nav.addClass('nav-resp');
 				toggleResp(mql,toggleButton);
+				toggleResp(mql,closeButton);
 			});//window load
 	
 			//display toggleButton if max-width < breakpoint
 			$(window).resize(function () {
 				toggleResp(mql, toggleButton);
+				toggleResp(mql, closeButton);
 			});//on window resize function
 
 			//toggle .is-open class when clicking on menu-toggle button
-			toggleButton.on('click', function() {
+			//also add pointer class to main
+			toggleButton.on('click', function () {
 				wrapper.toggleClass('is-open');
 				main.toggleClass('pointer');
-			});//menu-toggle on click
+			});//menu-toggle button on click
+
+			//toggle .is-open class when clicking on menu-close button
+			//also add pointer class to main
+			closeButton.on('click', function () {
+				wrapper.toggleClass('is-open');
+				main.toggleClass('pointer');
+			});//menu-close button on click
 
 			//dismiss opened side menu when clicking outside of menu
 			$(document).on('click', function(event) {
