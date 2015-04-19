@@ -54,12 +54,15 @@ svg {
 	
 }
 
-/********* 
-Large screen navigation styles
-*********/
-
 #menu-toggle {
 	display:none;
+	position: absolute;
+	top: rhythm(1);
+	right:0;
+	padding-right: em(10px);
+}
+
+#menu-close {
 	position: absolute;
 	top: rhythm(1);
 	right:0;
