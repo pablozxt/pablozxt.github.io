@@ -40,10 +40,19 @@ h1 {
 		@include set-font-size(huge-1);
 		font-weight: map-get($font-weights, bold);
 		text-transform: uppercase;
-		color: $main-color;
+		color: $engineer-color;
 		display: block;
 	}//span
 }//h1
+
+.home {
+	h1 {
+		@include set-font-size(huge-3);
+		font-family: $base-font-family;
+		color: $home-color;
+		margin-top: rhythm(1);
+	}
+}
 
 h2, h5 {
 	text-transform: uppercase;
@@ -61,7 +70,7 @@ h4 {
 	@include set-font-size(normal);
 	margin-top: rhythm(1);
 	.project-position {
-		color: darken($main-color, 15%);
+		color: darken($engineer-color, 15%);
 		font-weight: map-get($font-weights, bold);
 	}
 	.project-data {
@@ -84,6 +93,12 @@ section {
 
 p {
 	margin-top: rhythm(1);
+}
+
+.home {
+	p {
+		font-size: map-get($font-sizes, medium);
+	}
 }
 
 figcaption {

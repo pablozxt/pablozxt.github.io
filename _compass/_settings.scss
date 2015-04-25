@@ -39,7 +39,9 @@ $ms-ratio: $minor-third;
 $round-to-nearest-half-line: true; 
 
 $font-sizes: (
-             huge-4: round(ms(7)),
+             huge-6: round(ms(9)),
+			 huge-5: round(ms(8)),
+			 huge-4: round(ms(7)),
 			 huge-3: round(ms(6)),
 			 huge-2: round(ms(5)),
 			 huge-1: round(ms(4)),
@@ -62,18 +64,46 @@ $font-sizes: (
  			   );
 
 //Color palette
+//http://paletton.com/#uid=3000u0klPr+chGNhBvMqpoHtfj-
+//red color
+$red: #df4747;
+$light-red: #fd7272;
+$lighter-red: #ff9d9d;
+$dark-red: #c52222;
+$darker-red: #9c0d0d;
+//blue color
+$blue: #2b8686;
+$light-blue: #449898;
+$lighter-blue: #76bfbf;
+$dark-blue: #157676;
+$darker-blue: #085e5e;
+//green color
+$green: #a1d042;
+$light-green: #61ec6a;
+$lighter-green: #d5f497;
+$dark-green: #85b820;
+$darker-green: #65920d;
+
+//Theme colors
+//text and background colors
 $background-color: #fff;
 $text-color: #222;
-$nav-background: darken(#085e5e, 8%);
 $alt-text-color: #ffffff;
 $link-color: #2455c3;
 $link-hover-color: lighten($link-color, 10%);
 $link-active-color: lighten($link-color, 20%);
-$main-color: #df4747;
-//http://paletton.com/#uid=3000u0klPr+chGNhBvMqpoHtfj-
-$second-color: #2b8686;
-$third-color: #a1d042;
-$primary-button-color: #5cb85c;
+
+//nav background color
+$nav-background: darken($darker-blue, 8%);
+
+//main theme color for engineer section
+$engineer-color: $red;
+
+//main theme color for home page
+$home-color: $blue;
+
+//button color
+$primary-button-color: $dark-green;
 
 
 

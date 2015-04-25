@@ -14,7 +14,7 @@
 
 @mixin button-color($color: $primary-button-color) {
 	background-color: $color;
-	color: lighten($color, 40%);
+	color: lighten($color, 50%);
 	transition: background-color 0.4s ease;
 	&:hover, &:focus {
 		background-color: darken($color, 10%);

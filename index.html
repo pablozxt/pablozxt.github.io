@@ -1,10 +1,12 @@
 ---
 layout: default
-title: Pablo Perez
+title: home
 ---
-
-<h1>What I am</h1>
-
-{% for post in site.categories.pablo %}
-	{{ post.content}}
-{% endfor %}
+<main role="main">
+	<h1>What am I</h1>
+	{% for post in site.categories.pablo %}
+	<article class="home-post">
+		{{ post.content }}
+	</article>
+	{% endfor %}
+</main>

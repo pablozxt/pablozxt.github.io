@@ -4,7 +4,7 @@
 		<div id="wrapper">
 			<div class="nav-container">
 				<nav role="navigation" 
-				id= {% if page.title == "Pablo Perez" %}
+				id= {% if page.title == "home" %}
 					"sidebar"
 					{% else %}
 					"navigation"
@@ -59,7 +59,7 @@
 					</div>
 				</nav>
 			</div><!-- .nav-container -->
-			<div id="main">
+			<div id="main" class="{{ page.title }}">
 				<div>
 					<img src="{{ "/images/menu.svg" | prepend: site.baseurl}}" alt="menu-icon" id="menu-toggle">
 				</div>
