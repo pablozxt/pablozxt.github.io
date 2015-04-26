@@ -98,6 +98,10 @@ p {
 .home {
 	p {
 		font-size: map-get($font-sizes, medium);
+		margin-bottom: rhythm(3);
+	}
+	hr {
+		margin-bottom: rhythm(3);
 	}
 }
 
@@ -151,5 +155,6 @@ a {
 	@include button-color($primary-button-color);
 	margin-right: 0;
 }
+
 
 
