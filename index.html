@@ -4,14 +4,14 @@ title: home
 ---
 
 <h1>What am I</h1>
-{% for post in site.categories.pablo limit:1 %}
+{% for post in site.categories.pablo limit:2 %}
 <article class="home-post">
 	{{ post.content }}
 	<hr>
 </article>
 {% endfor %}
 
-{% for post in site.categories.pablo offset:1 limit:1%}
+{% for post in site.categories.pablo offset:2 limit:1%}
 <article class="home-post">
 	{{ post.content }}
 </article>

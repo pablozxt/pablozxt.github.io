@@ -51,6 +51,7 @@ h1 {
 		font-family: $base-font-family;
 		color: $home-color;
 		margin-top: rhythm(1);
+		margin-bottom: rhythm(1);
 	}
 }
 
@@ -98,10 +99,13 @@ p {
 .home {
 	p {
 		font-size: map-get($font-sizes, medium);
-		margin-bottom: rhythm(3);
+		margin-bottom: rhythm(2);
+	}
+	.home-post{
+		margin-bottom: rhythm(4);
 	}
 	hr {
-		margin-bottom: rhythm(3);
+		margin-top: rhythm(4);
 	}
 }
 
