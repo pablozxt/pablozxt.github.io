@@ -1,0 +1,39 @@
+{% assign postGroup = 10 %}
+
+{% comment %} ################ 
+firstOffset variable finds the first post for this page 
+############### {% endcomment %}
+
+{% assign firstOffset = page.position | minus: 1 %}
+{% assign firstOffset = firstOffset | times: postGroup %}
+
+{% comment %} ################  
+find the total number of posts in pablo category and store it in variable postCounter 
+############### {% endcomment %}
+
+{% assign postCounter = 0 %}
+{% for post in site.categories.pablo %}
+	{% assign postCounter = postCounter | plus: 1 %}
+{% endfor %}
+
+{% comment %} ################
+calculate the number of posts to show
+number of posts to show depends on the position of the page, the number of posts to group and the total number of posts
+############### {% endcomment %}
+
+{% if firstOffset == 0 %}
+	{% if postCounter >= postGroup %}
+		{% assign showPosts = postGroup %}
+	{% else %}
+		{% assign showPosts = postCounter %}
+	{% endif %}
+{% elsif firstOffset > 0 %}
+	{% if postCounter >= (firstOffset | plus: postGroup) %}
+		{% assign showPosts = postGroup %}
+	{% else %}
+		{% assign showPosts = postCounter | minus: firstOffset %}
+	{% endif %}
+{% endif %}
+
+{% assign showFirst = showPosts | minus: 1 %}
+{% assign lastOffset = firstOffset | plus: showFirst %}
