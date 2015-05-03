@@ -17,11 +17,11 @@ hr {
     height: 1px;
     margin: 1.4em 0;
     border: none;
-    background-color: $blue;
+    background-color: map-get($home-color, normal);
 	background-image: linear-gradient(
 	to right,
 	$background-color 0%,
-	$lighter-blue 40%,
-	$lighter-blue 60%,
+	map-get($home-color, lighter) 40%,
+	map-get($home-color, lighter) 60%,
 	$background-color 100%);
 }

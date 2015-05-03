@@ -66,17 +66,21 @@ $font-sizes: (
 //Color palette
 //http://paletton.com/#uid=3000u0klPr+chGNhBvMqpoHtfj-
 //red color
-$red: #df4747;
-$light-red: #fd7272;
-$lighter-red: #ff9d9d;
-$dark-red: #c52222;
-$darker-red: #9c0d0d;
+$red: 	(
+		normal: #df4747,
+		light: #fd7272,
+		lighter: #ff9d9d,
+		dark: #c52222,
+		darker: #9c0d0d,
+		);
 //blue color
-$blue: #2b8686;
-$light-blue: #449898;
-$lighter-blue: #76bfbf;
-$dark-blue: #157676;
-$darker-blue: #085e5e;
+$blue: 	(
+		normal: #2b8686,
+		light: #449898,
+		lighter: #76bfbf,
+		dark: #157676,
+		darker: #085e5e,
+		);
 //green color
 $green: #a1d042;
 $light-green: #61ec6a;
@@ -94,7 +98,7 @@ $link-hover-color: lighten($link-color, 10%);
 $link-active-color: lighten($link-color, 20%);
 
 //nav background color
-$nav-background: darken($darker-blue, 8%);
+$nav-background: darken(map-get($blue, darker), 14%);
 
 //main theme color for engineer section
 $engineer-color: $red;
