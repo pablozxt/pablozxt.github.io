@@ -5,18 +5,6 @@ position: 1
 ---
 
 {% include home_post_controller.html %}
+{% include home_post_content.html %}
 
-<h1>What am I</h1>
 
-{% for post in site.categories.pablo offset: firstOffset limit: showFirst %}
-<article class="home-post">
-	{{ post.content }}
-	<hr>
-</article>
-{% endfor %}
-
-{% for post in site.categories.pablo offset: lastOffset limit:1%}
-<article class="home-post">
-	{{ post.content }}
-</article>
-{% endfor %}

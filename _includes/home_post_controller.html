@@ -1,39 +1,52 @@
-{% assign postGroup = 10 %}
+{% comment %} ========================================= 
+the variable postGroup controls how many posts from category pablo are displayed on the home page. Other posts not included in the home page are shown on additional pages. 
+====================================== {% endcomment %}
 
-{% comment %} ################ 
+	{% assign postGroup = 10 %}
+
+{% comment %} ========================================= 
 firstOffset variable finds the first post for this page 
-############### {% endcomment %}
+====================================== {% endcomment %}
 
-{% assign firstOffset = page.position | minus: 1 %}
-{% assign firstOffset = firstOffset | times: postGroup %}
+	{% assign firstOffset = page.position | minus: 1 %}
+	{% assign firstOffset = firstOffset | times: postGroup %}
 
-{% comment %} ################  
+{% comment %} ========================================= 
 find the total number of posts in pablo category and store it in variable postCounter 
-############### {% endcomment %}
+====================================== {% endcomment %}
 
-{% assign postCounter = 0 %}
-{% for post in site.categories.pablo %}
-	{% assign postCounter = postCounter | plus: 1 %}
-{% endfor %}
+	{% assign postCounter = 0 %}
+	{% for post in site.categories.pablo %}
+		{% assign postCounter = postCounter | plus: 1 %}
+		{% endfor %}
 
-{% comment %} ################
+{% comment %} =========================================
 calculate the number of posts to show
 number of posts to show depends on the position of the page, the number of posts to group and the total number of posts
-############### {% endcomment %}
+====================================== {% endcomment %}
 
-{% if firstOffset == 0 %}
-	{% if postCounter >= postGroup %}
-		{% assign showPosts = postGroup %}
+	{% if page.position == 1 %}
+		{% if postCounter >= postGroup %}
+			{% assign showPosts = postGroup %}
+		{% else %}
+			{% assign showPosts = postCounter %}
+		{% endif %}
 	{% else %}
-		{% assign showPosts = postCounter %}
+		{% if postCounter >= (firstOffset | plus: postGroup) %}
+			{% assign showPosts = postGroup %}
+		{% else %}
+			{% assign showPosts = postCounter | minus: firstOffset %}
+		{% endif %}
 	{% endif %}
-{% elsif firstOffset > 0 %}
-	{% if postCounter >= (firstOffset | plus: postGroup) %}
-		{% assign showPosts = postGroup %}
-	{% else %}
-		{% assign showPosts = postCounter | minus: firstOffset %}
-	{% endif %}
-{% endif %}
 
-{% assign showFirst = showPosts | minus: 1 %}
-{% assign lastOffset = firstOffset | plus: showFirst %}
+{% comment %} =========================================
+separate the last post on the page from the rest of the posts because the last post is not followed by a horizontal rule
+Also, generate the url for the link to the next group of posts
+====================================== {% endcomment %}
+
+
+	{% assign showFirst = showPosts | minus: 1 %}
+	{% assign lastOffset = firstOffset | plus: showFirst %}
+	{% assign lastPost = lastOffset | plus: 1 %}
+	{% assign nextPosition = page.position | plus: 1 %}
+	{% capture nextUrl %} /pablo/index{{ nextPosition }}.html  {% endcapture %}
