@@ -16,13 +16,6 @@ Start setting .outer-wrapper with hidden overflow
 	position:relative;
 }
 
-.head-shot {
-	max-width: em(250px);
-	border-radius: 50%;
-	display: block;
-	margin: rhythm(3) auto;
-}
-
 svg {
 	width: $social-icon-size;
 	height: $social-icon-size;

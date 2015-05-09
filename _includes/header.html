@@ -9,6 +9,7 @@
 					{% else %}
 					"navigation"
 					{% endif %}>
+					<div>
 					<h1>
 						<ul>
 							<li><a href="{{ site.data.menu[0].url | prepend: site.baseurl }}">{{ site.data.menu[0].name}}</a></li>
@@ -20,13 +21,6 @@
 						</ul>
 					</h1>
 					<div class="nav-social">
-						<img class="head-shot"
-						srcset="{{ "/images/head-large.jpg" | prepend: site.baseurl }}  900w, 
-								{{ "/images/head-medium.jpg" | prepend: site.baseurl }}  700w, 
-						        {{ "/images/head-small.jpg" | prepend: site.baseurl }}  400w" 
-						sizes="275px"
-						src="{{ "/images/head shot-medium.jpg" | prepend: site.baseurl }}"
-						alt="Pablo with his two oldest children" />
 						<ul>
 							<li><span class="icon"><a href="mailto:{{ site.email }}">{{ site.email }}</a></span></li>
 							<li>

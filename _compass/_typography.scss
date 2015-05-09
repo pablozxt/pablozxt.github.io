@@ -21,12 +21,18 @@ header {
 nav {
 	padding: rhythm(2) $body-padding;
 	@extend %nav-color;
+	background: linear-gradient(
+		rgba($nav-background, 0.55), 
+		rgba($nav-background, 0.80) 375px,
+	    rgba($nav-background, 1) 395px),
+	    url(../images/background.jpg) no-repeat;
 	ul {
 		font-family: $secondary-font-family;
 		font-weight: map-get($font-weights, light);
 	}
 	.nav-social {
 		@include set-font-size(smaller);
+		margin-top: rhythm(20);
 	}
 }
 

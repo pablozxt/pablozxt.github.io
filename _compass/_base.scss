@@ -19,9 +19,9 @@ hr {
     border: none;
     background-color: map-get($home-color, normal);
 	background-image: linear-gradient(
-	to right,
-	$background-color 0%,
-	map-get($home-color, lighter) 40%,
-	map-get($home-color, lighter) 60%,
-	$background-color 100%);
+		to right,
+		$background-color 0%,
+		map-get($home-color, lighter) 40%,
+		map-get($home-color, lighter) 60%,
+		$background-color 100%);
 }
