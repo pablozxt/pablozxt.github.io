@@ -82,11 +82,14 @@ $blue: 	(
 		darker: #085e5e,
 		);
 //green color
-$green: #a1d042;
-$light-green: #61ec6a;
-$lighter-green: #d5f497;
-$dark-green: #85b820;
-$darker-green: #65920d;
+$green: (
+		normal: #a1d042,
+		light: #61ec6a,
+		lighter: #d5f497,
+		dark: #85b820,
+		darker: #65920d,
+		);
+
 
 //Theme colors
 //text and background colors
@@ -99,6 +102,7 @@ $link-active-color: lighten($link-color, 20%);
 
 //nav background color
 $nav-background: darken(map-get($blue, darker), 14%);
+//$engineer-nav-background: darken(map-get($red, darker), 14%);;
 
 //main theme color for engineer section
 $engineer-color: $red;
@@ -107,7 +111,7 @@ $engineer-color: $red;
 $home-color: $blue;
 
 //button color
-$primary-button-color: $dark-green;
+$primary-button-color: map-get($green, dark);
 
 
 
