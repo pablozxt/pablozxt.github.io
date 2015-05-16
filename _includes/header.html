@@ -42,6 +42,11 @@
 				</ul>
 			</div>
 		</nav>
-	<main role="main" id="main" class="{{ page.title }}">
+	<main role="main" id="main" {% if page.title == "Engineer" %}
+			class="engineer"
+		{% else %}
+			class="home"
+		{% endif %}
+		>
 
 			

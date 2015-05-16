@@ -56,8 +56,19 @@ main {
 	h1 {
 	@include set-font-size(huge-3);
 	font-family: $base-font-family;
-	color: map-get($home-color, normal);
 	margin-top: rhythm(1);
+	}
+}
+
+main.home {
+	h1 {
+		color: map-get($home-color, normal);
+	}
+}
+
+main.engineer {
+	h1 {
+		color: map-get($engineer-color, normal);
 	}
 }
 
@@ -112,15 +123,18 @@ p {
 }
 
 .home {
-	p {
-		font-size: map-get($font-sizes, medium);
-		margin-bottom: rhythm(2);
-	}
-	.home-post{
-		margin-bottom: rhythm(4);
+	article:first-of-type {
+		margin-top: rhythm(3);
 	}
 	hr {
 		margin-top: rhythm(4);
+	}
+}
+
+.home-post {
+	p {
+		font-size: map-get($font-sizes, medium);
+		margin-bottom: rhythm(2);
 	}
 }
 
