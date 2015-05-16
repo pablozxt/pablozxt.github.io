@@ -69,6 +69,7 @@ main.home {
 main.engineer {
 	h1 {
 		color: map-get($engineer-color, normal);
+		text-transform: uppercase;
 	}
 }
 
