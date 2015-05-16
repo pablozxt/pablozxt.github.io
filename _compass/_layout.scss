@@ -1,12 +1,12 @@
+body {
+	@include container($max-width);
+	position:relative;
+}
+
 #main {
     padding: 0 $body-padding;
 }
 
-
-#wrapper {
-	@include container($max-width);
-	position:relative;
-}
 
 svg {
 	width: $social-icon-size;
