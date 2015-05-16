@@ -2,14 +2,6 @@
     padding: 0 $body-padding;
 }
 
-/********* 
-Nav bar and off canvas navigation
-Start setting .outer-wrapper with hidden overflow
-*********/
-
-.outer-wrapper {
-	overflow-x: hidden; 
-}
 
 #wrapper {
 	@include container($max-width);
@@ -43,46 +35,6 @@ svg {
 	}
 	
 }
-
-#menu-toggle {
-	display:none;
-	position: absolute;
-	top: rhythm(1);
-	right:0;
-	padding-right: em(10px);
-}
-
-#menu-close {
-	display:none;
-	position: absolute;
-	top: rhythm(1);
-	right:0;
-	padding-right: em(10px);
-}
-
-/********* 
-Use off-canvas side navigation for smaller screens 
-and CSS transitions enabled browsers
-*********/
-
-.js.csstransforms3d {
-	@include breakpoint($break-nav){
-		#wrapper {
-			transition: transform 0.4s ease-in-out;
-			@include translate3d(0, 0, 0);
-			&.is-open {
-				@include translate3d((-1)*$off-canvas-width, 0, 0);
-			}//slide wrapper div to the left when menu is toggled
-		}//#wrapper
-		.nav-resp {
-			position: absolute;
-			width: $off-canvas-width;
-			left: 100%;//position off-canvas menu out of screen
-			top: 0;
-			bottom: 0;
-		}//#top-bar-resp
-	}//breakpoint
-}//js
 
 /********* 
 pictures layout
