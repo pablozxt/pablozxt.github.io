@@ -1,11 +1,11 @@
-<body	{% if page.title == "home" %}
-			id= {{ page.title }}
+<body	{% if page.title == "Engineer" %}
+			class="engineer"
 		{% endif %}>
 <!--[if lt IE 8]><p class="browserupgrade">You are using an <strong>outdated</strong>browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p><![endif]-->
 		<nav role="navigation">
 			<div>
 			<h1>
-				<ul>
+				<ul class="nav-links">
 					<li><a href="{{ site.data.menu[0].url | prepend: site.baseurl }}">{{ site.data.menu[0].name}}</a></li>
 					<li><a href="{{ site.data.menu[1].url | prepend: site.baseurl }}">{{ site.data.menu[1].name}}</a></li>
 					<li>Developer</li>

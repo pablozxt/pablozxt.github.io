@@ -30,34 +30,43 @@ nav {
 		font-family: $secondary-font-family;
 		font-weight: map-get($font-weights, light);
 	}
+	.nav-links {
+		li {
+			@include set-font-size(medium);
+		}
+	}
 	.nav-social {
 		@include set-font-size(smaller);
 		margin-top: rhythm(20);
 	}
 }
 
-h1 {
-	font-family: $secondary-font-family;
-	@include set-font-size(medium);
-	font-weight: map-get($font-weights, light);
-	margin-top: rhythm(0);
-	span {
-		font-family: $base-font-family;
-		@include set-font-size(huge-1);
-		font-weight: map-get($font-weights, bold);
-		text-transform: uppercase;
-		color: map-get($engineer-color, normal);
-		display: block;
-	}//span
-}//h1
+.engineer {
+	nav {
+		background: linear-gradient(
+			rgba($engineer-nav-background, 0.55), 
+			rgba($engineer-nav-background, 0.80) 375px,
+		    rgba($engineer-nav-background, 1) 395px),
+		    url(../images/background.jpg) no-repeat;
+	}
+}
 
-.home {
+
+main {
 	h1 {
-		@include set-font-size(huge-3);
-		font-family: $base-font-family;
-		color: map-get($home-color, normal);
+	@include set-font-size(huge-3);
+	font-family: $base-font-family;
+	color: map-get($home-color, normal);
+	margin-top: rhythm(1);
+	}
+}
+
+header {
+	p {
+		font-family: $secondary-font-family;
+		@include set-font-size(medium);
+		font-weight: map-get($font-weights, light);
 		margin-top: rhythm(1);
-		margin-bottom: rhythm(1);
 	}
 }
 
