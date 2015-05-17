@@ -32,11 +32,11 @@ nav {
 	}
 	.nav-links {
 		li {
-			@include set-font-size(medium);
+			@include set-font-size(normal);
 		}
 	}
 	.nav-social {
-		@include set-font-size(smaller);
+		@include set-font-size(tiny);
 		margin-top: rhythm(20);
 	}
 }
@@ -54,7 +54,7 @@ nav {
 
 main {
 	h1 {
-	@include set-font-size(huge-3);
+	@include set-font-size(huge-2);
 	font-family: $base-font-family;
 	margin-top: rhythm(1);
 	}
@@ -82,7 +82,7 @@ header {
 	}
 }
 
-h2, h5 {
+h2 {
 	text-transform: uppercase;
 	@include set-font-size(medium);
 }
@@ -110,6 +110,7 @@ h4 {
 }
 
 h5 {
+	text-transform: uppercase;
 	@include set-font-size(small);
 	margin-top: rhythm(2);
 	
@@ -134,7 +135,7 @@ p {
 
 .home-post {
 	p {
-		font-size: map-get($font-sizes, medium);
+		font-size: map-get($font-sizes, normal);
 		margin-bottom: rhythm(2);
 	}
 }
