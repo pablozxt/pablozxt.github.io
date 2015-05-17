@@ -60,13 +60,13 @@ main {
 	}
 }
 
-main.home {
+.home-main {
 	h1 {
 		color: map-get($home-color, normal);
 	}
 }
 
-main.engineer {
+.engineer-main {
 	h1 {
 		color: map-get($engineer-color, normal);
 		text-transform: uppercase;
