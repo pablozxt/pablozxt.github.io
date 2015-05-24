@@ -17,11 +17,18 @@ hr {
     height: 1px;
     margin: 1.4em 0;
     border: none;
-    background-color: map-get($home-color, normal);
-	background-image: linear-gradient(
-		to right,
-		$background-color 0%,
-		map-get($home-color, lighter) 40%,
-		map-get($home-color, lighter) 60%,
-		$background-color 100%);
+}
+
+.home-main {
+	hr {
+		@include hr-color($color: $home-color);
+	}
+}
+
+.engineer-main {
+	ul {
+		li {
+			margin-top: rhythm(1);
+		}
+	}
 }

@@ -1,11 +1,11 @@
 {% if page.description_url %}
 	<h3>
-		<a href="{{ page.description_url }}">{{ page.description }}</a> (<a href="{{ page.customer_url }}">{{ page.customer }}</a>) - <span class="project-budget">{{ page.budget }}</span>
+		<a href="{{ page.description_url }}">{{ page.description }}</a> <a href="{{ page.customer_url }}">({{ page.customer }})</a><span class="project-budget">{{ page.budget }}</span>
 {% else %}
 	<h3>
 		{{ page.description }} (<a href="{{ page.customer_url }}">{{ page.customer }}</a>)
 {% endif %}
 	<h4>J.F.Shea Construction
 		<div class="project-position">{{page.position}}</div>
-		<div class="project-data">{{ page.start_year }} - {{page.end_year}}</div>
+		<span class="project-data">({{ page.start_year }} - {{page.end_year}})</span>
 	</h4>

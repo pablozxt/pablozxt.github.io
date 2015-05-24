@@ -71,6 +71,9 @@ main {
 		color: map-get($engineer-color, normal);
 		text-transform: uppercase;
 	}
+	article {
+		padding-top: rhythm(2);
+	}
 }
 
 header {
@@ -85,39 +88,53 @@ header {
 h2 {
 	text-transform: uppercase;
 	@include set-font-size(medium);
+	font-weight: map-get($font-weights, semibold);
 }
 
 h3 {
-	@include set-font-size(medium);
+	@include set-font-size(normal);
 	text-transform: capitalize;
 	margin-top: rhythm(1);	
 	color: $text-color;
+}
+
+.project-budget {
+	&::before {
+		content: " \2013  ";
+	}
 }
 
 h4 {
 	@include set-font-size(normal);
 	margin-top: rhythm(1);
 	.project-position {
-		color: darken(map-get($engineer-color, normal), 15%);
-		font-weight: map-get($font-weights, bold);
+		display: inline;
+		&::before {
+			content: " \2013  ";
+		}
 	}
-	.project-data {
-		font-weight: map-get($font-weights, normal);
-		font-style: italic;
-		color: $text-color;
+}
+
+.project-data {
+	@include set-font-size(smaller);
+	color: $text-color;
+	&::before {
+		content: '\00a0 \00a0 \00a0 \00a0';
 	}
-	
 }
 
 h5 {
 	text-transform: uppercase;
 	@include set-font-size(small);
-	margin-top: rhythm(2);
+	margin-top: rhythm(3);
+	font-weight: map-get($font-weights, semibold);
 	
 }
 
-section {
-	margin-top: rhythm(3);
+.engineer { 
+	article {
+		margin-top: rhythm(3);
+	}
 }
 
 p {
