@@ -191,6 +191,13 @@ a {
 	font-weight: map-get($font-weights, normal);
 }
 
+.read-more {
+	background-color: lighten(map-get($engineer-color, lighter), 15%);
+	margin-top: rhythm(4);
+	padding: rhythm(2) $body-padding rhythm(5) $body-padding;
+	border-radius: $button-radius;
+}
+
 .read-more-button {
 	width: 100%;
 	margin-right: 0;
