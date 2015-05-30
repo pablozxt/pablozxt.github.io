@@ -53,6 +53,7 @@ nav {
 
 
 main {
+	margin-bottom: rhythm(10);
 	h1 {
 	@include set-font-size(huge-2);
 	font-family: $base-font-family;
@@ -71,8 +72,8 @@ main {
 		color: map-get($engineer-color, normal);
 		text-transform: uppercase;
 	}
-	article {
-		padding-top: rhythm(2);
+	article, section {
+		margin-top: rhythm(6);
 	}
 }
 
@@ -131,31 +132,21 @@ h5 {
 	
 }
 
-.engineer { 
-	article {
-		margin-top: rhythm(6);
-	}
-}
-
 p {
-	margin-top: rhythm(1);
+	font-size: map-get($font-sizes, normal);
+	margin-top: rhythm(2);
 }
 
-.home {
+.home-main {
 	article:first-of-type {
-		margin-top: rhythm(3);
-	}
-	hr {
 		margin-top: rhythm(4);
 	}
-}
-
-.home-post {
-	p {
-		font-size: map-get($font-sizes, normal);
-		margin-bottom: rhythm(2);
+	hr {
+		margin: rhythm(4) rhythm(2);
+		
 	}
 }
+
 
 figcaption {
 	font-family: $secondary-font-family;
@@ -206,6 +197,16 @@ a {
 	margin-top: rhythm(3);
 	@include button-color($primary-button-color);
 	margin-right: 0;
+}
+
+#main {
+	ul {
+		list-style: disc;
+		margin: rhythm(2) 0 0 span(1);
+		li {
+			margin-top: rhythm(2);
+		}
+	}
 }
 
 

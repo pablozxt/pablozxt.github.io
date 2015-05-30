@@ -26,6 +26,12 @@ hr {
 }
 
 .engineer-main {
+	hr {
+		@include hr-color($color: $engineer-color);
+	}
+}
+
+.engineer-main {
 	ul {
 		li {
 			margin-top: rhythm(1);
