@@ -26,6 +26,8 @@ nav {
 		rgba($nav-background, 0.80) 375px,
 	    rgba($nav-background, 1) 395px),
 	    url(../images/background.jpg) no-repeat;
+		background-size: cover;
+		background-position: center center;
 	ul {
 		font-family: $secondary-font-family;
 		font-weight: map-get($font-weights, light);
