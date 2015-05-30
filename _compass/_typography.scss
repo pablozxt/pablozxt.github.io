@@ -133,7 +133,7 @@ h5 {
 
 .engineer { 
 	article {
-		margin-top: rhythm(3);
+		margin-top: rhythm(6);
 	}
 }
 
@@ -203,7 +203,7 @@ a {
 .read-more-button {
 	width: 100%;
 	margin-right: 0;
-	margin-top: rhythm(2);
+	margin-top: rhythm(3);
 	@include button-color($primary-button-color);
 	margin-right: 0;
 }
