@@ -46,13 +46,13 @@ svg {
 nav {
 	background: linear-gradient(
 		rgba($nav-background, 0.55), 
-		rgba($nav-background, 0.80) 250px,
-	    rgba($nav-background, 1) 395px),
+		rgba($nav-background, 0.80) 650px,
+	    rgba($nav-background, 1) 780px),
 	    url(../images/background.jpg) no-repeat;
 	background-size: cover;
 	background-position: center center;
 	@include breakpoint($large-phone) {
-		background-size: auto 400px;
+		background-size: auto 800px;
 		background-position: 0% 0%;
 	}
 }
@@ -61,13 +61,13 @@ nav {
 	nav {
 		background: linear-gradient(
 			rgba($engineer-nav-background, 0.55), 
-			rgba($engineer-nav-background, 0.80) 250px,
-		    rgba($engineer-nav-background, 1) 395px),
+			rgba($engineer-nav-background, 0.80) 650px,
+		    rgba($engineer-nav-background, 1) 780px),
 		    url(../images/background.jpg) no-repeat;
 		background-size: cover;
 		background-position: center center;
 		@include breakpoint($large-phone) {
-			background-size: auto 400px;
+			background-size: auto 800px;
 			background-position: 0% 0%;
 		}
 	}
