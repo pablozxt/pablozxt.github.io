@@ -21,18 +21,12 @@ header {
 nav {
 	padding: rhythm(2) $body-padding;
 	@extend %nav-color;
-	background: linear-gradient(
-		rgba($nav-background, 0.55), 
-		rgba($nav-background, 0.80) 375px,
-	    rgba($nav-background, 1) 395px),
-	    url(../images/background.jpg) no-repeat;
-		background-size: cover;
-		background-position: center center;
 	ul {
 		font-family: $secondary-font-family;
 		font-weight: map-get($font-weights, light);
 	}
-	.nav-links {
+	.main-nav {
+		margin-left: span(1);
 		li {
 			@include set-font-size(normal);
 		}
@@ -45,14 +39,9 @@ nav {
 
 .engineer {
 	nav {
-		background: linear-gradient(
-			rgba($engineer-nav-background, 0.55), 
-			rgba($engineer-nav-background, 0.80) 375px,
-		    rgba($engineer-nav-background, 1) 395px),
-		    url(../images/background.jpg) no-repeat;
+		background-color: $engineer-nav-background;
 	}
 }
-
 
 main {
 	margin-bottom: rhythm(10);

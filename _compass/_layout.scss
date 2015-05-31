@@ -3,8 +3,15 @@ body {
 	position:relative;
 }
 
+.wrapper {
+	@include clearfix;
+}
+
 #main {
     padding: 0 $body-padding;
+	@include breakpoint($medium-phone) {
+		 padding: 0 2*$body-padding;
+	}
 }
 
 
@@ -24,7 +31,7 @@ svg {
 	li {
 		@include clearfix;
 		width: 200px;
-		margin-left: 34%;
+		margin-left: span(5);
 		span {
 			display: block;
 			float: left;
@@ -34,6 +41,36 @@ svg {
 		}
 	}
 	
+}
+
+nav {
+	background: linear-gradient(
+		rgba($nav-background, 0.55), 
+		rgba($nav-background, 0.80) 250px,
+	    rgba($nav-background, 1) 395px),
+	    url(../images/background.jpg) no-repeat;
+	background-size: cover;
+	background-position: center center;
+	@include breakpoint($large-phone) {
+		background-size: auto 400px;
+		background-position: 0% 0%;
+	}
+}
+
+.engineer {
+	nav {
+		background: linear-gradient(
+			rgba($engineer-nav-background, 0.55), 
+			rgba($engineer-nav-background, 0.80) 250px,
+		    rgba($engineer-nav-background, 1) 395px),
+		    url(../images/background.jpg) no-repeat;
+		background-size: cover;
+		background-position: center center;
+		@include breakpoint($large-phone) {
+			background-size: auto 400px;
+			background-position: 0% 0%;
+		}
+	}
 }
 
 /********* 
@@ -53,7 +90,22 @@ article {
 
 
 /********* 
-engineer layout
+menu responsive layout
 *********/
 
-
+@include breakpoint($large-phone) {
+	.wrapper {
+		position: relative;
+	}
+	nav {
+		width: span(4);
+	    position:absolute;  
+	    right: 0;
+		top: 0;
+		bottom: 0;
+	}
+	main {
+		float: left;
+		width: span(8);
+	}
+}
