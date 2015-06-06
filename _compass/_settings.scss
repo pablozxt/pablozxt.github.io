@@ -9,6 +9,7 @@ $susy: (
 //Susy max-width
 
 $max-width: em(1200px);
+$nav-max-width: em(700px);
 
 //Navigation 
 
@@ -119,8 +120,8 @@ $button-radius: em(10px);
 $button-padding-vert: rhythm(1);
 
 //Breakpoints
-$medium-phone: 500px;
-$large-phone: 800px;
+$medium-phone: em(500px);
+$large-phone: em(800px);
 
 
 //$spacing-unit		:	30px;
