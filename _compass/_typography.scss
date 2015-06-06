@@ -161,16 +161,16 @@ a {
 
 
 %nav-color {
-	background-color: $nav-background;
-	color: set-text-color($nav-background);
+	background-color: $home-nav-background;
+	color: set-text-color($home-nav-background);
 	a {
 		color: inherit;
-		@include underline($nav-background, $alt-text-color, true, 1.2, 0.8);
+		@include underline($home-nav-background, $alt-text-color, true, 1.2, 0.8);
 		&:hover, &:focus {
-			color: darken(set-text-color($nav-background), 10%);
+			color: darken(set-text-color($home-nav-background), 10%);
 		}
 		&:active {
-			color: darken(set-text-color($nav-background), 20%);
+			color: darken(set-text-color($home-nav-background), 20%);
 		}
 	}
 }
