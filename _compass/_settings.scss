@@ -6,20 +6,19 @@ $susy: (
 	   global-box-sizing: border-box
        );
 
-//Susy max-width
+//Width settings
 
 $max-width: em(1200px);
 $nav-max-width: em(700px);
+$nav-picture-width: em(1200px);
 
 //Navigation 
 
-$perspective: 750;//perspective for compass 3D translations
 $social-icon-size: em(20px);
 
 //Padding
 
 $body-padding: em(12px);
-
 
 //Typography
 
@@ -101,8 +100,8 @@ $link-hover-color: lighten($link-color, 10%);
 $link-active-color: lighten($link-color, 20%);
 
 //nav background color
-$home-nav-background: darken(map-get($blue, darker), 14%);
-$engineer-nav-background: darken(map-get($red, darker), 14%);;
+$home-nav-background: darken(map-get($blue, darker), 18%);
+$engineer-nav-background: darken(map-get($red, darker), 26%);;
 
 //main theme color for engineer section
 $engineer-color: $red;
@@ -113,8 +112,6 @@ $home-color: $blue;
 //button color
 $primary-button-color: map-get($green, dark);
 
-
-
 //Button styles
 $button-radius: em(10px);
 $button-padding-vert: rhythm(1);
@@ -122,6 +119,7 @@ $button-padding-vert: rhythm(1);
 //Breakpoints
 $medium-phone: em(500px);
 $large-phone: em(800px);
+
 
 
 //$spacing-unit		:	30px;

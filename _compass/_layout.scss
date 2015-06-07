@@ -36,53 +36,28 @@ svg {
 			margin-left: em(10px);
 		}
 	}
-	
 }
 
 nav {
-	background: url(../images/background.jpg) no-repeat;
+	background: url(../images/background.jpg) repeat;
 	background-size: cover;
 	background-position: center center;
+	@include breakpoint($nav-picture-width) {
+		background-size: auto auto;
+	}
 }
 
 .nav-outer-wrapper {
 	padding: rhythm(2) $body-padding;
 	position: relative;
 	z-index: 1;
-	background: rgba($home-nav-background, 0.55);
-	background: linear-gradient(
-		to right,
-		rgba($home-nav-background, 1),
-		rgba($home-nav-background, 0.55) span(4), 
-		rgba($home-nav-background, 0.55) span(8),
-		rgba($home-nav-background, 1) 100%);
-	@include breakpoint($nav-max-width) {
-		background: linear-gradient(
-			to right,
-			rgba($home-nav-background, 1),
-			rgba($home-nav-background, 0.55) calc(#{$nav-max-width}/2), 
-			rgba($home-nav-background, 0.55) calc((100% - #{$nav-max-width})/2),
-			rgba($home-nav-background, 1) 100%);
-	}
+	@include background-gradient();
 }
 
 .engineer {
 	.nav-outer-wrapper {
-		background: rgba($engineer-nav-background, 0.55);
-		background: linear-gradient(
-			to right,
-			rgba($engineer-nav-background, 1),
-			rgba($engineer-nav-background, 0.55) span(4), 
-			rgba($engineer-nav-background, 0.55) span(8),
-			rgba($engineer-nav-background, 1) 100%);
-		@include breakpoint($nav-max-width) {
-			background: linear-gradient(
-				to right,
-				rgba($engineer-nav-background, 1),
-				rgba($engineer-nav-background, 0.55) calc(#{$nav-max-width}/2), 
-				rgba($engineer-nav-background, 0.55) calc((100% - #{$nav-max-width})/2),
-				rgba($engineer-nav-background, 1) 100%);
-		}
+		@include background-gradient($color: $engineer-nav-background);
+	
 	}
 }
 

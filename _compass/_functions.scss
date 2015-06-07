@@ -41,3 +41,25 @@
 		map-get($color, lighter) 60%,
 		$background 100%);
 }
+
+@mixin background-gradient(
+	$color: $home-nav-background, 
+	$total-columns: 12,
+	$small-screen-gradient-width-columns: 4,
+	$nav-max-width: $nav-max-width,
+	$nav-picture-width: $nav-picture-width,
+	$transparency: 0.55
+	) {
+	background: linear-gradient(
+		to right,
+		rgba($color, 1),
+		rgba($color, $transparency) 50%, 
+		rgba($color, 1) 100%);
+	@include breakpoint($nav-max-width) {
+		background: linear-gradient(
+			to right,
+			rgba($color, 1) calc( (100% - #{$nav-picture-width})/2 + 50px),
+			rgba($color, $transparency) 50%, 
+			rgba($color, 1) calc( 100% - (100% - #{$nav-picture-width})/2 - 50px));
+		}
+	}
