@@ -5,7 +5,7 @@ body {
 
 #main {
     padding: 0 $body-padding;
-	@include breakpoint($medium-phone) {
+	@include breakpoint($large-phone) {
 		 padding: 0 2*$body-padding;
 	}
 }
@@ -57,7 +57,6 @@ nav {
 .engineer {
 	.nav-outer-wrapper {
 		@include background-gradient($color: $engineer-nav-background);
-	
 	}
 }
 
