@@ -48,6 +48,9 @@ main {
 	@include set-font-size(huge-2);
 	font-family: $base-font-family;
 	margin-top: rhythm(1);
+		//@include breakpoint() {
+			
+			//}
 	}
 }
 
@@ -130,10 +133,6 @@ p {
 .home-main {
 	article:first-of-type {
 		margin-top: rhythm(4);
-	}
-	hr {
-		margin: rhythm(4) rhythm(2);
-		
 	}
 }
 

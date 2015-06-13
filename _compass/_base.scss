@@ -17,6 +17,8 @@ hr {
     height: 1px;
     margin: 1.4em 0;
     border: none;
+	max-width: $max-text-width;
+	margin: rhythm(4) auto;
 }
 
 .home-main {
