@@ -12,7 +12,9 @@ $max-width: em(1200px);
 $nav-max-width: em(700px);
 $nav-picture-width: em(1200px);
 $max-text-width: 700px;
-$max-hr-width: 433px;
+$max-hr-width: em(433px);
+$max-header-width: 800px;
+$read-more-button-width: 250px;
 
 //Navigation 
 
@@ -117,6 +119,7 @@ $primary-button-color: map-get($green, dark);
 //Button styles
 $button-radius: em(10px);
 $button-padding-vert: rhythm(1);
+$button-padding-horiz: 24px;
 
 //Breakpoints
 $medium-phone: em(500px);

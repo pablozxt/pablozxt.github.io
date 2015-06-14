@@ -1,8 +1,9 @@
 button {
+	display: block;
 	border-radius: $button-radius;
 	min-height: em(44px);
 	border-style: none;
-	padding: $button-padding-vert 0;
+	padding: $button-padding-vert $button-padding-horiz;
 	cursor: pointer; 
 	@extend %button-typography;
 	&:focus {

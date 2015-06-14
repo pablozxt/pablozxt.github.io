@@ -80,11 +80,16 @@ main {
 }
 
 header {
+	max-width: $max-header-width;
+	margin: 0 auto;
 	p {
 		font-family: $secondary-font-family;
 		@include set-font-size(medium);
 		font-weight: map-get($font-weights, light);
 		margin-top: rhythm(1);
+		@include breakpoint($large-phone) {
+			@include set-font-size(large);
+		}
 	}
 }
 
@@ -189,11 +194,11 @@ a {
 }
 
 .read-more-button {
-	width: 100%;
-	margin-right: 0;
+	width: $read-more-button-width;
+	margin-left: auto;
+	margin-right: auto;
 	margin-top: rhythm(3);
 	@include button-color($primary-button-color);
-	margin-right: 0;
 }
 
 #main {
