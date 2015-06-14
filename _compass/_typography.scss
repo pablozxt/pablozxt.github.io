@@ -48,9 +48,6 @@ main {
 	@include set-font-size(huge-2);
 	font-family: $base-font-family;
 	margin-top: rhythm(1);
-		//@include breakpoint() {
-			
-			//}
 	}
 }
 
@@ -160,7 +157,6 @@ a {
 
 
 %nav-color {
-	background-color: $home-nav-background;
 	color: set-text-color($home-nav-background);
 	a {
 		color: inherit;

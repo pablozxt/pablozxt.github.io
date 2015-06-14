@@ -50,12 +50,9 @@
 	$nav-picture-width: $nav-picture-width,
 	$transparency: 0.55
 	) {
-	background: linear-gradient(
-		to right,
-		rgba($color, 1),
-		rgba($color, $transparency) 50%, 
-		rgba($color, 1) 100%);
+	background-color: rgba($color, $transparency);
 	@include breakpoint($nav-max-width) {
+		background-color: $color;
 		background: linear-gradient(
 			to right,
 			rgba($color, 1) calc( (100% - #{$nav-picture-width})/2 + 150px),
