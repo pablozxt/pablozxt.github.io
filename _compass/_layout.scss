@@ -23,7 +23,7 @@ svg {
 .nav-social {
 	ul {
 		display: relative;
-	}
+	}//ul
 	li {
 		@include clearfix;
 		width: 200px;
@@ -31,12 +31,12 @@ svg {
 		span {
 			display: block;
 			float: left;
-		}
+		}//span
 		.username {
 			margin-left: em(10px);
-		}
-	}
-}
+		}//username
+	}//li
+}//.nav-social
 
 nav {
 	background: url(../images/background.jpg) repeat;
@@ -44,8 +44,8 @@ nav {
 	background-position: center center;
 	@include breakpoint($nav-picture-width) {
 		background-size: auto auto;
-	}
-}
+	}//media query
+}//.nav
 
 .nav-outer-wrapper {
 	padding: rhythm(2) $body-padding;

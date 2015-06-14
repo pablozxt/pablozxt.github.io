@@ -16,24 +16,24 @@ body {
 
 header {
 	padding-top: rhythm(0);
-}//header
+}
 
 nav {
 	@extend %nav-color;
 	ul {
 		font-family: $secondary-font-family;
 		font-weight: map-get($font-weights, light);
-	}
+	}//ul
 	.main-nav {
 		margin-left: span(1);
 		li {
 			@include set-font-size(normal);
-		}
-	}
+		}//li
+	}//.main-nav
 	.nav-social {
 		@include set-font-size(tiny);
 		margin-top: rhythm(20);
-	}
+	}//.nav-social
 }
 
 .engineer {
@@ -48,21 +48,33 @@ main {
 	@include set-font-size(huge-2);
 	font-family: $base-font-family;
 	margin-top: rhythm(1);
-	}
-}
+		@include breakpoint ($large-phone) {
+			@include set-font-size(huge-4);
+		}//media query
+	}//h1
+}//main
 
 .home-main {
 	h1 {
 		color: map-get($home-color, normal);
-	}
-}
+		@include breakpoint ($max-text-width + 200px) {
+			margin-left: calc(50% - (#{$max-text-width}/2 + #{span(1)}));
+		}//media query
+	}//h1
+}//.home-main
 
 .engineer-main {
 	h1 {
 		color: map-get($engineer-color, normal);
 		text-transform: uppercase;
-	}
+	}//h1
 	article, section {
+		margin-top: rhythm(6);
+	}//article, section
+}//.engineer-main
+
+.home-main {
+	article:first-of-type {
 		margin-top: rhythm(6);
 	}
 }
@@ -102,17 +114,17 @@ h4 {
 		display: inline;
 		&::before {
 			content: " \2013  ";
-		}
-	}
-}
+		}//:before
+	}//project-position
+}//h4
 
 .project-data {
 	@include set-font-size(smaller);
 	color: $text-color;
 	&::before {
 		content: '\00a0 \00a0 \00a0 \00a0';
-	}
-}
+	}//:before
+}//.project-data
 
 h5 {
 	text-transform: uppercase;
@@ -126,13 +138,6 @@ p {
 	font-size: map-get($font-sizes, normal);
 	margin-top: rhythm(2);
 }
-
-.home-main {
-	article:first-of-type {
-		margin-top: rhythm(4);
-	}
-}
-
 
 figcaption {
 	font-family: $secondary-font-family;
@@ -149,11 +154,11 @@ a {
 	transition: color 0.4s ease;
 	&:hover, &:focus {
 		color: $link-hover-color;
-	}
+	}//:hover, :focus
 	&:active {
 		color: $link-active-color;
-	}
-}
+	}//:active
+}//a
 
 
 %nav-color {
@@ -163,12 +168,12 @@ a {
 		@include underline($home-nav-background, $alt-text-color, true, 1.2, 0.8);
 		&:hover, &:focus {
 			color: darken(set-text-color($home-nav-background), 10%);
-		}
+		}//:hover, :focus
 		&:active {
 			color: darken(set-text-color($home-nav-background), 20%);
-		}
-	}
-}
+		}//:active
+	}//a
+}//nav-color
 
 %button-typography {
 	font-family: $secondary-font-family;
@@ -197,9 +202,9 @@ a {
 		margin: rhythm(2) 0 0 span(1);
 		li {
 			margin-top: rhythm(2);
-		}
-	}
-}
+		}//li
+	}//ul
+}//#main
 
 
 

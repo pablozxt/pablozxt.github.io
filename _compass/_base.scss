@@ -17,8 +17,11 @@ hr {
     height: 1px;
     margin: 1.4em 0;
     border: none;
-	max-width: $max-text-width;
+	max-width: $max-hr-width;
 	margin: rhythm(4) auto;
+	@include breakpoint($large-phone) {
+		margin: rhythm(4) auto rhythm(10) auto;
+	}
 }
 
 .home-main {
