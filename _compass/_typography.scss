@@ -71,10 +71,6 @@ main {
 	article, section {
 		margin-top: rhythm(6);
 	}//article, section
-	.text-container {
-		max-width: $max-text-width;
-		margin: 0 auto;
-	}
 }//.engineer-main
 
 .home-main {
@@ -87,8 +83,6 @@ main {
 }
 
 header {
-	max-width: $max-header-width;
-	margin: 0 auto;
 	p {
 		font-family: $secondary-font-family;
 		@include set-font-size(medium);
@@ -159,6 +153,11 @@ figcaption {
 	
 }
 
+/********* 
+a styles. Sets link colors and includes a Medium style  
+underline function
+*********/
+
 a {
 	color: $link-color;
 	text-decoration: none;
@@ -171,7 +170,6 @@ a {
 		color: $link-active-color;
 	}//:active
 }//a
-
 
 %nav-color {
 	color: set-text-color($home-nav-background);
@@ -194,10 +192,21 @@ a {
 }
 
 .read-more {
-	background-color: lighten(map-get($engineer-color, lighter), 15%);
+	background-color: $read-more-background-color;
 	margin-top: rhythm(4);
 	padding: rhythm(2) $body-padding rhythm(5) $body-padding;
 	border-radius: $button-radius;
+}
+
+/********* 
+a underline for read-more area has to be modified due to
+different background color
+*********/
+
+.read-more {
+	a {
+		@include underline( $read-more-background-color, $link-color, true, 1, 1.3);
+	}
 }
 
 .read-more-button {

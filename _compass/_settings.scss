@@ -116,6 +116,9 @@ $home-color: $blue;
 //button color
 $primary-button-color: map-get($green, dark);
 
+//background color for read more section
+$read-more-background-color: lighten(map-get($engineer-color, lighter), 15%);
+
 //Button styles
 $button-radius: em(10px);
 $button-padding-vert: rhythm(1);
@@ -124,6 +127,7 @@ $button-padding-horiz: 24px;
 //Breakpoints
 $medium-phone: em(500px);
 $large-phone: em(800px);
+$laptop: 1200px;
 
 
 //$spacing-unit		:	30px;
