@@ -8,13 +8,15 @@ title: Engineer
 	<p>I have {{(site.time | date: "%Y") | minus: 2002}} years of experience in the construction industry as a Mechanical Engineer and Structural Estimator. I work for the Water division of J.F.Shea Construction.</p>
 </header>
 	<article>
-		<h2>Current Position</h2>
-		<h4>J.F.Shea Construction
-			<div class="project-position">Structural Concrete Estimator</div>
-			<span class="project-data">(2012 - present)</span>
-		</h4>
-		<h5>Description</h5>
-		<p>Since January 2012 I have been working as a structural concrete estimator. I have been responsible for concrete quantity take-offs and pricing for very diverse water infrastructure projects, from construction of new facilities, to rehabilitation of existing structures or seismic retrofits.</p>
+		<div class="text-container">
+			<h2>Current Position</h2>
+			<h4>J.F.Shea Construction
+				<div class="project-position">Structural Concrete Estimator</div>
+				<span class="project-data">(2012 - present)</span>
+			</h4>
+			<h5>Description</h5>
+			<p>Since January 2012 I have been working as a structural concrete estimator. I have been responsible for concrete quantity take-offs and pricing for very diverse water infrastructure projects, from construction of new facilities, to rehabilitation of existing structures or seismic retrofits.</p>
+		</div><!-- .text-container -->
 		<figure>
 			<img class="full-width"
 		srcset="{{ "/images/weymouth-huge.jpg" | prepend: site.baseurl }}  2000w, 
@@ -43,18 +45,21 @@ title: Engineer
 	</article>
 	{% for post in site.categories.engineer %}
 	<article class="engineer-project">
-		<h2>Past Projects</h2>
-		{{ post.content}}
+		<div class="text-container">
+			<h2>Past Projects</h2>
+			{{ post.content}}
 	</article>
 	{% endfor %}
 	<article>
-		<h2>Previous Jobs</h2>
-		<h4>Mejoras Energéticas (Madrid, Spain) 
-			<div class="project-position">Consultant Engineer</div>
-			<span class="project-data">2001 - 2003</span>
-		</h4>
-		<h5>Description</h5>
-		<p>My first job out of college consisted of building computer models of water supply, sewer and storm drain systems. We used these models to simulate extreme loading conditions and future city expansion plans, find areas where existing infrastructure needed improvement and propose solutions.</p>
+		<div class="text-container">
+			<h2>Previous Jobs</h2>
+			<h4>Mejoras Energéticas (Madrid, Spain) 
+				<div class="project-position">Consultant Engineer</div>
+				<span class="project-data">2001 - 2003</span>
+			</h4>
+			<h5>Description</h5>
+			<p>My first job out of college consisted of building computer models of water supply, sewer and storm drain systems. We used these models to simulate extreme loading conditions and future city expansion plans, find areas where existing infrastructure needed improvement and propose solutions.</p>
+		</div><!-- .text-container -->
 		<button class="read-more-button hidden" data-alt-text="Read less">Read more</button>
 		<div class="read-more js-hidden">
 			<h5>The Best Parts</h5>
@@ -63,30 +68,34 @@ title: Engineer
 			<p>Most Spanish municipalities at the time did not have at their disposal all the information that the <a href="http://www.innovyze.com/products/infoworks_cs/">InfoWorks</a> models require. In order to complete the work, we had to make assumptions, and no matter how reasonable we thought our assumptions were, one has to question the accuracy and usefulness of the model and, therefore, our whole endeavor. In other words, I am not sure that we brought a lot of value to our customers, and that was in my view the biggest challenge.</p>
 	</article>
 	<article>
-		<h2>Education</h2>
-		<h3>
-			<ul>
-				<li>
-					<a href="http://www.upm.es/internacional">Universidad Politécnica de Madrid: </a><a href="http://www.caminos.upm.es/default.asp"> Ingeniero de Caminos, Canales y Puertos (B.S. Civil Engineering)</a><span class="project-data"> (1994 - 2001)</span>
-				</li>
-				<li>
-					<a href="https://www.uclaextension.edu/Pages/default.aspx">UCLA Extension: </a><a href="https://www.uclaextension.edu/eistm/Pages/engineering/civilEng.aspx">Professional Designation in Construction Management</a><span class="project-data"> (2003 - 2004)</span>
-				</li>
-				<li>
-					Engineer-In-Training (<abbr title="">EIT</abbr>) Certificate, California <span class="project-data"> (2005)</span>
-				</li>
-			</ul>
-		</h3>
+		<div class="text-container">
+			<h2>Education</h2>
+			<h3>
+				<ul>
+					<li>
+						<a href="http://www.upm.es/internacional">Universidad Politécnica de Madrid: </a><a href="http://www.caminos.upm.es/default.asp"> Ingeniero de Caminos, Canales y Puertos (B.S. Civil Engineering)</a><span class="project-data"> (1994 - 2001)</span>
+					</li>
+					<li>
+						<a href="https://www.uclaextension.edu/Pages/default.aspx">UCLA Extension: </a><a href="https://www.uclaextension.edu/eistm/Pages/engineering/civilEng.aspx">Professional Designation in Construction Management</a><span class="project-data"> (2003 - 2004)</span>
+					</li>
+					<li>
+						Engineer-In-Training (<abbr title="">EIT</abbr>) Certificate, California <span class="project-data"> (2005)</span>
+					</li>
+				</ul>
+			</h3>
+		</div><!-- .text-container -->
 	</article>
 	<section>
-		<h2>
-			My Interests
-		</h2>
-		<p>Looking forward, these are the areas that I am most interested in for the next few years of my career in construction:</p>
-		<ul class="interests">
-			<li>Application of technological innovation to the construction process through the use and development of new applications.</li>
-			<li>Improvement of J.F.Shea's cost tracking and estimating systems.</li>
-			<li>Promoting communication and integration between field operations and the estimating teams.</li>
-			<li>Continue to deepen my knowledge and understanding of construction procedures.</li>
-		</ul>
+		<div class="text-container">
+			<h2>
+				My Interests
+			</h2>
+			<p>Looking forward, these are the areas that I am most interested in for the next few years of my career in construction:</p>
+			<ul class="interests">
+				<li>Application of technological innovation to the construction process through the use and development of new applications.</li>
+				<li>Improvement of J.F.Shea's cost tracking and estimating systems.</li>
+				<li>Promoting communication and integration between field operations and the estimating teams.</li>
+				<li>Continue to deepen my knowledge and understanding of construction procedures.</li>
+			</ul>
+		</div><!-- .text-container -->
 	</section>

@@ -71,6 +71,10 @@ main {
 	article, section {
 		margin-top: rhythm(6);
 	}//article, section
+	.text-container {
+		max-width: $max-text-width;
+		margin: 0 auto;
+	}
 }//.engineer-main
 
 .home-main {
