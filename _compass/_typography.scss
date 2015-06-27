@@ -98,6 +98,9 @@ h2 {
 	text-transform: uppercase;
 	@include set-font-size(medium);
 	font-weight: map-get($font-weights, semibold);
+	@include breakpoint ($large-phone) {
+		@include set-font-size(large);
+	}
 }
 
 h3 {
@@ -137,6 +140,9 @@ h5 {
 	@include set-font-size(small);
 	margin-top: rhythm(3);
 	font-weight: map-get($font-weights, semibold);
+	@include breakpoint($large-phone) {
+		@include set-font-size(normal);
+	}
 	
 }
 
