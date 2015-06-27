@@ -4,16 +4,33 @@ body {
 }
 
 /********* 
-main styles. Includes padding
+Define padding as an extension class which then gets applied 
+to all elemements that I want to apply padding to. By avoiding application
+of padding to one container element, other elements such as images
+can extend to edge of window
 *********/
 
-main {
+%main-padding {
     padding: 0 $body-padding;
 	@include breakpoint($large-phone) {
 		 padding: 0 2*$body-padding;
 	}
 	
 }
+
+.home-main {
+	@extend %main-padding;
+}
+
+.engineer-main {
+	header, .text-container, button, .read-more, figcaption {
+		@extend %main-padding;
+	}
+}
+
+/********* 
+End padding
+*********/
 
 svg {
 	width: $social-icon-size;
