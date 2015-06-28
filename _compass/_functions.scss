@@ -2,15 +2,28 @@
 
 @include border-box-sizing;
 
+/********* 
+em: calculate em from pixels
+*********/
 
 @function em($target, $context: $base-font-size){
 	@return 1em * $target/$context;
 };
 
+/********* 
+set-font-size: sets font size based on $font-sizes map.
+Also sets line height using the adjust-font-size-to mixin
+*********/
+
 @mixin set-font-size($size: normal) {
     $font-size: map-get($font-sizes, $size);
 	@include adjust-font-size-to($font-size);
 }
+
+/********* 
+button-color: controls the button background color as well as the 
+hover and active colors
+*********/
 
 @mixin button-color($color: $primary-button-color) {
 	background-color: $color;
@@ -24,6 +37,11 @@
 	}
 }
 
+/********* 
+set-text-color: defines an element's font color 
+based on its background color
+*********/
+
 @function set-text-color($background-color) {
   @if (lightness($background-color) > 50) {
     @return $text-color;
@@ -31,6 +49,11 @@
     @return $alt-text-color;
   }
 }
+
+/********* 
+hr-color: establishes the color of hr rules. Creates hr rules
+with color fading towards the ends
+*********/
 
 @mixin hr-color($color: $home-color, $background: $background-color) {
     background-color: map-get($color, normal);
@@ -41,6 +64,11 @@
 		map-get($color, lighter) 60%,
 		$background 100%);
 }
+
+/********* 
+background-gradient: defines the background color and gradient 
+for the navigation bar
+*********/
 
 @mixin background-gradient(
 	$color: $home-nav-background, 
@@ -60,4 +88,20 @@
 			rgba($color, $transparency) calc( 100% - (100% - #{$nav-picture-width})/2 - 400px), 
 			rgba($color, 1) calc( 100% - (100% - #{$nav-picture-width})/2 - 150px));
 		}
+}
+	
+@mixin resp-horiz-padding(
+	$padding-0: $body-padding,
+	$breakpoint-1: null,
+	$padding-1: 0
+	) {
+    padding-left: $padding-0;
+	padding-right: $padding-0;
+	@if $breakpoint-1 {
+		@include breakpoint($breakpoint-1) {
+		    padding-left: $padding-1;
+			padding-right: $padding-1;
+		}	
 	}
+}	
+	

@@ -217,8 +217,6 @@ different background color
 
 .read-more-button {
 	width: $read-more-button-width;
-	margin-left: auto;
-	margin-right: auto;
 	margin-top: rhythm(3);
 	@include button-color($primary-button-color);
 }

@@ -13,8 +13,8 @@ $nav-max-width: em(700px);
 $nav-picture-width: em(1200px);
 $max-text-width: 700px;
 $max-hr-width: em(433px);
-$max-header-width: 800px;
-$read-more-button-width: 250px;
+$max-header-width: em(800px, 22px);
+$read-more-button-width: em(200px, 22px);
 
 //Navigation 
 
@@ -126,8 +126,8 @@ $button-padding-horiz: 24px;
 
 //Breakpoints
 $medium-phone: em(500px);
-$large-phone: em(800px);
-$laptop: 1200px;
+$large-phone: em(800px, 22px);
+$laptop: em(1200px, 22px);
 
 
 //$spacing-unit		:	30px;

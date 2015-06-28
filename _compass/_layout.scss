@@ -4,60 +4,8 @@ body {
 }
 
 /********* 
-Define padding as an extension class which then gets applied 
-to all elemements that I want to apply padding to. By avoiding application
-of padding to one container element, other elements such as images
-can extend to edge of window
+Nav styles
 *********/
-
-%main-padding {
-    padding: 0 $body-padding;
-	@include breakpoint($large-phone) {
-		 padding: 0 2*$body-padding;
-	}
-	
-}
-
-.home-main {
-	@extend %main-padding;
-}
-
-.engineer-main {
-	header, .text-container, button, .read-more, figcaption {
-		@extend %main-padding;
-	}
-}
-
-/********* 
-End padding
-*********/
-
-svg {
-	width: $social-icon-size;
-	height: $social-icon-size;
-	stroke: $alt-text-color;
-	fill: $alt-text-color;
-	position: relative;
-	top: 6px;
-}
-
-.nav-social {
-	ul {
-		display: relative;
-	}//ul
-	li {
-		@include clearfix;
-		width: 200px;
-		margin-left: span(5);
-		span {
-			display: block;
-			float: left;
-		}//span
-		.username {
-			margin-left: em(10px);
-		}//username
-	}//li
-}//.nav-social
 
 nav {
 	background: url(../images/background.jpg) repeat;
@@ -86,6 +34,73 @@ nav {
 	margin: 0 auto;
 }
 
+.nav-social {
+	ul {
+		display: relative;
+	}//ul
+	li {
+		@include clearfix;
+		width: 200px;
+		margin-left: span(5);
+		span {
+			display: block;
+			float: left;
+		}//span
+		.username {
+			margin-left: em(10px);
+		}//username
+	}//li
+}//.nav-social
+
+svg {
+	width: $social-icon-size;
+	height: $social-icon-size;
+	stroke: $alt-text-color;
+	fill: $alt-text-color;
+	position: relative;
+	top: 6px;
+}
+
+/********* 
+End nav styles
+*********/
+
+/********* 
+Define padding using the resp-horiz-padding mixin. By avoiding application
+of padding to one container element, other elements, such as images, can 
+extend to edge of window.
+Padding controls left margin for small screens. For larger screens, left 
+margins are set elsewhere.
+Button padding has to be set using margin rules
+*********/
+
+
+.home-main {
+	@include resp-horiz-padding($breakpoint-1: $max-header-width);
+}
+
+.engineer-main {
+	header, .text-container, figcaption {
+		@include resp-horiz-padding($breakpoint-1: $max-header-width);
+	}
+}
+
+.read-more {
+	@include resp-horiz-padding();
+	margin-left: $body-padding;
+	margin-right: $body-padding;
+	
+}
+
+.read-more-button {
+	margin-left: $body-padding;
+}
+
+/********* 
+End padding
+*********/
+
+
 /********* 
 header (meant for engineer page): set maximum width
 *********/
@@ -95,19 +110,24 @@ header {
 }
 
 /********* 
-Set margins for header element and .text-container class.
-The goal is to have the left-margin of these two sets of elements 
-be aligned
+Set margins for header element, .text-container class and .read-more-button.
+The goal is to have the left-margin of these two sets of elements be aligned
 Left margin starts at 0, increases to one column, then to two columns
 *********/
 
-header, .text-container {
+header, .text-container, .read-more-button {
 	@include breakpoint($max-header-width) {
 		margin-left: span(1);
 	}	
 	@include breakpoint($laptop) {
 		margin-left: span(2);
 	}
+}
+
+figcaption {
+	@include breakpoint($max-header-width) {
+		margin-left: span(1);
+	}	
 }
 
 .home-post {
