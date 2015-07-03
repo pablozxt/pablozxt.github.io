@@ -11,10 +11,10 @@ $susy: (
 $max-width: em(1200px);
 $nav-max-width: em(700px);
 $nav-picture-width: em(1200px);
-$max-text-width: 700px;
+$max-text-width: 750px;
 $max-hr-width: em(433px);
-$max-header-width: em(800px, 22px);
-$read-more-button-width: em(200px, 22px);
+$max-header-width: 900px;
+$read-more-button-width: em(140px);
 
 //Navigation 
 
@@ -126,8 +126,9 @@ $button-padding-horiz: 24px;
 
 //Breakpoints
 $medium-phone: em(500px);
-$large-phone: em(800px, 22px);
-$laptop: em(1200px, 22px);
+$large-phone: em(800px);
+$laptop: em(1200px);
+$desktop: em(1400px);
 
 
 //$spacing-unit		:	30px;

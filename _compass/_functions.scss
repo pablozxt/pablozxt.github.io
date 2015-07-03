@@ -6,7 +6,7 @@
 em: calculate em from pixels
 *********/
 
-@function em($target, $context: $base-font-size){
+@function em($target, $context: 16px){
 	@return 1em * $target/$context;
 };
 
@@ -89,7 +89,12 @@ for the navigation bar
 			rgba($color, 1) calc( 100% - (100% - #{$nav-picture-width})/2 - 150px));
 		}
 }
-	
+
+/********* 
+resp-horiz-padding: used to set the horizontal padding at different 
+responsive points
+*********/
+
 @mixin resp-horiz-padding(
 	$padding-0: $body-padding,
 	$breakpoint-1: null,

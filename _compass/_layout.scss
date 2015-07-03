@@ -71,17 +71,18 @@ of padding to one container element, other elements, such as images, can
 extend to edge of window.
 Padding controls left margin for small screens. For larger screens, left 
 margins are set elsewhere.
-Button padding has to be set using margin rules
+.read-more class needs margins to be set in addition to padding
+.read-more-button padding has to be set using margin rules
 *********/
 
 
 .home-main {
-	@include resp-horiz-padding($breakpoint-1: $max-header-width);
+	@include resp-horiz-padding($breakpoint-1: $max-header-width + 100px);
 }
 
 .engineer-main {
 	header, .text-container, figcaption {
-		@include resp-horiz-padding($breakpoint-1: $max-header-width);
+		@include resp-horiz-padding($breakpoint-1: $max-header-width + 100px);
 	}
 }
 
@@ -116,23 +117,30 @@ Left margin starts at 0, increases to one column, then to two columns
 *********/
 
 header, .text-container, .read-more-button {
-	@include breakpoint($max-header-width) {
+	@include breakpoint($max-header-width + 100px) {
 		margin-left: span(1);
 	}	
 	@include breakpoint($laptop) {
 		margin-left: span(2);
 	}
+	@include breakpoint($desktop) {
+		margin-left: span(3);
+	}
 }
 
 figcaption {
-	@include breakpoint($max-header-width) {
+	@include breakpoint($max-header-width + 100px) {
 		margin-left: span(1);
 	}	
 }
 
-.home-post {
-	max-width: $max-text-width;
-	margin: 0 auto;
+#main {
+	ul {
+		margin-left: span(1);
+		@include breakpoint($max-header-width) {
+			margin-left: span(2);
+		}
+	}
 }
 
 /********* 
@@ -148,6 +156,15 @@ in engineer page, while letting images have a longer width
 			margin-left: span(1);
 		}
 	}
+}
+
+/********* 
+set .home-post width
+*********/
+
+.home-post {
+	max-width: $max-text-width;
+	margin: 0 auto;
 }
 
 /********* 
