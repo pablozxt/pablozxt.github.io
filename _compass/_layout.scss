@@ -171,14 +171,19 @@ set .home-post width
 pictures layout
 *********/
 
-img {
-	max-width: $max-width;
-}
 
 article {
 	img.full-width {
 		width: span(12);
 		margin-top: rhythm(3);
 	}
+}
+
+figure, img {
+	max-width: $max-picture-width;
+	@include breakpoint($max-picture-width) {
+		margin-left: auto;
+		margin-right: auto;
+	} 
 }
 
