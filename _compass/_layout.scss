@@ -172,18 +172,20 @@ pictures layout
 *********/
 
 
-article {
-	img.full-width {
-		width: span(12);
-		margin-top: rhythm(3);
-	}
+figure {
+	margin-top: rhythm(3);
+	margin-left: auto;
+	margin-right: auto;
 }
 
-figure, img {
+.full-width {
 	max-width: $max-picture-width;
-	@include breakpoint($max-picture-width) {
-		margin-left: auto;
-		margin-right: auto;
-	} 
 }
+
+.medium-width {
+	max-width: 700px;
+}
+
+
+
 
