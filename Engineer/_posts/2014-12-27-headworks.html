@@ -10,6 +10,8 @@ customer_url: http://www.ocsd.com/
 budget: "$200M"
 start_year: "2008"
 end_year: "2011"
+text-align: left
+img-align: right
 
 ---
 
@@ -20,8 +22,8 @@ end_year: "2011"
 		<h5>My Role</h5>
 		<p>I came to this job in May of 2008, approximately three years after it started. When I got there, the concrete structures were mostly built, and the mechanical installation was well underway. I became responsible for the odor control system. I finished the installation, and then commissioned, started-up, operated and maintained the system until beneficial occupancy.</p>
 	</div><!-- .text-container -->
-	<figure class="full-width">
-		<img class="full-width"
+	<figure class="{% if page.img-align %}{{ page.img-align }}-resp{% endif %}">
+		<img
 	srcset="{{ "/images/headworks-huge.jpg" | prepend: site.baseurl }}  2000w,
 			{{ "/images/headworks-large.jpg" | prepend: site.baseurl }}  1200w, 
 	        {{ "/images/headworks-medium.jpg" | prepend: site.baseurl }}  800w,
@@ -31,6 +33,7 @@ end_year: "2011"
 	alt="View of Headworks Replacement Project Bar Screen and Screenings Loading Facility illuminated at night" />
 		<figcaption>Headworks Replacement Project: screenings loading, bar screen and headworks odor control facilities</figcaption>
 	</figure>
+	<div style="clear: both;"></div>
 	<button class="read-more-button hidden" data-alt-text="Read less">Read more</button>
 	<div class="read-more js-hidden">
 		<h5>The Best Parts</h5>

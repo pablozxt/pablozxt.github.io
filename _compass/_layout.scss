@@ -111,6 +111,21 @@ header {
 }
 
 /********* 
+.text-container class controls maximum text width for articles
+in engineer page, while letting images have a longer width
+.text-container 
+*********/
+
+.text-container {
+	max-width: $max-text-width;
+	p, h3, h4 {
+		@include breakpoint($max-header-width) {
+			margin-left: span(1);
+		}
+	}
+}
+
+/********* 
 Set margins for header element, .text-container class and .read-more-button.
 The goal is to have the left-margin of these two sets of elements be aligned
 Left margin starts at 0, increases to one column, then to two columns
@@ -143,19 +158,41 @@ figcaption {
 	}
 }
 
+
 /********* 
-.text-container class controls maximum text width for articles
-in engineer page, while letting images have a longer width
-.text-container 
+set styles for left-resp and right-resp classes, which are meant for laying 
+out images in engineer page to the right or to the left, while wrapping text 
+around them 
 *********/
 
-.text-container {
-	max-width: $max-text-width;
-	p, h3, h4 {
-		@include breakpoint($max-header-width) {
-			margin-left: span(1);
+.left-resp {
+	@include breakpoint($laptop) {
+		float: left;
+		width: span(6 of 14);
+		margin-left: gutter(12);
+	}
+}
+
+.right-resp {
+	@include breakpoint($laptop) {
+		float: right;
+		width: span(7 of 14);
+		margin-right: gutter(12);
+	}
+}
+
+.floated {
+	.read-more-button {
+		@include breakpoint($laptop) {
+			margin-top: rhythm(5);
+			margin-left: gutter(24) + span(1 of 24);
 		}
 	}
+}
+
+/** max-width of floated images has to be limited to 100% of its column **/
+.right-resp img {
+	max-width: span(12);
 }
 
 /********* 
@@ -180,10 +217,6 @@ figure {
 
 .full-width {
 	max-width: $max-picture-width;
-}
-
-.medium-width {
-	max-width: 700px;
 }
 
 

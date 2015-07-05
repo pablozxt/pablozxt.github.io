@@ -44,10 +44,7 @@ title: Engineer
 			<p>The biggest challenge of all, an industry-wide one, is having to compete on price only. There is no brand, no user experience, no customer relations in public work bidding. It's all about being the lowest bidder. This can be frustrating. I secretly envy other industries where you don't have to race to the bottom, and can instead strive to create the best product and provide a great experience.</p>
 	</article>
 	{% for post in site.categories.engineer %}
-	<article class="engineer-project">
-		<div class="text-container">
-			<h2>Past Projects</h2>
-			{{ post.content}}
+		{{ post.content}}
 	</article>
 	{% endfor %}
 	<article>
