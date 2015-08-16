@@ -7,27 +7,32 @@ title: Engineer
 	<h1>Engineer</h1>
 	<p>I have {{(site.time | date: "%Y") | minus: 2002}} years of experience in the construction industry as a Mechanical Engineer and Structural Estimator. I work for the Water division of J.F.Shea Construction.</p>
 </header>
-	<article>
-		<div class="text-container">
-			<h2>Current Position</h2>
-			<h4>J.F.Shea Construction
-				<div class="project-position">Structural Concrete Estimator</div>
-				<span class="project-data">(2012 - present)</span>
-			</h4>
-			<h5>Description</h5>
-			<p>Since January 2012 I have been working as a structural concrete estimator. I have been responsible for concrete quantity take-offs and pricing for very diverse water infrastructure projects, from construction of new facilities, to rehabilitation of existing structures or seismic retrofits.</p>
-		</div><!-- .text-container -->
-		<figure class="full-width">
-			<img class="full-width"
-		srcset="{{ "/images/weymouth-huge.jpg" | prepend: site.baseurl }}  2000w, 
-				{{ "/images/weymouth-large.jpg" | prepend: site.baseurl }}  1200w, 
-		        {{ "/images/weymouth-medium.jpg" | prepend: site.baseurl }}  800w,
-		        {{ "/images/weymouth-small.jpg" | prepend: site.baseurl }}   600w"
-		sizes="100%"
-		src="{{ "/images/weymouth-medium.jpg" | prepend: site.baseurl }}"
-		alt="Advanced Water Treatment Facility Reverse Osmosis Facility. View of Reverse Osmosis Unit" />
-			<figcaption>Weymouth Filter Building Seismic Upgrades</figcaption>
-		</figure>
+	<article class="floated">
+		<div class="clearfix left-to-right">
+			<div class="text-container left-resp">
+				<h2>Current Position</h2>
+				<h4>J.F.Shea Construction
+					<div class="project-position">Structural Concrete Estimator</div>
+					<span class="project-data">(2012 - present)</span>
+				</h4>
+				<h5>Description</h5>
+				<p>Since January 2012 I have been working as a structural concrete estimator. I am responsible for concrete quantity take-offs and pricing for very diverse water infrastructure projects, from construction of new facilities, to rehabilitation of existing structures or seismic retrofits.</p>
+				<p>As part of my job, I also track closely our cost performance across multiple jobs. This information feeds my estimating models and helps me stay in touch and more integrated with our field operations.</p>
+				<p>I use HCSS estimating software to build our estimates, Primavera P6 to develop bid schedules, MicroStation to draw key plans, formwork and 3D models, and Excel to complete take-offs and track cost performance.</p>
+			</div><!-- .text-container -->
+			<figure class="full-width right-resp">
+				<img class="full-width"
+			srcset="{{ "/images/weymouth-huge.jpg" | prepend: site.baseurl }}  2000w, 
+					{{ "/images/weymouth-large.jpg" | prepend: site.baseurl }}  1200w, 
+			        {{ "/images/weymouth-medium.jpg" | prepend: site.baseurl }}  800w,
+			        {{ "/images/weymouth-small.jpg" | prepend: site.baseurl }}   600w"
+			sizes="100%"
+			src="{{ "/images/weymouth-medium.jpg" | prepend: site.baseurl }}"
+			alt="Advanced Water Treatment Facility Reverse Osmosis Facility. View of Reverse Osmosis Unit" />
+				<figcaption>Weymouth Filter Building Seismic Upgrades</figcaption>
+			</figure>
+		</div><!-- clearfix -->
+		<div style="clear: both;"></div>
 		<button class="read-more-button hidden" data-alt-text="Read less">Read more</button>
 		<div class="read-more js-hidden">
 			<h5>The Best Parts</h5>
@@ -47,16 +52,30 @@ title: Engineer
 		{{ post.content}}
 	</article>
 	{% endfor %}
-	<article>
-		<div class="text-container">
-			<h2>Previous Jobs</h2>
-			<h4>Mejoras Energéticas (Madrid, Spain) 
-				<div class="project-position">Consultant Engineer</div>
-				<span class="project-data">2001 - 2003</span>
-			</h4>
-			<h5>Description</h5>
-			<p>My first job out of college consisted of building computer models of water supply, sewer and storm drain systems. We used these models to simulate extreme loading conditions and future city expansion plans, find areas where existing infrastructure needed improvement and propose solutions.</p>
-		</div><!-- .text-container -->
+	<article class="floated">
+		<div class="clearfix left-to-right">
+			<div class="text-container">
+				<h2>Previous Jobs</h2>
+				<h4>Mejoras Energéticas (Madrid, Spain) 
+					<div class="project-position">Consultant Engineer</div>
+					<span class="project-data">2001 - 2003</span>
+				</h4>
+				<h5>Description</h5>
+				<p>My first job out of college consisted of building computer models of water supply, sewer and storm drain systems. We used these models to simulate extreme loading conditions and future city expansion plans, find areas where existing infrastructure needed improvement and propose solutions.</p>
+			</div><!-- .text-container -->
+			<figure class="full-width right-resp">
+				<img class="full-width"
+			srcset="{{ "/images/infoworks-huge.jpg" | prepend: site.baseurl }}  1680w, 
+					{{ "/images/infoworks-large.jpg" | prepend: site.baseurl }}  1200w, 
+			        {{ "/images/infoworks-medium.jpg" | prepend: site.baseurl }}  800w,
+			        {{ "/images/infoworks-small.jpg" | prepend: site.baseurl }}   600w"
+			sizes="100%"
+			src="{{ "/images/infoworks-medium.jpg" | prepend: site.baseurl }}"
+			alt="Computer model of a sewer system built with InfoWorks" />
+				<figcaption>Computer model of a sewer system built with InfoWorks</figcaption>
+			</figure>
+			</div><!-- clearfix -->
+		<div style="clear: both;"></div>
 		<button class="read-more-button hidden" data-alt-text="Read less">Read more</button>
 		<div class="read-more js-hidden">
 			<h5>The Best Parts</h5>

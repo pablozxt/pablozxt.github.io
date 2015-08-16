@@ -10,29 +10,30 @@ customer_url: http://www.ocsd.com/
 budget: "$200M"
 start_year: "2008"
 end_year: "2011"
-text-align: left
-img-align: right
+text-align: right
+img-align: left
 
 ---
 
-	{% include engineer_project_heading.html %}
+		{% include engineer_project_heading.html %}
 	
-		<h5>Project Description:</h5>
-		<p>This project provided a new headworks facility for OCSD Plant No. 2, which replaced a 40-year-old outdated installation. The new headworks is capable of processing a design peak flow of 340 million gallons per day of raw sewage. The facility consists of 14 process structures, including among others a bar screen, screenings washings and loading facility, an influent pump station, grit basins and handling facilities and a new odor control system, which included the largest biological treatment facility of its kind in the country.</p>
-		<h5>My Role</h5>
-		<p>I came to this job in May of 2008, approximately three years after it started. When I got there, the concrete structures were mostly built, and the mechanical installation was well underway. I became responsible for the odor control system. I finished the installation, and then commissioned, started-up, operated and maintained the system until beneficial occupancy.</p>
-	</div><!-- .text-container -->
-	<figure class="{% if page.img-align %}{{ page.img-align }}-resp{% endif %}">
-		<img
-	srcset="{{ "/images/headworks-huge.jpg" | prepend: site.baseurl }}  2000w,
-			{{ "/images/headworks-large.jpg" | prepend: site.baseurl }}  1200w, 
-	        {{ "/images/headworks-medium.jpg" | prepend: site.baseurl }}  800w,
-	        {{ "/images/headworks-small.jpg" | prepend: site.baseurl }}   600w"
-	sizes="100%"
-	src="{{ "/images/headworks-medium.jpg" | prepend: site.baseurl }}"
-	alt="View of Headworks Replacement Project Bar Screen and Screenings Loading Facility illuminated at night" />
-		<figcaption>Headworks Replacement Project: screenings loading, bar screen and headworks odor control facilities</figcaption>
-	</figure>
+			<h5>Project Description:</h5>
+			<p>This project provided a new headworks facility for OCSD Plant No. 2, which replaced a 40-year-old outdated installation. The new headworks is capable of processing a design peak flow of 340 million gallons per day of raw sewage. The facility consists of 14 process structures, including among others a bar screen, screenings washings and loading facility, an influent pump station, grit basins and handling facilities and a new odor control system, which included the largest biological treatment facility of its kind in the country.</p>
+			<h5>My Role</h5>
+			<p>I came to this job in May of 2008, approximately three years after it started. When I got there, the concrete structures were mostly built, and the mechanical installation was well underway. I became responsible for the odor control system. I finished the installation, and then commissioned, started-up, operated and maintained the system until beneficial occupancy.</p>
+		</div><!-- .text-container -->
+		<figure class="{% if page.img-align %}{{ page.img-align }}-resp{% endif %}">
+			<img
+		srcset="{{ "/images/headworks-huge.jpg" | prepend: site.baseurl }}  2000w,
+				{{ "/images/headworks-large.jpg" | prepend: site.baseurl }}  1200w, 
+		        {{ "/images/headworks-medium.jpg" | prepend: site.baseurl }}  800w,
+		        {{ "/images/headworks-small.jpg" | prepend: site.baseurl }}   600w"
+		sizes="100%"
+		src="{{ "/images/headworks-medium.jpg" | prepend: site.baseurl }}"
+		alt="View of Headworks Replacement Project Bar Screen and Screenings Loading Facility illuminated at night" />
+			<figcaption>Headworks Replacement Project: screenings loading, bar screen and headworks odor control facilities</figcaption>
+		</figure>
+	</div><!-- clearfix -->
 	<div style="clear: both;"></div>
 	<button class="read-more-button hidden" data-alt-text="Read less">Read more</button>
 	<div class="read-more js-hidden">

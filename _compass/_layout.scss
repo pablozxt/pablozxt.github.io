@@ -160,26 +160,40 @@ figcaption {
 
 
 /********* 
-set styles for left-resp and right-resp classes, which are meant for laying 
-out images in engineer page to the right or to the left, while wrapping text 
-around them 
+set styles for .text-container and figure inside of .floated 
+class to float text to the left and images to the right
 *********/
 
-.left-resp {
+.floated {
+	.text-container {
+		@extend %resp-float-left-half;
+	}
+	figure {
+		@extend %resp-float-right-half;
+	}
+
+%resp-float-left-half {
 	@include breakpoint($laptop) {
 		float: left;
-		width: span(6 of 14);
+		width: span(6 of 13);
 		margin-left: gutter(12);
 	}
 }
 
-.right-resp {
+%resp-float-right-half {
 	@include breakpoint($laptop) {
 		float: right;
-		width: span(7 of 14);
+		width: span(6 of 13);
 		margin-right: gutter(12);
 	}
 }
+
+/** max-width of floated images has to be limited to 100% of its column **/
+	img {
+		max-width: span(12);
+	}
+}//.floated
+
 
 .floated {
 	.read-more-button {
@@ -190,10 +204,6 @@ around them
 	}
 }
 
-/** max-width of floated images has to be limited to 100% of its column **/
-.right-resp img {
-	max-width: span(12);
-}
 
 /********* 
 set .home-post width
