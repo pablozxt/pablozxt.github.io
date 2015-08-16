@@ -151,6 +151,13 @@ p {
 	margin-top: rhythm(2);
 }
 
+.engineer-main {
+	p {
+		//font-size: map-get($font-sizes, small);
+		//margin-top: rhythm(2);
+	}
+}
+
 figcaption {
 	font-family: $secondary-font-family;
 	@include set-font-size(tiny);
