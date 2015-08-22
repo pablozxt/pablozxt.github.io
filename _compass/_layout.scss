@@ -161,32 +161,18 @@ figcaption {
 
 /********* 
 set styles for .text-container and figure inside of .floated 
-class to float text to the left and images to the right
+class to float text to the left and images to the right. 
+Use resp-float mixin to float element responsively at a given breakpoint
 *********/
 
 .floated {
 	.text-container {
-		@extend %resp-float-left-half;
+		@include resp-float ($float: left);
 	}
 	figure {
-		@extend %resp-float-right-half;
+		@include resp-float ($float: right);
 	}
 
-%resp-float-left-half {
-	@include breakpoint($laptop) {
-		float: left;
-		width: span(6 of 13);
-		margin-left: gutter(12);
-	}
-}
-
-%resp-float-right-half {
-	@include breakpoint($laptop) {
-		float: right;
-		width: span(6 of 13);
-		margin-right: gutter(12);
-	}
-}
 
 /** max-width of floated images has to be limited to 100% of its column **/
 	img {

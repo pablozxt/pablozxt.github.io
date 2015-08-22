@@ -95,7 +95,7 @@ resp-horiz-padding: used to set the horizontal padding at different
 responsive points
 *********/
 
-@mixin resp-horiz-padding(
+@mixin resp-horiz-padding (
 	$padding-0: $body-padding,
 	$breakpoint-1: null,
 	$padding-1: 0
@@ -109,4 +109,25 @@ responsive points
 		}	
 	}
 }	
+
+/********* 
+resp-float mixin: used to set the float, width and margins for a given breakpoint
+*********/
+
+@mixin resp-float (
+	$breakpoint: $laptop,
+	$float: left,
+	$span-columns: 6,
+	$context: 13,
+	$margin: 1) {
+	@include breakpoint($breakpoint) {
+		float: $float;
+		width: span($span-columns of $context);
+		@if $float == left {
+			margin-left: gutter(12);
+		} @else if $float == right {
+			margin-right: $margin * gutter(12);
+		}
+	}
+}
 	
