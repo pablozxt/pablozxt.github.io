@@ -27,11 +27,11 @@ nav {
 	.main-nav {
 		margin-left: span(1);
 		li {
-			@include set-font-size(normal);
+			@include set-font-size(medium);
 		}//li
 	}//.main-nav
 	.nav-social {
-		@include set-font-size(tiny);
+		@include set-font-size(smaller);
 		margin-top: rhythm(20);
 	}//.nav-social
 }
@@ -89,13 +89,14 @@ header {
 		font-weight: map-get($font-weights, light);
 		margin-top: rhythm(1);
 		@include breakpoint($large-phone) {
-			@include set-font-size(large);
+			@include set-font-size(extra-large);
 		}
 	}
 }
 
 h2 {
 	text-transform: uppercase;
+	color: map-get($engineer-color, darker);
 	@include set-font-size(medium);
 	font-weight: map-get($font-weights, semibold);
 	@include breakpoint ($large-phone) {
@@ -137,6 +138,7 @@ h4 {
 
 h5 {
 	text-transform: uppercase;
+	color: map-get($engineer-color, darker);
 	@include set-font-size(small);
 	margin-top: rhythm(3);
 	font-weight: map-get($font-weights, semibold);

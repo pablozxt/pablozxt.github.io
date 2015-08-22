@@ -132,10 +132,10 @@ Left margin starts at 0, increases to one column, then to two columns
 *********/
 
 header, .text-container, .read-more-button {
-	@include breakpoint($max-header-width + 100px) {
+	@include breakpoint($max-text-width + 100px) {
 		margin-left: span(1);
 	}	
-	@include breakpoint($laptop) {
+	@include breakpoint($max-text-width + 300px) {
 		margin-left: span(2);
 	}
 	@include breakpoint($desktop) {
