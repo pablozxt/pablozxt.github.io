@@ -29,14 +29,6 @@
 	cursor: pointer;
 }
 
-.right {
-	float: right;
-}
-
-.left {
-	float: left;
-}
-
-.clear {
-	clear: both;
+.clearfix {
+	@include clearfix();
 }
