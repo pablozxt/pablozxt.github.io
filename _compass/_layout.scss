@@ -193,10 +193,10 @@ Use resp-float mixin to float element responsively at a given breakpoint
 
 	.engineer-project {
 		.text-container {
-			@include resp-float ($float: left);
+			@include resp-float($float: left);
 		}
 		figure {
-			@include resp-float ($float: right);
+			@include resp-float($float: right);
 		}
 	/** max-width of floated images has to be limited to 100% of its column **/
 		img {
@@ -210,6 +210,15 @@ Use resp-float mixin to float element responsively at a given breakpoint
 			}
 		}
 	}//.engineer-project
+	
+	.engineer-interests {
+		@include resp-float($float: left);
+	}
+	
+	.engineer-education {
+		@include resp-float($float: right);
+		margin-left: gutter(12);
+	}
 
 /********* 
 END RESPONSIVE FLOATED TWO COLUMN LAYOUT

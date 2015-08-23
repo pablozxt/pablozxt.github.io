@@ -124,7 +124,7 @@ resp-float mixin: used to set the float, width and margins for a given breakpoin
 		float: $float;
 		width: span($span-columns of $context);
 		@if $float == left {
-			margin-left: gutter(12);
+			margin-left: $margin * gutter(12);
 		} @else if $float == right {
 			margin-right: $margin * gutter(12);
 		}
