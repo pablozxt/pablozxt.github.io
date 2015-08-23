@@ -4,212 +4,235 @@ body {
 }
 
 /********* 
-Nav styles
+NAV STYLES
 *********/
 
-nav {
-	background: url(../images/background.jpg) repeat;
-	background-size: cover;
-	background-position: center center;
-	@include breakpoint($nav-picture-width) {
-		background-size: auto auto;
-	}//media query
-}//.nav
+	nav {
+		background: url(../images/background.jpg) repeat;
+		background-size: cover;
+		background-position: center center;
+		@include breakpoint($nav-picture-width) {
+			background-size: auto auto;
+		}//media query
+	}//.nav
 
-.nav-outer-wrapper {
-	padding: rhythm(2) $body-padding;
-	position: relative;
-	z-index: 1;
-	@include background-gradient();
-}
-
-.engineer {
 	.nav-outer-wrapper {
-		@include background-gradient($color: $engineer-nav-background);
+		padding: rhythm(2) $body-padding;
+		position: relative;
+		z-index: 1;
+		@include background-gradient();
 	}
-}
 
-.nav-wrapper {
- 	max-width: $nav-max-width;
-	margin: 0 auto;
-}
+	.engineer {
+		.nav-outer-wrapper {
+			@include background-gradient($color: $engineer-nav-background);
+		}
+	}
 
-.nav-social {
-	ul {
-		display: relative;
-	}//ul
-	li {
-		@include clearfix;
-		width: 200px;
-		margin-left: span(5);
-		span {
-			display: block;
-			float: left;
-		}//span
-		.username {
-			margin-left: em(10px);
-		}//username
-	}//li
-}//.nav-social
+	.nav-wrapper {
+	 	max-width: $nav-max-width;
+		margin: 0 auto;
+	}
 
-svg {
-	width: $social-icon-size;
-	height: $social-icon-size;
-	stroke: $alt-text-color;
-	fill: $alt-text-color;
-	position: relative;
-	top: 6px;
-}
+	.nav-social {
+		ul {
+			display: relative;
+		}//ul
+		li {
+			@include clearfix;
+			width: 200px;
+			margin-left: span(5);
+			span {
+				display: block;
+				float: left;
+			}//span
+			.username {
+				margin-left: em(10px);
+			}//username
+		}//li
+	}//.nav-social
+
+	svg {
+		width: $social-icon-size;
+		height: $social-icon-size;
+		stroke: $alt-text-color;
+		fill: $alt-text-color;
+		position: relative;
+		top: 6px;
+	}
 
 /********* 
-End nav styles
+END NAV STYLES
 *********/
 
 /********* 
+PADDING
+	
 Define padding using the resp-horiz-padding mixin. By avoiding application
 of padding to one container element, other elements, such as images, can 
 extend to edge of window.
 Padding controls left margin for small screens. For larger screens, left 
 margins are set elsewhere.
 .read-more class needs margins to be set in addition to padding
-.read-more-button padding has to be set using margin rules
+.read-more-button padding has to be set using margin rules and has to clear 
+float of the previous elements
 *********/
 
 
-.home-main {
-	@include resp-horiz-padding($breakpoint-1: $max-header-width + 100px);
-}
-
-.engineer-main {
-	header, .text-container, figcaption {
+	.home-main {
 		@include resp-horiz-padding($breakpoint-1: $max-header-width + 100px);
 	}
-}
 
-.read-more {
-	@include resp-horiz-padding();
-	margin-left: $body-padding;
-	margin-right: $body-padding;
-	
-}
-
-.read-more-button {
-	margin-left: $body-padding;
-	clear: both;
-}
-
-/********* 
-End padding
-*********/
-
-
-/********* 
-header (meant for engineer page): set maximum width
-*********/
-
-header { 
-	max-width: $max-header-width;
-}
-
-/********* 
-.text-container class controls maximum text width for articles
-in engineer page, while letting images have a longer width
-.text-container 
-*********/
-
-.text-container {
-	max-width: $max-text-width;
-	p, h3, h4 {
-		@include breakpoint($max-header-width) {
-			margin-left: span(1);
+	.engineer-main {
+		header, .text-container, figcaption {
+			@include resp-horiz-padding($breakpoint-1: $max-header-width + 100px);
 		}
 	}
-}
+
+	.read-more {
+		@include resp-horiz-padding();
+		margin-left: $body-padding;
+		margin-right: $body-padding;
+	
+	}
+
+	.read-more-button {
+		margin-left: $body-padding;
+	}
 
 /********* 
+END PADDING
+*********/
+
+/********* 
+MAXIMUM WIDTHS
+*********/
+
+	/********* 
+	header (meant for engineer page): set maximum width
+	*********/
+
+	header { 
+		max-width: $max-header-width;
+	}
+
+	/********* 
+	.text-container class controls maximum text width for articles
+	in engineer page, while letting images have a longer width
+	.text-container 
+	*********/
+
+	.text-container {
+		max-width: $max-text-width;
+		p, h3, h4 {
+			@include breakpoint($max-header-width) {
+				margin-left: span(1);
+			}
+		}
+	}
+
+	/********* 
+	set .home-post width
+	*********/
+
+	.home-post {
+		max-width: $max-text-width;
+		margin: 0 auto;
+	}
+
+/********* 
+END MAXIMUM WIDTHS
+*********/
+
+/********* 
+RESPONSIVE LEFT MARGINS
+	
 Set margins for header element, .text-container class and .read-more-button.
 The goal is to have the left-margin of these two sets of elements be aligned
 Left margin starts at 0, increases to one column, then to two columns
 *********/
 
-header, .text-container, .read-more-button {
-	@include breakpoint($max-text-width + 100px) {
-		margin-left: span(1);
-	}	
-	@include breakpoint($max-text-width + 300px) {
-		margin-left: span(2);
-	}
-	@include breakpoint($desktop) {
-		margin-left: span(3);
-	}
-}
-
-figcaption {
-	@include breakpoint($max-header-width + 100px) {
-		margin-left: span(1);
-	}	
-}
-
-#main {
-	ul {
-		margin-left: span(1);
-		@include breakpoint($max-header-width) {
+	header, .text-container, .read-more-button {
+		@include breakpoint($max-text-width + 100px) {
+			margin-left: span(1);
+		}	
+		@include breakpoint($max-text-width + 300px) {
 			margin-left: span(2);
 		}
+		@include breakpoint($desktop) {
+			margin-left: span(3);
+		}
 	}
-}
 
+	figcaption {
+		@include breakpoint($max-header-width + 100px) {
+			margin-left: span(1);
+		}	
+	}
+
+	#main {
+		ul {
+			margin-left: span(1);
+			@include breakpoint($max-header-width) {
+				margin-left: span(2);
+			}
+		}
+	}
 
 /********* 
+END RESPONSIVE LEFT-MARGINS
+*********/
+
+/********* 
+RESPONSIVE FLOATED TWO COLUMN LAYOUT
+	
 set styles for .text-container and figure inside of .engineer-project
 class to float text to the left and images to the right. 
 Use resp-float mixin to float element responsively at a given breakpoint
 *********/
 
-.engineer-project {
-	.text-container {
-		@include resp-float ($float: left);
-	}
-	figure {
-		@include resp-float ($float: right);
-	}
-/** max-width of floated images has to be limited to 100% of its column **/
-	img {
-		max-width: span(12);
-	}
-	.read-more-button {
-		@include breakpoint($laptop) {
-			margin-top: rhythm(5);
-			margin-left: gutter(24) + span(1 of 24);
+	.engineer-project {
+		.text-container {
+			@include resp-float ($float: left);
 		}
+		figure {
+			@include resp-float ($float: right);
+		}
+	/** max-width of floated images has to be limited to 100% of its column **/
+		img {
+			max-width: span(12);
+		}
+		.read-more-button {
+			@include breakpoint($laptop) {
+				clear: both;
+				margin-top: rhythm(5);
+				margin-left: gutter(24) + span(1 of 24);
+			}
+		}
+	}//.engineer-project
+
+/********* 
+END RESPONSIVE FLOATED TWO COLUMN LAYOUT
+*********/
+
+
+/********* 
+PICTURES LAYOUT
+*********/
+
+	figure {
+		margin-top: rhythm(3);
+		margin-left: auto;
+		margin-right: auto;
 	}
-}//.engineer-project
 
-
-/********* 
-set .home-post width
-*********/
-
-.home-post {
-	max-width: $max-text-width;
-	margin: 0 auto;
-}
+	.full-width {
+		max-width: $max-picture-width;
+	}
 
 /********* 
-pictures layout
+END PICTURES LAYOUT
 *********/
-
-
-figure {
-	margin-top: rhythm(3);
-	margin-left: auto;
-	margin-right: auto;
-}
-
-.full-width {
-	max-width: $max-picture-width;
-}
-
 
 
 
