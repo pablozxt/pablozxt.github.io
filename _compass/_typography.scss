@@ -70,6 +70,9 @@ main {
 	}//h1
 	article, section {
 		margin-top: rhythm(6);
+		@include breakpoint($laptop) {
+			margin-top: rhythm(9);
+		}
 	}//article, section
 }//.engineer-main
 
@@ -153,12 +156,6 @@ p {
 	margin-top: rhythm(2);
 }
 
-.engineer-main {
-	p {
-		//font-size: map-get($font-sizes, small);
-		//margin-top: rhythm(2);
-	}
-}
 
 figcaption {
 	font-family: $secondary-font-family;
