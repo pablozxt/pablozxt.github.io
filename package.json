@@ -13,6 +13,6 @@
 	  "matchdep": "~0.3",
 	  "grunt-jekyll":"~0.4.2",
 	  "grunt-shell":"~1.1.1",
-	  "grunt-smushit":"~0.4.0"
+	  "grunt-babel":"~5.0.1"
   }
 }

@@ -6,6 +6,7 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-contrib-concat');
 	grunt.loadNpmTasks('grunt-contrib-uglify');
 	grunt.loadNpmTasks('grunt-smushit');
+	grunt.loadNpmTasks('grunt-babel');
 	
 	grunt.initConfig({
 		shell : {
@@ -16,6 +17,13 @@ module.exports = function(grunt) {
 		    	command : 'jekyll serve'
 		    }//jekyllServe
 		},//shell
+		babel: {
+			dist: {
+				files: {
+					"js/app/*.js": "js/app/*.es6"
+				}
+			}
+		},
 		concat : {
 			options : {
 				separator: ';'
@@ -28,7 +36,6 @@ module.exports = function(grunt) {
 			},//libraries
 			app : {
 				src : [
-					'js/app/menu.js',
 					'js/app/read-more.js'
 				],//app src
 				dest : 'js/app.js'
@@ -50,16 +57,10 @@ module.exports = function(grunt) {
 			      }//files
 			 }//my_target
 		},//uglify
-		smushit: {
-		    mygroup: {
-		      src: ['images_source/*.png','images_source/*.jpg'],
-		      dest: 'images'
-		    }
-		},//smushit
 		watch : {
 			js: {
 		        files: ['js/**/*.js', 'js/*.js'],
-		        tasks: ['concat','uglify'],
+		        tasks: ['babel','concat','uglify'],
 		        options: {livereload: true}
 			},//js
 			site : {
@@ -71,7 +72,8 @@ module.exports = function(grunt) {
 					'_compass/*.scss',
 					'_compass/**/*.scss',
 					'js/*.js',
-					'js/**/*.js'
+					'js/**/*.js',
+					'js/**/*.es6'
 					],//site files
 				tasks : ['shell:jekyllBuild'],
 				options : {livereload: true}
@@ -79,6 +81,6 @@ module.exports = function(grunt) {
 		}//watch
 	})//initConfig
 	
-	grunt.registerTask('serve', ['concat','uglify','smushit','shell:jekyllBuild','shell:jekyllServe']);
+	grunt.registerTask('serve', ['babel','concat','uglify','shell:jekyllBuild','shell:jekyllServe']);
 	grunt.registerTask('default', ['watch','shell:jekyllBuild']);
 }//exports	
