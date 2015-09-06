@@ -20,10 +20,10 @@ module.exports = function(grunt) {
 		babel : {
 			dist: {
 				files: {
-					"js/app/*.js": "js/app/*.es6"
-				}
-			}
-		},
+					"js/app/read-more.js": "js/app/read-more.es6.js"
+				}//files
+			}//dist
+		},//babel
 		concat : {
 			options : {
 				separator: ';'

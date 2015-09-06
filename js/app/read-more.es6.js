@@ -34,14 +34,14 @@
 
 			if ( target.html() === text ) {
 				more.slideToggle( animSpeed).promise().done(
-					function () {
+					() => {
 						target.html( altText );
 						moreChildren.fadeIn( animSpeed );
 				});
 			} else {
 				moreChildren.fadeOut( animSpeed ).promise().done(
 					function () {
-						more.slideToggle (animSpeed , function () {
+						more.slideToggle (animSpeed , () => {
 							target.html( text );	
 						});
 					}
