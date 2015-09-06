@@ -17,7 +17,7 @@ module.exports = function(grunt) {
 		    	command : 'jekyll serve'
 		    }//jekyllServe
 		},//shell
-		babel: {
+		babel : {
 			dist: {
 				files: {
 					"js/app/*.js": "js/app/*.es6"
