@@ -152,10 +152,24 @@ h5 {
 }
 
 p {
-	font-size: map-get($font-sizes, normal);
+	@include set-font-size(normal);
 	margin-top: rhythm(2);
 }
 
+/********* 
+Smaller font size for h5 and p inside .read-more sections
+*********/
+
+.read-more {
+	h5 {
+		@include breakpoint($large-phone) {
+			@include set-font-size(small);
+		}
+	}
+	p {
+		@include set-font-size(small);
+	}
+}
 
 figcaption {
 	font-family: $secondary-font-family;
@@ -164,6 +178,8 @@ figcaption {
 	margin-top: rhythm(-1);
 	
 }
+
+/***********/
 
 /********* 
 a styles. Sets link colors and includes a Medium style  
