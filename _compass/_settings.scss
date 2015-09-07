@@ -116,10 +116,10 @@ $engineer-color: $red;
 $home-color: $blue;
 
 //button color
-$primary-button-color: map-get($green, dark);
+$primary-button-color: map-get($red, normal);
 
 //background color for read more section
-$read-more-background-color: lighten(#edefed, 4%);
+$read-more-background-color: #edefed;
 
 //Button styles
 $button-radius: em(10px);

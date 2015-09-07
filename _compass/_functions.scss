@@ -25,15 +25,18 @@ button-color: controls the button background color as well as the
 hover and active colors
 *********/
 
-@mixin button-color($color: $primary-button-color) {
-	background-color: $color;
-	color: lighten($color, 50%);
+@mixin button-color(
+	$background-color: $primary-button-color,
+	$color: lighten($background-color, 50%)
+	) {
+	background-color: $background-color;
+	color: $color;
 	transition: background-color 0.4s ease;
 	&:hover, &:focus {
-		background-color: darken($color, 10%);
+		background-color: darken($background-color, 10%);
 	}
 	&:active {
-		background-color: darken($color, 20%);
+		background-color: darken($background-color, 20%);
 	}
 }
 

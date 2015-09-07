@@ -240,7 +240,8 @@ different background color
 .read-more-button {
 	width: $read-more-button-width;
 	margin-top: rhythm(3);
-	@include button-color($primary-button-color);
+	@include button-color($background-color: $read-more-background-color,
+							$color: map-get($engineer-color, darker));
 }
 
 #main {
