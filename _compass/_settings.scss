@@ -119,7 +119,7 @@ $home-color: $blue;
 $primary-button-color: map-get($green, dark);
 
 //background color for read more section
-$read-more-background-color: lighten(map-get($engineer-color, lighter), 15%);
+$read-more-background-color: lighten(#edefed, 4%);
 
 //Button styles
 $button-radius: em(10px);
