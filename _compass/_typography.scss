@@ -1,258 +1,246 @@
-// import establish baseline mixin
-
-@include establish-baseline;
-
 /********* 
-Typographic style of major html elements
-Include vertical rhythm layout
+IMPORT ESTABLISH BASELINE MIXIN from Compass 
+to establish vertical rhythm
 *********/
 
-body {
-    font-size: $base-font-size;
-	font-family: $base-font-family;
-	@include adjust-leading-to(3);
-	color: $text-color;
-}
+	@include establish-baseline;
 
-header {
-	padding-top: rhythm(0);
-}
+/********* 
+TYPOGRAPHIC STYLES AND VERTICAL RHYTHMS OF MAJOR PAGE COMPONENTS
+*********/
 
-nav {
-	@extend %nav-color;
-	ul {
-		font-family: $secondary-font-family;
-		font-weight: map-get($font-weights, light);
-	}//ul
-	.main-nav {
-		margin-left: span(1);
-		li {
-			@include set-font-size(medium);
-		}//li
-	}//.main-nav
-	.nav-social {
-		@include set-font-size(smaller);
-		margin-top: rhythm(20);
-	}//.nav-social
-}
-
-.engineer {
-	nav {
-		background-color: $engineer-nav-background;
+	body {
+	    font-size: $base-font-size;
+		font-family: $base-font-family;
+		@include adjust-leading-to(3);
+		color: $text-color;
 	}
-}
 
-main {
-	margin-bottom: rhythm(10);
-	h1 {
-	@include set-font-size(huge-2);
-	font-family: $base-font-family;
-	margin-top: rhythm(1);
-		@include breakpoint ($large-phone) {
-			@include set-font-size(huge-4);
-		}//media query
-	}//h1
-}//main
+	nav {
+		@extend %nav-color;
+		ul {
+			font-family: $secondary-font-family;
+			font-weight: map-get($font-weights, light);
+		}//ul
+		.main-nav {
+			margin-left: span(1);
+			li {
+				@include set-font-size(medium);
+			}//li
+		}//.main-nav
+		.nav-social {
+			@include set-font-size(smaller);
+			margin-top: rhythm(20);
+		}//.nav-social
+	}
 
-.home-main {
-	h1 {
-		color: map-get($home-color, normal);
-		@include breakpoint ($max-text-width + 200px) {
-			margin-left: calc(50% - (#{$max-text-width}/2 + #{span(1)}));
-		}//media query
-	}//h1
-}//.home-main
-
-.engineer-main {
-	h1 {
-		color: map-get($engineer-color, normal);
-		text-transform: uppercase;
-	}//h1
-	article, section {
-		margin-top: rhythm(6);
-		@include breakpoint($laptop) {
-			margin-top: rhythm(9);
+	.engineer {
+		nav {
+			background-color: $engineer-nav-background;
 		}
-	}//article, section
-}//.engineer-main
+	}
 
-.home-main {
-	article:first-of-type {
-		margin-top: rhythm(4);
+	main {
+		margin-bottom: rhythm(10);
+		h1 {
+		@include set-font-size(huge-2);
+		font-family: $base-font-family;
+		margin-top: rhythm(1);
+			@include breakpoint ($large-phone) {
+				@include set-font-size(huge-4);
+			}//media query
+		}//h1
+		ul {
+			list-style: disc;
+			margin-top: rhythm(2);
+			li {
+				margin-top: rhythm(2);
+			}//li
+		}//ul
+	}//main
+
+	header {
+		padding-top: rhythm(0);
+	}
+
+	.home-main {
+		h1 {
+			color: map-get($home-color, normal);
+			@include breakpoint ($max-text-width + 200px) {
+				margin-left: calc(50% - (#{$max-text-width}/2 + #{span(1)}));
+			}//media query
+		}//h1
+		article:first-of-type {
+			margin-top: rhythm(4);
 			@include breakpoint ($large-phone) {
 				margin-top: rhythm(6);
-			}
-	}
-}
+			}//breakpoint
+		}//article
+	}//.home-main
 
-header {
-	p {
-		font-family: $secondary-font-family;
-		@include set-font-size(medium);
-		font-weight: map-get($font-weights, light);
-		margin-top: rhythm(1);
-		@include breakpoint($large-phone) {
-			@include set-font-size(extra-large);
+	.engineer-main {
+		h1 {
+			color: map-get($engineer-color, normal);
+			text-transform: uppercase;
+		}//h1
+		article, section {
+			margin-top: rhythm(6);
+			@include breakpoint($laptop) {
+				margin-top: rhythm(9);
+			}
+		}//article, section
+	}//.engineer-main
+
+	header {
+		p {
+			font-family: $secondary-font-family;
+			@include set-font-size(medium);
+			font-weight: map-get($font-weights, light);
+			margin-top: rhythm(1);
+			@include breakpoint($large-phone) {
+				@include set-font-size(extra-large);
+			}
 		}
 	}
-}
 
-h2 {
-	text-transform: uppercase;
-	color: map-get($engineer-color, darker);
-	@include set-font-size(medium);
-	font-weight: map-get($font-weights, semibold);
-	@include breakpoint ($large-phone) {
-		@include set-font-size(large);
+	h2 {
+		text-transform: uppercase;
+		color: map-get($engineer-color, darker);
+		@include set-font-size(medium);
+		font-weight: map-get($font-weights, semibold);
+		@include breakpoint ($large-phone) {
+			@include set-font-size(large);
+		}
 	}
-}
 
-h3 {
-	@include set-font-size(normal);
-	text-transform: capitalize;
-	margin-top: rhythm(1);	
-	color: $text-color;
-}
-
-.project-budget {
-	&::before {
-		content: " \2013  ";
+	h3 {
+		@include set-font-size(normal);
+		text-transform: capitalize;
+		margin-top: rhythm(1);	
+		color: $text-color;
 	}
-}
 
-h4 {
-	@include set-font-size(normal);
-	margin-top: rhythm(1);
-	.project-position {
-		display: inline;
+	.project-budget {
 		&::before {
 			content: " \2013  ";
-		}//:before
-	}//project-position
-}//h4
-
-.project-data {
-	@include set-font-size(smaller);
-	color: $text-color;
-	&::before {
-		content: '\00a0 \00a0 \00a0 \00a0';
-	}//:before
-}//.project-data
-
-h5 {
-	text-transform: uppercase;
-	color: map-get($engineer-color, darker);
-	@include set-font-size(small);
-	margin-top: rhythm(3);
-	font-weight: map-get($font-weights, semibold);
-	@include breakpoint($large-phone) {
-		@include set-font-size(normal);
-	}
-	
-}
-
-p {
-	@include set-font-size(normal);
-	margin-top: rhythm(2);
-}
-
-/********* 
-Smaller font size for h5 and p inside .read-more sections
-*********/
-
-.read-more {
-	h5 {
-		@include breakpoint($large-phone) {
-			@include set-font-size(small);
 		}
 	}
-	p {
+
+	h4 {
+		@include set-font-size(normal);
+		margin-top: rhythm(1);
+		.project-position {
+			display: inline;
+			&::before {
+				content: " \2013  ";
+			}//:before
+		}//project-position
+	}//h4
+
+	.project-data {
+		@include set-font-size(smaller);
+		color: $text-color;
+		&::before {
+			content: '\00a0 \00a0 \00a0 \00a0';
+		}//:before
+	}//.project-data
+
+	h5 {
+		text-transform: uppercase;
+		color: map-get($engineer-color, darker);
 		@include set-font-size(small);
+		margin-top: rhythm(3);
+		font-weight: map-get($font-weights, semibold);
+		@include breakpoint($large-phone) {
+			@include set-font-size(normal);
+		}
+	}//h5
+
+	p {
+		@include set-font-size(normal);
+		margin-top: rhythm(2);
 	}
-}
 
-figcaption {
-	font-family: $secondary-font-family;
-	@include set-font-size(tiny);
-	color: lighten($text-color, 20%);
-	margin-top: rhythm(-1);
-	
-}
+	figcaption {
+		font-family: $secondary-font-family;
+		@include set-font-size(tiny);
+		color: lighten($text-color, 20%);
+		margin-top: rhythm(-1);
+	}
 
-/***********/
+	//Link Styles. Sets link colors and includes a Medium style underline function
 
-/********* 
-a styles. Sets link colors and includes a Medium style  
-underline function
-*********/
-
-a {
-	color: $link-color;
-	text-decoration: none;
-	@include underline($background-color, $link-color, true, 1, 1.3);
-	transition: color 0.4s ease;
-	&:hover, &:focus {
-		color: $link-hover-color;
-	}//:hover, :focus
-	&:active {
-		color: $link-active-color;
-	}//:active
-}//a
-
-%nav-color {
-	color: set-text-color($home-nav-background);
 	a {
-		color: inherit;
-		@include underline($home-nav-background, $alt-text-color, true, 1.2, 0.8);
+		color: $link-color;
+		text-decoration: none;
+		@include underline($background-color, $link-color, true, 1, 1.3);
+		transition: color 0.4s ease;
 		&:hover, &:focus {
-			color: darken(set-text-color($home-nav-background), 10%);
+			color: $link-hover-color;
 		}//:hover, :focus
 		&:active {
-			color: darken(set-text-color($home-nav-background), 20%);
+			color: $link-active-color;
 		}//:active
 	}//a
-}//nav-color
-
-%button-typography {
-	font-family: $secondary-font-family;
-	@include set-font-size(normal);
-	font-weight: map-get($font-weights, normal);
-}
-
-.read-more {
-	background-color: $read-more-background-color;
-	margin-top: rhythm(4);
-	padding: rhythm(2) $body-padding rhythm(5) $body-padding;
-	border-radius: $button-radius;
-}
 
 /********* 
-underline for read-more area has to be modified due to
-different background color
+PLACEHOLDER SELECTORS
+*********/
+	
+	//%nav-color establishes font color and link styles inside nav
+
+	%nav-color {
+		color: set-text-color($home-nav-background);
+		a {
+			color: inherit;
+			@include underline($home-nav-background, $alt-text-color, true, 1.2, 0.8);
+			&:hover, &:focus {
+				color: darken(set-text-color($home-nav-background), 10%);
+			}//:hover, :focus
+			&:active {
+				color: darken(set-text-color($home-nav-background), 20%);
+			}//:active
+		}//a
+	}//nav-color
+	
+	//button-typography
+
+	%button-typography {
+		font-family: $secondary-font-family;
+		@include set-font-size(normal);
+		font-weight: map-get($font-weights, normal);
+	}
+
+/********* 
+Styles for READ MORE section and read more buttons
 *********/
 
-.read-more {
-	a {
-		@include underline( $read-more-background-color, $link-color, true, 1, 1.3);
+	.read-more {
+		background-color: $read-more-background-color;
+		margin-top: rhythm(4);
+		padding: rhythm(2) $body-padding rhythm(5) $body-padding;
+		border-radius: $button-radius;
+		a {
+			@include underline( $read-more-background-color, $link-color, true, 1, 1.3);
+		}//a
+		h5 {
+			@include breakpoint($large-phone) {
+				@include set-font-size(small);
+			}//breakpoint
+		}//h5
+		p {
+			@include set-font-size(small);
+		}//p
+	}//.read-more
+
+	.read-more-button {
+		width: $read-more-button-width;
+		margin-top: rhythm(3);
+		@include button-color($background-color: $read-more-background-color,
+								$color: map-get($engineer-color, darker));
 	}
-}
 
-.read-more-button {
-	width: $read-more-button-width;
-	margin-top: rhythm(3);
-	@include button-color($background-color: $read-more-background-color,
-							$color: map-get($engineer-color, darker));
-}
 
-#main {
-	ul {
-		list-style: disc;
-		margin-top: rhythm(2);
-		li {
-			margin-top: rhythm(2);
-		}//li
-	}//ul
-}//#main
 
 
 
