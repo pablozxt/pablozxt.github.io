@@ -74,7 +74,6 @@ of padding to one container element, other elements, such as images, can
 extend to edge of window.
 Padding controls left margin for small screens. For larger screens, left 
 margins are set elsewhere.
-.read-more class needs margins to be set in addition to padding
 .read-more-button padding has to be set using margin rules and has to clear 
 float of the previous elements
 *********/
@@ -91,10 +90,7 @@ float of the previous elements
 	}
 
 	.read-more {
-		@include resp-horiz-padding();
-		margin-left: $body-padding;
-		margin-right: $body-padding;
-	
+		@include resp-horiz-padding();	
 	}
 
 	.read-more-button {
@@ -252,8 +248,21 @@ READ MORE COLUMN LAYOUT
 *********/
 
 	.read-more {
-		columns: 2 $max-text-width/2;
+		p, h5 {
+			max-width: em(400px);
+		} 
 	}
+
+	.csscolumns {
+		.read-more {
+			p, h5 {
+				max-width: $max-read-more-column-width;
+			}
+			columns: 3 $min-read-more-column-width;
+			column-gap: 2*$body-padding;
+		}
+	}
+	
 
 
 	

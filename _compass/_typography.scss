@@ -182,6 +182,10 @@ TYPOGRAPHIC STYLES AND VERTICAL RHYTHMS OF MAJOR PAGE COMPONENTS
 			color: $link-active-color;
 		}//:active
 	}//a
+	
+/********* 	
+END TYPOGRAPHIC STYLES AND VERTICAL RHYTHMS OF MAJOR PAGE COMPONENTS
+*********/
 
 /********* 
 PLACEHOLDER SELECTORS
@@ -218,8 +222,7 @@ Styles for READ MORE section and read more buttons
 	.read-more {
 		background-color: $read-more-background-color;
 		margin-top: rhythm(4);
-		padding: rhythm(2) $body-padding rhythm(5) $body-padding;
-		border-radius: $button-radius;
+		padding: rhythm(2) 2*$body-padding rhythm(5) 2*$body-padding;
 		a {
 			@include underline( $read-more-background-color, $link-color, true, 1, 1.3);
 		}//a
