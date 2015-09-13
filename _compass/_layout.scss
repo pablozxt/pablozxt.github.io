@@ -249,11 +249,15 @@ END PICTURES LAYOUT
 	
 /********* 
 READ MORE COLUMN LAYOUT
+First, set maximum width for browsers that don't support the CSS column property. This value gets
+overridden for browsers supporting CSS column
+Default read-more layout is three columns wide. However, areas with shorter read-more sections
+add a class columns-2 which reduces the width down to two columns
 *********/
 
 	.read-more {
 		p, h5 {
-			max-width: $min-read-more-column-width;
+			max-width: $max-read-more-column-width;
 		} 
 	}
 
@@ -265,17 +269,11 @@ READ MORE COLUMN LAYOUT
 			columns: 3 $min-read-more-column-width;
 			column-gap: 1 em;
 		}
-		
 		.columns-2 {
 			column-count: 2;
 			max-width: 2 * $min-read-more-column-width + 3 * 2 * $body-padding;
 		}
-	}
-	
-
-
-	
-	
+	}//.csscolumns
 	
 /********* 
 END READ MORE COLUMN LAYOUT

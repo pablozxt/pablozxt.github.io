@@ -1,6 +1,6 @@
-/********* 
-SUSY DEFAULT LAYOUT
-*********/
+/////////// 
+//SUSY DEFAULT LAYOUT
+//////////
 
 	$susy: (
 		   columns: 12,
@@ -8,134 +8,145 @@ SUSY DEFAULT LAYOUT
 		   global-box-sizing: border-box
 	       );
 
-/********* 
-WIDTH SETTINGS
-*********/
+//////////
+//WIDTH SETTINGS
+//////////
 
+	//$max-width controls the body's max-width and is used for Susy's container mixin
 	$max-width: em(1400px);
+	//navigation area maximum widths
 	$nav-max-width: em(700px);
 	$nav-picture-width: em(1200px);
+	//$maximum paragraph width
 	$max-text-width: 600px;
+	//max horizontal rule width
 	$max-hr-width: em(433px);
+	//max-header-width controls controls certain breakpoints, in addition to the header width
 	$max-header-width: 800px;
+	//read-more maximum widths
 	$read-more-button-width: em(140px);
 	$min-read-more-column-width: em(300px);
 	$max-read-more-column-width: em(500px);
+	//image maximum widths
 	$max-picture-width: em(1400px, 22px);
 	$max-floated-picture-width: em(600px, 22px);
 
-//Navigation 
+//////////
+//SIZE OF SOCIAL SVG ICONS
+//////////
 
-$social-icon-size: em(20px);
+	$social-icon-size: em(20px);
 
-//Padding
+//////////
+//BODY PADDING
+//////////
 
-$body-padding: em(12px);
+	$body-padding: em(12px);
 
-//Typography
+//////////
+//TYPOGRAPHY
+//////////
 
-$base-font-family: "garamond-premier-pro";
-$secondary-font-family: "open-sans";
+	//font-families
+	$base-font-family: "garamond-premier-pro";
+	$secondary-font-family: "open-sans";
+	//vertical rhythm parameters
+	$base-font-size: 19px;
+	$base-line-height: 9px;
+	//Modular scale parameters
+	$ms-base: $base-font-size;
+	$ms-ratio: $minor-third;
 
-// Vertical rhythm
+	$round-to-nearest-half-line: true; 
+	//font size map
+	$font-sizes: (
+	             huge-6: round(ms(9)),
+				 huge-5: round(ms(8)),
+				 huge-4: round(ms(7)),
+				 huge-3: round(ms(6)),
+				 huge-2: round(ms(5)),
+				 huge-1: round(ms(4)),
+				 extra-large: round(ms(3)),
+				 large: round(ms(2)),
+				 medium: round(ms(1)),
+				 normal: round(ms(0)),
+				 small: round(ms(-1)),
+				 smaller: round(ms(-2)),
+				 tiny: round(ms(-3))
+	             );
+	//font-weight map
+	$font-weights: (
+	                extra-light: 200,
+	 			   light: 300,
+	 			   normal: 400, 
+	 			   medium: 500, 
+	 			   semibold: 600, 
+	 			   bold: 700
+	 			   );
 
-$base-font-size: 19px;
-$base-line-height: 9px;
+//////////
+//COLOR PALETTE
+//////////
+//Reference http://paletton.com/#uid=3000u0klPr+chGNhBvMqpoHtfj-
+	//red color
+	$red: 	(
+			normal: #df4747,
+			light: #fd7272,
+			lighter: #ff9d9d,
+			dark: #c52222,
+			darker: #9c0d0d,
+			);
+	//blue color
+	$blue: 	(
+			normal: #2b8686,
+			light: #449898,
+			lighter: #76bfbf,
+			dark: #157676,
+			darker: #085e5e,
+			);
+	//green color
+	$green: (
+			normal: #a1d042,
+			light: #61ec6a,
+			lighter: #d5f497,
+			dark: #85b820,
+			darker: #65920d,
+			);
 
-//Modular scale parameters
+	//text and background colors
+	$background-color: #fff;
+	$text-color: #222;
+	$alt-text-color: #ffffff;
+	$link-color: #2455c3;
+	$link-hover-color: lighten($link-color, 10%);
+	$link-active-color: lighten($link-color, 20%);
+	//nav background color
+	$home-nav-background: darken(map-get($blue, darker), 18%);
+	$engineer-nav-background: darken(map-get($red, darker), 26%);;
+	//main theme color for engineer section
+	$engineer-color: $red;
+	//main theme color for home page
+	$home-color: $blue;
+	//button color
+	$primary-button-color: map-get($red, normal);
+	//background color for read more section
+	$read-more-background-color: lighten(#edefed, 3%);
 
-$ms-base: $base-font-size;
-$ms-ratio: $minor-third;
+//////////
+//BUTTON STYLES
+//////////
 
-$round-to-nearest-half-line: true; 
+	$button-radius: em(10px);
+	$button-padding-vert: rhythm(1);
+	$button-padding-horiz: 24px;
 
-$font-sizes: (
-             huge-6: round(ms(9)),
-			 huge-5: round(ms(8)),
-			 huge-4: round(ms(7)),
-			 huge-3: round(ms(6)),
-			 huge-2: round(ms(5)),
-			 huge-1: round(ms(4)),
-			 extra-large: round(ms(3)),
-			 large: round(ms(2)),
-			 medium: round(ms(1)),
-			 normal: round(ms(0)),
-			 small: round(ms(-1)),
-			 smaller: round(ms(-2)),
-			 tiny: round(ms(-3))
-             );
-
- $font-weights: (
-                extra-light: 200,
- 			   light: 300,
- 			   normal: 400, 
- 			   medium: 500, 
- 			   semibold: 600, 
- 			   bold: 700
- 			   );
-
-//Color palette
-//http://paletton.com/#uid=3000u0klPr+chGNhBvMqpoHtfj-
-//red color
-$red: 	(
-		normal: #df4747,
-		light: #fd7272,
-		lighter: #ff9d9d,
-		dark: #c52222,
-		darker: #9c0d0d,
-		);
-//blue color
-$blue: 	(
-		normal: #2b8686,
-		light: #449898,
-		lighter: #76bfbf,
-		dark: #157676,
-		darker: #085e5e,
-		);
-//green color
-$green: (
-		normal: #a1d042,
-		light: #61ec6a,
-		lighter: #d5f497,
-		dark: #85b820,
-		darker: #65920d,
-		);
-
-
-//Theme colors
-//text and background colors
-$background-color: #fff;
-$text-color: #222;
-$alt-text-color: #ffffff;
-$link-color: #2455c3;
-$link-hover-color: lighten($link-color, 10%);
-$link-active-color: lighten($link-color, 20%);
-
-//nav background color
-$home-nav-background: darken(map-get($blue, darker), 18%);
-$engineer-nav-background: darken(map-get($red, darker), 26%);;
-
-//main theme color for engineer section
-$engineer-color: $red;
-
-//main theme color for home page
-$home-color: $blue;
-
-//button color
-$primary-button-color: map-get($red, normal);
-
-//background color for read more section
-$read-more-background-color: lighten(#edefed, 3%);
-
-//Button styles
-$button-radius: em(10px);
-$button-padding-vert: rhythm(1);
-$button-padding-horiz: 24px;
-
-//Breakpoints
-$medium-phone: em(500px);
-$large-phone: em(600px);
-$laptop: em(1200px);
-$desktop: em(1400px);
+//////////
+//BREAKPOINTS
+//////////
+	
+	$medium-phone: em(500px);
+	$large-phone: em(600px);
+	$laptop: em(1200px);
+	$desktop: em(1400px);
 
 

@@ -1,136 +1,136 @@
 //include border-box-sizing mixin
 
-@include border-box-sizing;
+	@include border-box-sizing;
 
-/********* 
-em: calculate em from pixels
-*********/
+//////////
+//em: calculate em from pixels
+//////////
 
-@function em($target, $context: 16px){
-	@return 1em * $target/$context;
-};
+	@function em($target, $context: 16px){
+		@return 1em * $target/$context;
+	};
 
-/********* 
-set-font-size: sets font size based on $font-sizes map.
-Also sets line height using the adjust-font-size-to mixin
-*********/
+//////////
+//set-font-size: sets font size based on $font-sizes map.
+//Also sets line height using the adjust-font-size-to mixin
+//////////
 
-@mixin set-font-size($size: normal) {
-    $font-size: map-get($font-sizes, $size);
-	@include adjust-font-size-to($font-size);
-}
-
-/********* 
-button-color: controls the button background color as well as the 
-hover and active colors
-*********/
-
-@mixin button-color(
-	$background-color: $primary-button-color,
-	$color: lighten($background-color, 50%)
-	) {
-	background-color: $background-color;
-	color: $color;
-	transition: background-color 0.4s ease;
-	&:hover, &:focus {
-		background-color: darken($background-color, 10%);
+	@mixin set-font-size($size: normal) {
+	    $font-size: map-get($font-sizes, $size);
+		@include adjust-font-size-to($font-size);
 	}
-	&:active {
-		background-color: darken($background-color, 20%);
+
+//////////
+//button-color: controls the button background color as well as the 
+//hover and active colors
+//////////
+
+	@mixin button-color(
+		$background-color: $primary-button-color,
+		$color: lighten($background-color, 50%)
+		) {
+		background-color: $background-color;
+		color: $color;
+		transition: background-color 0.4s ease;
+		&:hover, &:focus {
+			background-color: darken($background-color, 10%);
+		}//:hover & :focus
+		&:active {
+			background-color: darken($background-color, 20%);
+		}//:active
+	}//mixin
+
+//////////
+//set-text-color: defines an element's font color 
+//based on its background color
+//////////
+
+	@function set-text-color($background-color) {
+	  @if (lightness($background-color) > 50) {
+	    @return $text-color;
+	  } @else {
+	    @return $alt-text-color;
+	  }
 	}
-}
 
-/********* 
-set-text-color: defines an element's font color 
-based on its background color
-*********/
+//////////
+//hr-color: establishes the color of hr rules. Creates hr rules
+//with color fading towards the ends
+//////////
 
-@function set-text-color($background-color) {
-  @if (lightness($background-color) > 50) {
-    @return $text-color;
-  } @else {
-    @return $alt-text-color;
-  }
-}
-
-/********* 
-hr-color: establishes the color of hr rules. Creates hr rules
-with color fading towards the ends
-*********/
-
-@mixin hr-color($color: $home-color, $background: $background-color) {
-    background-color: map-get($color, normal);
-	background-image: linear-gradient(
-		to right,
-		$background 0%,
-		map-get($color, lighter) 40%,
-		map-get($color, lighter) 60%,
-		$background 100%);
-}
-
-/********* 
-background-gradient: defines the background color and gradient 
-for the navigation bar
-*********/
-
-@mixin background-gradient(
-	$color: $home-nav-background, 
-	$total-columns: 12,
-	$small-screen-gradient-width-columns: 4,
-	$nav-max-width: $nav-max-width,
-	$nav-picture-width: $nav-picture-width,
-	$transparency: 0.55
-	) {
-	background-color: rgba($color, $transparency);
-	@include breakpoint($nav-max-width) {
-		background-color: $color;
-		background: linear-gradient(
+	@mixin hr-color($color: $home-color, $background: $background-color) {
+	    background-color: map-get($color, normal);
+		background-image: linear-gradient(
 			to right,
-			rgba($color, 1) calc( (100% - #{$nav-picture-width})/2 + 150px),
-			rgba($color, $transparency) calc( (100% - #{$nav-picture-width})/2 + 400px), 
-			rgba($color, $transparency) calc( 100% - (100% - #{$nav-picture-width})/2 - 400px), 
-			rgba($color, 1) calc( 100% - (100% - #{$nav-picture-width})/2 - 150px));
-		}
-}
-
-/********* 
-resp-horiz-padding: used to set the horizontal padding at different 
-responsive points
-*********/
-
-@mixin resp-horiz-padding (
-	$padding-0: $body-padding,
-	$breakpoint-1: null,
-	$padding-1: 0
-	) {
-    padding-left: $padding-0;
-	padding-right: $padding-0;
-	@if $breakpoint-1 {
-		@include breakpoint($breakpoint-1) {
-		    padding-left: $padding-1;
-			padding-right: $padding-1;
-		}	
+			$background 0%,
+			map-get($color, lighter) 40%,
+			map-get($color, lighter) 60%,
+			$background 100%);
 	}
-}	
 
-/********* 
-resp-float mixin: used to set the float, width and margins for a given breakpoint
-*********/
+////////// 
+//background-gradient: defines the background color and gradient 
+//for the navigation bar
+//////////
 
-@mixin resp-float (
-	$breakpoint: $laptop,
-	$float: left,
-	$span-columns: 6,
-	$context: 13,
-	$margin: 1) {
-	@include breakpoint($breakpoint) {
-		float: $float;
-		width: span($span-columns of $context);
-		@if $float == left {
-			margin-left: $margin * gutter(12);
-		} @else if $float == right {
-			margin-right: $margin * gutter(12);
-		}
+	@mixin background-gradient(
+		$color: $home-nav-background, 
+		$total-columns: 12,
+		$small-screen-gradient-width-columns: 4,
+		$nav-max-width: $nav-max-width,
+		$nav-picture-width: $nav-picture-width,
+		$transparency: 0.55
+		) {
+		background-color: rgba($color, $transparency);
+		@include breakpoint($nav-max-width) {
+			background-color: $color;
+			background: linear-gradient(
+				to right,
+				rgba($color, 1) calc( (100% - #{$nav-picture-width})/2 + 150px),
+				rgba($color, $transparency) calc( (100% - #{$nav-picture-width})/2 + 400px), 
+				rgba($color, $transparency) calc( 100% - (100% - #{$nav-picture-width})/2 - 400px), 
+				rgba($color, 1) calc( 100% - (100% - #{$nav-picture-width})/2 - 150px));
+			}
 	}
-}
+
+//////////
+//resp-horiz-padding: used to set the horizontal padding at different 
+//responsive points
+//////////
+
+	@mixin resp-horiz-padding (
+		$padding-0: $body-padding,
+		$breakpoint-1: null,
+		$padding-1: 0
+		) {
+	    padding-left: $padding-0;
+		padding-right: $padding-0;
+		@if $breakpoint-1 {
+			@include breakpoint($breakpoint-1) {
+			    padding-left: $padding-1;
+				padding-right: $padding-1;
+			}//breakpoint	
+		}//if
+	}//mixin
+
+////////// 
+//resp-float mixin: used to set the float, width and margins for a given breakpoint
+//////////
+
+	@mixin resp-float (
+		$breakpoint: $laptop,
+		$float: left,
+		$span-columns: 6,
+		$context: 13,
+		$margin: 1) {
+		@include breakpoint($breakpoint) {
+			float: $float;
+			width: span($span-columns of $context);
+			@if $float == left {
+				margin-left: $margin * gutter(12);
+			} @else if $float == right {
+				margin-right: $margin * gutter(12);
+			}//else
+		}//breakpoint
+	}//mixin
 	
