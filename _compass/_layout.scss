@@ -214,7 +214,9 @@ Use resp-float mixin to float element responsively at a given breakpoint
 	
 	.engineer-education {
 		@include resp-float($float: right);
-		margin-left: gutter(12);
+		@include breakpoint($laptop) { 
+			margin-left: gutter(12);
+		}
 	}
 
 /********* 
@@ -249,17 +251,22 @@ READ MORE COLUMN LAYOUT
 
 	.read-more {
 		p, h5 {
-			max-width: em(400px);
+			max-width: $min-read-more-column-width;
 		} 
 	}
 
 	.csscolumns {
-		.read-more {
-			p, h5 {
-				max-width: $max-read-more-column-width;
-			}
+		p, h5 {
+			max-width: $max-read-more-column-width;
+		} 
+		.read-more-inner {
 			columns: 3 $min-read-more-column-width;
-			column-gap: 2*$body-padding;
+			column-gap: 1 em;
+		}
+		
+		.columns-2 {
+			column-count: 2;
+			max-width: 2 * $min-read-more-column-width + 3 * 2 * $body-padding;
 		}
 	}
 	
