@@ -1,24 +1,28 @@
-//Susy layout
+/********* 
+SUSY DEFAULT LAYOUT
+*********/
 
-$susy: (
-	   columns: 12,
-	   gutters: .25,
-	   global-box-sizing: border-box
-       );
+	$susy: (
+		   columns: 12,
+		   gutters: .25,
+		   global-box-sizing: border-box
+	       );
 
-//Width settings
+/********* 
+WIDTH SETTINGS
+*********/
 
-$max-width: em(1200px);
-$nav-max-width: em(700px);
-$nav-picture-width: em(1200px);
-$max-text-width: 600px;
-$max-hr-width: em(433px);
-$max-header-width: 800px;
-$read-more-button-width: em(140px);
-$min-read-more-column-width: em(300px);
-$max-read-more-column-width: em(500px);
-$max-picture-width: em(1400px, 22px);
-$max-floated-picture-width: em(600px, 22px);
+	$max-width: em(1400px);
+	$nav-max-width: em(700px);
+	$nav-picture-width: em(1200px);
+	$max-text-width: 600px;
+	$max-hr-width: em(433px);
+	$max-header-width: 800px;
+	$read-more-button-width: em(140px);
+	$min-read-more-column-width: em(300px);
+	$max-read-more-column-width: em(500px);
+	$max-picture-width: em(1400px, 22px);
+	$max-floated-picture-width: em(600px, 22px);
 
 //Navigation 
 

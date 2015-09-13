@@ -2,6 +2,8 @@ body {
 	@include container($max-width);
 	position: relative;
 	background-color: $background-color;
+	max-width: $max-width;
+	margin: 0 auto;
 }
 
 /********* 
