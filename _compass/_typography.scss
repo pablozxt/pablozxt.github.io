@@ -188,34 +188,6 @@ END TYPOGRAPHIC STYLES AND VERTICAL RHYTHMS OF MAJOR PAGE COMPONENTS
 *********/
 
 /********* 
-PLACEHOLDER SELECTORS
-*********/
-	
-	//%nav-color establishes font color and link styles inside nav
-
-	%nav-color {
-		color: set-text-color($home-nav-background);
-		a {
-			color: inherit;
-			@include underline($home-nav-background, $alt-text-color, true, 1.2, 0.8);
-			&:hover, &:focus {
-				color: darken(set-text-color($home-nav-background), 10%);
-			}//:hover, :focus
-			&:active {
-				color: darken(set-text-color($home-nav-background), 20%);
-			}//:active
-		}//a
-	}//nav-color
-	
-	//button-typography
-
-	%button-typography {
-		font-family: $secondary-font-family;
-		@include set-font-size(normal);
-		font-weight: map-get($font-weights, normal);
-	}
-
-/********* 
 Styles for READ MORE section and read more buttons
 *********/
 
@@ -243,7 +215,33 @@ Styles for READ MORE section and read more buttons
 								$color: map-get($engineer-color, darker));
 	}
 
+/********* 
+PLACEHOLDER SELECTORS
+*********/
 
+	//%nav-color establishes font color and link styles inside nav
+
+	%nav-color {
+		color: set-text-color($home-nav-background);
+		a {
+			color: inherit;
+			@include underline($home-nav-background, $alt-text-color, true, 1.2, 0.8);
+			&:hover, &:focus {
+				color: darken(set-text-color($home-nav-background), 10%);
+			}//:hover, :focus
+			&:active {
+				color: darken(set-text-color($home-nav-background), 20%);
+			}//:active
+		}//a
+	}//nav-color
+
+	//button-typography
+
+	%button-typography {
+		font-family: $secondary-font-family;
+		@include set-font-size(small);
+		font-weight: map-get($font-weights, normal);
+	}
 
 
 
