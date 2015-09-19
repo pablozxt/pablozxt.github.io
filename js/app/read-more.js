@@ -34,14 +34,14 @@
 		    animSpeed = 200; //animation speed
 
 		if (target.html() === text) {
+			target.html(altText);
 			more.slideToggle(animSpeed).promise().done(function () {
-				target.html(altText);
 				moreChildren.fadeIn(animSpeed);
 			});
 		} else {
+			target.html(text);
 			moreChildren.fadeOut(animSpeed).promise().done(function () {
 				more.slideToggle(animSpeed);
-				target.html(text);
 			});
 		}
 	}); //on moreButton click event
