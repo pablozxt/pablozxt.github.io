@@ -162,7 +162,7 @@ TYPOGRAPHIC STYLES AND VERTICAL RHYTHMS OF MAJOR PAGE COMPONENTS
 	}
 	
 
-	.single-post p:first-of-type:first-letter {
+	span.drop-cap {
 		font-size: map-get($font-sizes, huge-6);
 		line-height: 0.5em;
 		color: map-get($home-color, normal);
