@@ -160,6 +160,16 @@ TYPOGRAPHIC STYLES AND VERTICAL RHYTHMS OF MAJOR PAGE COMPONENTS
 		@include set-font-size(normal);
 		margin-top: rhythm(2);
 	}
+	
+
+	.single-post p:first-of-type:first-letter {
+		font-size: map-get($font-sizes, huge-6);
+		line-height: 0.5em;
+		color: map-get($home-color, normal);
+		float: left;
+		padding-right: 0.15em;
+		padding-top: 0.19em;
+	}
 
 	figcaption {
 		font-family: $secondary-font-family;
