@@ -1,12 +1,12 @@
 # Site settings
-title: pablodp.net
+title: pablodp.com
 email: pablozxt@gmail.com
 twitter_username: pablozxt
 github_username:  pablozxt
 paginate: 2
 description: >
-  I am Pablo Perez, an engineer, web developer, father of three and spaniard living in Los Angeles. And this is my site.
-url: "http://pablodp.net"
+  I am Pablo Perez, an engineer, web developer, father of three and spaniard living in Los Angeles.
+url: "http://pablodp.com"
 
 # Build settings
 markdown: kramdown
