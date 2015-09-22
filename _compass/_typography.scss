@@ -161,8 +161,8 @@ TYPOGRAPHIC STYLES AND VERTICAL RHYTHMS OF MAJOR PAGE COMPONENTS
 		margin-top: rhythm(2);
 	}
 	
-
-	span.drop-cap {
+	/**** Home post singe page view DROP CAPS ****/
+	.drop-cap:first-letter {
 		font-size: map-get($font-sizes, huge-6);
 		line-height: 0.5em;
 		color: map-get($home-color, normal);
@@ -170,6 +170,7 @@ TYPOGRAPHIC STYLES AND VERTICAL RHYTHMS OF MAJOR PAGE COMPONENTS
 		padding-right: 0.15em;
 		padding-top: 0.19em;
 	}
+	
 
 	figcaption {
 		font-family: $secondary-font-family;
