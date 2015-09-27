@@ -168,7 +168,13 @@ TYPOGRAPHIC STYLES AND VERTICAL RHYTHMS OF MAJOR PAGE COMPONENTS
 		color: map-get($home-color, normal);
 		float: left;
 		padding-right: 0.15em;
-		padding-top: 0.19em;
+		padding-top: 0.24em;
+	}
+	
+	.no-js, .wf-inactive {
+		.drop-cap:first-letter {
+			padding-top: 0.19em;
+		}
 	}
 	
 
