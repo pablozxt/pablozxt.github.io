@@ -169,6 +169,7 @@ TYPOGRAPHIC STYLES AND VERTICAL RHYTHMS OF MAJOR PAGE COMPONENTS
 		float: left;
 		padding-right: 0.15em;
 		padding-top: 0.24em;
+		font-weight: map-get($font-weights, semibold);
 	}
 	
 	.no-js, .wf-inactive {
