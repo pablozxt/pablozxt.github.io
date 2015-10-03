@@ -7,6 +7,7 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-contrib-uglify');
 	grunt.loadNpmTasks('grunt-smushit');
 	grunt.loadNpmTasks('grunt-babel');
+	grunt.loadNpmTasks('grunt-contrib-cssmin');
 	
 	grunt.initConfig({
 		shell : {
@@ -57,6 +58,13 @@ module.exports = function(grunt) {
 			      }//files
 			 }//my_target
 		},//uglify
+		cssmin: {
+			target: {
+			    files: {
+			      	'_site/css/app.min.css': ['_site/css/app.css']
+			    }//files
+			}//target
+		},//cssmin
 		watch : {
 			js: {
 		        files: ['js/**/*.js', 'js/*.js'],
@@ -75,12 +83,17 @@ module.exports = function(grunt) {
 					'js/**/*.js',
 					'js/**/*.es6'
 					],//site files
-				tasks : ['shell:jekyllBuild'],
-				options : {livereload: true}
-			}//site
+				tasks: ['shell:jekyllBuild'],
+				options: {livereload: true}
+			},//site
+			css: {
+				files: ['_site/css/app.css'],
+				tasks: ['cssmin'],
+				options: {livereload: true}
+			} 
 		}//watch
 	})//initConfig
 	
-	grunt.registerTask('serve', ['babel','concat','uglify','shell:jekyllBuild','shell:jekyllServe']);
-	grunt.registerTask('default', ['watch','shell:jekyllBuild']);
+	grunt.registerTask('serve', ['babel','concat','uglify','shell:jekyllBuild', 'cssmin', 'shell:jekyllServe']);
+	grunt.registerTask('default', ['watch']);
 }//exports	
