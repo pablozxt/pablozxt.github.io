@@ -1,0 +1,888 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 5, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 14, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/susy-2.1.3/sass/susy/language/susy/_box-sizing.scss */
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 1, ../../_compass/_base.scss */
+button {
+  display: block;
+  border-radius: 0.625em;
+  min-height: 2.25em;
+  border-style: none;
+  padding: 0.47368em 24px;
+  cursor: pointer;
+}
+/* line 9, ../../_compass/_base.scss */
+button:focus {
+  outline: none;
+}
+
+/* line 14, ../../_compass/_base.scss */
+hr {
+  clear: both;
+  float: none;
+  width: 100%;
+  height: 1px;
+  margin: 1.4em 0;
+  border: none;
+  max-width: 27.0625em;
+  margin: 1.89474em auto;
+}
+@media (min-width: 37.5em) {
+  /* line 14, ../../_compass/_base.scss */
+  hr {
+    margin: 1.89474em auto 4.73684em auto;
+  }
+}
+
+/* line 29, ../../_compass/_base.scss */
+.home-main hr {
+  background-color: #2b8686;
+  background-image: -webkit-linear-gradient(left, #ffffff 0%, #76bfbf 40%, #76bfbf 60%, #ffffff 100%);
+  background-image: linear-gradient(to right, #ffffff 0%, #76bfbf 40%, #76bfbf 60%, #ffffff 100%);
+}
+
+/* line 35, ../../_compass/_base.scss */
+.engineer-main hr {
+  background-color: #df4747;
+  background-image: -webkit-linear-gradient(left, #ffffff 0%, #ff9d9d 40%, #ff9d9d 60%, #ffffff 100%);
+  background-image: linear-gradient(to right, #ffffff 0%, #ff9d9d 40%, #ff9d9d 60%, #ffffff 100%);
+}
+
+/* line 42, ../../_compass/_base.scss */
+.engineer-main ul li {
+  margin-top: 0.47368em;
+}
+
+/* line 1, ../../_compass/_layout.scss */
+body {
+  max-width: 87.5em;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  background-color: #fff;
+  max-width: 87.5em;
+  margin: 0 auto;
+}
+/* line 12, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/susy-2.1.3/sass/susy/output/support/_clearfix.scss */
+body:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+/********* 
+NAV STYLES
+*********/
+/* line 13, ../../_compass/_layout.scss */
+nav {
+  background: url(../images/background.jpg) repeat;
+  background-size: cover;
+  background-position: center center;
+}
+@media (min-width: 75em) {
+  /* line 13, ../../_compass/_layout.scss */
+  nav {
+    background-size: auto auto;
+  }
+}
+
+/* line 22, ../../_compass/_layout.scss */
+.nav-outer-wrapper {
+  padding: 0.94737em 0.75em;
+  position: relative;
+  z-index: 1;
+  background-color: rgba(1, 9, 9, 0.55);
+}
+@media (min-width: 43.75em) {
+  /* line 22, ../../_compass/_layout.scss */
+  .nav-outer-wrapper {
+    background-color: #010909;
+    background: -webkit-linear-gradient(left, #010909 calc( (100% - 75em)/2 + 150px), rgba(1, 9, 9, 0.55) calc( (100% - 75em)/2 + 400px), rgba(1, 9, 9, 0.55) calc( 100% - (100% - 75em)/2 - 400px), #010909 calc( 100% - (100% - 75em)/2 - 150px));
+    background: linear-gradient(to right, #010909 calc( (100% - 75em)/2 + 150px), rgba(1, 9, 9, 0.55) calc( (100% - 75em)/2 + 400px), rgba(1, 9, 9, 0.55) calc( 100% - (100% - 75em)/2 - 400px), #010909 calc( 100% - (100% - 75em)/2 - 150px));
+  }
+}
+
+/* line 30, ../../_compass/_layout.scss */
+.engineer .nav-outer-wrapper {
+  background-color: rgba(34, 3, 3, 0.55);
+}
+@media (min-width: 43.75em) {
+  /* line 30, ../../_compass/_layout.scss */
+  .engineer .nav-outer-wrapper {
+    background-color: #220303;
+    background: -webkit-linear-gradient(left, #220303 calc( (100% - 75em)/2 + 150px), rgba(34, 3, 3, 0.55) calc( (100% - 75em)/2 + 400px), rgba(34, 3, 3, 0.55) calc( 100% - (100% - 75em)/2 - 400px), #220303 calc( 100% - (100% - 75em)/2 - 150px));
+    background: linear-gradient(to right, #220303 calc( (100% - 75em)/2 + 150px), rgba(34, 3, 3, 0.55) calc( (100% - 75em)/2 + 400px), rgba(34, 3, 3, 0.55) calc( 100% - (100% - 75em)/2 - 400px), #220303 calc( 100% - (100% - 75em)/2 - 150px));
+  }
+}
+
+/* line 35, ../../_compass/_layout.scss */
+.nav-wrapper {
+  max-width: 43.75em;
+  margin: 0 auto;
+}
+
+/* line 41, ../../_compass/_layout.scss */
+.nav-social ul {
+  display: relative;
+}
+/* line 44, ../../_compass/_layout.scss */
+.nav-social li {
+  overflow: hidden;
+  *zoom: 1;
+  width: 200px;
+  margin-left: 40.67797%;
+}
+/* line 48, ../../_compass/_layout.scss */
+.nav-social li span {
+  display: block;
+  float: left;
+}
+/* line 52, ../../_compass/_layout.scss */
+.nav-social li .username {
+  margin-left: 0.625em;
+}
+
+/* line 58, ../../_compass/_layout.scss */
+svg {
+  width: 1.25em;
+  height: 1.25em;
+  stroke: #ffffff;
+  fill: #ffffff;
+  position: relative;
+  top: 6px;
+}
+
+/********* 
+END NAV STYLES
+*********/
+/********* 
+PADDING
+	
+Define padding using the resp-horiz-padding mixin. By avoiding application
+of padding to one container element, other elements, such as images, can 
+extend to edge of window.
+Padding controls left margin for small screens. For larger screens, left 
+margins are set elsewhere.
+.read-more-button padding has to be set using margin rules and has to clear 
+float of the previous elements
+*********/
+/* line 84, ../../_compass/_layout.scss */
+.home-main {
+  padding-left: 0.75em;
+  padding-right: 0.75em;
+}
+@media (min-width: 900px) {
+  /* line 84, ../../_compass/_layout.scss */
+  .home-main {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+/* line 89, ../../_compass/_layout.scss */
+.engineer-main header, .engineer-main .text-container, .engineer-main figcaption {
+  padding-left: 0.75em;
+  padding-right: 0.75em;
+}
+@media (min-width: 900px) {
+  /* line 89, ../../_compass/_layout.scss */
+  .engineer-main header, .engineer-main .text-container, .engineer-main figcaption {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+/* line 94, ../../_compass/_layout.scss */
+.read-more {
+  padding-left: 0.75em;
+  padding-right: 0.75em;
+}
+
+/* line 98, ../../_compass/_layout.scss */
+.read-more-button {
+  margin-left: 0.75em;
+}
+
+/********* 
+END PADDING
+*********/
+/********* 
+MAXIMUM WIDTHS
+*********/
+/********* 
+header (meant for engineer page): set maximum width
+*********/
+/* line 114, ../../_compass/_layout.scss */
+header {
+  max-width: 800px;
+}
+
+/********* 
+.text-container class controls maximum text width for articles
+in engineer page, while letting images have a longer width
+.text-container 
+*********/
+/* line 124, ../../_compass/_layout.scss */
+.text-container {
+  max-width: 600px;
+}
+@media (min-width: 800px) {
+  /* line 126, ../../_compass/_layout.scss */
+  .text-container p, .text-container h3, .text-container h4 {
+    margin-left: 6.77966%;
+  }
+}
+
+/********* 
+set .home-post width
+*********/
+/* line 137, ../../_compass/_layout.scss */
+.home-post {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/********* 
+END MAXIMUM WIDTHS
+*********/
+/********* 
+RESPONSIVE LEFT MARGINS
+	
+Set margins for header element, .text-container class and .read-more-button.
+The goal is to have the left-margin of these two sets of elements be aligned
+Left margin starts at 0, increases to one column, then to two columns
+*********/
+@media (min-width: 700px) {
+  /* line 154, ../../_compass/_layout.scss */
+  header, .text-container, .read-more-button {
+    margin-left: 6.77966%;
+  }
+}
+@media (min-width: 900px) {
+  /* line 154, ../../_compass/_layout.scss */
+  header, .text-container, .read-more-button {
+    margin-left: 15.25424%;
+  }
+}
+@media (min-width: 87.5em) {
+  /* line 154, ../../_compass/_layout.scss */
+  header, .text-container, .read-more-button {
+    margin-left: 23.72881%;
+  }
+}
+
+@media (min-width: 900px) {
+  /* line 166, ../../_compass/_layout.scss */
+  figcaption {
+    margin-left: 6.77966%;
+  }
+}
+
+/* line 173, ../../_compass/_layout.scss */
+#main ul {
+  margin-left: 6.77966%;
+}
+@media (min-width: 800px) {
+  /* line 173, ../../_compass/_layout.scss */
+  #main ul {
+    margin-left: 15.25424%;
+  }
+}
+
+/********* 
+END RESPONSIVE LEFT-MARGINS
+*********/
+/********* 
+RESPONSIVE FLOATED TWO COLUMN LAYOUT
+	
+set styles for .text-container and figure inside of .engineer-project
+class to float text to the left and images to the right. 
+Use resp-float mixin to float element responsively at a given breakpoint
+*********/
+/* line 193, ../../_compass/_layout.scss */
+.engineer-project {
+  /** max-width of floated images has to be limited to 100% of its column **/
+}
+@media (min-width: 75em) {
+  /* line 194, ../../_compass/_layout.scss */
+  .engineer-project .text-container {
+    float: left;
+    width: 45.3125%;
+    margin-left: 1.69492%;
+  }
+}
+@media (min-width: 75em) {
+  /* line 197, ../../_compass/_layout.scss */
+  .engineer-project figure {
+    float: right;
+    width: 45.3125%;
+    margin-right: 1.69492%;
+  }
+}
+/* line 201, ../../_compass/_layout.scss */
+.engineer-project img {
+  max-width: 100%;
+}
+@media (min-width: 75em) {
+  /* line 204, ../../_compass/_layout.scss */
+  .engineer-project .read-more-button {
+    clear: both;
+    margin-top: 2.36842em;
+    margin-left: 4.20168%;
+  }
+}
+
+@media (min-width: 75em) {
+  /* line 213, ../../_compass/_layout.scss */
+  .engineer-interests {
+    float: left;
+    width: 45.3125%;
+    margin-left: 1.69492%;
+  }
+}
+
+@media (min-width: 75em) {
+  /* line 217, ../../_compass/_layout.scss */
+  .engineer-education {
+    float: right;
+    width: 45.3125%;
+    margin-right: 1.69492%;
+  }
+}
+@media (min-width: 75em) {
+  /* line 217, ../../_compass/_layout.scss */
+  .engineer-education {
+    margin-left: 1.69492%;
+  }
+}
+
+/********* 
+END RESPONSIVE FLOATED TWO COLUMN LAYOUT
+*********/
+/********* 
+PICTURES LAYOUT
+*********/
+/* line 233, ../../_compass/_layout.scss */
+figure {
+  margin-top: 1.42105em;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (min-width: 75em) {
+  /* line 233, ../../_compass/_layout.scss */
+  figure {
+    margin-top: 2.84211em;
+  }
+}
+
+/* line 242, ../../_compass/_layout.scss */
+.full-width {
+  max-width: 63.63636em;
+}
+
+/********* 
+END PICTURES LAYOUT
+*********/
+/********* 
+READ MORE COLUMN LAYOUT
+First, set maximum width for browsers that don't support the CSS column property. This value gets
+overridden for browsers supporting CSS column
+Default read-more layout is three columns wide. However, areas with shorter read-more sections
+add a class columns-2 which reduces the width down to two columns
+*********/
+/* line 259, ../../_compass/_layout.scss */
+.read-more p, .read-more h5 {
+  max-width: 31.25em;
+}
+
+/* line 265, ../../_compass/_layout.scss */
+.csscolumns p, .csscolumns h5 {
+  max-width: 31.25em;
+}
+/* line 268, ../../_compass/_layout.scss */
+.csscolumns .read-more-inner {
+  -webkit-columns: 3 18.75em;
+     -moz-columns: 3 18.75em;
+          columns: 3 18.75em;
+  -webkit-column-gap: 1 em;
+     -moz-column-gap: 1 em;
+          column-gap: 1 em;
+}
+/* line 272, ../../_compass/_layout.scss */
+.csscolumns .columns-2 {
+  -webkit-column-count: 2;
+     -moz-column-count: 2;
+          column-count: 2;
+  max-width: 42em;
+}
+
+/********* 
+END READ MORE COLUMN LAYOUT
+*********/
+/*
+ * HTML5 Boilerplate
+ * Hide only visually, but have it available for screen readers:
+ * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ */
+/* line 7, ../../_compass/_utilities.scss */
+.visually-hidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+/* line 18, ../../_compass/_utilities.scss */
+.hidden {
+  display: none;
+}
+
+/* line 23, ../../_compass/_utilities.scss */
+.js .js-hidden {
+  display: none;
+}
+
+/* line 28, ../../_compass/_utilities.scss */
+.pointer {
+  cursor: pointer;
+}
+
+/* line 32, ../../_compass/_utilities.scss */
+.clearfix {
+  overflow: hidden;
+  *zoom: 1;
+}
+
+/********* 
+IMPORT ESTABLISH BASELINE MIXIN from Compass 
+to establish vertical rhythm
+*********/
+/* line 106, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/typography/_vertical_rhythm.scss */
+html {
+  font-size: 118.75%;
+  line-height: 0.47368em;
+}
+
+/********* 
+TYPOGRAPHIC STYLES AND VERTICAL RHYTHMS OF MAJOR PAGE COMPONENTS
+*********/
+/* line 12, ../../_compass/_typography.scss */
+body {
+  font-size: 19px;
+  font-family: "garamond-premier-pro", Times, serif;
+  line-height: 1.42105em;
+  color: #222;
+}
+
+/* line 21, ../../_compass/_typography.scss */
+nav ul {
+  font-family: "open-sans", sans-serif;
+  font-weight: 300;
+}
+/* line 25, ../../_compass/_typography.scss */
+nav .main-nav {
+  margin-left: 6.77966%;
+}
+/* line 27, ../../_compass/_typography.scss */
+nav .main-nav li {
+  font-size: 1.21053em;
+  line-height: 1.17391em;
+}
+/* line 31, ../../_compass/_typography.scss */
+nav .nav-social {
+  font-size: 0.68421em;
+  line-height: 1.38462em;
+  margin-top: 9.47368em;
+}
+
+/* line 38, ../../_compass/_typography.scss */
+.engineer nav {
+  background-color: #220303;
+}
+
+/* line 43, ../../_compass/_typography.scss */
+main {
+  margin-bottom: 4.73684em;
+}
+/* line 45, ../../_compass/_typography.scss */
+main h1 {
+  font-size: 2.47368em;
+  line-height: 1.14894em;
+  font-family: "garamond-premier-pro", Times, serif;
+  margin-top: 0.47368em;
+}
+@media (min-width: 37.5em) {
+  /* line 45, ../../_compass/_typography.scss */
+  main h1 {
+    font-size: 3.57895em;
+    line-height: 1.05882em;
+  }
+}
+/* line 53, ../../_compass/_typography.scss */
+main ul {
+  list-style: disc;
+  margin-top: 0.94737em;
+}
+/* line 56, ../../_compass/_typography.scss */
+main ul li {
+  margin-top: 0.94737em;
+}
+
+/* line 62, ../../_compass/_typography.scss */
+header {
+  padding-top: 0em;
+}
+
+/* line 67, ../../_compass/_typography.scss */
+.home-main h1 {
+  color: #2b8686;
+}
+@media (min-width: 800px) {
+  /* line 67, ../../_compass/_typography.scss */
+  .home-main h1 {
+    margin-left: calc(50% - (600px/2 + 6.77966%));
+  }
+}
+/* line 73, ../../_compass/_typography.scss */
+.home-main article:first-of-type {
+  margin-top: 1.89474em;
+}
+@media (min-width: 37.5em) {
+  /* line 73, ../../_compass/_typography.scss */
+  .home-main article:first-of-type {
+    margin-top: 2.84211em;
+  }
+}
+
+/* line 82, ../../_compass/_typography.scss */
+.engineer-main h1 {
+  color: #df4747;
+  text-transform: uppercase;
+}
+/* line 86, ../../_compass/_typography.scss */
+.engineer-main article, .engineer-main section {
+  margin-top: 2.84211em;
+}
+@media (min-width: 75em) {
+  /* line 86, ../../_compass/_typography.scss */
+  .engineer-main article, .engineer-main section {
+    margin-top: 4.26316em;
+  }
+}
+
+/* line 95, ../../_compass/_typography.scss */
+header p {
+  font-family: "open-sans", sans-serif;
+  font-size: 1.21053em;
+  line-height: 1.17391em;
+  font-weight: 300;
+  margin-top: 0.47368em;
+}
+@media (min-width: 37.5em) {
+  /* line 95, ../../_compass/_typography.scss */
+  header p {
+    font-size: 1.73684em;
+    line-height: 1.22727em;
+  }
+}
+
+/* line 106, ../../_compass/_typography.scss */
+h2 {
+  text-transform: uppercase;
+  color: #9c0d0d;
+  font-size: 1.21053em;
+  line-height: 1.17391em;
+  font-weight: 600;
+}
+@media (min-width: 37.5em) {
+  /* line 106, ../../_compass/_typography.scss */
+  h2 {
+    font-size: 1.42105em;
+    line-height: 1.16667em;
+  }
+}
+
+/* line 116, ../../_compass/_typography.scss */
+h3 {
+  font-size: 1em;
+  line-height: 1.42105em;
+  text-transform: capitalize;
+  margin-top: 0.47368em;
+  color: #222;
+}
+
+/* line 124, ../../_compass/_typography.scss */
+.project-budget::before {
+  content: " \2013  ";
+}
+
+/* line 129, ../../_compass/_typography.scss */
+h4 {
+  font-size: 1em;
+  line-height: 1.42105em;
+  margin-top: 0.47368em;
+}
+/* line 132, ../../_compass/_typography.scss */
+h4 .project-position {
+  display: inline;
+}
+/* line 134, ../../_compass/_typography.scss */
+h4 .project-position::before {
+  content: " \2013  ";
+}
+
+/* line 140, ../../_compass/_typography.scss */
+.project-data {
+  font-size: 0.68421em;
+  line-height: 1.38462em;
+  color: #222;
+}
+/* line 143, ../../_compass/_typography.scss */
+.project-data::before {
+  content: '\00a0 \00a0 \00a0 \00a0';
+}
+
+/* line 148, ../../_compass/_typography.scss */
+h5 {
+  text-transform: uppercase;
+  color: #9c0d0d;
+  font-size: 0.84211em;
+  line-height: 1.40625em;
+  margin-top: 1.42105em;
+  font-weight: 600;
+}
+@media (min-width: 37.5em) {
+  /* line 148, ../../_compass/_typography.scss */
+  h5 {
+    font-size: 1em;
+    line-height: 1.42105em;
+  }
+}
+
+/* line 159, ../../_compass/_typography.scss */
+p {
+  font-size: 1em;
+  line-height: 1.42105em;
+  margin-top: 0.94737em;
+}
+
+/**** Home post singe page view DROP CAPS ****/
+/* line 165, ../../_compass/_typography.scss */
+.drop-cap:first-letter {
+  font-size: 98px;
+  line-height: 0.5em;
+  color: #2b8686;
+  float: left;
+  padding-right: 0.15em;
+  padding-top: 0.24em;
+  font-weight: 600;
+}
+
+/* line 176, ../../_compass/_typography.scss */
+.no-js .drop-cap:first-letter, .wf-inactive .drop-cap:first-letter {
+  padding-top: 0.19em;
+}
+
+/* line 182, ../../_compass/_typography.scss */
+figcaption {
+  font-family: "open-sans", sans-serif;
+  font-size: 0.57895em;
+  line-height: 1.63636em;
+  color: #555555;
+  margin-top: -0.47368em;
+}
+
+/* line 191, ../../_compass/_typography.scss */
+a {
+  color: #2455c3;
+  text-decoration: none;
+  text-decoration: none;
+  background-repeat: repeat-x;
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjEuMCIgeDI9IjAuNSIgeTI9IjAuMCI+PHN0b3Agb2Zmc2V0PSI3NSUiIHN0b3AtY29sb3I9IiNmZmZmZmYiLz48c3RvcCBvZmZzZXQ9Ijc1JSIgc3RvcC1jb2xvcj0iIzI0NTVjMyIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
+  background-size: 100%;
+  background-image: -webkit-gradient(linear, 50% 100%, 50% 0%, color-stop(75%, #ffffff), color-stop(75%, #2455c3));
+  background-image: -webkit-linear-gradient(bottom, #ffffff 75%, #2455c3 75%);
+  background-image: linear-gradient(to top, #ffffff 75%, #2455c3 75%);
+  background-size: 0.125em 0.14375em;
+  background-position: 0 1.08125em;
+  text-shadow: 0.0625em 0.0625em 0 #fff, -0.0625em 0 0 #fff;
+  -webkit-transition: color 0.4s ease;
+          transition: color 0.4s ease;
+}
+/* line 196, ../../_compass/_typography.scss */
+a:hover, a:focus {
+  color: #3f6fdb;
+}
+/* line 199, ../../_compass/_typography.scss */
+a:active {
+  color: #6a8fe3;
+}
+
+/********* 	
+END TYPOGRAPHIC STYLES AND VERTICAL RHYTHMS OF MAJOR PAGE COMPONENTS
+*********/
+/********* 
+Styles for READ MORE section and read more buttons
+*********/
+/* line 212, ../../_compass/_typography.scss */
+.read-more {
+  background-color: #f5f6f5;
+  margin-top: 1.89474em;
+  padding: 0.94737em 1.5em 2.36842em 1.5em;
+}
+/* line 216, ../../_compass/_typography.scss */
+.read-more a {
+  text-decoration: none;
+  background-repeat: repeat-x;
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjEuMCIgeDI9IjAuNSIgeTI9IjAuMCI+PHN0b3Agb2Zmc2V0PSI3NSUiIHN0b3AtY29sb3I9IiNmNWY2ZjUiLz48c3RvcCBvZmZzZXQ9Ijc1JSIgc3RvcC1jb2xvcj0iIzI0NTVjMyIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
+  background-size: 100%;
+  background-image: -webkit-gradient(linear, 50% 100%, 50% 0%, color-stop(75%, #f5f6f5), color-stop(75%, #2455c3));
+  background-image: -webkit-linear-gradient(bottom, #f5f6f5 75%, #2455c3 75%);
+  background-image: linear-gradient(to top, #f5f6f5 75%, #2455c3 75%);
+  background-size: 0.125em 0.14375em;
+  background-position: 0 1.08125em;
+  text-shadow: 0.0625em 0.0625em 0 #f5f6f5, -0.0625em 0 0 #f5f6f5;
+}
+@media (min-width: 37.5em) {
+  /* line 219, ../../_compass/_typography.scss */
+  .read-more h5 {
+    font-size: 0.84211em;
+    line-height: 1.40625em;
+  }
+}
+/* line 224, ../../_compass/_typography.scss */
+.read-more p {
+  font-size: 0.84211em;
+  line-height: 1.40625em;
+}
+
+/* line 229, ../../_compass/_typography.scss */
+.read-more-button {
+  width: 8.75em;
+  margin-top: 1.42105em;
+  background-color: #f5f6f5;
+  color: #9c0d0d;
+  -webkit-transition: background-color 0.4s ease;
+          transition: background-color 0.4s ease;
+}
+/* line 35, ../../_compass/_functions.scss */
+.read-more-button:hover, .read-more-button:focus {
+  background-color: #dadeda;
+}
+/* line 38, ../../_compass/_functions.scss */
+.read-more-button:active {
+  background-color: #bfc6bf;
+}
+
+/********* 
+PLACEHOLDER SELECTORS
+*********/
+/* line 242, ../../_compass/_typography.scss */
+nav {
+  color: #ffffff;
+}
+/* line 244, ../../_compass/_typography.scss */
+nav a {
+  color: inherit;
+  text-decoration: none;
+  background-repeat: repeat-x;
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjEuMCIgeDI9IjAuNSIgeTI9IjAuMCI+PHN0b3Agb2Zmc2V0PSI3NSUiIHN0b3AtY29sb3I9IiMwMTA5MDkiLz48c3RvcCBvZmZzZXQ9Ijc1JSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
+  background-size: 100%;
+  background-image: -webkit-gradient(linear, 50% 100%, 50% 0%, color-stop(75%, #010909), color-stop(75%, #ffffff));
+  background-image: -webkit-linear-gradient(bottom, #010909 75%, #ffffff 75%);
+  background-image: linear-gradient(to top, #010909 75%, #ffffff 75%);
+  background-size: 0.125em 0.1125em;
+  background-position: 0 1.25em;
+  text-shadow: 0.0625em 0.0625em 0 #010909, -0.0625em 0 0 #010909;
+}
+/* line 247, ../../_compass/_typography.scss */
+nav a:hover, nav a:focus {
+  color: #e6e6e6;
+}
+/* line 250, ../../_compass/_typography.scss */
+nav a:active {
+  color: #cccccc;
+}
+
+/* line 258, ../../_compass/_typography.scss */
+button {
+  font-family: "open-sans", sans-serif;
+  font-size: 0.84211em;
+  line-height: 1.40625em;
+  font-weight: 400;
+}
