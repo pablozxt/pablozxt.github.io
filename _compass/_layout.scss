@@ -2,9 +2,10 @@ body {
 	@include container($max-width);
 	position: relative;
 	background-color: $background-color;
-	max-width: $max-width;
 	margin: 0 auto;
 }
+
+
 
 /********* 
 NAV STYLES
@@ -106,6 +107,10 @@ END PADDING
 /********* 
 MAXIMUM WIDTHS
 *********/
+
+	main {
+		max-width: $max-width;
+	}
 
 	/********* 
 	header (meant for engineer page): set maximum width
