@@ -44,7 +44,6 @@ NAV STYLES
 		}//ul
 		li {
 			@include clearfix;
-			width: 200px;
 			margin-left: span(5);
 			span {
 				display: block;
@@ -62,7 +61,7 @@ NAV STYLES
 		stroke: $alt-text-color;
 		fill: $alt-text-color;
 		position: relative;
-		top: 6px;
+		top: 5px;
 	}
 
 /********* 
