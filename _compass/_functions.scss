@@ -15,8 +15,8 @@
 //Also sets line height using the adjust-font-size-to mixin
 //////////
 
-	@mixin set-font-size($size: normal) {
-	    $font-size: map-get($font-sizes, $size);
+	@mixin set-font-size($size: normal, $font-map: $font-sizes) {
+	    $font-size: map-get($font-map, $size);
 		@include adjust-font-size-to($font-size);
 	}
 

@@ -11,6 +11,9 @@ TYPOGRAPHIC STYLES AND VERTICAL RHYTHMS OF MAJOR PAGE COMPONENTS
 
 	body {
 	    font-size: $base-font-size;
+		@include breakpoint($large-phone) {
+			font-size: $small-font-size;
+		}
 		font-family: $base-font-family;
 		@include adjust-leading-to(3);
 		color: $text-color;
@@ -30,6 +33,9 @@ TYPOGRAPHIC STYLES AND VERTICAL RHYTHMS OF MAJOR PAGE COMPONENTS
 		}//.main-nav
 		.nav-social {
 			@include set-font-size(smaller);
+			@include breakpoint($large-phone) {
+				@include set-font-size(smaller, $small-font-sizes);
+			}
 			margin-top: rhythm(20);
 		}//.nav-social
 	}
@@ -44,6 +50,9 @@ TYPOGRAPHIC STYLES AND VERTICAL RHYTHMS OF MAJOR PAGE COMPONENTS
 		margin-bottom: rhythm(10);
 		h1 {
 		@include set-font-size(huge-2);
+		@include breakpoint($large-phone) {
+			@include set-font-size(huge-2, $small-font-sizes);
+		}
 		font-family: $base-font-family;
 		margin-top: rhythm(1);
 			@include breakpoint ($large-phone) {
@@ -95,6 +104,9 @@ TYPOGRAPHIC STYLES AND VERTICAL RHYTHMS OF MAJOR PAGE COMPONENTS
 		p {
 			font-family: $secondary-font-family;
 			@include set-font-size(medium);
+			@include breakpoint($large-phone) {
+				@include set-font-size(medium, $small-font-sizes);
+			}
 			font-weight: map-get($font-weights, light);
 			margin-top: rhythm(1);
 			@include breakpoint($large-phone) {
@@ -107,6 +119,9 @@ TYPOGRAPHIC STYLES AND VERTICAL RHYTHMS OF MAJOR PAGE COMPONENTS
 		text-transform: uppercase;
 		color: map-get($engineer-color, darker);
 		@include set-font-size(medium);
+		@include breakpoint($large-phone) {
+			@include set-font-size(medium, $small-font-sizes);
+		}
 		font-weight: map-get($font-weights, semibold);
 		@include breakpoint ($large-phone) {
 			@include set-font-size(large);
@@ -115,6 +130,9 @@ TYPOGRAPHIC STYLES AND VERTICAL RHYTHMS OF MAJOR PAGE COMPONENTS
 
 	h3 {
 		@include set-font-size(normal);
+		@include breakpoint($large-phone) {
+			@include set-font-size(normal, $small-font-sizes);
+		}
 		text-transform: capitalize;
 		margin-top: rhythm(1);	
 		color: $text-color;
@@ -139,6 +157,9 @@ TYPOGRAPHIC STYLES AND VERTICAL RHYTHMS OF MAJOR PAGE COMPONENTS
 
 	.project-data {
 		@include set-font-size(smaller);
+		@include breakpoint($large-phone) {
+			@include set-font-size(smaller, $small-font-sizes);
+		}
 		color: $text-color;
 		&::before {
 			content: '\00a0 \00a0 \00a0 \00a0';
@@ -149,6 +170,9 @@ TYPOGRAPHIC STYLES AND VERTICAL RHYTHMS OF MAJOR PAGE COMPONENTS
 		text-transform: uppercase;
 		color: map-get($engineer-color, darker);
 		@include set-font-size(small);
+		@include breakpoint($large-phone) {
+			@include set-font-size(small, $small-font-sizes);
+		}
 		margin-top: rhythm(3);
 		font-weight: map-get($font-weights, semibold);
 		@include breakpoint($large-phone) {
@@ -158,18 +182,27 @@ TYPOGRAPHIC STYLES AND VERTICAL RHYTHMS OF MAJOR PAGE COMPONENTS
 
 	p {
 		@include set-font-size(normal);
+		@include breakpoint($large-phone) {
+			@include set-font-size(normal, $small-font-sizes);
+		}
 		margin-top: rhythm(2);
 	}
 	
 	/**** Home post singe page view DROP CAPS ****/
 	.drop-cap:first-letter {
-		font-size: map-get($font-sizes, huge-6);
-		line-height: 0.5em;
+		font-size: map-get($font-sizes, huge-5);
+		font-weight: map-get($font-weights, semibold);
 		color: map-get($home-color, normal);
 		float: left;
+		line-height: 0.5em;
 		padding-right: 0.15em;
-		padding-top: 0.24em;
-		font-weight: map-get($font-weights, semibold);
+		padding-top: 0.25em;
+		@include breakpoint($large-phone) {
+			@include set-font-size(huge-6, $small-font-sizes);
+			line-height: 0.5em;
+			padding-right: 0.15em;
+			padding-top: 0.26em;
+		}
 	}
 	
 	.no-js, .wf-inactive {
@@ -182,6 +215,9 @@ TYPOGRAPHIC STYLES AND VERTICAL RHYTHMS OF MAJOR PAGE COMPONENTS
 	figcaption {
 		font-family: $secondary-font-family;
 		@include set-font-size(tiny);
+		@include breakpoint($large-phone) {
+			@include set-font-size(tiny, $small-font-sizes);
+		}
 		color: lighten($text-color, 20%);
 		margin-top: rhythm(-1);
 	}
@@ -219,6 +255,9 @@ Styles for READ MORE section and read more buttons
 		}//h5
 		p {
 			@include set-font-size(small);
+			@include breakpoint($large-phone) {
+				@include set-font-size(small, $small-font-sizes);
+			}
 		}//p
 	}//.read-more
 
@@ -254,6 +293,9 @@ PLACEHOLDER SELECTORS
 	%button-typography {
 		font-family: $secondary-font-family;
 		@include set-font-size(small);
+		@include breakpoint($large-phone) {
+			@include set-font-size(small, $small-font-sizes);
+		}
 		font-weight: map-get($font-weights, normal);
 	}
 

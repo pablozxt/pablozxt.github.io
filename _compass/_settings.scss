@@ -51,14 +51,17 @@
 	$base-font-family: "garamond-premier-pro", Times, serif;
 	$secondary-font-family: "open-sans", sans-serif;
 	//vertical rhythm parameters
-	$base-font-size: 19px;
+	//base font size for small screens
+	$base-font-size: 21px;
+	//small font size for large screens
+	$small-font-size: 19px;
 	$base-line-height: 9px;
 	//Modular scale parameters
 	$ms-base: $base-font-size;
 	$ms-ratio: $minor-third;
 
 	$round-to-nearest-half-line: true; 
-	//font size map
+	//font size map for small screens
 	$font-sizes: (
 	             huge-6: round(ms(9)),
 				 huge-5: round(ms(8)),
@@ -74,6 +77,23 @@
 				 smaller: round(ms(-2)),
 				 tiny: round(ms(-3))
 	             );
+	//small font size map for small screens
+	$small-font-sizes: (
+						 huge-6: round(modular-scale(9, $small-font-size, $ms-ratio)),
+						 huge-5: round(modular-scale(8, $small-font-size, $ms-ratio)),
+						 huge-4: round(modular-scale(7, $small-font-size, $ms-ratio)),
+						 huge-3: round(modular-scale(6, $small-font-size, $ms-ratio)),
+						 huge-2: round(modular-scale(5, $small-font-size, $ms-ratio)),
+						 huge-1: round(modular-scale(4, $small-font-size, $ms-ratio)),
+						 extra-large: round(modular-scale(3, $small-font-size, $ms-ratio)),
+						 large: round(modular-scale(2, $small-font-size, $ms-ratio)),
+						 medium: round(modular-scale(1, $small-font-size, $ms-ratio)),
+						 normal: round(modular-scale(0, $small-font-size, $ms-ratio)),
+						 small: round(modular-scale(-1, $small-font-size, $ms-ratio)),
+						 smaller: round(modular-scale(-2, $small-font-size, $ms-ratio)),
+						 tiny: round(modular-scale(-3, $small-font-size, $ms-ratio))
+						);
+	
 	//font-weight map
 	$font-weights: (
 	                extra-light: 200,
