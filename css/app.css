@@ -79,7 +79,7 @@ button {
   border-radius: 0.625em;
   min-height: 2.25em;
   border-style: none;
-  padding: 0.47368em 24px;
+  padding: 0.42857em 24px;
   cursor: pointer;
 }
 /* line 9, ../../_compass/_base.scss */
@@ -96,12 +96,12 @@ hr {
   margin: 1.4em 0;
   border: none;
   max-width: 27.0625em;
-  margin: 1.89474em auto;
+  margin: 1.71429em auto;
 }
 @media (min-width: 37.5em) {
   /* line 14, ../../_compass/_base.scss */
   hr {
-    margin: 1.89474em auto 4.73684em auto;
+    margin: 1.71429em auto 4.28571em auto;
   }
 }
 
@@ -121,7 +121,7 @@ hr {
 
 /* line 42, ../../_compass/_base.scss */
 .engineer-main ul li {
-  margin-top: 0.47368em;
+  margin-top: 0.42857em;
 }
 
 /* line 1, ../../_compass/_layout.scss */
@@ -158,7 +158,7 @@ nav {
 
 /* line 23, ../../_compass/_layout.scss */
 .nav-outer-wrapper {
-  padding: 0.94737em 0.75em;
+  padding: 0.85714em 0.75em;
   position: relative;
   z-index: 1;
   background-color: rgba(1, 9, 9, 0.55);
@@ -401,7 +401,7 @@ Use resp-float mixin to float element responsively at a given breakpoint
   /* line 208, ../../_compass/_layout.scss */
   .engineer-project .read-more-button {
     clear: both;
-    margin-top: 2.36842em;
+    margin-top: 2.14286em;
     margin-left: 4.20168%;
   }
 }
@@ -438,14 +438,14 @@ PICTURES LAYOUT
 *********/
 /* line 237, ../../_compass/_layout.scss */
 figure {
-  margin-top: 1.42105em;
+  margin-top: 1.28571em;
   margin-left: auto;
   margin-right: auto;
 }
 @media (min-width: 75em) {
   /* line 237, ../../_compass/_layout.scss */
   figure {
-    margin-top: 2.84211em;
+    margin-top: 2.57143em;
   }
 }
 
@@ -537,8 +537,8 @@ to establish vertical rhythm
 *********/
 /* line 106, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/typography/_vertical_rhythm.scss */
 html {
-  font-size: 118.75%;
-  line-height: 0.47368em;
+  font-size: 131.25%;
+  line-height: 0.42857em;
 }
 
 /********* 
@@ -546,242 +546,321 @@ TYPOGRAPHIC STYLES AND VERTICAL RHYTHMS OF MAJOR PAGE COMPONENTS
 *********/
 /* line 12, ../../_compass/_typography.scss */
 body {
-  font-size: 19px;
+  font-size: 21px;
   font-family: "garamond-premier-pro", Times, serif;
-  line-height: 1.42105em;
+  line-height: 1.28571em;
   color: #222;
 }
+@media (min-width: 37.5em) {
+  /* line 12, ../../_compass/_typography.scss */
+  body {
+    font-size: 19px;
+  }
+}
 
-/* line 21, ../../_compass/_typography.scss */
+/* line 24, ../../_compass/_typography.scss */
 nav ul {
   font-family: "open-sans", sans-serif;
   font-weight: 300;
 }
-/* line 25, ../../_compass/_typography.scss */
+/* line 28, ../../_compass/_typography.scss */
 nav .main-nav {
   margin-left: 6.77966%;
 }
-/* line 27, ../../_compass/_typography.scss */
+/* line 30, ../../_compass/_typography.scss */
 nav .main-nav li {
-  font-size: 1.21053em;
-  line-height: 1.17391em;
+  font-size: 1.19048em;
+  line-height: 1.26em;
 }
-/* line 31, ../../_compass/_typography.scss */
+/* line 34, ../../_compass/_typography.scss */
 nav .nav-social {
-  font-size: 0.68421em;
-  line-height: 1.38462em;
-  margin-top: 9.47368em;
+  font-size: 0.71429em;
+  line-height: 1.5em;
+  margin-top: 8.57143em;
+}
+@media (min-width: 37.5em) {
+  /* line 34, ../../_compass/_typography.scss */
+  nav .nav-social {
+    font-size: 0.61905em;
+    line-height: 1.38462em;
+  }
 }
 
-/* line 38, ../../_compass/_typography.scss */
+/* line 44, ../../_compass/_typography.scss */
 .engineer nav {
   background-color: #220303;
 }
 
-/* line 43, ../../_compass/_typography.scss */
+/* line 49, ../../_compass/_typography.scss */
 main {
-  margin-bottom: 4.73684em;
+  margin-bottom: 4.28571em;
 }
-/* line 45, ../../_compass/_typography.scss */
+/* line 51, ../../_compass/_typography.scss */
 main h1 {
-  font-size: 2.47368em;
-  line-height: 1.14894em;
+  font-size: 2.47619em;
+  line-height: 1.125em;
   font-family: "garamond-premier-pro", Times, serif;
-  margin-top: 0.47368em;
+  margin-top: 0.42857em;
 }
 @media (min-width: 37.5em) {
-  /* line 45, ../../_compass/_typography.scss */
+  /* line 51, ../../_compass/_typography.scss */
   main h1 {
-    font-size: 3.57895em;
-    line-height: 1.05882em;
+    font-size: 2.2381em;
+    line-height: 1.14894em;
   }
 }
-/* line 53, ../../_compass/_typography.scss */
+@media (min-width: 37.5em) {
+  /* line 51, ../../_compass/_typography.scss */
+  main h1 {
+    font-size: 3.57143em;
+    line-height: 1.08em;
+  }
+}
+/* line 62, ../../_compass/_typography.scss */
 main ul {
   list-style: disc;
-  margin-top: 0.94737em;
+  margin-top: 0.85714em;
 }
-/* line 56, ../../_compass/_typography.scss */
+/* line 65, ../../_compass/_typography.scss */
 main ul li {
-  margin-top: 0.94737em;
+  margin-top: 0.85714em;
 }
 
-/* line 62, ../../_compass/_typography.scss */
+/* line 71, ../../_compass/_typography.scss */
 header {
   padding-top: 0em;
 }
 
-/* line 67, ../../_compass/_typography.scss */
+/* line 76, ../../_compass/_typography.scss */
 .home-main h1 {
   color: #2b8686;
 }
 @media (min-width: 800px) {
-  /* line 67, ../../_compass/_typography.scss */
+  /* line 76, ../../_compass/_typography.scss */
   .home-main h1 {
     margin-left: calc(50% - (600px/2 + 6.77966%));
   }
 }
-/* line 73, ../../_compass/_typography.scss */
+/* line 82, ../../_compass/_typography.scss */
 .home-main article:first-of-type {
-  margin-top: 1.89474em;
+  margin-top: 1.71429em;
 }
 @media (min-width: 37.5em) {
-  /* line 73, ../../_compass/_typography.scss */
+  /* line 82, ../../_compass/_typography.scss */
   .home-main article:first-of-type {
-    margin-top: 2.84211em;
+    margin-top: 2.57143em;
   }
 }
 
-/* line 82, ../../_compass/_typography.scss */
+/* line 91, ../../_compass/_typography.scss */
 .engineer-main h1 {
   color: #df4747;
   text-transform: uppercase;
 }
-/* line 86, ../../_compass/_typography.scss */
+/* line 95, ../../_compass/_typography.scss */
 .engineer-main article, .engineer-main section {
-  margin-top: 2.84211em;
+  margin-top: 2.57143em;
 }
 @media (min-width: 75em) {
-  /* line 86, ../../_compass/_typography.scss */
+  /* line 95, ../../_compass/_typography.scss */
   .engineer-main article, .engineer-main section {
-    margin-top: 4.26316em;
+    margin-top: 3.85714em;
   }
 }
 
-/* line 95, ../../_compass/_typography.scss */
+/* line 104, ../../_compass/_typography.scss */
 header p {
   font-family: "open-sans", sans-serif;
-  font-size: 1.21053em;
-  line-height: 1.17391em;
+  font-size: 1.19048em;
+  line-height: 1.26em;
   font-weight: 300;
-  margin-top: 0.47368em;
+  margin-top: 0.42857em;
 }
 @media (min-width: 37.5em) {
-  /* line 95, ../../_compass/_typography.scss */
+  /* line 104, ../../_compass/_typography.scss */
   header p {
-    font-size: 1.73684em;
-    line-height: 1.22727em;
+    font-size: 1.09524em;
+    line-height: 1.17391em;
+  }
+}
+@media (min-width: 37.5em) {
+  /* line 104, ../../_compass/_typography.scss */
+  header p {
+    font-size: 1.71429em;
+    line-height: 1.125em;
   }
 }
 
-/* line 106, ../../_compass/_typography.scss */
+/* line 118, ../../_compass/_typography.scss */
 h2 {
   text-transform: uppercase;
   color: #9c0d0d;
-  font-size: 1.21053em;
-  line-height: 1.17391em;
+  font-size: 1.19048em;
+  line-height: 1.26em;
   font-weight: 600;
 }
 @media (min-width: 37.5em) {
-  /* line 106, ../../_compass/_typography.scss */
+  /* line 118, ../../_compass/_typography.scss */
   h2 {
-    font-size: 1.42105em;
-    line-height: 1.16667em;
+    font-size: 1.09524em;
+    line-height: 1.17391em;
+  }
+}
+@media (min-width: 37.5em) {
+  /* line 118, ../../_compass/_typography.scss */
+  h2 {
+    font-size: 1.42857em;
+    line-height: 1.2em;
   }
 }
 
-/* line 116, ../../_compass/_typography.scss */
+/* line 131, ../../_compass/_typography.scss */
 h3 {
   font-size: 1em;
-  line-height: 1.42105em;
+  line-height: 1.28571em;
   text-transform: capitalize;
-  margin-top: 0.47368em;
+  margin-top: 0.42857em;
   color: #222;
-}
-
-/* line 124, ../../_compass/_typography.scss */
-.project-budget::before {
-  content: " \2013  ";
-}
-
-/* line 129, ../../_compass/_typography.scss */
-h4 {
-  font-size: 1em;
-  line-height: 1.42105em;
-  margin-top: 0.47368em;
-}
-/* line 132, ../../_compass/_typography.scss */
-h4 .project-position {
-  display: inline;
-}
-/* line 134, ../../_compass/_typography.scss */
-h4 .project-position::before {
-  content: " \2013  ";
-}
-
-/* line 140, ../../_compass/_typography.scss */
-.project-data {
-  font-size: 0.68421em;
-  line-height: 1.38462em;
-  color: #222;
-}
-/* line 143, ../../_compass/_typography.scss */
-.project-data::before {
-  content: '\00a0 \00a0 \00a0 \00a0';
-}
-
-/* line 148, ../../_compass/_typography.scss */
-h5 {
-  text-transform: uppercase;
-  color: #9c0d0d;
-  font-size: 0.84211em;
-  line-height: 1.40625em;
-  margin-top: 1.42105em;
-  font-weight: 600;
 }
 @media (min-width: 37.5em) {
-  /* line 148, ../../_compass/_typography.scss */
-  h5 {
-    font-size: 1em;
+  /* line 131, ../../_compass/_typography.scss */
+  h3 {
+    font-size: 0.90476em;
     line-height: 1.42105em;
   }
 }
 
-/* line 159, ../../_compass/_typography.scss */
+/* line 142, ../../_compass/_typography.scss */
+.project-budget::before {
+  content: " \2013  ";
+}
+
+/* line 147, ../../_compass/_typography.scss */
+h4 {
+  font-size: 1em;
+  line-height: 1.28571em;
+  margin-top: 0.42857em;
+}
+/* line 150, ../../_compass/_typography.scss */
+h4 .project-position {
+  display: inline;
+}
+/* line 152, ../../_compass/_typography.scss */
+h4 .project-position::before {
+  content: " \2013  ";
+}
+
+/* line 158, ../../_compass/_typography.scss */
+.project-data {
+  font-size: 0.71429em;
+  line-height: 1.5em;
+  color: #222;
+}
+@media (min-width: 37.5em) {
+  /* line 158, ../../_compass/_typography.scss */
+  .project-data {
+    font-size: 0.61905em;
+    line-height: 1.38462em;
+  }
+}
+/* line 164, ../../_compass/_typography.scss */
+.project-data::before {
+  content: '\00a0 \00a0 \00a0 \00a0';
+}
+
+/* line 169, ../../_compass/_typography.scss */
+h5 {
+  text-transform: uppercase;
+  color: #9c0d0d;
+  font-size: 0.85714em;
+  line-height: 1.25em;
+  margin-top: 1.28571em;
+  font-weight: 600;
+}
+@media (min-width: 37.5em) {
+  /* line 169, ../../_compass/_typography.scss */
+  h5 {
+    font-size: 0.7619em;
+    line-height: 1.40625em;
+  }
+}
+@media (min-width: 37.5em) {
+  /* line 169, ../../_compass/_typography.scss */
+  h5 {
+    font-size: 1em;
+    line-height: 1.28571em;
+  }
+}
+
+/* line 183, ../../_compass/_typography.scss */
 p {
   font-size: 1em;
-  line-height: 1.42105em;
-  margin-top: 0.94737em;
+  line-height: 1.28571em;
+  margin-top: 0.85714em;
+}
+@media (min-width: 37.5em) {
+  /* line 183, ../../_compass/_typography.scss */
+  p {
+    font-size: 0.90476em;
+    line-height: 1.42105em;
+  }
 }
 
 /**** Home post singe page view DROP CAPS ****/
-/* line 165, ../../_compass/_typography.scss */
+/* line 192, ../../_compass/_typography.scss */
 .drop-cap:first-letter {
-  font-size: 98px;
-  line-height: 0.5em;
+  font-size: 90px;
+  font-weight: 600;
   color: #2b8686;
   float: left;
+  line-height: 0.5em;
   padding-right: 0.15em;
-  padding-top: 0.24em;
-  font-weight: 600;
+  padding-top: 0.25em;
+}
+@media (min-width: 37.5em) {
+  /* line 192, ../../_compass/_typography.scss */
+  .drop-cap:first-letter {
+    font-size: 4.66667em;
+    line-height: 1.05612em;
+    line-height: 0.5em;
+    padding-right: 0.15em;
+    padding-top: 0.26em;
+  }
 }
 
-/* line 176, ../../_compass/_typography.scss */
+/* line 209, ../../_compass/_typography.scss */
 .no-js .drop-cap:first-letter, .wf-inactive .drop-cap:first-letter {
   padding-top: 0.19em;
 }
 
-/* line 182, ../../_compass/_typography.scss */
+/* line 215, ../../_compass/_typography.scss */
 figcaption {
   font-family: "open-sans", sans-serif;
-  font-size: 0.57895em;
-  line-height: 1.63636em;
+  font-size: 0.57143em;
+  line-height: 1.5em;
   color: #555555;
-  margin-top: -0.47368em;
+  margin-top: -0.42857em;
+}
+@media (min-width: 37.5em) {
+  /* line 215, ../../_compass/_typography.scss */
+  figcaption {
+    font-size: 0.52381em;
+    line-height: 1.63636em;
+  }
 }
 
-/* line 191, ../../_compass/_typography.scss */
+/* line 227, ../../_compass/_typography.scss */
 a {
   color: #2455c3;
   text-decoration: underline;
   -webkit-transition: color 0.4s ease;
           transition: color 0.4s ease;
 }
-/* line 195, ../../_compass/_typography.scss */
+/* line 231, ../../_compass/_typography.scss */
 a:hover, a:focus {
   color: #3f6fdb;
 }
-/* line 198, ../../_compass/_typography.scss */
+/* line 234, ../../_compass/_typography.scss */
 a:active {
   color: #6a8fe3;
 }
@@ -792,29 +871,36 @@ END TYPOGRAPHIC STYLES AND VERTICAL RHYTHMS OF MAJOR PAGE COMPONENTS
 /********* 
 Styles for READ MORE section and read more buttons
 *********/
-/* line 211, ../../_compass/_typography.scss */
+/* line 247, ../../_compass/_typography.scss */
 .read-more {
   background-color: #f5f6f5;
-  margin-top: 1.89474em;
-  padding: 0.94737em 1.5em 2.36842em 1.5em;
+  margin-top: 1.71429em;
+  padding: 0.85714em 1.5em 2.14286em 1.5em;
 }
 @media (min-width: 37.5em) {
-  /* line 215, ../../_compass/_typography.scss */
+  /* line 251, ../../_compass/_typography.scss */
   .read-more h5 {
-    font-size: 0.84211em;
+    font-size: 0.85714em;
+    line-height: 1.25em;
+  }
+}
+/* line 256, ../../_compass/_typography.scss */
+.read-more p {
+  font-size: 0.85714em;
+  line-height: 1.25em;
+}
+@media (min-width: 37.5em) {
+  /* line 256, ../../_compass/_typography.scss */
+  .read-more p {
+    font-size: 0.7619em;
     line-height: 1.40625em;
   }
 }
-/* line 220, ../../_compass/_typography.scss */
-.read-more p {
-  font-size: 0.84211em;
-  line-height: 1.40625em;
-}
 
-/* line 225, ../../_compass/_typography.scss */
+/* line 264, ../../_compass/_typography.scss */
 .read-more-button {
   width: 8.75em;
-  margin-top: 1.42105em;
+  margin-top: 1.28571em;
   background-color: #f5f6f5;
   color: #9c0d0d;
   -webkit-transition: background-color 0.4s ease;
@@ -832,28 +918,35 @@ Styles for READ MORE section and read more buttons
 /********* 
 PLACEHOLDER SELECTORS
 *********/
-/* line 238, ../../_compass/_typography.scss */
+/* line 277, ../../_compass/_typography.scss */
 nav {
   color: #ffffff;
 }
-/* line 240, ../../_compass/_typography.scss */
+/* line 279, ../../_compass/_typography.scss */
 nav a {
   color: inherit;
   text-decoration: underline;
 }
-/* line 243, ../../_compass/_typography.scss */
+/* line 282, ../../_compass/_typography.scss */
 nav a:hover, nav a:focus {
   color: #e6e6e6;
 }
-/* line 246, ../../_compass/_typography.scss */
+/* line 285, ../../_compass/_typography.scss */
 nav a:active {
   color: #cccccc;
 }
 
-/* line 254, ../../_compass/_typography.scss */
+/* line 293, ../../_compass/_typography.scss */
 button {
   font-family: "open-sans", sans-serif;
-  font-size: 0.84211em;
-  line-height: 1.40625em;
+  font-size: 0.85714em;
+  line-height: 1.25em;
   font-weight: 400;
+}
+@media (min-width: 37.5em) {
+  /* line 293, ../../_compass/_typography.scss */
+  button {
+    font-size: 0.7619em;
+    line-height: 1.40625em;
+  }
 }
