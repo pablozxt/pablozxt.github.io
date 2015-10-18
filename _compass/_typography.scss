@@ -191,7 +191,6 @@ TYPOGRAPHIC STYLES AND VERTICAL RHYTHMS OF MAJOR PAGE COMPONENTS
 	/**** Home post singe page view DROP CAPS ****/
 	.drop-cap:first-letter {
 		font-size: map-get($font-sizes, huge-5);
-		font-weight: map-get($font-weights, semibold);
 		color: map-get($home-color, normal);
 		float: left;
 		line-height: 0.5em;
@@ -199,6 +198,7 @@ TYPOGRAPHIC STYLES AND VERTICAL RHYTHMS OF MAJOR PAGE COMPONENTS
 		padding-top: 0.25em;
 		@include breakpoint($large-phone) {
 			@include set-font-size(huge-6, $small-font-sizes);
+			font-weight: map-get($font-weights, semibold);
 			line-height: 0.5em;
 			padding-right: 0.15em;
 			padding-top: 0.26em;

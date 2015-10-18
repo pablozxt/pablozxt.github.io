@@ -816,7 +816,6 @@ p {
 /* line 192, ../../_compass/_typography.scss */
 .drop-cap:first-letter {
   font-size: 90px;
-  font-weight: 600;
   color: #2b8686;
   float: left;
   line-height: 0.5em;
@@ -828,6 +827,7 @@ p {
   .drop-cap:first-letter {
     font-size: 4.66667em;
     line-height: 1.05612em;
+    font-weight: 600;
     line-height: 0.5em;
     padding-right: 0.15em;
     padding-top: 0.26em;
