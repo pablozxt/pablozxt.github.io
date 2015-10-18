@@ -44,7 +44,10 @@ NAV STYLES
 		}//ul
 		li {
 			@include clearfix;
-			margin-left: span(5);
+			margin-left: span(4);
+			@include breakpoint($large-phone) {
+				margin-left: span(5);
+			}
 			span {
 				display: block;
 				float: left;
