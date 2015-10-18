@@ -49,7 +49,7 @@ TYPOGRAPHIC STYLES AND VERTICAL RHYTHMS OF MAJOR PAGE COMPONENTS
 	main {
 		margin-bottom: rhythm(10);
 		h1 {
-		@include set-font-size(huge-2);
+		@include set-font-size(huge-3);
 		@include breakpoint($large-phone) {
 			@include set-font-size(huge-2, $small-font-sizes);
 		}
