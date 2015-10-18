@@ -190,8 +190,7 @@ TYPOGRAPHIC STYLES AND VERTICAL RHYTHMS OF MAJOR PAGE COMPONENTS
 
 	a {
 		color: $link-color;
-		text-decoration: none;
-		@include underline($background-color, $link-color, true, 1, 1.3);
+		text-decoration: underline;
 		transition: color 0.4s ease;
 		&:hover, &:focus {
 			color: $link-hover-color;
@@ -213,9 +212,6 @@ Styles for READ MORE section and read more buttons
 		background-color: $read-more-background-color;
 		margin-top: rhythm(4);
 		padding: rhythm(2) 2*$body-padding rhythm(5) 2*$body-padding;
-		a {
-			@include underline( $read-more-background-color, $link-color, true, 1, 1.3);
-		}//a
 		h5 {
 			@include breakpoint($large-phone) {
 				@include set-font-size(small);
@@ -243,7 +239,7 @@ PLACEHOLDER SELECTORS
 		color: set-text-color($home-nav-background);
 		a {
 			color: inherit;
-			@include underline($home-nav-background, $alt-text-color, true, 1.2, 0.8);
+			text-decoration: underline;
 			&:hover, &:focus {
 				color: darken(set-text-color($home-nav-background), 10%);
 			}//:hover, :focus
