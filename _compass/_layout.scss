@@ -17,6 +17,7 @@ NAV STYLES
 		background-position: 0%;
 		@include breakpoint($nav-picture-width) {
 			background-size: auto auto;
+			background-position: center;
 		}//media query
 	}//.nav
 
