@@ -153,10 +153,11 @@ nav {
   /* line 14, ../../_compass/_layout.scss */
   nav {
     background-size: auto auto;
+    background-position: center;
   }
 }
 
-/* line 23, ../../_compass/_layout.scss */
+/* line 24, ../../_compass/_layout.scss */
 .nav-outer-wrapper {
   padding: 0.85714em 0.75em;
   position: relative;
@@ -164,7 +165,7 @@ nav {
   background-color: rgba(1, 9, 9, 0.55);
 }
 @media (min-width: 43.75em) {
-  /* line 23, ../../_compass/_layout.scss */
+  /* line 24, ../../_compass/_layout.scss */
   .nav-outer-wrapper {
     background-color: #010909;
     background: -webkit-linear-gradient(left, #010909 calc( (100% - 75em)/2 + 150px), rgba(1, 9, 9, 0.55) calc( (100% - 75em)/2 + 400px), rgba(1, 9, 9, 0.55) calc( 100% - (100% - 75em)/2 - 400px), #010909 calc( 100% - (100% - 75em)/2 - 150px));
@@ -172,12 +173,12 @@ nav {
   }
 }
 
-/* line 31, ../../_compass/_layout.scss */
+/* line 32, ../../_compass/_layout.scss */
 .engineer .nav-outer-wrapper {
   background-color: rgba(34, 3, 3, 0.55);
 }
 @media (min-width: 43.75em) {
-  /* line 31, ../../_compass/_layout.scss */
+  /* line 32, ../../_compass/_layout.scss */
   .engineer .nav-outer-wrapper {
     background-color: #220303;
     background: -webkit-linear-gradient(left, #220303 calc( (100% - 75em)/2 + 150px), rgba(34, 3, 3, 0.55) calc( (100% - 75em)/2 + 400px), rgba(34, 3, 3, 0.55) calc( 100% - (100% - 75em)/2 - 400px), #220303 calc( 100% - (100% - 75em)/2 - 150px));
@@ -185,39 +186,39 @@ nav {
   }
 }
 
-/* line 36, ../../_compass/_layout.scss */
+/* line 37, ../../_compass/_layout.scss */
 .nav-wrapper {
   max-width: 43.75em;
   margin: 0 auto;
 }
 
-/* line 42, ../../_compass/_layout.scss */
+/* line 43, ../../_compass/_layout.scss */
 .nav-social ul {
   display: relative;
 }
-/* line 45, ../../_compass/_layout.scss */
+/* line 46, ../../_compass/_layout.scss */
 .nav-social li {
   overflow: hidden;
   *zoom: 1;
   margin-left: 32.20339%;
 }
 @media (min-width: 37.5em) {
-  /* line 45, ../../_compass/_layout.scss */
+  /* line 46, ../../_compass/_layout.scss */
   .nav-social li {
     margin-left: 40.67797%;
   }
 }
-/* line 51, ../../_compass/_layout.scss */
+/* line 52, ../../_compass/_layout.scss */
 .nav-social li span {
   display: block;
   float: left;
 }
-/* line 55, ../../_compass/_layout.scss */
+/* line 56, ../../_compass/_layout.scss */
 .nav-social li .username {
   margin-left: 0.625em;
 }
 
-/* line 61, ../../_compass/_layout.scss */
+/* line 62, ../../_compass/_layout.scss */
 svg {
   width: 1.25em;
   height: 1.25em;
@@ -241,39 +242,39 @@ margins are set elsewhere.
 .read-more-button padding has to be set using margin rules and has to clear 
 float of the previous elements
 *********/
-/* line 87, ../../_compass/_layout.scss */
+/* line 88, ../../_compass/_layout.scss */
 .home-main {
   padding-left: 0.75em;
   padding-right: 0.75em;
 }
 @media (min-width: 900px) {
-  /* line 87, ../../_compass/_layout.scss */
+  /* line 88, ../../_compass/_layout.scss */
   .home-main {
     padding-left: 0;
     padding-right: 0;
   }
 }
 
-/* line 92, ../../_compass/_layout.scss */
+/* line 93, ../../_compass/_layout.scss */
 .engineer-main header, .engineer-main .text-container, .engineer-main figcaption {
   padding-left: 0.75em;
   padding-right: 0.75em;
 }
 @media (min-width: 900px) {
-  /* line 92, ../../_compass/_layout.scss */
+  /* line 93, ../../_compass/_layout.scss */
   .engineer-main header, .engineer-main .text-container, .engineer-main figcaption {
     padding-left: 0;
     padding-right: 0;
   }
 }
 
-/* line 97, ../../_compass/_layout.scss */
+/* line 98, ../../_compass/_layout.scss */
 .read-more {
   padding-left: 0.75em;
   padding-right: 0.75em;
 }
 
-/* line 101, ../../_compass/_layout.scss */
+/* line 102, ../../_compass/_layout.scss */
 .read-more-button {
   margin-left: 0.75em;
 }
@@ -284,7 +285,7 @@ END PADDING
 /********* 
 MAXIMUM WIDTHS
 *********/
-/* line 113, ../../_compass/_layout.scss */
+/* line 114, ../../_compass/_layout.scss */
 main {
   max-width: 87.5em;
   margin-left: auto;
@@ -294,7 +295,7 @@ main {
 /********* 
 header (meant for engineer page): set maximum width
 *********/
-/* line 123, ../../_compass/_layout.scss */
+/* line 124, ../../_compass/_layout.scss */
 header {
   max-width: 800px;
 }
@@ -304,12 +305,12 @@ header {
 in engineer page, while letting images have a longer width
 .text-container 
 *********/
-/* line 133, ../../_compass/_layout.scss */
+/* line 134, ../../_compass/_layout.scss */
 .text-container {
   max-width: 600px;
 }
 @media (min-width: 800px) {
-  /* line 135, ../../_compass/_layout.scss */
+  /* line 136, ../../_compass/_layout.scss */
   .text-container p, .text-container h3, .text-container h4 {
     margin-left: 6.77966%;
   }
@@ -318,7 +319,7 @@ in engineer page, while letting images have a longer width
 /********* 
 set .home-post width
 *********/
-/* line 146, ../../_compass/_layout.scss */
+/* line 147, ../../_compass/_layout.scss */
 .home-post {
   max-width: 600px;
   margin: 0 auto;
@@ -335,37 +336,37 @@ The goal is to have the left-margin of these two sets of elements be aligned
 Left margin starts at 0, increases to one column, then to two columns
 *********/
 @media (min-width: 700px) {
-  /* line 163, ../../_compass/_layout.scss */
+  /* line 164, ../../_compass/_layout.scss */
   header, .text-container, .read-more-button {
     margin-left: 6.77966%;
   }
 }
 @media (min-width: 900px) {
-  /* line 163, ../../_compass/_layout.scss */
+  /* line 164, ../../_compass/_layout.scss */
   header, .text-container, .read-more-button {
     margin-left: 15.25424%;
   }
 }
 @media (min-width: 87.5em) {
-  /* line 163, ../../_compass/_layout.scss */
+  /* line 164, ../../_compass/_layout.scss */
   header, .text-container, .read-more-button {
     margin-left: 23.72881%;
   }
 }
 
 @media (min-width: 900px) {
-  /* line 175, ../../_compass/_layout.scss */
+  /* line 176, ../../_compass/_layout.scss */
   figcaption {
     margin-left: 6.77966%;
   }
 }
 
-/* line 182, ../../_compass/_layout.scss */
+/* line 183, ../../_compass/_layout.scss */
 #main ul {
   margin-left: 6.77966%;
 }
 @media (min-width: 800px) {
-  /* line 182, ../../_compass/_layout.scss */
+  /* line 183, ../../_compass/_layout.scss */
   #main ul {
     margin-left: 15.25424%;
   }
@@ -381,12 +382,12 @@ set styles for .text-container and figure inside of .engineer-project
 class to float text to the left and images to the right. 
 Use resp-float mixin to float element responsively at a given breakpoint
 *********/
-/* line 202, ../../_compass/_layout.scss */
+/* line 203, ../../_compass/_layout.scss */
 .engineer-project {
   /** max-width of floated images has to be limited to 100% of its column **/
 }
 @media (min-width: 75em) {
-  /* line 203, ../../_compass/_layout.scss */
+  /* line 204, ../../_compass/_layout.scss */
   .engineer-project .text-container {
     float: left;
     width: 45.3125%;
@@ -394,19 +395,19 @@ Use resp-float mixin to float element responsively at a given breakpoint
   }
 }
 @media (min-width: 75em) {
-  /* line 206, ../../_compass/_layout.scss */
+  /* line 207, ../../_compass/_layout.scss */
   .engineer-project figure {
     float: right;
     width: 45.3125%;
     margin-right: 1.69492%;
   }
 }
-/* line 210, ../../_compass/_layout.scss */
+/* line 211, ../../_compass/_layout.scss */
 .engineer-project img {
   max-width: 100%;
 }
 @media (min-width: 75em) {
-  /* line 213, ../../_compass/_layout.scss */
+  /* line 214, ../../_compass/_layout.scss */
   .engineer-project .read-more-button {
     clear: both;
     margin-top: 2.14286em;
@@ -415,7 +416,7 @@ Use resp-float mixin to float element responsively at a given breakpoint
 }
 
 @media (min-width: 75em) {
-  /* line 222, ../../_compass/_layout.scss */
+  /* line 223, ../../_compass/_layout.scss */
   .engineer-interests {
     float: left;
     width: 45.3125%;
@@ -424,7 +425,7 @@ Use resp-float mixin to float element responsively at a given breakpoint
 }
 
 @media (min-width: 75em) {
-  /* line 226, ../../_compass/_layout.scss */
+  /* line 227, ../../_compass/_layout.scss */
   .engineer-education {
     float: right;
     width: 45.3125%;
@@ -432,7 +433,7 @@ Use resp-float mixin to float element responsively at a given breakpoint
   }
 }
 @media (min-width: 75em) {
-  /* line 226, ../../_compass/_layout.scss */
+  /* line 227, ../../_compass/_layout.scss */
   .engineer-education {
     margin-left: 1.69492%;
   }
@@ -444,20 +445,20 @@ END RESPONSIVE FLOATED TWO COLUMN LAYOUT
 /********* 
 PICTURES LAYOUT
 *********/
-/* line 242, ../../_compass/_layout.scss */
+/* line 243, ../../_compass/_layout.scss */
 figure {
   margin-top: 1.28571em;
   margin-left: auto;
   margin-right: auto;
 }
 @media (min-width: 75em) {
-  /* line 242, ../../_compass/_layout.scss */
+  /* line 243, ../../_compass/_layout.scss */
   figure {
     margin-top: 2.57143em;
   }
 }
 
-/* line 251, ../../_compass/_layout.scss */
+/* line 252, ../../_compass/_layout.scss */
 .full-width {
   max-width: 63.63636em;
 }
@@ -472,16 +473,16 @@ overridden for browsers supporting CSS column
 Default read-more layout is three columns wide. However, areas with shorter read-more sections
 add a class columns-2 which reduces the width down to two columns
 *********/
-/* line 268, ../../_compass/_layout.scss */
+/* line 269, ../../_compass/_layout.scss */
 .read-more p, .read-more h5 {
   max-width: 31.25em;
 }
 
-/* line 274, ../../_compass/_layout.scss */
+/* line 275, ../../_compass/_layout.scss */
 .csscolumns p, .csscolumns h5 {
   max-width: 31.25em;
 }
-/* line 277, ../../_compass/_layout.scss */
+/* line 278, ../../_compass/_layout.scss */
 .csscolumns .read-more-inner {
   -webkit-columns: 3 15.625em;
      -moz-columns: 3 15.625em;
@@ -490,7 +491,7 @@ add a class columns-2 which reduces the width down to two columns
      -moz-column-gap: 1 em;
           column-gap: 1 em;
 }
-/* line 281, ../../_compass/_layout.scss */
+/* line 282, ../../_compass/_layout.scss */
 .csscolumns .columns-2 {
   -webkit-column-count: 2;
      -moz-column-count: 2;
