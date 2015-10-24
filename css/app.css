@@ -894,29 +894,29 @@ blockquote {
 blockquote p:first-of-type:before {
   content: open-quote;
   color: #2b8686;
-  font-size: 1.42857em;
-  line-height: 1.2em;
+  font-size: 1.19048em;
+  line-height: 1.26em;
 }
 @media (min-width: 37.5em) {
   /* line 255, ../../_compass/_typography.scss */
   blockquote p:first-of-type:before {
-    font-size: 1.28571em;
-    line-height: 1.16667em;
+    font-size: 1.09524em;
+    line-height: 1.17391em;
   }
 }
 
 /* line 264, ../../_compass/_typography.scss */
 blockquote p:last-of-type:after {
   content: close-quote;
-  font-size: 1.42857em;
-  line-height: 1.2em;
+  font-size: 1.19048em;
+  line-height: 1.26em;
   color: #2b8686;
 }
 @media (min-width: 37.5em) {
   /* line 264, ../../_compass/_typography.scss */
   blockquote p:last-of-type:after {
-    font-size: 1.28571em;
-    line-height: 1.16667em;
+    font-size: 1.09524em;
+    line-height: 1.17391em;
   }
 }
 
