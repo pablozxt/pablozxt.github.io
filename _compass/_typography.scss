@@ -63,9 +63,6 @@ TYPOGRAPHIC STYLES AND VERTICAL RHYTHMS OF MAJOR PAGE COMPONENTS
 			@include breakpoint($large-phone) {
 				@include set-font-size(normal, $small-font-sizes);
 			}
-			li {
-				margin-top: rhythm(2);
-			}//li
 		}//ul
 	}//main
 
@@ -249,18 +246,28 @@ TYPOGRAPHIC STYLES AND VERTICAL RHYTHMS OF MAJOR PAGE COMPONENTS
 	}
 	
 	blockquote {
-		border-left: 8px solid $read-more-background-color;
+		border-left: 5px solid $read-more-background-color;
 		margin-top: rhythm(4);
 		padding-left: 2*$body-padding;
 		color: lighten($text-color, 30%);
 	}//blockquote
 	
 	blockquote p:first-of-type:before {
-	    content: open-quote;
+		content: open-quote;
+		color: map-get($home-color, normal);
+		@include set-font-size(large);
+		@include breakpoint($large-phone) {
+			@include set-font-size(large, $small-font-sizes);
+		}
 	}
 	
 	blockquote p:last-of-type:after {
 	    content: close-quote;
+		@include set-font-size(large);
+		@include breakpoint($large-phone) {
+			@include set-font-size(large, $small-font-sizes);
+		}
+		color: map-get($home-color, normal);
 	}
 	
 /********* 	
