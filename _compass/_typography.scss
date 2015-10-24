@@ -255,17 +255,17 @@ TYPOGRAPHIC STYLES AND VERTICAL RHYTHMS OF MAJOR PAGE COMPONENTS
 	blockquote p:first-of-type:before {
 		content: open-quote;
 		color: map-get($home-color, normal);
-		@include set-font-size(large);
+		@include set-font-size(medium);
 		@include breakpoint($large-phone) {
-			@include set-font-size(large, $small-font-sizes);
+			@include set-font-size(medium, $small-font-sizes);
 		}
 	}
 	
 	blockquote p:last-of-type:after {
 	    content: close-quote;
-		@include set-font-size(large);
+		@include set-font-size(medium);
 		@include breakpoint($large-phone) {
-			@include set-font-size(large, $small-font-sizes);
+			@include set-font-size(medium, $small-font-sizes);
 		}
 		color: map-get($home-color, normal);
 	}
