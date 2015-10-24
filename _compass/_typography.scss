@@ -243,6 +243,26 @@ TYPOGRAPHIC STYLES AND VERTICAL RHYTHMS OF MAJOR PAGE COMPONENTS
 		font-style: italic;
 	}
 	
+	q, 
+	blockquote {
+	    quotes: "\201C" "\201D" "\2018" "\2019";
+	}
+	
+	blockquote {
+		border-left: 8px solid $read-more-background-color;
+		margin-top: rhythm(4);
+		padding-left: 2*$body-padding;
+		color: lighten($text-color, 30%);
+	}//blockquote
+	
+	blockquote p:first-of-type:before {
+	    content: open-quote;
+	}
+	
+	blockquote p:last-of-type:after {
+	    content: close-quote;
+	}
+	
 /********* 	
 END TYPOGRAPHIC STYLES AND VERTICAL RHYTHMS OF MAJOR PAGE COMPONENTS
 *********/
@@ -254,7 +274,7 @@ Styles for READ MORE section and read more buttons
 	.read-more {
 		background-color: $read-more-background-color;
 		margin-top: rhythm(4);
-		padding: rhythm(2) 2*$body-padding rhythm(5) 2*$body-padding;
+		padding: rhythm(2) 1*$body-padding rhythm(5) 1*$body-padding;
 		h5 {
 			@include breakpoint($large-phone) {
 				@include set-font-size(small);

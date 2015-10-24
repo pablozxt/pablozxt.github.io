@@ -881,39 +881,63 @@ em {
   font-style: italic;
 }
 
+/* line 246, ../../_compass/_typography.scss */
+q,
+blockquote {
+  quotes: "\201C" "\201D" "\2018" "\2019";
+}
+
+/* line 251, ../../_compass/_typography.scss */
+blockquote {
+  border-left: 8px solid #f5f6f5;
+  margin-top: 1.71429em;
+  padding-left: 1.5em;
+  color: #6f6f6f;
+}
+
+/* line 258, ../../_compass/_typography.scss */
+blockquote p:first-of-type:before {
+  content: open-quote;
+}
+
+/* line 262, ../../_compass/_typography.scss */
+blockquote p:last-of-type:after {
+  content: close-quote;
+}
+
 /********* 	
 END TYPOGRAPHIC STYLES AND VERTICAL RHYTHMS OF MAJOR PAGE COMPONENTS
 *********/
 /********* 
 Styles for READ MORE section and read more buttons
 *********/
-/* line 254, ../../_compass/_typography.scss */
+/* line 274, ../../_compass/_typography.scss */
 .read-more {
   background-color: #f5f6f5;
   margin-top: 1.71429em;
-  padding: 0.85714em 1.5em 2.14286em 1.5em;
+  padding: 0.85714em 0.75em 2.14286em 0.75em;
 }
 @media (min-width: 37.5em) {
-  /* line 258, ../../_compass/_typography.scss */
+  /* line 278, ../../_compass/_typography.scss */
   .read-more h5 {
     font-size: 0.85714em;
     line-height: 1.25em;
   }
 }
-/* line 263, ../../_compass/_typography.scss */
+/* line 283, ../../_compass/_typography.scss */
 .read-more p {
   font-size: 0.85714em;
   line-height: 1.25em;
 }
 @media (min-width: 37.5em) {
-  /* line 263, ../../_compass/_typography.scss */
+  /* line 283, ../../_compass/_typography.scss */
   .read-more p {
     font-size: 0.7619em;
     line-height: 1.40625em;
   }
 }
 
-/* line 271, ../../_compass/_typography.scss */
+/* line 291, ../../_compass/_typography.scss */
 .read-more-button {
   width: 8.75em;
   margin-top: 1.28571em;
@@ -934,25 +958,25 @@ Styles for READ MORE section and read more buttons
 /********* 
 PLACEHOLDER SELECTORS
 *********/
-/* line 284, ../../_compass/_typography.scss */
+/* line 304, ../../_compass/_typography.scss */
 nav {
   color: #ffffff;
 }
-/* line 286, ../../_compass/_typography.scss */
+/* line 306, ../../_compass/_typography.scss */
 nav a {
   color: inherit;
   text-decoration: underline;
 }
-/* line 289, ../../_compass/_typography.scss */
+/* line 309, ../../_compass/_typography.scss */
 nav a:hover, nav a:focus {
   color: #e6e6e6;
 }
-/* line 292, ../../_compass/_typography.scss */
+/* line 312, ../../_compass/_typography.scss */
 nav a:active {
   color: #cccccc;
 }
 
-/* line 300, ../../_compass/_typography.scss */
+/* line 320, ../../_compass/_typography.scss */
 button {
   font-family: "open-sans", sans-serif;
   font-size: 0.85714em;
@@ -960,7 +984,7 @@ button {
   font-weight: 400;
 }
 @media (min-width: 37.5em) {
-  /* line 300, ../../_compass/_typography.scss */
+  /* line 320, ../../_compass/_typography.scss */
   button {
     font-size: 0.7619em;
     line-height: 1.40625em;
