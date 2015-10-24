@@ -11,9 +11,6 @@ TYPOGRAPHIC STYLES AND VERTICAL RHYTHMS OF MAJOR PAGE COMPONENTS
 
 	body {
 	    font-size: $base-font-size;
-		@include breakpoint($large-phone) {
-			font-size: $small-font-size;
-		}
 		font-family: $base-font-family;
 		@include adjust-leading-to(3);
 		color: $text-color;
@@ -62,6 +59,10 @@ TYPOGRAPHIC STYLES AND VERTICAL RHYTHMS OF MAJOR PAGE COMPONENTS
 		ul {
 			list-style: disc;
 			margin-top: rhythm(2);
+			@include set-font-size(normal);
+			@include breakpoint($large-phone) {
+				@include set-font-size(normal, $small-font-sizes);
+			}
 			li {
 				margin-top: rhythm(2);
 			}//li

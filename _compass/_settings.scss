@@ -77,6 +77,8 @@
 				 smaller: round(ms(-2)),
 				 tiny: round(ms(-3))
 	             );
+
+	
 	//small font size map for small screens
 	$small-font-sizes: (
 						 huge-6: round(modular-scale(9, $small-font-size, $ms-ratio)),
