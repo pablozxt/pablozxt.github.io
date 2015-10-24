@@ -876,39 +876,44 @@ a:active {
   color: #6a8fe3;
 }
 
+/* line 242, ../../_compass/_typography.scss */
+em {
+  font-style: italic;
+}
+
 /********* 	
 END TYPOGRAPHIC STYLES AND VERTICAL RHYTHMS OF MAJOR PAGE COMPONENTS
 *********/
 /********* 
 Styles for READ MORE section and read more buttons
 *********/
-/* line 248, ../../_compass/_typography.scss */
+/* line 254, ../../_compass/_typography.scss */
 .read-more {
   background-color: #f5f6f5;
   margin-top: 1.71429em;
   padding: 0.85714em 1.5em 2.14286em 1.5em;
 }
 @media (min-width: 37.5em) {
-  /* line 252, ../../_compass/_typography.scss */
+  /* line 258, ../../_compass/_typography.scss */
   .read-more h5 {
     font-size: 0.85714em;
     line-height: 1.25em;
   }
 }
-/* line 257, ../../_compass/_typography.scss */
+/* line 263, ../../_compass/_typography.scss */
 .read-more p {
   font-size: 0.85714em;
   line-height: 1.25em;
 }
 @media (min-width: 37.5em) {
-  /* line 257, ../../_compass/_typography.scss */
+  /* line 263, ../../_compass/_typography.scss */
   .read-more p {
     font-size: 0.7619em;
     line-height: 1.40625em;
   }
 }
 
-/* line 265, ../../_compass/_typography.scss */
+/* line 271, ../../_compass/_typography.scss */
 .read-more-button {
   width: 8.75em;
   margin-top: 1.28571em;
@@ -929,25 +934,25 @@ Styles for READ MORE section and read more buttons
 /********* 
 PLACEHOLDER SELECTORS
 *********/
-/* line 278, ../../_compass/_typography.scss */
+/* line 284, ../../_compass/_typography.scss */
 nav {
   color: #ffffff;
 }
-/* line 280, ../../_compass/_typography.scss */
+/* line 286, ../../_compass/_typography.scss */
 nav a {
   color: inherit;
   text-decoration: underline;
 }
-/* line 283, ../../_compass/_typography.scss */
+/* line 289, ../../_compass/_typography.scss */
 nav a:hover, nav a:focus {
   color: #e6e6e6;
 }
-/* line 286, ../../_compass/_typography.scss */
+/* line 292, ../../_compass/_typography.scss */
 nav a:active {
   color: #cccccc;
 }
 
-/* line 294, ../../_compass/_typography.scss */
+/* line 300, ../../_compass/_typography.scss */
 button {
   font-family: "open-sans", sans-serif;
   font-size: 0.85714em;
@@ -955,7 +960,7 @@ button {
   font-weight: 400;
 }
 @media (min-width: 37.5em) {
-  /* line 294, ../../_compass/_typography.scss */
+  /* line 300, ../../_compass/_typography.scss */
   button {
     font-size: 0.7619em;
     line-height: 1.40625em;

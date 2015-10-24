@@ -223,7 +223,7 @@ TYPOGRAPHIC STYLES AND VERTICAL RHYTHMS OF MAJOR PAGE COMPONENTS
 		margin-top: rhythm(-1);
 	}
 
-	//Link Styles. Sets link colors and includes a Medium style underline function
+	//Link styles. Sets link colors and includes a Medium style underline function
 
 	a {
 		color: $link-color;
@@ -236,6 +236,12 @@ TYPOGRAPHIC STYLES AND VERTICAL RHYTHMS OF MAJOR PAGE COMPONENTS
 			color: $link-active-color;
 		}//:active
 	}//a
+	
+	//<em> styles: italics
+	
+	em {
+		font-style: italic;
+	}
 	
 /********* 	
 END TYPOGRAPHIC STYLES AND VERTICAL RHYTHMS OF MAJOR PAGE COMPONENTS
