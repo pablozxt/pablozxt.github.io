@@ -188,12 +188,12 @@ TYPOGRAPHIC STYLES AND VERTICAL RHYTHMS OF MAJOR PAGE COMPONENTS
 	
 	/**** Home post singe page view DROP CAPS ****/
 	.drop-cap:first-letter {
-		font-size: map-get($font-sizes, huge-5);
+		font-size: map-get($font-sizes, huge-3);
 		color: map-get($home-color, normal);
 		float: left;
-		line-height: 0.5em;
+		line-height: 0.45em;
 		padding-right: 0.15em;
-		padding-top: 0.25em;
+		padding-top: 0.31em;
 		@include breakpoint($large-phone) {
 			@include set-font-size(huge-6, $small-font-sizes);
 			font-weight: map-get($font-weights, semibold);
@@ -221,7 +221,6 @@ TYPOGRAPHIC STYLES AND VERTICAL RHYTHMS OF MAJOR PAGE COMPONENTS
 	}
 
 	//Link styles. Sets link colors and includes a Medium style underline function
-
 	a {
 		color: $link-color;
 		text-decoration: underline;
@@ -240,18 +239,20 @@ TYPOGRAPHIC STYLES AND VERTICAL RHYTHMS OF MAJOR PAGE COMPONENTS
 		font-style: italic;
 	}
 	
-	q, 
-	blockquote {
+	//define smart quotes for quotes and blockquotes
+	q, blockquote {
 	    quotes: "\201C" "\201D" "\2018" "\2019";
 	}
 	
+	//blockquote styles
 	blockquote {
 		border-left: 5px solid $read-more-background-color;
 		margin-top: rhythm(4);
 		padding-left: 2*$body-padding;
 		color: lighten($text-color, 30%);
-	}//blockquote
+	}
 	
+	//open a blockquote using smart double quotes
 	blockquote p:first-of-type:before {
 		content: open-quote;
 		color: map-get($home-color, normal);
@@ -261,6 +262,7 @@ TYPOGRAPHIC STYLES AND VERTICAL RHYTHMS OF MAJOR PAGE COMPONENTS
 		}
 	}
 	
+	//close a blockquote with double quotes
 	blockquote p:last-of-type:after {
 	    content: close-quote;
 		@include set-font-size(medium);

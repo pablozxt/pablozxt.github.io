@@ -815,12 +815,12 @@ p {
 /**** Home post singe page view DROP CAPS ****/
 /* line 190, ../../_compass/_typography.scss */
 .drop-cap:first-letter {
-  font-size: 90px;
+  font-size: 63px;
   color: #2b8686;
   float: left;
-  line-height: 0.5em;
+  line-height: 0.45em;
   padding-right: 0.15em;
-  padding-top: 0.25em;
+  padding-top: 0.31em;
 }
 @media (min-width: 37.5em) {
   /* line 190, ../../_compass/_typography.scss */
@@ -855,30 +855,29 @@ figcaption {
   }
 }
 
-/* line 225, ../../_compass/_typography.scss */
+/* line 224, ../../_compass/_typography.scss */
 a {
   color: #2455c3;
   text-decoration: underline;
   -webkit-transition: color 0.4s ease;
           transition: color 0.4s ease;
 }
-/* line 229, ../../_compass/_typography.scss */
+/* line 228, ../../_compass/_typography.scss */
 a:hover, a:focus {
   color: #3f6fdb;
 }
-/* line 232, ../../_compass/_typography.scss */
+/* line 231, ../../_compass/_typography.scss */
 a:active {
   color: #6a8fe3;
 }
 
-/* line 239, ../../_compass/_typography.scss */
+/* line 238, ../../_compass/_typography.scss */
 em {
   font-style: italic;
 }
 
 /* line 243, ../../_compass/_typography.scss */
-q,
-blockquote {
+q, blockquote {
   quotes: "\201C" "\201D" "\2018" "\2019";
 }
 
@@ -890,7 +889,7 @@ blockquote {
   color: #6f6f6f;
 }
 
-/* line 255, ../../_compass/_typography.scss */
+/* line 256, ../../_compass/_typography.scss */
 blockquote p:first-of-type:before {
   content: open-quote;
   color: #2b8686;
@@ -898,14 +897,14 @@ blockquote p:first-of-type:before {
   line-height: 1.26em;
 }
 @media (min-width: 37.5em) {
-  /* line 255, ../../_compass/_typography.scss */
+  /* line 256, ../../_compass/_typography.scss */
   blockquote p:first-of-type:before {
     font-size: 1.09524em;
     line-height: 1.17391em;
   }
 }
 
-/* line 264, ../../_compass/_typography.scss */
+/* line 266, ../../_compass/_typography.scss */
 blockquote p:last-of-type:after {
   content: close-quote;
   font-size: 1.19048em;
@@ -913,7 +912,7 @@ blockquote p:last-of-type:after {
   color: #2b8686;
 }
 @media (min-width: 37.5em) {
-  /* line 264, ../../_compass/_typography.scss */
+  /* line 266, ../../_compass/_typography.scss */
   blockquote p:last-of-type:after {
     font-size: 1.09524em;
     line-height: 1.17391em;
@@ -926,33 +925,33 @@ END TYPOGRAPHIC STYLES AND VERTICAL RHYTHMS OF MAJOR PAGE COMPONENTS
 /********* 
 Styles for READ MORE section and read more buttons
 *********/
-/* line 281, ../../_compass/_typography.scss */
+/* line 283, ../../_compass/_typography.scss */
 .read-more {
   background-color: #f5f6f5;
   margin-top: 1.71429em;
   padding: 0.85714em 0.75em 2.14286em 0.75em;
 }
 @media (min-width: 37.5em) {
-  /* line 285, ../../_compass/_typography.scss */
+  /* line 287, ../../_compass/_typography.scss */
   .read-more h5 {
     font-size: 0.85714em;
     line-height: 1.25em;
   }
 }
-/* line 290, ../../_compass/_typography.scss */
+/* line 292, ../../_compass/_typography.scss */
 .read-more p {
   font-size: 0.85714em;
   line-height: 1.25em;
 }
 @media (min-width: 37.5em) {
-  /* line 290, ../../_compass/_typography.scss */
+  /* line 292, ../../_compass/_typography.scss */
   .read-more p {
     font-size: 0.7619em;
     line-height: 1.40625em;
   }
 }
 
-/* line 298, ../../_compass/_typography.scss */
+/* line 300, ../../_compass/_typography.scss */
 .read-more-button {
   width: 8.75em;
   margin-top: 1.28571em;
@@ -973,25 +972,25 @@ Styles for READ MORE section and read more buttons
 /********* 
 PLACEHOLDER SELECTORS
 *********/
-/* line 311, ../../_compass/_typography.scss */
+/* line 313, ../../_compass/_typography.scss */
 nav {
   color: #ffffff;
 }
-/* line 313, ../../_compass/_typography.scss */
+/* line 315, ../../_compass/_typography.scss */
 nav a {
   color: inherit;
   text-decoration: underline;
 }
-/* line 316, ../../_compass/_typography.scss */
+/* line 318, ../../_compass/_typography.scss */
 nav a:hover, nav a:focus {
   color: #e6e6e6;
 }
-/* line 319, ../../_compass/_typography.scss */
+/* line 321, ../../_compass/_typography.scss */
 nav a:active {
   color: #cccccc;
 }
 
-/* line 327, ../../_compass/_typography.scss */
+/* line 329, ../../_compass/_typography.scss */
 button {
   font-family: "open-sans", sans-serif;
   font-size: 0.85714em;
@@ -999,7 +998,7 @@ button {
   font-weight: 400;
 }
 @media (min-width: 37.5em) {
-  /* line 327, ../../_compass/_typography.scss */
+  /* line 329, ../../_compass/_typography.scss */
   button {
     font-size: 0.7619em;
     line-height: 1.40625em;
