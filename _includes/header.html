@@ -5,15 +5,13 @@
 	<nav role="navigation">
 		<div class="nav-outer-wrapper">
 			<div class="nav-wrapper">
-				<h1>
-					<ul class="main-nav">
-						<li><a href="{{ site.data.menu[0].url | prepend: site.baseurl }}">{{ site.data.menu[0].name}}</a></li>
-						<li><a href="{{ site.data.menu[1].url | prepend: site.baseurl }}">{{ site.data.menu[1].name}}</a></li>
-						<li>Developer</li>
-						<li>Father of three boys</li>
-						<li>Español en Los Angeles</li>
-					</ul>
-				</h1>
+				<ul class="main-nav">
+					<li><a href="{{ site.data.menu[0].url | prepend: site.baseurl }}">{{ site.data.menu[0].name}}</a></li>
+					<li><a href="{{ site.data.menu[1].url | prepend: site.baseurl }}">{{ site.data.menu[1].name}}</a></li>
+					<li>Developer</li>
+					<li>Father of three boys</li>
+					<li>Español en Los Angeles</li>
+				</ul>
 				<div class="nav-social">
 					<ul>
 						<li><span class="icon"><a href="mailto:{{ site.email }}">{{ site.email }}</a></span></li>
