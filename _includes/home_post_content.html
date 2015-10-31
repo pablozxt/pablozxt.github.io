@@ -9,7 +9,7 @@
 
 {% endfor %}
 
-{% for post in site.categories.pablo offset: lastOffset limit:1%}
+{% for post in site.categories.pablo offset: lastOffset limit:1 %}
 <article class="home-post">
 	{{ post.content }}
 </article>
