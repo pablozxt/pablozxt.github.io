@@ -608,8 +608,8 @@ main h1 {
 @media (min-width: 21.875em) {
   /* line 50, ../../_compass/_typography.scss */
   main h1 {
-    font-size: 3.57143em;
-    line-height: 1.08em;
+    font-size: 3em;
+    line-height: 1.07143em;
   }
 }
 @media (min-width: 37.5em) {
