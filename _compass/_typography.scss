@@ -49,6 +49,7 @@ TYPOGRAPHIC STYLES AND VERTICAL RHYTHMS OF MAJOR PAGE COMPONENTS
 		margin-bottom: rhythm(10);
 		h1 {
 		@include set-font-size(huge-2);
+		font-weight: map-get($font-weights, semibold);
 		@include breakpoint($large-phone) {
 			@include set-font-size(huge-2, $small-font-sizes);
 		}
