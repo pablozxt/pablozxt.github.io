@@ -197,6 +197,9 @@ TYPOGRAPHIC STYLES AND VERTICAL RHYTHMS OF MAJOR PAGE COMPONENTS
 		line-height: 0.45em;
 		padding-right: 0.15em;
 		padding-top: 0.31em;
+		@include breakpoint($iphone5) {
+			font-size: map-get($font-sizes, huge-5);
+		}
 		@include breakpoint($large-phone) {
 			@include set-font-size(huge-6, $small-font-sizes);
 			font-weight: map-get($font-weights, semibold);
