@@ -48,17 +48,16 @@ TYPOGRAPHIC STYLES AND VERTICAL RHYTHMS OF MAJOR PAGE COMPONENTS
 	main {
 		margin-bottom: rhythm(10);
 		h1 {
-			//text-transform: uppercase;
 			@include set-font-size(huge-2);
 			font-weight: map-get($font-weights, semibold);
+			@include breakpoint($iphone5) {
+				@include set-font-size(huge-4);
+			}
 			@include breakpoint($large-phone) {
-				@include set-font-size(huge-2, $small-font-sizes);
+				@include set-font-size(huge-6, $small-font-sizes);
 			}
 			font-family: $base-font-family;
 			margin-top: rhythm(1);
-				@include breakpoint ($large-phone) {
-					@include set-font-size(huge-4);
-				}//media query
 		}//h1
 		ul {
 			list-style: disc;

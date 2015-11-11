@@ -605,21 +605,21 @@ main h1 {
   font-family: "garamond-premier-pro", Times, serif;
   margin-top: 0.42857em;
 }
-@media (min-width: 37.5em) {
-  /* line 50, ../../_compass/_typography.scss */
-  main h1 {
-    font-size: 2.2381em;
-    line-height: 1.14894em;
-  }
-}
-@media (min-width: 37.5em) {
+@media (min-width: 21.875em) {
   /* line 50, ../../_compass/_typography.scss */
   main h1 {
     font-size: 3.57143em;
     line-height: 1.08em;
   }
 }
-/* line 63, ../../_compass/_typography.scss */
+@media (min-width: 37.5em) {
+  /* line 50, ../../_compass/_typography.scss */
+  main h1 {
+    font-size: 4.66667em;
+    line-height: 1.05612em;
+  }
+}
+/* line 62, ../../_compass/_typography.scss */
 main ul {
   list-style: disc;
   margin-top: 0.85714em;
@@ -627,56 +627,56 @@ main ul {
   line-height: 1.28571em;
 }
 @media (min-width: 37.5em) {
-  /* line 63, ../../_compass/_typography.scss */
+  /* line 62, ../../_compass/_typography.scss */
   main ul {
     font-size: 0.90476em;
     line-height: 1.42105em;
   }
 }
 
-/* line 73, ../../_compass/_typography.scss */
+/* line 72, ../../_compass/_typography.scss */
 header {
   padding-top: 0em;
 }
 
-/* line 78, ../../_compass/_typography.scss */
+/* line 77, ../../_compass/_typography.scss */
 .home-main h1 {
   color: #2b8686;
 }
 @media (min-width: 800px) {
-  /* line 78, ../../_compass/_typography.scss */
+  /* line 77, ../../_compass/_typography.scss */
   .home-main h1 {
     margin-left: calc(50% - (600px/2 + 6.77966%));
   }
 }
-/* line 84, ../../_compass/_typography.scss */
+/* line 83, ../../_compass/_typography.scss */
 .home-main article:first-of-type {
   margin-top: 1.71429em;
 }
 @media (min-width: 37.5em) {
-  /* line 84, ../../_compass/_typography.scss */
+  /* line 83, ../../_compass/_typography.scss */
   .home-main article:first-of-type {
     margin-top: 2.57143em;
   }
 }
 
-/* line 93, ../../_compass/_typography.scss */
+/* line 92, ../../_compass/_typography.scss */
 .engineer-main h1 {
   color: #df4747;
   text-transform: uppercase;
 }
-/* line 97, ../../_compass/_typography.scss */
+/* line 96, ../../_compass/_typography.scss */
 .engineer-main article, .engineer-main section {
   margin-top: 2.57143em;
 }
 @media (min-width: 75em) {
-  /* line 97, ../../_compass/_typography.scss */
+  /* line 96, ../../_compass/_typography.scss */
   .engineer-main article, .engineer-main section {
     margin-top: 3.85714em;
   }
 }
 
-/* line 106, ../../_compass/_typography.scss */
+/* line 105, ../../_compass/_typography.scss */
 header p {
   font-family: "open-sans", sans-serif;
   font-size: 1.19048em;
@@ -685,21 +685,21 @@ header p {
   margin-top: 0.42857em;
 }
 @media (min-width: 37.5em) {
-  /* line 106, ../../_compass/_typography.scss */
+  /* line 105, ../../_compass/_typography.scss */
   header p {
     font-size: 1.09524em;
     line-height: 1.17391em;
   }
 }
 @media (min-width: 37.5em) {
-  /* line 106, ../../_compass/_typography.scss */
+  /* line 105, ../../_compass/_typography.scss */
   header p {
     font-size: 1.71429em;
     line-height: 1.125em;
   }
 }
 
-/* line 120, ../../_compass/_typography.scss */
+/* line 119, ../../_compass/_typography.scss */
 h2 {
   text-transform: uppercase;
   color: #9c0d0d;
@@ -708,21 +708,21 @@ h2 {
   font-weight: 600;
 }
 @media (min-width: 37.5em) {
-  /* line 120, ../../_compass/_typography.scss */
+  /* line 119, ../../_compass/_typography.scss */
   h2 {
     font-size: 1.09524em;
     line-height: 1.17391em;
   }
 }
 @media (min-width: 37.5em) {
-  /* line 120, ../../_compass/_typography.scss */
+  /* line 119, ../../_compass/_typography.scss */
   h2 {
     font-size: 1.42857em;
     line-height: 1.2em;
   }
 }
 
-/* line 133, ../../_compass/_typography.scss */
+/* line 132, ../../_compass/_typography.scss */
 h3 {
   font-size: 1em;
   line-height: 1.28571em;
@@ -731,52 +731,52 @@ h3 {
   color: #222;
 }
 @media (min-width: 37.5em) {
-  /* line 133, ../../_compass/_typography.scss */
+  /* line 132, ../../_compass/_typography.scss */
   h3 {
     font-size: 0.90476em;
     line-height: 1.42105em;
   }
 }
 
-/* line 144, ../../_compass/_typography.scss */
+/* line 143, ../../_compass/_typography.scss */
 .project-budget::before {
   content: " \2013  ";
 }
 
-/* line 149, ../../_compass/_typography.scss */
+/* line 148, ../../_compass/_typography.scss */
 h4 {
   font-size: 1em;
   line-height: 1.28571em;
   margin-top: 0.42857em;
 }
-/* line 152, ../../_compass/_typography.scss */
+/* line 151, ../../_compass/_typography.scss */
 h4 .project-position {
   display: inline;
 }
-/* line 154, ../../_compass/_typography.scss */
+/* line 153, ../../_compass/_typography.scss */
 h4 .project-position::before {
   content: " \2013  ";
 }
 
-/* line 160, ../../_compass/_typography.scss */
+/* line 159, ../../_compass/_typography.scss */
 .project-data {
   font-size: 0.71429em;
   line-height: 1.5em;
   color: #222;
 }
 @media (min-width: 37.5em) {
-  /* line 160, ../../_compass/_typography.scss */
+  /* line 159, ../../_compass/_typography.scss */
   .project-data {
     font-size: 0.61905em;
     line-height: 1.38462em;
   }
 }
-/* line 166, ../../_compass/_typography.scss */
+/* line 165, ../../_compass/_typography.scss */
 .project-data::before {
   content: '\00a0 \00a0 \00a0 \00a0';
 }
 
-/* line 171, ../../_compass/_typography.scss */
+/* line 170, ../../_compass/_typography.scss */
 h5 {
   text-transform: uppercase;
   color: #9c0d0d;
@@ -786,28 +786,28 @@ h5 {
   font-weight: 600;
 }
 @media (min-width: 37.5em) {
-  /* line 171, ../../_compass/_typography.scss */
+  /* line 170, ../../_compass/_typography.scss */
   h5 {
     font-size: 0.7619em;
     line-height: 1.40625em;
   }
 }
 @media (min-width: 37.5em) {
-  /* line 171, ../../_compass/_typography.scss */
+  /* line 170, ../../_compass/_typography.scss */
   h5 {
     font-size: 1em;
     line-height: 1.28571em;
   }
 }
 
-/* line 185, ../../_compass/_typography.scss */
+/* line 184, ../../_compass/_typography.scss */
 p {
   font-size: 1em;
   line-height: 1.28571em;
   margin-top: 0.85714em;
 }
 @media (min-width: 37.5em) {
-  /* line 185, ../../_compass/_typography.scss */
+  /* line 184, ../../_compass/_typography.scss */
   p {
     font-size: 0.90476em;
     line-height: 1.42105em;
@@ -815,7 +815,7 @@ p {
 }
 
 /**** Home post singe page view DROP CAPS ****/
-/* line 194, ../../_compass/_typography.scss */
+/* line 193, ../../_compass/_typography.scss */
 .drop-cap:first-letter {
   font-size: 63px;
   color: #2b8686;
@@ -825,7 +825,7 @@ p {
   padding-top: 0.31em;
 }
 @media (min-width: 37.5em) {
-  /* line 194, ../../_compass/_typography.scss */
+  /* line 193, ../../_compass/_typography.scss */
   .drop-cap:first-letter {
     font-size: 4.66667em;
     line-height: 1.05612em;
@@ -836,12 +836,12 @@ p {
   }
 }
 
-/* line 211, ../../_compass/_typography.scss */
+/* line 210, ../../_compass/_typography.scss */
 .no-js .drop-cap:first-letter, .wf-inactive .drop-cap:first-letter {
   padding-top: 0.19em;
 }
 
-/* line 217, ../../_compass/_typography.scss */
+/* line 216, ../../_compass/_typography.scss */
 figcaption {
   font-family: "open-sans", sans-serif;
   font-size: 0.57143em;
@@ -850,40 +850,40 @@ figcaption {
   margin-top: -0.42857em;
 }
 @media (min-width: 37.5em) {
-  /* line 217, ../../_compass/_typography.scss */
+  /* line 216, ../../_compass/_typography.scss */
   figcaption {
     font-size: 0.52381em;
     line-height: 1.63636em;
   }
 }
 
-/* line 228, ../../_compass/_typography.scss */
+/* line 227, ../../_compass/_typography.scss */
 a {
   color: #2455c3;
   text-decoration: underline;
   -webkit-transition: color 0.4s ease;
           transition: color 0.4s ease;
 }
-/* line 232, ../../_compass/_typography.scss */
+/* line 231, ../../_compass/_typography.scss */
 a:hover, a:focus {
   color: #3f6fdb;
 }
-/* line 235, ../../_compass/_typography.scss */
+/* line 234, ../../_compass/_typography.scss */
 a:active {
   color: #6a8fe3;
 }
 
-/* line 242, ../../_compass/_typography.scss */
+/* line 241, ../../_compass/_typography.scss */
 em {
   font-style: italic;
 }
 
-/* line 247, ../../_compass/_typography.scss */
+/* line 246, ../../_compass/_typography.scss */
 q, blockquote {
   quotes: "\201C" "\201D" "\2018" "\2019";
 }
 
-/* line 252, ../../_compass/_typography.scss */
+/* line 251, ../../_compass/_typography.scss */
 blockquote {
   border-left: 2px solid #e1e1e1;
   margin-top: 1.71429em;
@@ -891,7 +891,7 @@ blockquote {
   color: #6f6f6f;
 }
 
-/* line 260, ../../_compass/_typography.scss */
+/* line 259, ../../_compass/_typography.scss */
 blockquote p:first-of-type:before {
   content: open-quote;
   color: #2b8686;
@@ -899,14 +899,14 @@ blockquote p:first-of-type:before {
   line-height: 1.28571em;
 }
 @media (min-width: 37.5em) {
-  /* line 260, ../../_compass/_typography.scss */
+  /* line 259, ../../_compass/_typography.scss */
   blockquote p:first-of-type:before {
     font-size: 1.28571em;
     line-height: 1.16667em;
   }
 }
 
-/* line 270, ../../_compass/_typography.scss */
+/* line 269, ../../_compass/_typography.scss */
 blockquote p:last-of-type:after {
   content: close-quote;
   font-size: 1em;
@@ -914,7 +914,7 @@ blockquote p:last-of-type:after {
   color: #2b8686;
 }
 @media (min-width: 37.5em) {
-  /* line 270, ../../_compass/_typography.scss */
+  /* line 269, ../../_compass/_typography.scss */
   blockquote p:last-of-type:after {
     font-size: 1.28571em;
     line-height: 1.16667em;
@@ -927,33 +927,33 @@ END TYPOGRAPHIC STYLES AND VERTICAL RHYTHMS OF MAJOR PAGE COMPONENTS
 /********* 
 Styles for READ MORE section and read more buttons
 *********/
-/* line 287, ../../_compass/_typography.scss */
+/* line 286, ../../_compass/_typography.scss */
 .read-more {
   background-color: #f5f6f5;
   margin-top: 1.71429em;
   padding: 0.85714em 0.75em 2.14286em 0.75em;
 }
 @media (min-width: 37.5em) {
-  /* line 291, ../../_compass/_typography.scss */
+  /* line 290, ../../_compass/_typography.scss */
   .read-more h5 {
     font-size: 0.85714em;
     line-height: 1.25em;
   }
 }
-/* line 296, ../../_compass/_typography.scss */
+/* line 295, ../../_compass/_typography.scss */
 .read-more p {
   font-size: 0.85714em;
   line-height: 1.25em;
 }
 @media (min-width: 37.5em) {
-  /* line 296, ../../_compass/_typography.scss */
+  /* line 295, ../../_compass/_typography.scss */
   .read-more p {
     font-size: 0.7619em;
     line-height: 1.40625em;
   }
 }
 
-/* line 304, ../../_compass/_typography.scss */
+/* line 303, ../../_compass/_typography.scss */
 .read-more-button {
   width: 8.75em;
   margin-top: 1.28571em;
@@ -974,25 +974,25 @@ Styles for READ MORE section and read more buttons
 /********* 
 PLACEHOLDER SELECTORS
 *********/
-/* line 317, ../../_compass/_typography.scss */
+/* line 316, ../../_compass/_typography.scss */
 nav {
   color: #ffffff;
 }
-/* line 319, ../../_compass/_typography.scss */
+/* line 318, ../../_compass/_typography.scss */
 nav a {
   color: inherit;
   text-decoration: underline;
 }
-/* line 322, ../../_compass/_typography.scss */
+/* line 321, ../../_compass/_typography.scss */
 nav a:hover, nav a:focus {
   color: #e6e6e6;
 }
-/* line 325, ../../_compass/_typography.scss */
+/* line 324, ../../_compass/_typography.scss */
 nav a:active {
   color: #cccccc;
 }
 
-/* line 333, ../../_compass/_typography.scss */
+/* line 332, ../../_compass/_typography.scss */
 button {
   font-family: "open-sans", sans-serif;
   font-size: 0.85714em;
@@ -1000,7 +1000,7 @@ button {
   font-weight: 400;
 }
 @media (min-width: 37.5em) {
-  /* line 333, ../../_compass/_typography.scss */
+  /* line 332, ../../_compass/_typography.scss */
   button {
     font-size: 0.7619em;
     line-height: 1.40625em;
