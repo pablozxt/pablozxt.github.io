@@ -884,7 +884,7 @@ q, blockquote {
 
 /* line 250, ../../_compass/_typography.scss */
 blockquote {
-  border-left: 5px solid #e1e1e1;
+  border-left: 2px solid #e1e1e1;
   margin-top: 1.71429em;
   padding-left: 1.5em;
   color: #6f6f6f;
