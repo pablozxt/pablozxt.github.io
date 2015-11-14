@@ -40,7 +40,7 @@ NAV STYLES
 
 	.nav-social {
 		ul {
-			display: relative;
+			position: relative;
 		}//ul
 		li {
 			@include clearfix;
@@ -61,7 +61,7 @@ NAV STYLES
 	svg {
 		width: $social-icon-size;
 		height: $social-icon-size;
-		stroke: $alt-text-color;
+		//stroke: $alt-text-color;
 		fill: $alt-text-color;
 		position: relative;
 		top: 5px;
@@ -276,11 +276,12 @@ add a class columns-2 which reduces the width down to two columns
 		} 
 		.read-more-inner {
 			columns: 3 $min-read-more-column-width;
-			column-gap: 1 em;
+			column-gap: 1em;
 		}
 		.columns-2 {
-			column-count: 2;
-			max-width: 2 * $min-read-more-column-width + 3 * 2 * $body-padding;
+			columns: 2 $min-read-more-column-width;
+			column-gap: 1em;
+			max-width: 2 * $max-read-more-column-width - 5em;
 		}
 	}//.csscolumns
 	
