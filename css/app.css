@@ -158,8 +158,8 @@ nav {
   /* line 23, ../../_compass/_layout.scss */
   .nav-outer-wrapper {
     background-color: #010909;
-    background: -webkit-linear-gradient(left, #010909 calc( (100% - 75em)/2 + 150px), rgba(1, 9, 9, 0.55) calc( (100% - 75em)/2 + 400px), rgba(1, 9, 9, 0.55) calc( 100% - (100% - 75em)/2 - 400px), #010909 calc( 100% - (100% - 75em)/2 - 150px));
-    background: linear-gradient(to right, #010909 calc( (100% - 75em)/2 + 150px), rgba(1, 9, 9, 0.55) calc( (100% - 75em)/2 + 400px), rgba(1, 9, 9, 0.55) calc( 100% - (100% - 75em)/2 - 400px), #010909 calc( 100% - (100% - 75em)/2 - 150px));
+    background: -webkit-linear-gradient(left, #010909 calc( 50% - 0.5 * 75em + 150px ), rgba(1, 9, 9, 0.55) calc( 50% - 0.5 * 75em + 400px ), rgba(1, 9, 9, 0.55) calc( 50% + 0.5 * 75em - 400px ), #010909 calc( 50% + 0.5 * 75em - 150px ));
+    background: linear-gradient(to right, #010909 calc( 50% - 0.5 * 75em + 150px ), rgba(1, 9, 9, 0.55) calc( 50% - 0.5 * 75em + 400px ), rgba(1, 9, 9, 0.55) calc( 50% + 0.5 * 75em - 400px ), #010909 calc( 50% + 0.5 * 75em - 150px ));
   }
 }
 
@@ -171,8 +171,8 @@ nav {
   /* line 31, ../../_compass/_layout.scss */
   .engineer .nav-outer-wrapper {
     background-color: #220303;
-    background: -webkit-linear-gradient(left, #220303 calc( (100% - 75em)/2 + 150px), rgba(34, 3, 3, 0.55) calc( (100% - 75em)/2 + 400px), rgba(34, 3, 3, 0.55) calc( 100% - (100% - 75em)/2 - 400px), #220303 calc( 100% - (100% - 75em)/2 - 150px));
-    background: linear-gradient(to right, #220303 calc( (100% - 75em)/2 + 150px), rgba(34, 3, 3, 0.55) calc( (100% - 75em)/2 + 400px), rgba(34, 3, 3, 0.55) calc( 100% - (100% - 75em)/2 - 400px), #220303 calc( 100% - (100% - 75em)/2 - 150px));
+    background: -webkit-linear-gradient(left, #220303 calc( 50% - 0.5 * 75em + 150px ), rgba(34, 3, 3, 0.55) calc( 50% - 0.5 * 75em + 400px ), rgba(34, 3, 3, 0.55) calc( 50% + 0.5 * 75em - 400px ), #220303 calc( 50% + 0.5 * 75em - 150px ));
+    background: linear-gradient(to right, #220303 calc( 50% - 0.5 * 75em + 150px ), rgba(34, 3, 3, 0.55) calc( 50% - 0.5 * 75em + 400px ), rgba(34, 3, 3, 0.55) calc( 50% + 0.5 * 75em - 400px ), #220303 calc( 50% + 0.5 * 75em - 150px ));
   }
 }
 
