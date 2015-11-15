@@ -225,7 +225,10 @@ Use resp-float mixin to float element responsively at a given breakpoint
 	
 	.engineer-education {
 		@include resp-float($float: right);
-		@include breakpoint($laptop) { 
+		@include breakpoint($laptop) {
+			margin-left: gutter(12);
+		}
+		@include breakpoint($large-desktop) { 
 			float: left;
 			margin-left: span(2);
 		}
