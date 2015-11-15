@@ -14,6 +14,7 @@
 
 	//$max-width controls the body's max-width and is used for Susy's container mixin
 	$max-width: em(1400px);
+	$max-width-px: 1400px;
 	//navigation area maximum widths
 	$nav-max-width: em(700px);
 	$nav-picture-width: em(1200px);

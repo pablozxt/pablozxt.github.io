@@ -110,7 +110,7 @@ END PADDING
 MAXIMUM WIDTHS
 *********/
 
-	main {
+	.container, .home-post, header {
 		@include container($max-width);
 		margin-left: auto;
 		margin-right: auto;
@@ -121,7 +121,7 @@ MAXIMUM WIDTHS
 	*********/
 
 	header { 
-		max-width: $max-header-width;
+		@include container($max-header-width);
 	}
 
 	/********* 

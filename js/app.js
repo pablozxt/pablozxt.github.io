@@ -29,7 +29,7 @@
 	moreButton.click(function (event) {
 
 		var target = $(event.target),
-		    more = target.next('.read-more'),
+		    more = target.parent().next('.read-more'),
 		    moreChildren = more.children(),
 		    animSpeed = 200; //animation speed
 

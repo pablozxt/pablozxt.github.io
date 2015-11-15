@@ -7,35 +7,38 @@ title: Engineer
 	<h1>Engineer</h1>
 	<p>I have {{(site.time | date: "%Y") | minus: 2002}} years of experience in the construction industry as a Mechanical Engineer and Structural Estimator. I work for the Water division of J.F.Shea Construction.</p>
 </header>
-	<article class="engineer-project">
-		<div class="clearfix">
-			<div class="text-container left-resp">
-				<h2>Current Position</h2>
-				<h4>J.F.Shea Construction
-					<span class="project-position">Structural Concrete Estimator</span>
-					<span class="project-data">(2012 - present)</span>
-				</h4>
-				<h5>Description</h5>
-				<p>Since January 2012 I have been working as a structural concrete estimator. I am responsible for concrete quantity take-offs and pricing for very diverse water infrastructure projects, from construction of new facilities, to rehabilitation of existing structures or seismic retrofits.</p>
-				<p>I also track closely our cost performance across multiple jobs. This information feeds my estimating models and helps me stay in touch and more integrated with our field operations.</p>
-				<p>Sometimes we get jobs which have accelerated schedules and require early planning after bid time. I usually help with scheduling, procurement, drawings and submittals for these jobs until they get appropriately staffed.</p>
-			</div><!-- .text-container -->
-			<figure class="full-width right-resp">
-				<img class="full-width"
-			srcset="{{ "/images/weymouth-huge.jpg" | prepend: site.baseurl }}  2000w, 
-					{{ "/images/weymouth-large.jpg" | prepend: site.baseurl }}  1200w, 
-			        {{ "/images/weymouth-medium.jpg" | prepend: site.baseurl }}  800w,
-			        {{ "/images/weymouth-small.jpg" | prepend: site.baseurl }}   600w"
-			sizes=	"(min-width: 75em) 38.5em,
-					 (min-width: 87.5em) 40em,
-					 100vw"
-			src="{{ "/images/weymouth-medium.jpg" | prepend: site.baseurl }}"
-			alt="Advanced Water Treatment Facility Reverse Osmosis Facility. View of Reverse Osmosis Unit" />
-				<figcaption>Weymouth Filter Building Seismic Upgrades</figcaption>
-			</figure>
-		</div><!-- clearfix -->
+<article class="engineer-project">
+	<div class="container clearfix">
+		<div class="text-container left-resp">
+			<h2>Current Position</h2>
+			<h4>J.F.Shea Construction
+				<span class="project-position">Structural Concrete Estimator</span>
+				<span class="project-data">(2012 - present)</span>
+			</h4>
+			<h5>Description</h5>
+			<p>Since January 2012 I have been working as a structural concrete estimator. I am responsible for concrete quantity take-offs and pricing for very diverse water infrastructure projects, from construction of new facilities, to rehabilitation of existing structures or seismic retrofits.</p>
+			<p>I also track closely our cost performance across multiple jobs. This information feeds my estimating models and helps me stay in touch and more integrated with our field operations.</p>
+			<p>Sometimes we get jobs which have accelerated schedules and require early planning after bid time. I usually help with scheduling, procurement, drawings and submittals for these jobs until they get appropriately staffed.</p>
+		</div><!-- .text-container -->
+		<figure class="full-width right-resp">
+			<img class="full-width"
+		srcset="{{ "/images/weymouth-huge.jpg" | prepend: site.baseurl }}  2000w, 
+				{{ "/images/weymouth-large.jpg" | prepend: site.baseurl }}  1200w, 
+		        {{ "/images/weymouth-medium.jpg" | prepend: site.baseurl }}  800w,
+		        {{ "/images/weymouth-small.jpg" | prepend: site.baseurl }}   600w"
+		sizes=	"(min-width: 75em) 38.5em,
+				 (min-width: 87.5em) 40em,
+				 100vw"
+		src="{{ "/images/weymouth-medium.jpg" | prepend: site.baseurl }}"
+		alt="Advanced Water Treatment Facility Reverse Osmosis Facility. View of Reverse Osmosis Unit" />
+			<figcaption>Weymouth Filter Building Seismic Upgrades</figcaption>
+		</figure>
+	</div><!-- clearfix -->
+	<div class="container">
 		<button class="read-more-button hidden" data-alt-text="Read less">Read more</button>
-		<div class="read-more js-hidden">
+	</div>
+	<div class="read-more js-hidden">
+		<div class="container">
 			<div class="read-more-inner">
 				<h5>The Best Parts</h5>
 				<p>Thanks to my position as a structural estimator I have had the chance to learn a completely new discipline. As explained below, my field experience was highly focused on mechanical, commissioning and start-up. After I finished the Headworks project and came into our office to help estimate, I knew little about concrete construction or formwork. However, we had enough mechanical estimators at the time, and needed some help with concrete, so, with the assistance of our senior structural estimator, I jumped right in. The second project I was asked to estimate was a $200M water treatment facility, so I had to learn fast!  </p>
@@ -49,71 +52,75 @@ title: Engineer
 				<p>When I first started working as an estimator, I had to become productive very quickly because we had a lot of work to bid with tight deadlines. The result was that I had to use many general rules of thumb and assumptions. Part of my work since then has been to unpack those rules of thumb, learn what is needed for each particular situation, and be more detailed-oriented.</p>
 				<p>The biggest challenge of all, an industry-wide one, is having to compete on price only. There is no brand, no user experience, no customer relations in public work bidding. It&rsquo;s all about being the lowest bidder. This can be frustrating. I secretly envy other industries where you don&rsquo;t have to race to the bottom, and can instead strive to create the best product and provide a great user experience.</p>
 			</div><!-- .read-more.inner-->
-		</div><!-- .read-more -->
-	</article>
-	{% for post in site.categories.engineer %}
-		{{ post.content}}
-	</article>
-	{% endfor %}
-	<article class="engineer-project">
-		<div class="clearfix">
-			<div class="text-container">
-				<h2>Previous Jobs</h2>
-				<h4>Mejoras Energéticas (Madrid, Spain) 
-					<span class="project-position">Consultant Engineer</span>
-					<span class="project-data">2001 - 2003</span>
-				</h4>
-				<h5>Description</h5>
-				<p>At my first job out of college, I developed computer models of water supply, sewer and storm drain systems. We used these models to simulate extreme loading conditions and future city expansion plans, find areas where existing infrastructure needed improvement and propose solutions. I worked on projects for the spanish cities of Almeria, Benalmádena, Motril, Almuñecar and Salobreña. In addition to doing the technical work of building the models, I was the liaison with our customers for some of these projects and coordinated a small team of engineers.</p>
-				<p>Towards the end of my time with Mejoras, we started to expand our activities into the telecommunications market. As part of this effort, I participated on a successful bid proposal for spanish cable operator <a href="https://www.ono.es/">Ono</a> to get a license to build and operate a cable service in the region of Castilla La Mancha.</p>
-			</div><!-- .text-container -->
-			<figure class="full-width right-resp">
-				<img class="full-width"
-			srcset="{{ "/images/infoworks-huge.jpg" | prepend: site.baseurl }}  1680w, 
-					{{ "/images/infoworks-large.jpg" | prepend: site.baseurl }}  1200w, 
-			        {{ "/images/infoworks-medium.jpg" | prepend: site.baseurl }}  800w,
-			        {{ "/images/infoworks-small.jpg" | prepend: site.baseurl }}   600w"
-			sizes=	"(min-width: 75em) 38.5em,
-					 (min-width: 87.5em) 40em,
-					 100vw"
-			src="{{ "/images/infoworks-medium.jpg" | prepend: site.baseurl }}"
-			alt="Computer model of a sewer system built with InfoWorks" />
-				<figcaption>Computer model of a sewer system built with InfoWorks</figcaption>
-			</figure>
-			</div><!-- clearfix -->
+		</div><!-- .container-->
+	</div><!-- .read-more -->
+</article>
+{% for post in site.categories.engineer %}
+	{{ post.content}}
+{% endfor %}
+<article class="engineer-project">
+	<div class="container clearfix">
+		<div class="text-container">
+			<h2>Previous Jobs</h2>
+			<h4>Mejoras Energéticas (Madrid, Spain) 
+				<span class="project-position">Consultant Engineer</span>
+				<span class="project-data">2001 - 2003</span>
+			</h4>
+			<h5>Description</h5>
+			<p>At my first job out of college, I developed computer models of water supply, sewer and storm drain systems. We used these models to simulate extreme loading conditions and future city expansion plans, find areas where existing infrastructure needed improvement and propose solutions. I worked on projects for the spanish cities of Almeria, Benalmádena, Motril, Almuñecar and Salobreña. In addition to doing the technical work of building the models, I was the liaison with our customers for some of these projects and coordinated a small team of engineers.</p>
+			<p>Towards the end of my time with Mejoras, we started to expand our activities into the telecommunications market. As part of this effort, I participated on a successful bid proposal for spanish cable operator <a href="https://www.ono.es/">Ono</a> to get a license to build and operate a cable service in the region of Castilla La Mancha.</p>
+		</div><!-- .text-container -->
+		<figure class="full-width right-resp">
+			<img class="full-width"
+		srcset="{{ "/images/infoworks-huge.jpg" | prepend: site.baseurl }}  1680w, 
+				{{ "/images/infoworks-large.jpg" | prepend: site.baseurl }}  1200w, 
+		        {{ "/images/infoworks-medium.jpg" | prepend: site.baseurl }}  800w,
+		        {{ "/images/infoworks-small.jpg" | prepend: site.baseurl }}   600w"
+		sizes=	"(min-width: 75em) 38.5em,
+				 (min-width: 87.5em) 40em,
+				 100vw"
+		src="{{ "/images/infoworks-medium.jpg" | prepend: site.baseurl }}"
+		alt="Computer model of a sewer system built with InfoWorks" />
+			<figcaption>Computer model of a sewer system built with InfoWorks</figcaption>
+		</figure>
+		</div><!-- clearfix -->
+	<div class="container">
 		<button class="read-more-button hidden" data-alt-text="Read less">Read more</button>
-		<div class="read-more js-hidden">
+	</div>
+	<div class="read-more js-hidden">
+		<div class="container">
 			<div class="read-more-inner columns-2">
 				<h5>The Best Parts</h5>
 				<p>Having direct contact with customers was a useful learning experience. The same can be said for managing a group of people. I extended my knowledge of hydraulics and hydrology, and, on the software side, learned to use GIS software <a href="http://www.mapinfo.com/product/mapinfo-professional/">MapInfo</a> pretty well, got some exposure to relational databases and wrote basic SQL queries.</p>
 				<h5>The Challenges</h5>
 				<p>Most Spanish municipalities at the time did not have at their disposal all the information that the <a href="http://www.innovyze.com/products/infoworks_cs/">InfoWorks</a> models require. In order to complete the work, we had to make assumptions, and no matter how reasonable we thought our assumptions were, one has to question the accuracy and usefulness of the model and, therefore, our whole endeavor. In other words, I am not sure that we brought a lot of value to our customers, and that was in my view the biggest challenge.</p>
 			</div><!-- .read-more.inner-->
-		</div><!-- read-more -->
-	</article>
-	<div class="clearfix">
-		<section class="text-container engineer-interests">
-			<h2>My Interests</h2>
-			<p>Looking forward, these are the areas that I am most interested in for the next few years of my career in construction:</p>
-			<ul class="interests">
-				<li>Application of technological innovation to the construction process through the use and development of new applications.</li>
-				<li>Improvement of J.F.Shea&rsquo;s cost tracking and estimating systems.</li>
-				<li>Promoting communication and integration between field operations and the estimating teams.</li>
-				<li>Continue to deepen my knowledge and understanding of construction procedures.</li>
-			</ul>
-		</section><!-- .text-container -->
-		<section class="text-container engineer-education">
-			<h2>Education</h2>
-			<ul>
-				<li>
-					<a href="http://www.upm.es/internacional">Universidad Politécnica de Madrid: </a><a href="http://www.caminos.upm.es/default.asp"> Ingeniero de Caminos, Canales y Puertos (B.S. Civil Engineering)</a><span class="project-data"> (1994 - 2001)</span>
-				</li>
-				<li>
-					<a href="https://www.uclaextension.edu/Pages/default.aspx">UCLA Extension: </a><a href="https://www.uclaextension.edu/eistm/Pages/engineering/civilEng.aspx">Professional Designation in Construction Management</a><span class="project-data"> (2003 - 2004)</span>
-				</li>
-				<li>
-					Engineer-In-Training (<abbr title="">EIT</abbr>) Certificate, California <span class="project-data"> (2005)</span>
-				</li>
-			</ul>
-		</section><!-- .text-container -->
-	</div>
+		</div><!-- .container-->
+	</div><!-- read-more -->
+</article>
+<div class="container clearfix">
+	<section class="text-container engineer-interests">
+		<h2>My Interests</h2>
+		<p>Looking forward, these are the areas that I am most interested in for the next few years of my career in construction:</p>
+		<ul class="interests">
+			<li>Application of technological innovation to the construction process through the use and development of new applications.</li>
+			<li>Improvement of J.F.Shea&rsquo;s cost tracking and estimating systems.</li>
+			<li>Promoting communication and integration between field operations and the estimating teams.</li>
+			<li>Continue to deepen my knowledge and understanding of construction procedures.</li>
+		</ul>
+	</section><!-- .text-container -->
+	<section class="text-container engineer-education">
+		<h2>Education</h2>
+		<ul>
+			<li>
+				<a href="http://www.upm.es/internacional">Universidad Politécnica de Madrid: </a><a href="http://www.caminos.upm.es/default.asp"> Ingeniero de Caminos, Canales y Puertos (B.S. Civil Engineering)</a><span class="project-data"> (1994 - 2001)</span>
+			</li>
+			<li>
+				<a href="https://www.uclaextension.edu/Pages/default.aspx">UCLA Extension: </a><a href="https://www.uclaextension.edu/eistm/Pages/engineering/civilEng.aspx">Professional Designation in Construction Management</a><span class="project-data"> (2003 - 2004)</span>
+			</li>
+			<li>
+				Engineer-In-Training (<abbr title="">EIT</abbr>) Certificate, California <span class="project-data"> (2005)</span>
+			</li>
+		</ul>
+	</section><!-- .text-container -->
+</div>
