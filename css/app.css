@@ -440,6 +440,12 @@ Use resp-float mixin to float element responsively at a given breakpoint
 @media (min-width: 75em) {
   /* line 226, ../../_compass/_layout.scss */
   .engineer-education {
+    margin-left: 1.69492%;
+  }
+}
+@media (min-width: 100em) {
+  /* line 226, ../../_compass/_layout.scss */
+  .engineer-education {
     float: left;
     margin-left: 15.25424%;
   }
@@ -451,20 +457,20 @@ END RESPONSIVE FLOATED TWO COLUMN LAYOUT
 /********* 
 PICTURES LAYOUT
 *********/
-/* line 243, ../../_compass/_layout.scss */
+/* line 246, ../../_compass/_layout.scss */
 figure {
   margin-top: 1.28571em;
   margin-left: auto;
   margin-right: auto;
 }
 @media (min-width: 75em) {
-  /* line 243, ../../_compass/_layout.scss */
+  /* line 246, ../../_compass/_layout.scss */
   figure {
     margin-top: 2.57143em;
   }
 }
 
-/* line 252, ../../_compass/_layout.scss */
+/* line 255, ../../_compass/_layout.scss */
 .full-width {
   max-width: 63.63636em;
 }
@@ -479,16 +485,16 @@ overridden for browsers supporting CSS column
 Default read-more layout is three columns wide. However, areas with shorter read-more sections
 add a class columns-2 which reduces the width down to two columns
 *********/
-/* line 269, ../../_compass/_layout.scss */
+/* line 272, ../../_compass/_layout.scss */
 .read-more p, .read-more h5 {
   max-width: 31.25em;
 }
 
-/* line 275, ../../_compass/_layout.scss */
+/* line 278, ../../_compass/_layout.scss */
 .csscolumns p, .csscolumns h5 {
   max-width: 31.25em;
 }
-/* line 278, ../../_compass/_layout.scss */
+/* line 281, ../../_compass/_layout.scss */
 .csscolumns .read-more-inner {
   -webkit-columns: 3 15.625em;
      -moz-columns: 3 15.625em;
@@ -497,7 +503,7 @@ add a class columns-2 which reduces the width down to two columns
      -moz-column-gap: 1em;
           column-gap: 1em;
 }
-/* line 282, ../../_compass/_layout.scss */
+/* line 285, ../../_compass/_layout.scss */
 .csscolumns .columns-2 {
   -webkit-columns: 2 15.625em;
      -moz-columns: 2 15.625em;
