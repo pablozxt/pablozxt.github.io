@@ -158,8 +158,8 @@ nav {
   /* line 23, ../../_compass/_layout.scss */
   .nav-outer-wrapper {
     background-color: #010909;
-    background: -webkit-linear-gradient(left, #010909 calc( (100% - 75em)/2 + 150px), rgba(1, 9, 9, 0.55) calc( (100% - 75em)/2 + 400px), rgba(1, 9, 9, 0.55) calc( 100% - (100% - 75em)/2 - 400px), #010909 calc( 100% - (100% - 75em)/2 - 150px));
-    background: linear-gradient(to right, #010909 calc( (100% - 75em)/2 + 150px), rgba(1, 9, 9, 0.55) calc( (100% - 75em)/2 + 400px), rgba(1, 9, 9, 0.55) calc( 100% - (100% - 75em)/2 - 400px), #010909 calc( 100% - (100% - 75em)/2 - 150px));
+    background: -webkit-linear-gradient(left, #010909 calc( 50% - 0.5 * 75em + 150px ), rgba(1, 9, 9, 0.55) calc( 50% - 0.5 * 75em + 400px ), rgba(1, 9, 9, 0.55) calc( 50% + 0.5 * 75em - 400px ), #010909 calc( 50% + 0.5 * 75em - 150px ));
+    background: linear-gradient(to right, #010909 calc( 50% - 0.5 * 75em + 150px ), rgba(1, 9, 9, 0.55) calc( 50% - 0.5 * 75em + 400px ), rgba(1, 9, 9, 0.55) calc( 50% + 0.5 * 75em - 400px ), #010909 calc( 50% + 0.5 * 75em - 150px ));
   }
 }
 
@@ -171,8 +171,8 @@ nav {
   /* line 31, ../../_compass/_layout.scss */
   .engineer .nav-outer-wrapper {
     background-color: #220303;
-    background: -webkit-linear-gradient(left, #220303 calc( (100% - 75em)/2 + 150px), rgba(34, 3, 3, 0.55) calc( (100% - 75em)/2 + 400px), rgba(34, 3, 3, 0.55) calc( 100% - (100% - 75em)/2 - 400px), #220303 calc( 100% - (100% - 75em)/2 - 150px));
-    background: linear-gradient(to right, #220303 calc( (100% - 75em)/2 + 150px), rgba(34, 3, 3, 0.55) calc( (100% - 75em)/2 + 400px), rgba(34, 3, 3, 0.55) calc( 100% - (100% - 75em)/2 - 400px), #220303 calc( 100% - (100% - 75em)/2 - 150px));
+    background: -webkit-linear-gradient(left, #220303 calc( 50% - 0.5 * 75em + 150px ), rgba(34, 3, 3, 0.55) calc( 50% - 0.5 * 75em + 400px ), rgba(34, 3, 3, 0.55) calc( 50% + 0.5 * 75em - 400px ), #220303 calc( 50% + 0.5 * 75em - 150px ));
+    background: linear-gradient(to right, #220303 calc( 50% - 0.5 * 75em + 150px ), rgba(34, 3, 3, 0.55) calc( 50% - 0.5 * 75em + 400px ), rgba(34, 3, 3, 0.55) calc( 50% + 0.5 * 75em - 400px ), #220303 calc( 50% + 0.5 * 75em - 150px ));
   }
 }
 
@@ -184,7 +184,7 @@ nav {
 
 /* line 42, ../../_compass/_layout.scss */
 .nav-social ul {
-  display: relative;
+  position: relative;
 }
 /* line 45, ../../_compass/_layout.scss */
 .nav-social li {
@@ -212,7 +212,6 @@ nav {
 svg {
   width: 1.25em;
   height: 1.25em;
-  stroke: #ffffff;
   fill: #ffffff;
   position: relative;
   top: 5px;
@@ -276,7 +275,7 @@ END PADDING
 MAXIMUM WIDTHS
 *********/
 /* line 113, ../../_compass/_layout.scss */
-main {
+.container, .home-post, header {
   max-width: 87.5em;
   margin-left: auto;
   margin-right: auto;
@@ -284,7 +283,7 @@ main {
   margin-right: auto;
 }
 /* line 12, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/susy-2.1.3/sass/susy/output/support/_clearfix.scss */
-main:after {
+.container:after, .home-post:after, header:after {
   content: " ";
   display: block;
   clear: both;
@@ -296,6 +295,14 @@ header (meant for engineer page): set maximum width
 /* line 123, ../../_compass/_layout.scss */
 header {
   max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 12, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/susy-2.1.3/sass/susy/output/support/_clearfix.scss */
+header:after {
+  content: " ";
+  display: block;
+  clear: both;
 }
 
 /********* 
@@ -433,7 +440,8 @@ Use resp-float mixin to float element responsively at a given breakpoint
 @media (min-width: 75em) {
   /* line 226, ../../_compass/_layout.scss */
   .engineer-education {
-    margin-left: 1.69492%;
+    float: left;
+    margin-left: 15.25424%;
   }
 }
 
@@ -443,20 +451,20 @@ END RESPONSIVE FLOATED TWO COLUMN LAYOUT
 /********* 
 PICTURES LAYOUT
 *********/
-/* line 242, ../../_compass/_layout.scss */
+/* line 243, ../../_compass/_layout.scss */
 figure {
   margin-top: 1.28571em;
   margin-left: auto;
   margin-right: auto;
 }
 @media (min-width: 75em) {
-  /* line 242, ../../_compass/_layout.scss */
+  /* line 243, ../../_compass/_layout.scss */
   figure {
     margin-top: 2.57143em;
   }
 }
 
-/* line 251, ../../_compass/_layout.scss */
+/* line 252, ../../_compass/_layout.scss */
 .full-width {
   max-width: 63.63636em;
 }
@@ -471,30 +479,33 @@ overridden for browsers supporting CSS column
 Default read-more layout is three columns wide. However, areas with shorter read-more sections
 add a class columns-2 which reduces the width down to two columns
 *********/
-/* line 268, ../../_compass/_layout.scss */
+/* line 269, ../../_compass/_layout.scss */
 .read-more p, .read-more h5 {
   max-width: 31.25em;
 }
 
-/* line 274, ../../_compass/_layout.scss */
+/* line 275, ../../_compass/_layout.scss */
 .csscolumns p, .csscolumns h5 {
   max-width: 31.25em;
 }
-/* line 277, ../../_compass/_layout.scss */
+/* line 278, ../../_compass/_layout.scss */
 .csscolumns .read-more-inner {
   -webkit-columns: 3 15.625em;
      -moz-columns: 3 15.625em;
           columns: 3 15.625em;
-  -webkit-column-gap: 1 em;
-     -moz-column-gap: 1 em;
-          column-gap: 1 em;
+  -webkit-column-gap: 1em;
+     -moz-column-gap: 1em;
+          column-gap: 1em;
 }
-/* line 281, ../../_compass/_layout.scss */
+/* line 282, ../../_compass/_layout.scss */
 .csscolumns .columns-2 {
-  -webkit-column-count: 2;
-     -moz-column-count: 2;
-          column-count: 2;
-  max-width: 35.75em;
+  -webkit-columns: 2 15.625em;
+     -moz-columns: 2 15.625em;
+          columns: 2 15.625em;
+  -webkit-column-gap: 1em;
+     -moz-column-gap: 1em;
+          column-gap: 1em;
+  max-width: 57.5em;
 }
 
 /********* 
