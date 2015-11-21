@@ -13,7 +13,7 @@ NAV STYLES
 	nav {
 		background: url(../images/background.jpg) repeat;
 		background-size: cover;
-		background-position: 0%;
+		background-position: 30%;
 		@include breakpoint($nav-picture-width) {
 			background-size: auto auto;
 			background-position: center;
