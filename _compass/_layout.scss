@@ -110,7 +110,7 @@ END PADDING
 MAXIMUM WIDTHS
 *********/
 
-	.container, .home-post, header {
+	.container, .home-post {
 		@include container($max-width);
 		margin-left: auto;
 		margin-right: auto;
@@ -122,6 +122,8 @@ MAXIMUM WIDTHS
 
 	header { 
 		@include container($max-header-width);
+		//margin-left: auto;
+		//margin-right: auto;
 	}
 
 	/********* 
@@ -156,7 +158,7 @@ END MAXIMUM WIDTHS
 RESPONSIVE LEFT MARGINS
 	
 Set margins for header element, .text-container class and .read-more-button.
-The goal is to have the left-margin of these two sets of elements be aligned
+The goal is to have the left-margin of these sets of elements be aligned
 Left margin starts at 0, increases to one column, then to two columns
 *********/
 
