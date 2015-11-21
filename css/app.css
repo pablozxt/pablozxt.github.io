@@ -137,7 +137,7 @@ NAV STYLES
 nav {
   background: url(../images/background.jpg) repeat;
   background-size: cover;
-  background-position: 0%;
+  background-position: 30%;
 }
 @media (min-width: 75em) {
   /* line 13, ../../_compass/_layout.scss */
