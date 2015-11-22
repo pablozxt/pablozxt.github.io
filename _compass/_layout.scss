@@ -36,6 +36,7 @@ NAV STYLES
 	.backgroundblendmode {
 		nav {
 			background-color: $home-nav-background;
+			background-blend-mode: lighten;
 			background-blend-mode: luminosity;
 		}
 		.engineer {
