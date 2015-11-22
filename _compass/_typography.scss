@@ -21,11 +21,16 @@ TYPOGRAPHIC STYLES AND VERTICAL RHYTHMS OF MAJOR PAGE COMPONENTS
 		ul {
 			font-family: $secondary-font-family;
 			font-weight: map-get($font-weights, light);
+			a {
+				text-decoration: none;
+				border-bottom: 1px solid;
+			}
 		}//ul
 		.main-nav {
 			margin-left: span(1);
 			li {
 				@include set-font-size(medium);
+				line-height: 1.45em;
 			}//li
 		}//.main-nav
 		.nav-social {
