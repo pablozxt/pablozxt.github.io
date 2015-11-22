@@ -29,7 +29,19 @@ NAV STYLES
 
 	.engineer {
 		.nav-outer-wrapper {
-			@include background-gradient($color: $engineer-nav-background);
+			@include background-gradient($color: $engineer-nav-background-gradient);
+		}
+	}
+
+	.backgroundblendmode {
+		nav {
+			background-color: $home-nav-background;
+			background-blend-mode: luminosity;
+		}
+		.engineer {
+			nav {
+				background-color: $engineer-nav-background;
+			}
 		}
 	}
 

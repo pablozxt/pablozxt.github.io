@@ -74,7 +74,7 @@
 //////////
 
 	@mixin background-gradient(
-		$color: $home-nav-background, 
+		$color: $home-nav-background-gradient, 
 		$total-columns: 12,
 		$small-screen-gradient-width-columns: 4,
 		$nav-max-width: $nav-max-width,

@@ -144,8 +144,10 @@
 	$link-hover-color: lighten($link-color, 10%);
 	$link-active-color: lighten($link-color, 20%);
 	//nav background color
-	$home-nav-background: darken(map-get($blue, darker), 18%);
-	$engineer-nav-background: darken(map-get($red, darker), 26%);;
+	$home-nav-background: map-get($blue, darker);
+	$home-nav-background-gradient: darken(map-get($blue, darker), 18%);
+	$engineer-nav-background: map-get($red, darker);
+	$engineer-nav-background-gradient: darken(map-get($red, darker), 26%);;
 	//main theme color for engineer section
 	$engineer-color: $red;
 	//main theme color for home page
