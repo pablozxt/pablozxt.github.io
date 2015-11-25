@@ -306,14 +306,6 @@ header (meant for engineer page): set maximum width
 /* line 136, ../../_compass/_layout.scss */
 header {
   max-width: 800px;
-  margin-left: auto;
-  margin-right: auto;
-}
-/* line 12, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/susy-2.1.3/sass/susy/output/support/_clearfix.scss */
-header:after {
-  content: " ";
-  display: block;
-  clear: both;
 }
 
 /********* 
@@ -321,12 +313,12 @@ header:after {
 in engineer page, while letting images have a longer width
 .text-container 
 *********/
-/* line 148, ../../_compass/_layout.scss */
+/* line 146, ../../_compass/_layout.scss */
 .text-container {
   max-width: 600px;
 }
 @media (min-width: 800px) {
-  /* line 150, ../../_compass/_layout.scss */
+  /* line 148, ../../_compass/_layout.scss */
   .text-container p, .text-container h3, .text-container h4 {
     margin-left: 6.77966%;
   }
@@ -335,7 +327,7 @@ in engineer page, while letting images have a longer width
 /********* 
 set .home-post width
 *********/
-/* line 161, ../../_compass/_layout.scss */
+/* line 159, ../../_compass/_layout.scss */
 .home-post {
   max-width: 600px;
   margin: 0 auto;
@@ -352,37 +344,37 @@ The goal is to have the left-margin of these sets of elements be aligned
 Left margin starts at 0, increases to one column, then to two columns
 *********/
 @media (min-width: 700px) {
-  /* line 178, ../../_compass/_layout.scss */
+  /* line 176, ../../_compass/_layout.scss */
   header, .text-container, .read-more-button {
     margin-left: 6.77966%;
   }
 }
 @media (min-width: 900px) {
-  /* line 178, ../../_compass/_layout.scss */
+  /* line 176, ../../_compass/_layout.scss */
   header, .text-container, .read-more-button {
     margin-left: 15.25424%;
   }
 }
 @media (min-width: 87.5em) {
-  /* line 178, ../../_compass/_layout.scss */
+  /* line 176, ../../_compass/_layout.scss */
   header, .text-container, .read-more-button {
     margin-left: 23.72881%;
   }
 }
 
 @media (min-width: 900px) {
-  /* line 190, ../../_compass/_layout.scss */
+  /* line 188, ../../_compass/_layout.scss */
   figcaption {
     margin-left: 6.77966%;
   }
 }
 
-/* line 197, ../../_compass/_layout.scss */
+/* line 195, ../../_compass/_layout.scss */
 #main ul {
   margin-left: 6.77966%;
 }
 @media (min-width: 800px) {
-  /* line 197, ../../_compass/_layout.scss */
+  /* line 195, ../../_compass/_layout.scss */
   #main ul {
     margin-left: 15.25424%;
   }
@@ -398,12 +390,12 @@ set styles for .text-container and figure inside of .engineer-project
 class to float text to the left and images to the right. 
 Use resp-float mixin to float element responsively at a given breakpoint
 *********/
-/* line 217, ../../_compass/_layout.scss */
+/* line 215, ../../_compass/_layout.scss */
 .engineer-project {
   /** max-width of floated images has to be limited to 100% of its column **/
 }
 @media (min-width: 75em) {
-  /* line 218, ../../_compass/_layout.scss */
+  /* line 216, ../../_compass/_layout.scss */
   .engineer-project .text-container {
     float: left;
     width: 45.3125%;
@@ -411,19 +403,19 @@ Use resp-float mixin to float element responsively at a given breakpoint
   }
 }
 @media (min-width: 75em) {
-  /* line 221, ../../_compass/_layout.scss */
+  /* line 219, ../../_compass/_layout.scss */
   .engineer-project figure {
     float: right;
     width: 45.3125%;
     margin-right: 1.69492%;
   }
 }
-/* line 225, ../../_compass/_layout.scss */
+/* line 223, ../../_compass/_layout.scss */
 .engineer-project img {
   max-width: 100%;
 }
 @media (min-width: 75em) {
-  /* line 228, ../../_compass/_layout.scss */
+  /* line 226, ../../_compass/_layout.scss */
   .engineer-project .read-more-button {
     clear: both;
     margin-top: 2.14286em;
@@ -432,7 +424,7 @@ Use resp-float mixin to float element responsively at a given breakpoint
 }
 
 @media (min-width: 75em) {
-  /* line 237, ../../_compass/_layout.scss */
+  /* line 235, ../../_compass/_layout.scss */
   .engineer-interests {
     float: left;
     width: 45.3125%;
@@ -441,7 +433,7 @@ Use resp-float mixin to float element responsively at a given breakpoint
 }
 
 @media (min-width: 75em) {
-  /* line 241, ../../_compass/_layout.scss */
+  /* line 239, ../../_compass/_layout.scss */
   .engineer-education {
     float: right;
     width: 45.3125%;
@@ -449,13 +441,13 @@ Use resp-float mixin to float element responsively at a given breakpoint
   }
 }
 @media (min-width: 75em) {
-  /* line 241, ../../_compass/_layout.scss */
+  /* line 239, ../../_compass/_layout.scss */
   .engineer-education {
     margin-left: 1.69492%;
   }
 }
 @media (min-width: 100em) {
-  /* line 241, ../../_compass/_layout.scss */
+  /* line 239, ../../_compass/_layout.scss */
   .engineer-education {
     float: left;
     margin-left: 15.25424%;
@@ -468,20 +460,20 @@ END RESPONSIVE FLOATED TWO COLUMN LAYOUT
 /********* 
 PICTURES LAYOUT
 *********/
-/* line 261, ../../_compass/_layout.scss */
+/* line 259, ../../_compass/_layout.scss */
 figure {
   margin-top: 1.28571em;
   margin-left: auto;
   margin-right: auto;
 }
 @media (min-width: 75em) {
-  /* line 261, ../../_compass/_layout.scss */
+  /* line 259, ../../_compass/_layout.scss */
   figure {
     margin-top: 2.57143em;
   }
 }
 
-/* line 270, ../../_compass/_layout.scss */
+/* line 268, ../../_compass/_layout.scss */
 .full-width {
   max-width: 63.63636em;
 }
@@ -496,16 +488,16 @@ overridden for browsers supporting CSS column
 Default read-more layout is three columns wide. However, areas with shorter read-more sections
 add a class columns-2 which reduces the width down to two columns
 *********/
-/* line 287, ../../_compass/_layout.scss */
+/* line 285, ../../_compass/_layout.scss */
 .read-more p, .read-more h5 {
   max-width: 31.25em;
 }
 
-/* line 293, ../../_compass/_layout.scss */
+/* line 291, ../../_compass/_layout.scss */
 .csscolumns p, .csscolumns h5 {
   max-width: 31.25em;
 }
-/* line 296, ../../_compass/_layout.scss */
+/* line 294, ../../_compass/_layout.scss */
 .csscolumns .read-more-inner {
   -webkit-columns: 3 15.625em;
      -moz-columns: 3 15.625em;
@@ -514,7 +506,7 @@ add a class columns-2 which reduces the width down to two columns
      -moz-column-gap: 1em;
           column-gap: 1em;
 }
-/* line 300, ../../_compass/_layout.scss */
+/* line 298, ../../_compass/_layout.scss */
 .csscolumns .columns-2 {
   -webkit-columns: 2 15.625em;
      -moz-columns: 2 15.625em;
