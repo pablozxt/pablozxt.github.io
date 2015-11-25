@@ -134,9 +134,7 @@ MAXIMUM WIDTHS
 	*********/
 
 	header { 
-		@include container($max-header-width);
-		//margin-left: auto;
-		//margin-right: auto;
+		max-width: $max-header-width;
 	}
 
 	/********* 
