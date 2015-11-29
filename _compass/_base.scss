@@ -43,7 +43,7 @@ hr {
 hr {
 	border-width: 0px;
 	width: 87px;
-	margin: rhythm(6) auto;
+	margin: rhythm(3) auto;
 	@include set-font-size(extra-large);
 	letter-spacing: 0.9em;
 	color: lighten(map-get($blue, lighter),20%);
