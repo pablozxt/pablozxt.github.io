@@ -58,15 +58,19 @@
 //with color fading towards the ends
 //////////
 
-	@mixin hr-color($color: $home-color, $background: $background-color) {
-	    background-color: map-get($color, normal);
-		background-image: linear-gradient(
-			to right,
-			$background 0%,
-			map-get($color, lighter) 40%,
-			map-get($color, lighter) 60%,
-			$background 100%);
-	}
+//////////// Temporarily replaced hr styles with '...' hr pseudo-element"
+
+	//@mixin hr-color($color: $home-color, $background: $background-color) {
+	//    background-color: map-get($color, normal);
+	//	background-image: linear-gradient(
+	//		to right,
+	//		$background 0%,
+	//		map-get($color, lighter) 40%,
+	//		map-get($color, lighter) 60%,
+	//		$background 100%);
+	//}
+
+////////////
 
 ////////// 
 //background-gradient: defines the background color and gradient 
