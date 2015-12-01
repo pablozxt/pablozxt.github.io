@@ -118,7 +118,7 @@ hr {
 /* line 43, ../../_compass/_base.scss */
 hr {
   border-width: 0px;
-  width: 87px;
+  width: 100px;
   margin: 1.28571em auto;
   font-size: 1.71429em;
   line-height: 1.125em;
@@ -129,9 +129,11 @@ hr {
 /* line 52, ../../_compass/_base.scss */
 hr:before {
   content: '...';
+  display: block;
+  text-align: center;
 }
 
-/* line 59, ../../_compass/_base.scss */
+/* line 61, ../../_compass/_base.scss */
 .engineer-main ul li {
   margin-top: 0.42857em;
 }
@@ -389,7 +391,7 @@ main ul {
 
 @media (min-width: 800px) {
   /* line 201, ../../_compass/_layout.scss */
-  .engineer-interests ul {
+  .engineer-main ul {
     margin-left: 15.25424%;
   }
 }

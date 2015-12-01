@@ -42,7 +42,7 @@ hr {
 
 hr {
 	border-width: 0px;
-	width: 87px;
+	width: 100px;
 	margin: rhythm(3) auto;
 	@include set-font-size(extra-large);
 	letter-spacing: 0.9em;
@@ -51,6 +51,8 @@ hr {
 
 hr:before {
 	content: '...';
+	display: block;
+	text-align: center;
 }
 
 
