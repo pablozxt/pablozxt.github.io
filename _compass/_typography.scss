@@ -250,6 +250,15 @@ TYPOGRAPHIC STYLES AND VERTICAL RHYTHMS OF MAJOR PAGE COMPONENTS
 		font-style: italic;
 	}
 	
+	
+/********* 	
+END TYPOGRAPHIC STYLES AND VERTICAL RHYTHMS OF MAJOR PAGE COMPONENTS
+*********/
+
+/********* 
+BLOCKQUOTES
+*********/
+
 	//define smart quotes for quotes and blockquotes
 	q, blockquote {
 	    quotes: "\201C" "\201D" "\2018" "\2019";
@@ -283,10 +292,11 @@ TYPOGRAPHIC STYLES AND VERTICAL RHYTHMS OF MAJOR PAGE COMPONENTS
 		}
 		color: map-get($home-color, normal);
 	}
-	
-/********* 	
-END TYPOGRAPHIC STYLES AND VERTICAL RHYTHMS OF MAJOR PAGE COMPONENTS
+
+/********* 
+END BLOCKQUOTES
 *********/
+
 
 /********* 
 Styles for READ MORE section and read more buttons

@@ -925,12 +925,18 @@ em {
   font-style: italic;
 }
 
-/* line 254, ../../_compass/_typography.scss */
+/********* 	
+END TYPOGRAPHIC STYLES AND VERTICAL RHYTHMS OF MAJOR PAGE COMPONENTS
+*********/
+/********* 
+BLOCKQUOTES
+*********/
+/* line 263, ../../_compass/_typography.scss */
 q, blockquote {
   quotes: "\201C" "\201D" "\2018" "\2019";
 }
 
-/* line 259, ../../_compass/_typography.scss */
+/* line 268, ../../_compass/_typography.scss */
 blockquote {
   border-left: 2px solid #e1e1e1;
   margin-top: 1.71429em;
@@ -938,7 +944,7 @@ blockquote {
   color: #6f6f6f;
 }
 
-/* line 267, ../../_compass/_typography.scss */
+/* line 276, ../../_compass/_typography.scss */
 blockquote > :first-child:before {
   content: open-quote;
   color: #2b8686;
@@ -946,14 +952,14 @@ blockquote > :first-child:before {
   line-height: 1.28571em;
 }
 @media (min-width: 37.5em) {
-  /* line 267, ../../_compass/_typography.scss */
+  /* line 276, ../../_compass/_typography.scss */
   blockquote > :first-child:before {
     font-size: 1.28571em;
     line-height: 1.16667em;
   }
 }
 
-/* line 277, ../../_compass/_typography.scss */
+/* line 286, ../../_compass/_typography.scss */
 blockquote > :last-child:not(ul):after, blockquote > :last-child:not(ol):after,
 blockquote > ul:last-child > li:last-child:after, blockquote > ol:last-child > li:last-child:after {
   content: close-quote;
@@ -962,7 +968,7 @@ blockquote > ul:last-child > li:last-child:after, blockquote > ol:last-child > l
   color: #2b8686;
 }
 @media (min-width: 37.5em) {
-  /* line 277, ../../_compass/_typography.scss */
+  /* line 286, ../../_compass/_typography.scss */
   blockquote > :last-child:not(ul):after, blockquote > :last-child:not(ol):after,
   blockquote > ul:last-child > li:last-child:after, blockquote > ol:last-child > li:last-child:after {
     font-size: 1.28571em;
@@ -970,39 +976,39 @@ blockquote > ul:last-child > li:last-child:after, blockquote > ol:last-child > l
   }
 }
 
-/********* 	
-END TYPOGRAPHIC STYLES AND VERTICAL RHYTHMS OF MAJOR PAGE COMPONENTS
+/********* 
+END BLOCKQUOTES
 *********/
 /********* 
 Styles for READ MORE section and read more buttons
 *********/
-/* line 295, ../../_compass/_typography.scss */
+/* line 305, ../../_compass/_typography.scss */
 .read-more {
   background-color: #f5f6f5;
   margin-top: 1.71429em;
   padding: 0.85714em 0.75em 2.14286em 0.75em;
 }
 @media (min-width: 37.5em) {
-  /* line 299, ../../_compass/_typography.scss */
+  /* line 309, ../../_compass/_typography.scss */
   .read-more h5 {
     font-size: 0.85714em;
     line-height: 1.25em;
   }
 }
-/* line 304, ../../_compass/_typography.scss */
+/* line 314, ../../_compass/_typography.scss */
 .read-more p {
   font-size: 0.85714em;
   line-height: 1.25em;
 }
 @media (min-width: 37.5em) {
-  /* line 304, ../../_compass/_typography.scss */
+  /* line 314, ../../_compass/_typography.scss */
   .read-more p {
     font-size: 0.7619em;
     line-height: 1.40625em;
   }
 }
 
-/* line 312, ../../_compass/_typography.scss */
+/* line 322, ../../_compass/_typography.scss */
 .read-more-button {
   width: 8.75em;
   margin-top: 1.28571em;
@@ -1023,25 +1029,25 @@ Styles for READ MORE section and read more buttons
 /********* 
 PLACEHOLDER SELECTORS
 *********/
-/* line 325, ../../_compass/_typography.scss */
+/* line 335, ../../_compass/_typography.scss */
 nav {
   color: #ffffff;
 }
-/* line 327, ../../_compass/_typography.scss */
+/* line 337, ../../_compass/_typography.scss */
 nav a {
   color: inherit;
   text-decoration: underline;
 }
-/* line 330, ../../_compass/_typography.scss */
+/* line 340, ../../_compass/_typography.scss */
 nav a:hover, nav a:focus {
   color: #e6e6e6;
 }
-/* line 333, ../../_compass/_typography.scss */
+/* line 343, ../../_compass/_typography.scss */
 nav a:active {
   color: #cccccc;
 }
 
-/* line 341, ../../_compass/_typography.scss */
+/* line 351, ../../_compass/_typography.scss */
 button {
   font-family: "open-sans", sans-serif;
   font-size: 0.85714em;
@@ -1049,7 +1055,7 @@ button {
   font-weight: 400;
 }
 @media (min-width: 37.5em) {
-  /* line 341, ../../_compass/_typography.scss */
+  /* line 351, ../../_compass/_typography.scss */
   button {
     font-size: 0.7619em;
     line-height: 1.40625em;
