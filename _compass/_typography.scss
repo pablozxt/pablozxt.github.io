@@ -264,7 +264,7 @@ TYPOGRAPHIC STYLES AND VERTICAL RHYTHMS OF MAJOR PAGE COMPONENTS
 	}
 	
 	//open a blockquote using smart double quotes
-	blockquote p:first-of-type:before {
+	blockquote>:first-child:before {
 		content: open-quote;
 		color: map-get($home-color, normal);
 		@include set-font-size(normal);
@@ -273,8 +273,9 @@ TYPOGRAPHIC STYLES AND VERTICAL RHYTHMS OF MAJOR PAGE COMPONENTS
 		}
 	}
 	
-	//close a blockquote with double quotes
-	blockquote p:last-of-type:after {
+	//close a blockquote with smart double quotes
+	blockquote>:last-child:not(ul):after, blockquote>:last-child:not(ol):after, 
+	blockquote>ul:last-child>li:last-child:after, blockquote>ol:last-child>li:last-child:after {
 	    content: close-quote;
 		@include set-font-size(normal);
 		@include breakpoint($large-phone) {

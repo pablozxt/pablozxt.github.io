@@ -13,7 +13,6 @@ button {
 
 /******** Temporarily replaced hr styles with '...' hr pseudo-element"
 
-
 hr {
     clear: both;
     float: none;
@@ -38,6 +37,7 @@ hr {
 		@include hr-color($color: $engineer-color);
 	}
 }
+
 ************/
 
 hr {
