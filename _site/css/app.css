@@ -87,35 +87,7 @@ button:focus {
   outline: none;
 }
 
-/******** Temporarily replaced hr styles with '...' hr pseudo-element"
-
-hr {
-    clear: both;
-    float: none;
-    width: 100%;
-    height: 1px;
-    border: none;
-	max-width: $max-hr-width;
-	margin: rhythm(6) auto;
-	@include breakpoint($large-phone) {
-		margin: rhythm(6) auto rhythm(10) auto;
-	}
-}
-
-.home-main {
-	hr {
-		@include hr-color($color: $home-color);
-	}
-}
-
-.engineer-main {
-	hr {
-		@include hr-color($color: $engineer-color);
-	}
-}
-
-************/
-/* line 43, ../../_compass/_base.scss */
+/* line 14, ../../_compass/_base.scss */
 hr {
   border-width: 0px;
   width: 100px;
@@ -126,14 +98,14 @@ hr {
   color: #bcdfdf;
 }
 
-/* line 52, ../../_compass/_base.scss */
+/* line 23, ../../_compass/_base.scss */
 hr:before {
   content: '...';
   display: block;
   text-align: center;
 }
 
-/* line 61, ../../_compass/_base.scss */
+/* line 32, ../../_compass/_base.scss */
 .engineer-main ul li {
   margin-top: 0.42857em;
 }
