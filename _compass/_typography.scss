@@ -102,8 +102,13 @@ TYPOGRAPHIC STYLES AND VERTICAL RHYTHMS OF MAJOR PAGE COMPONENTS
 			margin-top: rhythm(6);
 			@include breakpoint($laptop) {
 				margin-top: rhythm(9);
-			}
+			}//breakpoint
 		}//article, section
+		ul {
+			li {
+				margin-top: rhythm(1);
+			}//li
+		}//ul
 	}//.engineer-main
 
 	header {
@@ -283,8 +288,10 @@ BLOCKQUOTES
 	}
 	
 	//close a blockquote with smart double quotes
-	blockquote>:last-child:not(ul):after, blockquote>:last-child:not(ol):after, 
-	blockquote>ul:last-child>li:last-child:after, blockquote>ol:last-child>li:last-child:after {
+	blockquote>:last-child:not(ul):after, 
+	blockquote>:last-child:not(ol):after, 
+	blockquote>ul:last-child>li:last-child:after, 
+	blockquote>ol:last-child>li:last-child:after {
 	    content: close-quote;
 		@include set-font-size(normal);
 		@include breakpoint($large-phone) {
