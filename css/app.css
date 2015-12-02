@@ -89,7 +89,6 @@ button:focus {
 
 /******** Temporarily replaced hr styles with '...' hr pseudo-element"
 
-
 hr {
     clear: both;
     float: none;
@@ -114,6 +113,7 @@ hr {
 		@include hr-color($color: $engineer-color);
 	}
 }
+
 ************/
 /* line 43, ../../_compass/_base.scss */
 hr {
@@ -939,7 +939,7 @@ blockquote {
 }
 
 /* line 267, ../../_compass/_typography.scss */
-blockquote p:first-of-type:before {
+blockquote > :first-child:before {
   content: open-quote;
   color: #2b8686;
   font-size: 1em;
@@ -947,14 +947,15 @@ blockquote p:first-of-type:before {
 }
 @media (min-width: 37.5em) {
   /* line 267, ../../_compass/_typography.scss */
-  blockquote p:first-of-type:before {
+  blockquote > :first-child:before {
     font-size: 1.28571em;
     line-height: 1.16667em;
   }
 }
 
 /* line 277, ../../_compass/_typography.scss */
-blockquote p:last-of-type:after {
+blockquote > :last-child:not(ul):after, blockquote > :last-child:not(ol):after,
+blockquote > ul:last-child > li:last-child:after, blockquote > ol:last-child > li:last-child:after {
   content: close-quote;
   font-size: 1em;
   line-height: 1.28571em;
@@ -962,7 +963,8 @@ blockquote p:last-of-type:after {
 }
 @media (min-width: 37.5em) {
   /* line 277, ../../_compass/_typography.scss */
-  blockquote p:last-of-type:after {
+  blockquote > :last-child:not(ul):after, blockquote > :last-child:not(ol):after,
+  blockquote > ul:last-child > li:last-child:after, blockquote > ol:last-child > li:last-child:after {
     font-size: 1.28571em;
     line-height: 1.16667em;
   }
@@ -974,33 +976,33 @@ END TYPOGRAPHIC STYLES AND VERTICAL RHYTHMS OF MAJOR PAGE COMPONENTS
 /********* 
 Styles for READ MORE section and read more buttons
 *********/
-/* line 294, ../../_compass/_typography.scss */
+/* line 295, ../../_compass/_typography.scss */
 .read-more {
   background-color: #f5f6f5;
   margin-top: 1.71429em;
   padding: 0.85714em 0.75em 2.14286em 0.75em;
 }
 @media (min-width: 37.5em) {
-  /* line 298, ../../_compass/_typography.scss */
+  /* line 299, ../../_compass/_typography.scss */
   .read-more h5 {
     font-size: 0.85714em;
     line-height: 1.25em;
   }
 }
-/* line 303, ../../_compass/_typography.scss */
+/* line 304, ../../_compass/_typography.scss */
 .read-more p {
   font-size: 0.85714em;
   line-height: 1.25em;
 }
 @media (min-width: 37.5em) {
-  /* line 303, ../../_compass/_typography.scss */
+  /* line 304, ../../_compass/_typography.scss */
   .read-more p {
     font-size: 0.7619em;
     line-height: 1.40625em;
   }
 }
 
-/* line 311, ../../_compass/_typography.scss */
+/* line 312, ../../_compass/_typography.scss */
 .read-more-button {
   width: 8.75em;
   margin-top: 1.28571em;
@@ -1021,25 +1023,25 @@ Styles for READ MORE section and read more buttons
 /********* 
 PLACEHOLDER SELECTORS
 *********/
-/* line 324, ../../_compass/_typography.scss */
+/* line 325, ../../_compass/_typography.scss */
 nav {
   color: #ffffff;
 }
-/* line 326, ../../_compass/_typography.scss */
+/* line 327, ../../_compass/_typography.scss */
 nav a {
   color: inherit;
   text-decoration: underline;
 }
-/* line 329, ../../_compass/_typography.scss */
+/* line 330, ../../_compass/_typography.scss */
 nav a:hover, nav a:focus {
   color: #e6e6e6;
 }
-/* line 332, ../../_compass/_typography.scss */
+/* line 333, ../../_compass/_typography.scss */
 nav a:active {
   color: #cccccc;
 }
 
-/* line 340, ../../_compass/_typography.scss */
+/* line 341, ../../_compass/_typography.scss */
 button {
   font-family: "open-sans", sans-serif;
   font-size: 0.85714em;
@@ -1047,7 +1049,7 @@ button {
   font-weight: 400;
 }
 @media (min-width: 37.5em) {
-  /* line 340, ../../_compass/_typography.scss */
+  /* line 341, ../../_compass/_typography.scss */
   button {
     font-size: 0.7619em;
     line-height: 1.40625em;
