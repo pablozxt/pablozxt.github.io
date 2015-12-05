@@ -276,7 +276,7 @@ BLOCKQUOTES
 	//blockquote styles
 	blockquote {
 		border-left: 2px solid lighten($text-color, 75%);
-		margin-top: rhythm(4);
+		margin: rhythm(4) 0;
 		padding-left: 2*$body-padding;
 		color: lighten($text-color, 30%);
 	}
