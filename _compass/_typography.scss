@@ -255,6 +255,10 @@ TYPOGRAPHIC STYLES AND VERTICAL RHYTHMS OF MAJOR PAGE COMPONENTS
 		font-style: italic;
 	}
 	
+	sup {
+		font-size: xx-small;
+		vertical-align:super;
+	}
 	
 /********* 	
 END TYPOGRAPHIC STYLES AND VERTICAL RHYTHMS OF MAJOR PAGE COMPONENTS
@@ -298,6 +302,11 @@ BLOCKQUOTES
 			@include set-font-size(large, $small-font-sizes);
 		}
 		color: map-get($home-color, normal);
+	}
+	
+	blockquote .subquote {
+		@include set-font-size(small);
+		margin-left: span(1);
 	}
 
 /********* 
