@@ -87,38 +87,10 @@ button:focus {
   outline: none;
 }
 
-/******** Temporarily replaced hr styles with '...' hr pseudo-element"
-
-
-hr {
-    clear: both;
-    float: none;
-    width: 100%;
-    height: 1px;
-    border: none;
-	max-width: $max-hr-width;
-	margin: rhythm(6) auto;
-	@include breakpoint($large-phone) {
-		margin: rhythm(6) auto rhythm(10) auto;
-	}
-}
-
-.home-main {
-	hr {
-		@include hr-color($color: $home-color);
-	}
-}
-
-.engineer-main {
-	hr {
-		@include hr-color($color: $engineer-color);
-	}
-}
-************/
-/* line 43, ../../_compass/_base.scss */
+/* line 14, ../../_compass/_base.scss */
 hr {
   border-width: 0px;
-  width: 87px;
+  width: 100px;
   margin: 1.28571em auto;
   font-size: 1.71429em;
   line-height: 1.125em;
@@ -126,14 +98,11 @@ hr {
   color: #bcdfdf;
 }
 
-/* line 52, ../../_compass/_base.scss */
+/* line 23, ../../_compass/_base.scss */
 hr:before {
   content: '...';
-}
-
-/* line 59, ../../_compass/_base.scss */
-.engineer-main ul li {
-  margin-top: 0.42857em;
+  display: block;
+  text-align: center;
 }
 
 /* line 1, ../../_compass/_layout.scss */
@@ -383,12 +352,13 @@ Left margin starts at 0, increases to one column, then to two columns
 }
 
 /* line 195, ../../_compass/_layout.scss */
-#main ul {
+main ul {
   margin-left: 6.77966%;
 }
+
 @media (min-width: 800px) {
-  /* line 195, ../../_compass/_layout.scss */
-  #main ul {
+  /* line 201, ../../_compass/_layout.scss */
+  .engineer-main ul {
     margin-left: 15.25424%;
   }
 }
@@ -403,12 +373,12 @@ set styles for .text-container and figure inside of .engineer-project
 class to float text to the left and images to the right. 
 Use resp-float mixin to float element responsively at a given breakpoint
 *********/
-/* line 215, ../../_compass/_layout.scss */
+/* line 220, ../../_compass/_layout.scss */
 .engineer-project {
   /** max-width of floated images has to be limited to 100% of its column **/
 }
 @media (min-width: 75em) {
-  /* line 216, ../../_compass/_layout.scss */
+  /* line 221, ../../_compass/_layout.scss */
   .engineer-project .text-container {
     float: left;
     width: 45.3125%;
@@ -416,19 +386,19 @@ Use resp-float mixin to float element responsively at a given breakpoint
   }
 }
 @media (min-width: 75em) {
-  /* line 219, ../../_compass/_layout.scss */
+  /* line 224, ../../_compass/_layout.scss */
   .engineer-project figure {
     float: right;
     width: 45.3125%;
     margin-right: 1.69492%;
   }
 }
-/* line 223, ../../_compass/_layout.scss */
+/* line 228, ../../_compass/_layout.scss */
 .engineer-project img {
   max-width: 100%;
 }
 @media (min-width: 75em) {
-  /* line 226, ../../_compass/_layout.scss */
+  /* line 231, ../../_compass/_layout.scss */
   .engineer-project .read-more-button {
     clear: both;
     margin-top: 2.14286em;
@@ -437,7 +407,7 @@ Use resp-float mixin to float element responsively at a given breakpoint
 }
 
 @media (min-width: 75em) {
-  /* line 235, ../../_compass/_layout.scss */
+  /* line 240, ../../_compass/_layout.scss */
   .engineer-interests {
     float: left;
     width: 45.3125%;
@@ -446,7 +416,7 @@ Use resp-float mixin to float element responsively at a given breakpoint
 }
 
 @media (min-width: 75em) {
-  /* line 239, ../../_compass/_layout.scss */
+  /* line 244, ../../_compass/_layout.scss */
   .engineer-education {
     float: right;
     width: 45.3125%;
@@ -454,13 +424,13 @@ Use resp-float mixin to float element responsively at a given breakpoint
   }
 }
 @media (min-width: 75em) {
-  /* line 239, ../../_compass/_layout.scss */
+  /* line 244, ../../_compass/_layout.scss */
   .engineer-education {
     margin-left: 1.69492%;
   }
 }
 @media (min-width: 100em) {
-  /* line 239, ../../_compass/_layout.scss */
+  /* line 244, ../../_compass/_layout.scss */
   .engineer-education {
     float: left;
     margin-left: 15.25424%;
@@ -473,20 +443,20 @@ END RESPONSIVE FLOATED TWO COLUMN LAYOUT
 /********* 
 PICTURES LAYOUT
 *********/
-/* line 259, ../../_compass/_layout.scss */
+/* line 264, ../../_compass/_layout.scss */
 figure {
   margin-top: 1.28571em;
   margin-left: auto;
   margin-right: auto;
 }
 @media (min-width: 75em) {
-  /* line 259, ../../_compass/_layout.scss */
+  /* line 264, ../../_compass/_layout.scss */
   figure {
     margin-top: 2.57143em;
   }
 }
 
-/* line 268, ../../_compass/_layout.scss */
+/* line 273, ../../_compass/_layout.scss */
 .full-width {
   max-width: 63.63636em;
 }
@@ -501,16 +471,16 @@ overridden for browsers supporting CSS column
 Default read-more layout is three columns wide. However, areas with shorter read-more sections
 add a class columns-2 which reduces the width down to two columns
 *********/
-/* line 285, ../../_compass/_layout.scss */
+/* line 290, ../../_compass/_layout.scss */
 .read-more p, .read-more h5 {
   max-width: 31.25em;
 }
 
-/* line 291, ../../_compass/_layout.scss */
+/* line 296, ../../_compass/_layout.scss */
 .csscolumns p, .csscolumns h5 {
   max-width: 31.25em;
 }
-/* line 294, ../../_compass/_layout.scss */
+/* line 299, ../../_compass/_layout.scss */
 .csscolumns .read-more-inner {
   -webkit-columns: 3 15.625em;
      -moz-columns: 3 15.625em;
@@ -519,7 +489,7 @@ add a class columns-2 which reduces the width down to two columns
      -moz-column-gap: 1em;
           column-gap: 1em;
 }
-/* line 298, ../../_compass/_layout.scss */
+/* line 303, ../../_compass/_layout.scss */
 .csscolumns .columns-2 {
   -webkit-columns: 2 15.625em;
      -moz-columns: 2 15.625em;
@@ -713,8 +683,12 @@ header {
     margin-top: 3.85714em;
   }
 }
+/* line 108, ../../_compass/_typography.scss */
+.engineer-main ul li {
+  margin-top: 0.42857em;
+}
 
-/* line 110, ../../_compass/_typography.scss */
+/* line 115, ../../_compass/_typography.scss */
 header p {
   font-family: "open-sans", sans-serif;
   font-size: 1.19048em;
@@ -723,21 +697,21 @@ header p {
   margin-top: 0.42857em;
 }
 @media (min-width: 37.5em) {
-  /* line 110, ../../_compass/_typography.scss */
+  /* line 115, ../../_compass/_typography.scss */
   header p {
     font-size: 1.09524em;
     line-height: 1.17391em;
   }
 }
 @media (min-width: 37.5em) {
-  /* line 110, ../../_compass/_typography.scss */
+  /* line 115, ../../_compass/_typography.scss */
   header p {
     font-size: 1.71429em;
     line-height: 1.125em;
   }
 }
 
-/* line 124, ../../_compass/_typography.scss */
+/* line 129, ../../_compass/_typography.scss */
 h2 {
   text-transform: uppercase;
   color: #9c0d0d;
@@ -746,21 +720,21 @@ h2 {
   font-weight: 600;
 }
 @media (min-width: 37.5em) {
-  /* line 124, ../../_compass/_typography.scss */
+  /* line 129, ../../_compass/_typography.scss */
   h2 {
     font-size: 1.09524em;
     line-height: 1.17391em;
   }
 }
 @media (min-width: 37.5em) {
-  /* line 124, ../../_compass/_typography.scss */
+  /* line 129, ../../_compass/_typography.scss */
   h2 {
     font-size: 1.42857em;
     line-height: 1.2em;
   }
 }
 
-/* line 137, ../../_compass/_typography.scss */
+/* line 142, ../../_compass/_typography.scss */
 h3 {
   font-size: 1em;
   line-height: 1.28571em;
@@ -769,52 +743,52 @@ h3 {
   color: #222;
 }
 @media (min-width: 37.5em) {
-  /* line 137, ../../_compass/_typography.scss */
+  /* line 142, ../../_compass/_typography.scss */
   h3 {
     font-size: 0.90476em;
     line-height: 1.42105em;
   }
 }
 
-/* line 148, ../../_compass/_typography.scss */
+/* line 153, ../../_compass/_typography.scss */
 .project-budget::before {
   content: " \2013  ";
 }
 
-/* line 153, ../../_compass/_typography.scss */
+/* line 158, ../../_compass/_typography.scss */
 h4 {
   font-size: 1em;
   line-height: 1.28571em;
   margin-top: 0.42857em;
 }
-/* line 156, ../../_compass/_typography.scss */
+/* line 161, ../../_compass/_typography.scss */
 h4 .project-position {
   display: inline;
 }
-/* line 158, ../../_compass/_typography.scss */
+/* line 163, ../../_compass/_typography.scss */
 h4 .project-position::before {
   content: " \2013  ";
 }
 
-/* line 164, ../../_compass/_typography.scss */
+/* line 169, ../../_compass/_typography.scss */
 .project-data {
   font-size: 0.71429em;
   line-height: 1.5em;
   color: #222;
 }
 @media (min-width: 37.5em) {
-  /* line 164, ../../_compass/_typography.scss */
+  /* line 169, ../../_compass/_typography.scss */
   .project-data {
     font-size: 0.61905em;
     line-height: 1.38462em;
   }
 }
-/* line 170, ../../_compass/_typography.scss */
+/* line 175, ../../_compass/_typography.scss */
 .project-data::before {
   content: '\00a0 \00a0 \00a0 \00a0';
 }
 
-/* line 175, ../../_compass/_typography.scss */
+/* line 180, ../../_compass/_typography.scss */
 h5 {
   text-transform: uppercase;
   color: #9c0d0d;
@@ -824,28 +798,28 @@ h5 {
   font-weight: 600;
 }
 @media (min-width: 37.5em) {
-  /* line 175, ../../_compass/_typography.scss */
+  /* line 180, ../../_compass/_typography.scss */
   h5 {
     font-size: 0.7619em;
     line-height: 1.40625em;
   }
 }
 @media (min-width: 37.5em) {
-  /* line 175, ../../_compass/_typography.scss */
+  /* line 180, ../../_compass/_typography.scss */
   h5 {
     font-size: 1em;
     line-height: 1.28571em;
   }
 }
 
-/* line 189, ../../_compass/_typography.scss */
+/* line 194, ../../_compass/_typography.scss */
 p {
   font-size: 1em;
   line-height: 1.28571em;
   margin-top: 0.85714em;
 }
 @media (min-width: 37.5em) {
-  /* line 189, ../../_compass/_typography.scss */
+  /* line 194, ../../_compass/_typography.scss */
   p {
     font-size: 0.90476em;
     line-height: 1.42105em;
@@ -853,7 +827,7 @@ p {
 }
 
 /**** Home post singe page view DROP CAPS ****/
-/* line 198, ../../_compass/_typography.scss */
+/* line 203, ../../_compass/_typography.scss */
 .drop-cap:first-letter {
   font-size: 63px;
   color: #2b8686;
@@ -863,13 +837,13 @@ p {
   padding-top: 0.31em;
 }
 @media (min-width: 21.875em) {
-  /* line 198, ../../_compass/_typography.scss */
+  /* line 203, ../../_compass/_typography.scss */
   .drop-cap:first-letter {
     font-size: 90px;
   }
 }
 @media (min-width: 37.5em) {
-  /* line 198, ../../_compass/_typography.scss */
+  /* line 203, ../../_compass/_typography.scss */
   .drop-cap:first-letter {
     font-size: 4.66667em;
     line-height: 1.05612em;
@@ -880,12 +854,12 @@ p {
   }
 }
 
-/* line 218, ../../_compass/_typography.scss */
+/* line 223, ../../_compass/_typography.scss */
 .no-js .drop-cap:first-letter, .wf-inactive .drop-cap:first-letter {
   padding-top: 0.19em;
 }
 
-/* line 224, ../../_compass/_typography.scss */
+/* line 229, ../../_compass/_typography.scss */
 figcaption {
   font-family: "open-sans", sans-serif;
   font-size: 0.57143em;
@@ -894,40 +868,52 @@ figcaption {
   margin-top: -0.42857em;
 }
 @media (min-width: 37.5em) {
-  /* line 224, ../../_compass/_typography.scss */
+  /* line 229, ../../_compass/_typography.scss */
   figcaption {
     font-size: 0.52381em;
     line-height: 1.63636em;
   }
 }
 
-/* line 235, ../../_compass/_typography.scss */
+/* line 240, ../../_compass/_typography.scss */
 a {
   color: #2455c3;
   text-decoration: underline;
   -webkit-transition: color 0.4s ease;
           transition: color 0.4s ease;
 }
-/* line 239, ../../_compass/_typography.scss */
+/* line 244, ../../_compass/_typography.scss */
 a:hover, a:focus {
   color: #3f6fdb;
 }
-/* line 242, ../../_compass/_typography.scss */
+/* line 247, ../../_compass/_typography.scss */
 a:active {
   color: #6a8fe3;
 }
 
-/* line 249, ../../_compass/_typography.scss */
+/* line 254, ../../_compass/_typography.scss */
 em {
   font-style: italic;
 }
 
-/* line 254, ../../_compass/_typography.scss */
+/* line 258, ../../_compass/_typography.scss */
+sup {
+  font-size: xx-small;
+  vertical-align: super;
+}
+
+/********* 	
+END TYPOGRAPHIC STYLES AND VERTICAL RHYTHMS OF MAJOR PAGE COMPONENTS
+*********/
+/********* 
+BLOCKQUOTES
+*********/
+/* line 272, ../../_compass/_typography.scss */
 q, blockquote {
   quotes: "\201C" "\201D" "\2018" "\2019";
 }
 
-/* line 259, ../../_compass/_typography.scss */
+/* line 277, ../../_compass/_typography.scss */
 blockquote {
   border-left: 2px solid #e1e1e1;
   margin-top: 1.71429em;
@@ -935,69 +921,82 @@ blockquote {
   color: #6f6f6f;
 }
 
-/* line 267, ../../_compass/_typography.scss */
-blockquote p:first-of-type:before {
+/* line 285, ../../_compass/_typography.scss */
+blockquote > :first-child:before {
   content: open-quote;
   color: #2b8686;
   font-size: 1em;
   line-height: 1.28571em;
 }
 @media (min-width: 37.5em) {
-  /* line 267, ../../_compass/_typography.scss */
-  blockquote p:first-of-type:before {
+  /* line 285, ../../_compass/_typography.scss */
+  blockquote > :first-child:before {
     font-size: 1.28571em;
     line-height: 1.16667em;
   }
 }
 
-/* line 277, ../../_compass/_typography.scss */
-blockquote p:last-of-type:after {
+/* line 295, ../../_compass/_typography.scss */
+blockquote > :last-child:not(ul):after,
+blockquote > :last-child:not(ol):after,
+blockquote > ul:last-child > li:last-child:after,
+blockquote > ol:last-child > li:last-child:after {
   content: close-quote;
   font-size: 1em;
   line-height: 1.28571em;
   color: #2b8686;
 }
 @media (min-width: 37.5em) {
-  /* line 277, ../../_compass/_typography.scss */
-  blockquote p:last-of-type:after {
+  /* line 295, ../../_compass/_typography.scss */
+  blockquote > :last-child:not(ul):after,
+  blockquote > :last-child:not(ol):after,
+  blockquote > ul:last-child > li:last-child:after,
+  blockquote > ol:last-child > li:last-child:after {
     font-size: 1.28571em;
     line-height: 1.16667em;
   }
 }
 
-/********* 	
-END TYPOGRAPHIC STYLES AND VERTICAL RHYTHMS OF MAJOR PAGE COMPONENTS
+/* line 307, ../../_compass/_typography.scss */
+blockquote .subquote {
+  font-size: 0.85714em;
+  line-height: 1.25em;
+  margin-left: 6.77966%;
+}
+
+/********* 
+END BLOCKQUOTES
 *********/
 /********* 
 Styles for READ MORE section and read more buttons
 *********/
-/* line 294, ../../_compass/_typography.scss */
+/* line 321, ../../_compass/_typography.scss */
 .read-more {
   background-color: #f5f6f5;
   margin-top: 1.71429em;
   padding: 0.85714em 0.75em 2.14286em 0.75em;
 }
 @media (min-width: 37.5em) {
-  /* line 298, ../../_compass/_typography.scss */
+  /* line 325, ../../_compass/_typography.scss */
   .read-more h5 {
     font-size: 0.85714em;
     line-height: 1.25em;
   }
 }
-/* line 303, ../../_compass/_typography.scss */
+/* line 330, ../../_compass/_typography.scss */
 .read-more p {
   font-size: 0.85714em;
   line-height: 1.25em;
 }
 @media (min-width: 37.5em) {
-  /* line 303, ../../_compass/_typography.scss */
+  /* line 330, ../../_compass/_typography.scss */
   .read-more p {
     font-size: 0.7619em;
     line-height: 1.40625em;
   }
 }
 
-/* line 311, ../../_compass/_typography.scss */
+/* line 338, ../../_compass/_typography.scss */
 .read-more-button {
   width: 8.75em;
   margin-top: 1.28571em;
@@ -1018,25 +1017,25 @@ Styles for READ MORE section and read more buttons
 /********* 
 PLACEHOLDER SELECTORS
 *********/
-/* line 324, ../../_compass/_typography.scss */
+/* line 351, ../../_compass/_typography.scss */
 nav {
   color: #ffffff;
 }
-/* line 326, ../../_compass/_typography.scss */
+/* line 353, ../../_compass/_typography.scss */
 nav a {
   color: inherit;
   text-decoration: underline;
 }
-/* line 329, ../../_compass/_typography.scss */
+/* line 356, ../../_compass/_typography.scss */
 nav a:hover, nav a:focus {
   color: #e6e6e6;
 }
-/* line 332, ../../_compass/_typography.scss */
+/* line 359, ../../_compass/_typography.scss */
 nav a:active {
   color: #cccccc;
 }
 
-/* line 340, ../../_compass/_typography.scss */
+/* line 367, ../../_compass/_typography.scss */
 button {
   font-family: "open-sans", sans-serif;
   font-size: 0.85714em;
@@ -1044,7 +1043,7 @@ button {
   font-weight: 400;
 }
 @media (min-width: 37.5em) {
-  /* line 340, ../../_compass/_typography.scss */
+  /* line 367, ../../_compass/_typography.scss */
   button {
     font-size: 0.7619em;
     line-height: 1.40625em;
