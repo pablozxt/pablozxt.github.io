@@ -916,7 +916,7 @@ q, blockquote {
 /* line 277, ../../_compass/_typography.scss */
 blockquote {
   border-left: 2px solid #e1e1e1;
-  margin-top: 1.71429em;
+  margin: 1.71429em 0;
   padding-left: 1.5em;
   color: #6f6f6f;
 }
