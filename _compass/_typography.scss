@@ -38,7 +38,7 @@ TYPOGRAPHIC STYLES AND VERTICAL RHYTHMS OF MAJOR PAGE COMPONENTS
 			margin-top: rhythm(6);
 			@include breakpoint($large-phone) {
 				@include set-font-size(smaller, $small-font-sizes);
-				margin-top: rhythm(20);
+				margin-top: rhythm(11);
 			}
 			
 		}//.nav-social
