@@ -68,7 +68,17 @@ NAV STYLES
 			.username {
 				margin-left: em(10px);
 			}//username
+			img {
+				border-radius: 50%;
+				width: 60px;
+			}
 		}//li
+		.headshot {
+			margin-left: span(4.7);
+			@include breakpoint($large-phone) {
+				margin-left: span(5.2);
+			}//breakpoint
+		}//li.headshot
 	}//.nav-social
 
 	svg {
