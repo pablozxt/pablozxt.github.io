@@ -1,7 +1,7 @@
 ---
 layout: home-post
 category: pablo
-title: Modes of Criticism
+title: Subject to Improvement
 
 ---
 
